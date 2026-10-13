@@ -262,7 +262,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/dropbox
 |---|---|---|---|---|---|---|
 | [Metabase](https://github.com/metabase/metabase) | 99 | 50k | PostgreSQL | 1024 MB | No | Yes |
 | [Redash](https://github.com/getredash/redash) | 98 | 29k | PostgreSQL | 4096 MB | No | Yes |
-| [Apache Superset](https://github.com/apache/superset) | 97 | 75k | PostgreSQL | about 4096 MB | Yes | Yes |
+| [Apache Superset](https://github.com/apache/superset) | 96 | 75k | PostgreSQL | about 4096 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/looker/
 
