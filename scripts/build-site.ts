@@ -152,15 +152,43 @@ try {
   /* no offers file */
 }
 
+// Official sites of one-click platforms that are not affiliate partners (plain nofollow links).
+const PLATFORMS: Record<string, string> = {
+  railway: "https://railway.com",
+  digitalocean: "https://marketplace.digitalocean.com",
+  pikapods: "https://www.pikapods.com",
+  coolify: "https://coolify.io",
+  render: "https://render.com",
+  heroku: "https://www.heroku.com",
+  cloudron: "https://www.cloudron.io",
+  zeabur: "https://zeabur.com",
+  vercel: "https://vercel.com",
+  sealos: "https://sealos.io",
+  repocloud: "https://repocloud.io",
+  elestio: "https://elest.io",
+  caprover: "https://caprover.com",
+  "unraid community apps": "https://unraid.net/community/apps",
+  unraid: "https://unraid.net",
+  easypanel: "https://easypanel.io",
+  "alibaba cloud": "https://www.alibabacloud.com",
+  "fly.io": "https://fly.io",
+  netlify: "https://www.netlify.com",
+  vultr: "https://www.vultr.com",
+  truenas: "https://apps.truenas.com",
+  "umbrel app store": "https://apps.umbrel.com",
+};
+
 const oneClickChips = (arr: string[]): string =>
   arr.length
     ? arr
         .map((x) => {
           const short = x.split(" (")[0];
-          const u = OFFERS[short.toLowerCase()] ?? OFFERS[x.toLowerCase()];
-          return u
-            ? `<a class="chip" href="${esc(u)}" rel="sponsored nofollow" title="${esc(x)}">${esc(short)}</a>`
-            : `<span class="chip" title="${esc(x)}">${esc(short)}</span>`;
+          const key = short.toLowerCase();
+          const sponsored = OFFERS[key] ?? OFFERS[x.toLowerCase()];
+          const plain = PLATFORMS[key];
+          if (sponsored) return `<a class="chip" href="${esc(sponsored)}" rel="sponsored nofollow" title="${esc(x)}">${esc(short)}</a>`;
+          if (plain) return `<a class="chip" href="${esc(plain)}" rel="nofollow noopener" title="${esc(x)}">${esc(short)}</a>`;
+          return `<span class="chip" title="${esc(x)}">${esc(short)}</span>`;
         })
         .join(" ")
     : '<span class="muted">none</span>';
