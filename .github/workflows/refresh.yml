@@ -2,7 +2,7 @@ name: Refresh data & deploy
 
 # Daily: pull fresh GitHub data -> rebuild -> commit README/awesome/dataset -> deploy to Cloudflare.
 # The daily commit is also what keeps this schedule alive (GitHub silently disables cron workflows
-# in public repos after 60 days without pushes); the keepalive step covers the API side too.
+# in public repos after 60 days without pushes); the last step re-enables it via the API as well.
 
 on:
   schedule:
@@ -61,5 +61,10 @@ jobs:
           npx -y wrangler@4 deploy
 
       - name: Keep the schedule alive
-        uses: gautamkrishnar/keepalive-workflow@v2
+        # Re-enable this workflow via the API in case GitHub disabled the cron (60-day inactivity rule).
+        # Inline on purpose: third-party keepalive actions have been blocked/disabled before.
+        if: always()
         continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh api --method PUT "repos/${GITHUB_REPOSITORY}/actions/workflows/refresh.yml/enable" && echo "Schedule (re)enabled."
