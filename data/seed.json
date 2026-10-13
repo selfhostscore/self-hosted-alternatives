@@ -1,0 +1,3849 @@
+{
+  "meta": {
+    "wedge": "dev/SMB internal tooling — self-hostable FOSS alternatives",
+    "differentiator": "deploy footprint (database / minRamMB / arm64 / one-click) + Self-Host Health Score",
+    "footprintStatus": "VERIFIED — all 124 alternatives verified vs official docs (footprintConfidence/footprintSources per alt)",
+    "version": "manual seed v0.3 (41 tools)",
+    "lastCuratedNote": "github = owner/repo is the live freshness source; the enricher fills stars/license/last-commit/health"
+  },
+  "tools": [
+    {
+      "name": "Airtable",
+      "slug": "airtable",
+      "category": "Database / spreadsheet",
+      "homepage": "https://airtable.com",
+      "blurb": "Spreadsheet-database hybrid for tracking anything. Teams seek self-hostable replacements to escape per-seat pricing and keep data on their own infra.",
+      "alternatives": [
+        {
+          "name": "NocoDB",
+          "slug": "nocodb",
+          "github": "nocodb/nocodb",
+          "homepage": "https://nocodb.com",
+          "description": "Turns any MySQL/Postgres/SQLite into a smart spreadsheet UI.",
+          "footprint": {
+            "database": "PostgreSQL (recommended for production; ships with embedded SQLite by default, also supports MySQL/MariaDB/SQL Server)",
+            "minRamMB": 2048,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Helm",
+              "AWS",
+              "Heroku",
+              "Cloudron",
+              "single-binary"
+            ],
+            "oneClick": [
+              "Railway"
+            ]
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://nocodb.com/docs/self-hosting/installation/docker-compose",
+            "https://nocodb.com/docs/self-hosting/installation/docker",
+            "https://hub.docker.com/r/nocodb/nocodb",
+            "https://github.com/nocodb/nocodb/issues/183",
+            "https://github.com/railwayapp-templates/nocodb"
+          ]
+        },
+        {
+          "name": "Baserow",
+          "slug": "baserow",
+          "github": "baserow/baserow",
+          "homepage": "https://baserow.io",
+          "description": "No-code database with a clean Airtable-like UI and plugin API.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 2048,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Helm",
+              "Kubernetes",
+              "Ubuntu/bare-metal",
+              "AWS",
+              "DigitalOcean Apps",
+              "Heroku",
+              "Render",
+              "Railway",
+              "Cloudron"
+            ],
+            "oneClick": [
+              "DigitalOcean",
+              "Render",
+              "Railway",
+              "Cloudron",
+              "Coolify"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://baserow.io/docs/installation/install-with-docker",
+            "https://baserow.io/docs/installation/install-with-docker-compose",
+            "https://hub.docker.com/r/baserow/baserow",
+            "https://community.baserow.io/t/baserow-container-image-for-64-bit-arm-cpus/1574"
+          ]
+        },
+        {
+          "name": "Teable",
+          "slug": "teable",
+          "github": "teableio/teable",
+          "homepage": "https://teable.io",
+          "description": "Postgres-native Airtable alternative with real-DB performance.",
+          "footprint": {
+            "database": "PostgreSQL (Redis also required for caching)",
+            "minRamMB": 4096,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose"
+            ],
+            "oneClick": [
+              "Railway",
+              "Sealos",
+              "Zeabur",
+              "RepoCloud",
+              "Elestio"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://help.teable.ai/en/deploy/docker",
+            "https://github.com/teableio/teable",
+            "https://railway.com/deploy/teable"
+          ]
+        },
+        {
+          "name": "Grist",
+          "slug": "grist",
+          "github": "gristlabs/grist-core",
+          "homepage": "https://www.getgrist.com",
+          "description": "Spreadsheet with real formulas + Python; lightweight SQLite backend.",
+          "footprint": {
+            "database": "none (embedded SQLite file storage; PostgreSQL optionally supported for the home/global DB)",
+            "minRamMB": 200,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "bare-metal"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://support.getgrist.com/self-managed/",
+            "https://github.com/gristlabs/grist-core/",
+            "https://hub.docker.com/r/gristlabs/grist"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Notion",
+      "slug": "notion",
+      "category": "Docs / knowledge base",
+      "homepage": "https://notion.so",
+      "blurb": "All-in-one docs, wiki and notes. Self-host seekers want data ownership and no monthly per-user fee.",
+      "alternatives": [
+        {
+          "name": "AppFlowy",
+          "slug": "appflowy",
+          "github": "AppFlowy-IO/AppFlowy",
+          "homepage": "https://appflowy.io",
+          "description": "Open-source Notion alternative built in Rust + Flutter.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 2048,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose"
+            ],
+            "oneClick": [
+              "Coolify",
+              "Railway"
+            ]
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://docs.appflowy.io/docs/documentation/appflowy-cloud/deployment",
+            "https://appflowy.com/docs/self-host-appflowy-deploy-appflowy-cloud",
+            "https://github.com/AppFlowy-IO/AppFlowy-Cloud/blob/main/docker-compose.yml",
+            "https://appflowy.com/docs/How-to-install-AppFlowy-Cloud-using-Coolify"
+          ]
+        },
+        {
+          "name": "Docmost",
+          "slug": "docmost",
+          "github": "docmost/docmost",
+          "homepage": "https://docmost.com",
+          "description": "Collaborative wiki & docs with real-time editing and spaces.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 1024,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose"
+            ],
+            "oneClick": [
+              "Railway",
+              "Coolify",
+              "PikaPods"
+            ]
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://docmost.com/docs/installation",
+            "https://coolify.io/docs/services/docmost",
+            "https://www.pikapods.com/apps",
+            "https://railway.com/deploy/docmost"
+          ]
+        },
+        {
+          "name": "AFFiNE",
+          "slug": "affine",
+          "github": "toeverything/AFFiNE",
+          "homepage": "https://affine.pro",
+          "description": "Docs + whiteboard + database in one local-first workspace.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 2048,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose"
+            ],
+            "oneClick": [
+              "Railway",
+              "Coolify"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.affine.pro/self-host-affine/install/requirements",
+            "https://docs.affine.pro/self-host-affine/install/docker-compose-recommend",
+            "https://coolify.io/docs/services/affine",
+            "https://railway.com/deploy/affine-1"
+          ]
+        },
+        {
+          "name": "Outline",
+          "slug": "outline",
+          "github": "outline/outline",
+          "homepage": "https://www.getoutline.com",
+          "description": "Fast team wiki/knowledge base with Slack/Markdown integration.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "bare-metal"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.getoutline.com/s/hosting/doc/requirements-ULdYnwi4wG",
+            "https://docs.getoutline.com/s/hosting/doc/docker-7pfeLP5a8t",
+            "https://hub.docker.com/r/outlinewiki/outline"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Retool",
+      "slug": "retool",
+      "category": "Internal tools / admin panels",
+      "homepage": "https://retool.com",
+      "blurb": "Drag-and-drop builder for internal admin apps over your databases/APIs. Self-host avoids per-user pricing and keeps internal tooling in-house.",
+      "alternatives": [
+        {
+          "name": "Appsmith",
+          "slug": "appsmith",
+          "github": "appsmithorg/appsmith",
+          "homepage": "https://www.appsmith.com",
+          "description": "Low-code platform to build internal apps on any data source.",
+          "footprint": {
+            "database": "MongoDB (embedded by default; external MongoDB recommended for production)",
+            "minRamMB": 8192,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Kubernetes (Helm)",
+              "AWS (EC2/EKS)",
+              "Google Cloud Run",
+              "Azure",
+              "DigitalOcean"
+            ],
+            "oneClick": [
+              "DigitalOcean"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.appsmith.com/getting-started/setup/installation-guides/docker",
+            "https://docs.appsmith.com/getting-started/setup/best-practices",
+            "https://docs.appsmith.com/getting-started/setup/deployment-architecture",
+            "https://docs.appsmith.com/getting-started/setup/installation-guides/digitalocean",
+            "https://docs.appsmith.com/getting-started/setup/installation-guides/kubernetes"
+          ]
+        },
+        {
+          "name": "ToolJet",
+          "slug": "tooljet",
+          "github": "ToolJet/ToolJet",
+          "homepage": "https://www.tooljet.com",
+          "description": "Open-source internal-tool builder with 50+ data connectors.",
+          "footprint": {
+            "database": "PostgreSQL (Redis also required for caching/sessions)",
+            "minRamMB": 4096,
+            "arm64": false,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Kubernetes",
+              "Helm",
+              "OpenShift",
+              "AWS ECS",
+              "DigitalOcean (manual droplet)",
+              "bare-metal"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.tooljet.com/docs/setup/system-requirements/",
+            "https://docs.tooljet.com/docs/setup/docker/",
+            "https://docs.tooljet.com/docs/setup/kubernetes/",
+            "https://docs.tooljet.com/docs/setup/helm/",
+            "https://docs.tooljet.com/docs/setup/digitalocean/"
+          ]
+        },
+        {
+          "name": "Budibase",
+          "slug": "budibase",
+          "github": "Budibase/budibase",
+          "homepage": "https://budibase.com",
+          "description": "Build internal apps + automations fast; bundled internal DB.",
+          "footprint": {
+            "database": "CouchDB (internal; plus MinIO object store and Redis)",
+            "minRamMB": 4096,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Kubernetes (Helm)",
+              "Portainer",
+              "Podman",
+              "Ansible",
+              "DigitalOcean",
+              "Azure App Service",
+              "Azure Container Instances",
+              "Google Cloud Run",
+              "Budibase CLI",
+              "Windows Server"
+            ],
+            "oneClick": [
+              "DigitalOcean"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.budibase.com/docs/docker",
+            "https://docs.budibase.com/docs/hosting-methods",
+            "https://docs.budibase.com/docs/digitalocean",
+            "https://marketplace.digitalocean.com/apps/budibase",
+            "https://docs.budibase.com/docs/kubernetes-k8s"
+          ]
+        },
+        {
+          "name": "NocoBase",
+          "slug": "nocobase",
+          "github": "nocobase/nocobase",
+          "homepage": "https://www.nocobase.com",
+          "description": "No-code platform with a data-model-driven plugin architecture.",
+          "footprint": {
+            "database": "PostgreSQL (also supports MySQL/MariaDB; external DB required, deployed separately)",
+            "minRamMB": 2048,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Kubernetes (Helm)",
+              "bare-metal (Node.js/create-nocobase-app)"
+            ],
+            "oneClick": [
+              "Railway"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.nocobase.com/get-started/system-requirements",
+            "https://docs.nocobase.com/get-started/installation/docker",
+            "https://docs.nocobase.com/cluster-mode/kubernetes",
+            "https://hub.docker.com/r/nocobase/nocobase/tags",
+            "https://railway.com/deploy/nocobase"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Zapier",
+      "slug": "zapier",
+      "category": "Automation / iPaaS",
+      "homepage": "https://zapier.com",
+      "blurb": "Connects apps with automated workflows. Self-hostable engines cut task-based pricing and let you run automations on private data.",
+      "alternatives": [
+        {
+          "name": "n8n",
+          "slug": "n8n",
+          "github": "n8n-io/n8n",
+          "homepage": "https://n8n.io",
+          "description": "Fair-code workflow automation with 400+ nodes and code steps.",
+          "footprint": {
+            "database": "SQLite (default, embedded); PostgreSQL recommended for production",
+            "minRamMB": 2048,
+            "arm64": true,
+            "deploy": [
+              "npm/npx",
+              "Docker",
+              "docker-compose",
+              "Kubernetes",
+              "Helm"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.n8n.io/hosting/installation/docker/",
+            "https://docs.n8n.io/hosting/configuration/supported-databases-settings/",
+            "https://docs.n8n.io/hosting/configuration/environment-variables/database/",
+            "https://hub.docker.com/r/n8nio/n8n",
+            "https://github.com/n8n-io/n8n-hosting",
+            "https://github.com/n8n-io/n8n-hosting/blob/main/charts/n8n/README.md"
+          ]
+        },
+        {
+          "name": "Activepieces",
+          "slug": "activepieces",
+          "github": "activepieces/activepieces",
+          "homepage": "https://www.activepieces.com",
+          "description": "Open-source Zapier alternative with an AI-friendly piece framework.",
+          "footprint": {
+            "database": "PostgreSQL (with Redis for the BullMQ job queue); single-image testing mode uses embedded PGLite + in-memory queue",
+            "minRamMB": 4096,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Kubernetes",
+              "Helm"
+            ],
+            "oneClick": [
+              "Railway",
+              "Easypanel",
+              "Elestio",
+              "PikaPods",
+              "Zeabur"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://www.activepieces.com/docs/install/configuration/hardware",
+            "https://www.activepieces.com/docs/install/options/docker",
+            "https://www.activepieces.com/docs/install/overview",
+            "https://www.activepieces.com/docs/install/options/easypanel"
+          ]
+        },
+        {
+          "name": "Automatisch",
+          "slug": "automatisch",
+          "github": "automatisch/automatisch",
+          "homepage": "https://automatisch.io",
+          "description": "Privacy-first workflow automation you fully self-host.",
+          "footprint": {
+            "database": "PostgreSQL (+ Redis required for job queue)",
+            "minRamMB": 2048,
+            "arm64": true,
+            "deploy": [
+              "docker-compose",
+              "docker",
+              "render"
+            ],
+            "oneClick": [
+              "Render"
+            ]
+          },
+          "footprintConfidence": "low",
+          "footprintSources": [
+            "https://automatisch.io/docs/guide/installation",
+            "https://automatisch.io/docs/advanced/configuration",
+            "https://github.com/automatisch/automatisch/blob/main/render.yaml",
+            "https://github.com/automatisch/automatisch/blob/main/.github/workflows/release.yml"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Calendly",
+      "slug": "calendly",
+      "category": "Scheduling",
+      "homepage": "https://calendly.com",
+      "blurb": "Automated meeting scheduling. Self-host keeps booking data private and removes per-seat costs.",
+      "alternatives": [
+        {
+          "name": "Cal.com",
+          "slug": "cal-com",
+          "github": "calcom/cal.com",
+          "homepage": "https://cal.com",
+          "description": "Scheduling infrastructure for everyone; deep integrations + API.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 2048,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "bare-metal"
+            ],
+            "oneClick": [
+              "Railway",
+              "Render",
+              "Vercel"
+            ]
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://cal.com/docs/introduction/quick-start/self-hosting/docker",
+            "https://cal.com/docs/self-hosting/installation",
+            "https://github.com/calcom/cal.com",
+            "https://hub.docker.com/r/calcom/cal.com"
+          ]
+        },
+        {
+          "name": "Easy!Appointments",
+          "slug": "easyappointments",
+          "github": "alextselegidis/easyappointments",
+          "homepage": "https://easyappointments.org",
+          "description": "Lightweight PHP appointment scheduler; runs on cheap LAMP.",
+          "footprint": {
+            "database": "MySQL",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "bare-metal"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://easyappointments.org/documentation/installation/",
+            "https://easyappointments.org/documentation/docker/",
+            "https://github.com/alextselegidis/easyappointments-docker",
+            "https://hub.docker.com/r/alextselegidis/easyappointments"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Trello",
+      "slug": "trello",
+      "category": "Kanban / project boards",
+      "homepage": "https://trello.com",
+      "blurb": "Kanban boards for tasks and projects. Self-host options keep boards on your infra without seat limits.",
+      "alternatives": [
+        {
+          "name": "Planka",
+          "slug": "planka",
+          "github": "plankanban/planka",
+          "homepage": "https://planka.app",
+          "description": "Realtime Trello-style kanban; lightweight and snappy.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Helm",
+              "Kubernetes",
+              "bare-metal"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.planka.cloud/docs/welcome/",
+            "https://docs.planka.cloud/docs/installation/docker/production-version/",
+            "https://docs.planka.cloud/docs/installation/kubernetes/helm-chart/",
+            "https://github.com/orgs/plankanban/packages/container/package/planka",
+            "https://github.com/plankanban/planka/blob/master/docker-compose.yml"
+          ]
+        },
+        {
+          "name": "WeKan",
+          "slug": "wekan",
+          "github": "wekan/wekan",
+          "homepage": "https://wekan.github.io",
+          "description": "Mature open-source kanban with granular permissions.",
+          "footprint": {
+            "database": "MongoDB",
+            "minRamMB": 1024,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Snap",
+              "Sandstorm",
+              "bundle",
+              "bare-metal"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://github.com/wekan/wekan",
+            "https://hub.docker.com/r/wekanteam/wekan",
+            "https://github.com/wekan/wekan/wiki/Platforms",
+            "https://github.com/wekan/wekan/wiki/Raspberry-Pi",
+            "https://wekan.github.io/wekan-doc/installation/docker.html"
+          ]
+        },
+        {
+          "name": "Kanboard",
+          "slug": "kanboard",
+          "github": "kanboard/kanboard",
+          "homepage": "https://kanboard.org",
+          "description": "Minimalist PHP kanban; tiny footprint, runs anywhere.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 256,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "bare-metal",
+              "single-binary"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.kanboard.org/v1/admin/requirements/",
+            "https://docs.kanboard.org/v1/admin/docker/",
+            "https://docs.kanboard.org/v1/admin/installation/",
+            "https://hub.docker.com/r/kanboard/kanboard",
+            "https://github.com/kanboard/kanboard"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Slack",
+      "slug": "slack",
+      "category": "Team chat",
+      "homepage": "https://slack.com",
+      "blurb": "Team messaging. Self-hosted chat gives data sovereignty and removes per-user costs for larger teams.",
+      "alternatives": [
+        {
+          "name": "Mattermost",
+          "slug": "mattermost",
+          "github": "mattermost/mattermost",
+          "homepage": "https://mattermost.com",
+          "description": "Enterprise-grade self-hosted Slack alternative for ops/dev teams.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 2048,
+            "arm64": false,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Kubernetes",
+              "bare-metal",
+              "single-binary"
+            ],
+            "oneClick": [
+              "DigitalOcean",
+              "Railway"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.mattermost.com/deployment-guide/software-hardware-requirements.html",
+            "https://docs.mattermost.com/deployment-guide/server/deploy-containers.html",
+            "https://mattermost.com/blog/install-mattermost-digitalocean/",
+            "https://github.com/mattermost/mattermost/issues/26440"
+          ]
+        },
+        {
+          "name": "Rocket.Chat",
+          "slug": "rocket-chat",
+          "github": "RocketChat/Rocket.Chat",
+          "homepage": "https://rocket.chat",
+          "description": "Feature-rich team chat with omnichannel + federation.",
+          "footprint": {
+            "database": "MongoDB",
+            "minRamMB": 4096,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Helm",
+              "Snap",
+              "bare-metal"
+            ],
+            "oneClick": [
+              "Railway"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.rocket.chat/docs/system-requirements",
+            "https://docs.rocket.chat/docs/deploy-rocketchat",
+            "https://docs.rocket.chat/docs/deploy-with-snaps",
+            "https://railway.com/deploy/rocketchat"
+          ]
+        },
+        {
+          "name": "Zulip",
+          "slug": "zulip",
+          "github": "zulip/zulip",
+          "homepage": "https://zulip.com",
+          "description": "Threaded team chat that scales to large async communities.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 2048,
+            "arm64": false,
+            "deploy": [
+              "bare-metal",
+              "Docker",
+              "docker-compose",
+              "Helm"
+            ],
+            "oneClick": [
+              "DigitalOcean",
+              "Render"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://zulip.readthedocs.io/en/stable/production/requirements.html",
+            "https://zulip.readthedocs.io/en/stable/production/deployment.html",
+            "https://zulip.com/self-hosting/",
+            "https://github.com/zulip/docker-zulip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Confluence",
+      "slug": "confluence",
+      "category": "Wiki / knowledge base",
+      "homepage": "https://www.atlassian.com/software/confluence",
+      "blurb": "Corporate wiki. Self-host options are lighter, cheaper, and keep internal docs off third-party servers.",
+      "alternatives": [
+        {
+          "name": "BookStack",
+          "slug": "bookstack",
+          "github": "BookStackApp/BookStack",
+          "homepage": "https://www.bookstackapp.com",
+          "description": "Simple, organized wiki (books/chapters/pages) on LAMP.",
+          "footprint": {
+            "database": "MySQL >= 8.0 or MariaDB >= 10.6",
+            "minRamMB": 1024,
+            "arm64": false,
+            "deploy": [
+              "manual",
+              "ubuntu-script",
+              "docker"
+            ],
+            "oneClick": [
+              "Cloudron",
+              "PikaPods"
+            ]
+          },
+          "footprintConfidence": "low",
+          "footprintSources": [
+            "https://www.bookstackapp.com/docs/admin/installation/",
+            "https://www.bookstackapp.com/docs/admin/"
+          ]
+        },
+        {
+          "name": "Wiki.js",
+          "slug": "wikijs",
+          "github": "requarks/wiki",
+          "homepage": "https://js.wiki",
+          "description": "Modern Node.js wiki with Markdown, Git sync and SSO.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Kubernetes",
+              "bare-metal"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://beta.js.wiki/docs/requirements",
+            "https://docs.requarks.io/install/requirements",
+            "https://docs.requarks.io/install/docker",
+            "https://hub.docker.com/r/requarks/wiki"
+          ]
+        },
+        {
+          "name": "Outline",
+          "slug": "outline",
+          "github": "outline/outline",
+          "homepage": "https://www.getoutline.com",
+          "description": "Fast, beautiful team knowledge base with great search.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "bare-metal"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.getoutline.com/s/hosting/doc/requirements-ULdYnwi4wG",
+            "https://docs.getoutline.com/s/hosting/doc/docker-7pfeLP5a8t",
+            "https://hub.docker.com/r/outlinewiki/outline"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Postman",
+      "slug": "postman",
+      "category": "API client",
+      "homepage": "https://www.postman.com",
+      "blurb": "API design/testing client. Devs want offline, privacy-respecting, no-account alternatives.",
+      "alternatives": [
+        {
+          "name": "Hoppscotch",
+          "slug": "hoppscotch",
+          "github": "hoppscotch/hoppscotch",
+          "homepage": "https://hoppscotch.io",
+          "description": "Fast, lightweight web API client; self-host the whole stack.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 2048,
+            "arm64": false,
+            "deploy": [
+              "Docker",
+              "docker-compose"
+            ],
+            "oneClick": [
+              "Coolify"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.hoppscotch.io/documentation/self-host/community-edition/prerequisites",
+            "https://docs.hoppscotch.io/guides/articles/self-host-hoppscotch-on-your-own-servers",
+            "https://hub.docker.com/r/hoppscotch/hoppscotch",
+            "https://github.com/hoppscotch/hoppscotch/issues/3199",
+            "https://coolify.io/docs/services/hoppscotch"
+          ]
+        },
+        {
+          "name": "Bruno",
+          "slug": "bruno",
+          "github": "usebruno/bruno",
+          "homepage": "https://www.usebruno.com",
+          "description": "Git-friendly offline API client; collections live as files.",
+          "footprint": {
+            "database": "none",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "bare-metal",
+              "Snap",
+              "Flatpak"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.usebruno.com/get-started/bruno-basics/download",
+            "https://github.com/usebruno/bruno",
+            "https://www.usebruno.com/downloads",
+            "https://flathub.org/en/apps/com.usebruno.Bruno"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Typeform",
+      "slug": "typeform",
+      "category": "Forms / surveys",
+      "homepage": "https://www.typeform.com",
+      "blurb": "Conversational forms and surveys. Self-host removes response limits and keeps respondent data private.",
+      "alternatives": [
+        {
+          "name": "Formbricks",
+          "slug": "formbricks",
+          "github": "formbricks/formbricks",
+          "homepage": "https://formbricks.com",
+          "description": "Privacy-first surveys + experience management you self-host.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 2048,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "shell-script",
+              "bare-metal"
+            ],
+            "oneClick": [
+              "Railway"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://formbricks.com/docs/self-hosting/overview",
+            "https://formbricks.com/docs/self-hosting/setup/docker",
+            "https://formbricks.com/docs/self-hosting/setup/one-click",
+            "https://railway.com/deploy/formbricks-survey-platform",
+            "https://github.com/formbricks/formbricks/pull/4421"
+          ]
+        },
+        {
+          "name": "HeyForm",
+          "slug": "heyform",
+          "github": "heyform/heyform",
+          "homepage": "https://heyform.net",
+          "description": "Build conversational forms with a clean self-hosted stack.",
+          "footprint": {
+            "database": "MongoDB",
+            "minRamMB": 1024,
+            "arm64": false,
+            "deploy": [
+              "Docker",
+              "docker-compose"
+            ],
+            "oneClick": [
+              "Railway",
+              "Zeabur",
+              "Sealos",
+              "RepoCloud",
+              "Alibaba Cloud"
+            ]
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://docs.heyform.net/open-source/self-hosting",
+            "https://docs.heyform.net/open-source/configuration/environment-variables",
+            "https://github.com/heyform/heyform"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Heroku",
+      "slug": "heroku",
+      "category": "PaaS / app hosting",
+      "homepage": "https://www.heroku.com",
+      "blurb": "Git-push app hosting. Self-hostable PaaS gives Heroku-style deploys on your own VPS at a fraction of the cost.",
+      "alternatives": [
+        {
+          "name": "Coolify",
+          "slug": "coolify",
+          "github": "coollabsio/coolify",
+          "homepage": "https://coolify.io",
+          "description": "Self-hostable Heroku/Netlify/Vercel alternative; one-click services.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 2048,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "install-script"
+            ],
+            "oneClick": [
+              "DigitalOcean"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://coolify.io/docs/get-started/installation",
+            "https://marketplace.digitalocean.com/apps/coolify",
+            "https://docs.digitalocean.com/products/marketplace/catalog/coolify/"
+          ]
+        },
+        {
+          "name": "Dokku",
+          "slug": "dokku",
+          "github": "dokku/dokku",
+          "homepage": "https://dokku.com",
+          "description": "The smallest PaaS; Heroku-like git push on a single host.",
+          "footprint": {
+            "database": "none",
+            "minRamMB": 1024,
+            "arm64": true,
+            "deploy": [
+              "bare-metal",
+              "install-script",
+              "Docker",
+              "Vagrant"
+            ],
+            "oneClick": [
+              "DigitalOcean"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://dokku.com/docs/getting-started/installation/",
+            "https://docs.digitalocean.com/products/marketplace/catalog/dokku/",
+            "https://marketplace.digitalocean.com/apps/dokku"
+          ]
+        },
+        {
+          "name": "CapRover",
+          "slug": "caprover",
+          "github": "caprover/caprover",
+          "homepage": "https://caprover.com",
+          "description": "Scalable PaaS with a web UI, one-click apps and Docker Swarm.",
+          "footprint": {
+            "database": "none",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "single-binary"
+            ],
+            "oneClick": [
+              "DigitalOcean"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://caprover.com/docs/get-started.html",
+            "https://github.com/caprover/caprover",
+            "https://caprover.com/docs/backup-and-restore.html"
+          ]
+        },
+        {
+          "name": "Dokploy",
+          "slug": "dokploy",
+          "github": "dokploy/dokploy",
+          "homepage": "https://dokploy.com",
+          "description": "Modern self-host PaaS for apps, databases and compose stacks.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 2048,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "install-script"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.dokploy.com/docs/core/installation",
+            "https://hub.docker.com/r/dokploy/dokploy/tags",
+            "https://docs.dokploy.com/docs/core/cloud"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Auth0",
+      "slug": "auth0",
+      "category": "Auth / SSO / identity",
+      "homepage": "https://auth0.com",
+      "blurb": "Identity-as-a-service. Self-hosted IdPs avoid per-MAU pricing and keep user identities on your infra.",
+      "alternatives": [
+        {
+          "name": "Authentik",
+          "slug": "authentik",
+          "github": "goauthentik/authentik",
+          "homepage": "https://goauthentik.io",
+          "description": "Flexible self-hosted IdP: SAML, OIDC, LDAP, flows and policies.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 2048,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Helm",
+              "Kubernetes"
+            ],
+            "oneClick": [
+              "Railway",
+              "Coolify"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.goauthentik.io/install-config/install/docker-compose/",
+            "https://docs.goauthentik.io/install-config/install/kubernetes/",
+            "https://railway.com/deploy/authentik",
+            "https://coolify.io/docs/services/authentik"
+          ]
+        },
+        {
+          "name": "Keycloak",
+          "slug": "keycloak",
+          "github": "keycloak/keycloak",
+          "homepage": "https://www.keycloak.org",
+          "description": "Battle-tested enterprise IAM/SSO from the CNCF ecosystem.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 1250,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "Kubernetes Operator",
+              "Helm (community)",
+              "bare-metal",
+              "single-binary (zip distribution)"
+            ],
+            "oneClick": [
+              "DigitalOcean"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://www.keycloak.org/server/containers",
+            "https://www.keycloak.org/high-availability/concepts-memory-and-cpu-sizing",
+            "https://www.keycloak.org/operator/installation",
+            "https://docs.digitalocean.com/products/marketplace/catalog/keycloak/",
+            "https://www.keycloak.org/2026/01/keycloak-2650-released"
+          ]
+        },
+        {
+          "name": "Zitadel",
+          "slug": "zitadel",
+          "github": "zitadel/zitadel",
+          "homepage": "https://zitadel.com",
+          "description": "Cloud-native identity with multi-tenancy and a modern API.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Helm",
+              "Kubernetes",
+              "Linux single-binary"
+            ],
+            "oneClick": [
+              "Railway"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://zitadel.com/docs/self-hosting/manage/requirements",
+            "https://help.zitadel.com/what-are-zitadel-minimum-self-hosted-specs",
+            "https://zitadel.com/docs/self-hosting/deploy/compose",
+            "https://zitadel.com/docs/self-hosting/deploy/kubernetes",
+            "https://railway.com/deploy/zitadel"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Datadog",
+      "slug": "datadog",
+      "category": "Observability / monitoring",
+      "homepage": "https://www.datadoghq.com",
+      "blurb": "Metrics, logs and traces SaaS — famously expensive at scale. Self-hosted observability caps cost and keeps telemetry in-house.",
+      "alternatives": [
+        {
+          "name": "SigNoz",
+          "slug": "signoz",
+          "github": "SigNoz/signoz",
+          "homepage": "https://signoz.io",
+          "description": "Open-source Datadog alternative: APM, logs, metrics on OpenTelemetry.",
+          "footprint": {
+            "database": "ClickHouse",
+            "minRamMB": 4096,
+            "arm64": false,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Docker Swarm",
+              "Helm",
+              "Kubernetes",
+              "install-script"
+            ],
+            "oneClick": [
+              "Render",
+              "Railway",
+              "DigitalOcean",
+              "Coolify"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://signoz.io/docs/install/docker/",
+            "https://signoz.io/docs/install/self-host/",
+            "https://signoz.io/docs/install/",
+            "https://github.com/SigNoz/signoz/issues/194"
+          ]
+        },
+        {
+          "name": "OpenObserve",
+          "slug": "openobserve",
+          "github": "openobserve/openobserve",
+          "homepage": "https://openobserve.ai",
+          "description": "Petabyte-scale logs/metrics/traces with 140x lower storage cost.",
+          "footprint": {
+            "database": "none",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "single-binary",
+              "Docker",
+              "Helm",
+              "Kubernetes"
+            ],
+            "oneClick": [
+              "Railway"
+            ]
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://openobserve.ai/docs/getting-started/",
+            "https://openobserve.ai/docs/architecture/",
+            "https://github.com/openobserve/openobserve",
+            "https://hub.docker.com/layers/openobserve/openobserve/latest-arm64/images/sha256-ba90c55e2c827afe18e77db71ba50e1f370b4612bb587d12d0951fe136ed4333",
+            "https://railway.com/deploy/openobserve",
+            "https://github.com/openobserve/openobserve/issues/7937"
+          ]
+        },
+        {
+          "name": "Uptime Kuma",
+          "slug": "uptime-kuma",
+          "github": "louislam/uptime-kuma",
+          "homepage": "https://uptime.kuma.pet",
+          "description": "Self-hosted uptime/status monitoring with a delightful UI.",
+          "footprint": {
+            "database": "SQLite",
+            "minRamMB": 256,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "bare-metal"
+            ],
+            "oneClick": [
+              "PikaPods"
+            ]
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://github.com/louislam/uptime-kuma/wiki/%F0%9F%94%A7-How-to-Install",
+            "https://hub.docker.com/r/louislam/uptime-kuma/",
+            "https://docs.pikapods.com/apps/uptime-kuma"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Zendesk",
+      "slug": "zendesk",
+      "category": "Helpdesk / support",
+      "homepage": "https://www.zendesk.com",
+      "blurb": "Customer support ticketing. Self-hosted helpdesks remove per-agent pricing and keep customer data private.",
+      "alternatives": [
+        {
+          "name": "Chatwoot",
+          "slug": "chatwoot",
+          "github": "chatwoot/chatwoot",
+          "homepage": "https://www.chatwoot.com",
+          "description": "Omnichannel support + live chat; modern Intercom/Zendesk alternative.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 4096,
+            "arm64": false,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Helm",
+              "Kubernetes",
+              "bare-metal",
+              "Heroku"
+            ],
+            "oneClick": [
+              "DigitalOcean",
+              "Heroku"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://developers.chatwoot.com/self-hosted/deployment/requirements",
+            "https://www.chatwoot.com/deploy/",
+            "https://developers.chatwoot.com/self-hosted/deployment/heroku",
+            "https://marketplace.digitalocean.com/apps/chatwoot",
+            "https://github.com/chatwoot/chatwoot/issues/9579",
+            "https://github.com/chatwoot/chatwoot/issues/7939"
+          ]
+        },
+        {
+          "name": "Zammad",
+          "slug": "zammad",
+          "github": "zammad/zammad",
+          "homepage": "https://zammad.com",
+          "description": "Full-featured helpdesk with email/chat/social and a strong API.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 4096,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Kubernetes/Helm",
+              "DEB/RPM packages",
+              "bare-metal (source)"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.zammad.org/en/latest/prerequisites/hardware.html",
+            "https://docs.zammad.org/en/latest/install/docker-compose.html",
+            "https://docs.zammad.org/en/latest/install/kubernetes.html",
+            "https://hub.docker.com/r/zammad/zammad-docker-compose/tags",
+            "https://community.zammad.org/t/arm64-docker-image/9700"
+          ]
+        },
+        {
+          "name": "FreeScout",
+          "slug": "freescout",
+          "github": "freescout-help-desk/freescout",
+          "homepage": "https://freescout.net",
+          "description": "Lightweight Help Scout-style shared-inbox helpdesk on LAMP.",
+          "footprint": {
+            "database": "MySQL/MariaDB",
+            "minRamMB": 1024,
+            "arm64": true,
+            "deploy": [
+              "bare-metal (PHP/MySQL, manual install script)",
+              "Docker",
+              "docker-compose",
+              "Softaculous/auto-installer"
+            ],
+            "oneClick": [
+              "PikaPods",
+              "Cloudron"
+            ]
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://github.com/freescout-help-desk/freescout",
+            "https://github.com/freescout-help-desk/freescout/wiki/Choosing-a-Server",
+            "https://github.com/tiredofit/docker-freescout",
+            "https://docs.pikapods.com/apps/freescout",
+            "https://freescout.net/blog/new-ios-app-community-modules-pikapods/",
+            "https://github.com/freescout-help-desk/freescout/wiki/Cloud-Hosted-FreeScout"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Google Analytics",
+      "slug": "google-analytics",
+      "category": "Web analytics",
+      "homepage": "https://analytics.google.com",
+      "blurb": "Web analytics. Privacy-first, self-hosted analytics keep visitor data on your servers and ease GDPR compliance.",
+      "alternatives": [
+        {
+          "name": "Plausible",
+          "slug": "plausible",
+          "github": "plausible/analytics",
+          "homepage": "https://plausible.io",
+          "description": "Lightweight, cookieless, privacy-friendly analytics.",
+          "footprint": {
+            "database": "PostgreSQL + ClickHouse",
+            "minRamMB": 2048,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose"
+            ],
+            "oneClick": [
+              "DigitalOcean",
+              "Coolify",
+              "Railway",
+              "PikaPods",
+              "CapRover"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://github.com/plausible/community-edition/",
+            "https://hub.docker.com/r/plausible/community-edition/tags",
+            "https://marketplace.digitalocean.com/apps/plausible-analytics",
+            "https://coolify.io/docs/services/plausible",
+            "https://github.com/railwayapp-templates/plausible"
+          ]
+        },
+        {
+          "name": "Umami",
+          "slug": "umami",
+          "github": "umami-software/umami",
+          "homepage": "https://umami.is",
+          "description": "Simple, fast, privacy-focused analytics; tiny footprint.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "bare-metal",
+              "Helm"
+            ],
+            "oneClick": [
+              "Railway",
+              "DigitalOcean",
+              "Coolify",
+              "Fly.io",
+              "Heroku",
+              "Vercel",
+              "Netlify",
+              "PikaPods"
+            ]
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://docs.umami.is/docs/install",
+            "https://docs.umami.is/docs/guides/running-on-railway",
+            "https://hub.docker.com/r/umamisoftware/umami/tags",
+            "https://railway.com/deploy/umami-analytics",
+            "https://coolify.io/docs/services/umami"
+          ]
+        },
+        {
+          "name": "PostHog",
+          "slug": "posthog",
+          "github": "PostHog/posthog",
+          "homepage": "https://posthog.com",
+          "description": "Product analytics + session replay + flags; self-host the suite.",
+          "footprint": {
+            "database": "PostgreSQL + ClickHouse",
+            "minRamMB": 4096,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose"
+            ],
+            "oneClick": [
+              "Railway"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://posthog.com/docs/self-host",
+            "https://hub.docker.com/r/posthog/posthog/tags",
+            "https://railway.com/deploy/posthog-1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DocuSign",
+      "slug": "docusign",
+      "category": "E-signature",
+      "homepage": "https://www.docusign.com",
+      "blurb": "Electronic signatures and document workflows. Self-host keeps signed contracts on your own infra and removes per-envelope pricing.",
+      "alternatives": [
+        {
+          "name": "Documenso",
+          "slug": "documenso",
+          "github": "documenso/documenso",
+          "homepage": "https://documenso.com",
+          "description": "The open-source DocuSign alternative; modern signing flow + API.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 1024,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Kubernetes"
+            ],
+            "oneClick": [
+              "Railway"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.documenso.com/docs/self-hosting/getting-started/requirements",
+            "https://docs.documenso.com/docs/self-hosting",
+            "https://hub.docker.com/r/documenso/documenso/tags"
+          ]
+        },
+        {
+          "name": "Docuseal",
+          "slug": "docuseal",
+          "github": "docusealco/docuseal",
+          "homepage": "https://www.docuseal.com",
+          "description": "Lightweight document signing with a simple builder; runs on SQLite.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 1024,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose"
+            ],
+            "oneClick": [
+              "Railway",
+              "Render",
+              "DigitalOcean",
+              "Heroku"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://www.docuseal.com/docs/on-premises-server-requirements",
+            "https://www.docuseal.com/install",
+            "https://hub.docker.com/r/docuseal/docuseal/tags"
+          ]
+        },
+        {
+          "name": "OpenSign",
+          "slug": "opensign",
+          "github": "OpenSignLabs/OpenSign",
+          "homepage": "https://www.opensignlabs.com",
+          "description": "Open-source e-sign with templates, audit trails and self-host.",
+          "footprint": {
+            "database": "MongoDB",
+            "minRamMB": 2048,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose"
+            ],
+            "oneClick": [
+              "DigitalOcean"
+            ]
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://docs.opensignlabs.com/docs/self-host/intro/",
+            "https://docs.opensignlabs.com/docs/self-host/docker/run-locally/",
+            "https://docs.opensignlabs.com/docs/self-host/One-click-Install/DigitalOcean/",
+            "https://hub.docker.com/r/opensign/opensignserver/tags"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "1Password",
+      "slug": "1password",
+      "category": "Password manager",
+      "homepage": "https://1password.com",
+      "blurb": "Team password/secrets manager. Self-hosted vaults keep credentials entirely under your control with no per-seat fee.",
+      "alternatives": [
+        {
+          "name": "Vaultwarden",
+          "slug": "vaultwarden",
+          "github": "dani-garcia/vaultwarden",
+          "homepage": "https://github.com/dani-garcia/vaultwarden",
+          "description": "Lightweight Bitwarden-compatible server in Rust; tiny footprint.",
+          "footprint": {
+            "database": "SQLite",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Podman",
+              "systemd service",
+              "single-binary (pre-built binaries)",
+              "bare-metal"
+            ],
+            "oneClick": [
+              "PikaPods"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://github.com/dani-garcia/vaultwarden/wiki",
+            "https://github.com/dani-garcia/vaultwarden/wiki/Which-container-image-to-use",
+            "https://github.com/dani-garcia/vaultwarden",
+            "https://github.com/dani-garcia/vaultwarden/discussions/2903"
+          ]
+        },
+        {
+          "name": "Passbolt",
+          "slug": "passbolt",
+          "github": "passbolt/passbolt_api",
+          "homepage": "https://www.passbolt.com",
+          "description": "Team password manager built for collaboration and GPG-based sharing.",
+          "footprint": {
+            "database": "MariaDB/MySQL",
+            "minRamMB": 2048,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Helm",
+              "bare-metal"
+            ],
+            "oneClick": [
+              "DigitalOcean"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://www.passbolt.com/docs/hosting/faq/what-are-minimum-server-requirements/",
+            "https://www.passbolt.com/docs/hosting/configure/database/configure-database/mysql/",
+            "https://github.com/passbolt/charts-passbolt",
+            "https://www.passbolt.com/docs/hosting/install/ce/digital-ocean/",
+            "https://docs.digitalocean.com/products/marketplace/catalog/passbolt-ce/",
+            "https://hub.docker.com/r/passbolt/passbolt"
+          ]
+        },
+        {
+          "name": "Padloc",
+          "slug": "padloc",
+          "github": "padloc/padloc",
+          "homepage": "https://padloc.app",
+          "description": "Modern open-source password manager with a clean UI.",
+          "footprint": {
+            "database": "LevelDB",
+            "minRamMB": 512,
+            "arm64": false,
+            "deploy": [
+              "Docker",
+              "docker-compose"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://docs.padloc.app/guides/self-host/",
+            "https://github.com/padloc/padloc/blob/main/packages/server/README.md",
+            "https://github.com/padloc/padloc/blob/main/docker-compose.yml",
+            "https://hub.docker.com/r/padloc/server"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Loom",
+      "slug": "loom",
+      "category": "Screen recording",
+      "homepage": "https://www.loom.com",
+      "blurb": "Async screen + camera recording for teams. Self-host/open alternatives keep recordings private and unlimited.",
+      "alternatives": [
+        {
+          "name": "Cap",
+          "slug": "cap",
+          "github": "CapSoftware/Cap",
+          "homepage": "https://cap.so",
+          "description": "Open-source Loom alternative; record, share, self-host the web app.",
+          "footprint": {
+            "database": "MySQL",
+            "minRamMB": 1024,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Coolify",
+              "Railway"
+            ],
+            "oneClick": [
+              "Railway",
+              "Coolify"
+            ]
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://cap.so/docs/self-hosting",
+            "https://github.com/CapSoftware/Cap",
+            "https://github.com/CapSoftware/Cap/blob/main/docker-compose.yml",
+            "https://github.com/CapSoftware/Cap/blob/main/.github/workflows/docker-build-web.yml",
+            "https://coolify.io/docs/services/cap"
+          ]
+        },
+        {
+          "name": "Screenity",
+          "slug": "screenity",
+          "github": "alyssaxuu/screenity",
+          "homepage": "https://screenity.io",
+          "description": "Privacy-first screen recorder browser extension; no server, no limits.",
+          "footprint": {
+            "database": "none",
+            "minRamMB": 0,
+            "arm64": true,
+            "deploy": [
+              "browser-extension"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://github.com/alyssaxuu/screenity",
+            "https://github.com/alyssaxuu/screenity/blob/master/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mailchimp",
+      "slug": "mailchimp",
+      "category": "Email marketing",
+      "homepage": "https://mailchimp.com",
+      "blurb": "Newsletters and email campaigns. Self-hosted senders cut per-subscriber pricing and keep list data private.",
+      "alternatives": [
+        {
+          "name": "Listmonk",
+          "slug": "listmonk",
+          "github": "knadh/listmonk",
+          "homepage": "https://listmonk.app",
+          "description": "Blazing-fast self-hosted newsletter + mailing-list manager (single binary).",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "single-binary",
+              "Docker",
+              "docker-compose",
+              "Helm",
+              "bare-metal",
+              "from-source"
+            ],
+            "oneClick": [
+              "PikaPods",
+              "Railway"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://listmonk.app/docs/installation/",
+            "https://github.com/knadh/listmonk",
+            "https://hub.docker.com/r/listmonk/listmonk",
+            "https://docs.pikapods.com/apps/listmonk",
+            "https://railway.com/deploy/listmonk-1"
+          ]
+        },
+        {
+          "name": "Mautic",
+          "slug": "mautic",
+          "github": "mautic/mautic",
+          "homepage": "https://www.mautic.org",
+          "description": "Full marketing-automation suite: campaigns, segments, landing pages.",
+          "footprint": {
+            "database": "MySQL/MariaDB",
+            "minRamMB": 2048,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Composer",
+              "zip-package",
+              "bare-metal",
+              "DDEV"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://mautic.org/mautic-requirements/",
+            "https://docs.mautic.org/en/5.x/getting_started/how_to_install_mautic.html",
+            "https://github.com/mautic/docker-mautic",
+            "https://hub.docker.com/r/mautic/mautic/"
+          ]
+        },
+        {
+          "name": "phpList",
+          "slug": "phplist",
+          "github": "phpList/phplist3",
+          "homepage": "https://www.phplist.org",
+          "description": "Veteran open-source newsletter manager; runs on cheap LAMP.",
+          "footprint": {
+            "database": "MySQL/MariaDB",
+            "minRamMB": 512,
+            "arm64": false,
+            "deploy": [
+              "bare-metal",
+              "Docker",
+              "docker-compose"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://resources.phplist.com/system/start",
+            "https://www.phplist.org/manual/books/phplist-manual/page/installing-phplist-manually",
+            "https://github.com/phpList/phplist-docker",
+            "https://hub.docker.com/r/phplist/phplist"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Intercom",
+      "slug": "intercom",
+      "category": "Live chat / customer messaging",
+      "homepage": "https://www.intercom.com",
+      "blurb": "Live chat and customer messaging. Self-hosted options remove per-seat/per-contact pricing and keep conversations private.",
+      "alternatives": [
+        {
+          "name": "Chatwoot",
+          "slug": "chatwoot",
+          "github": "chatwoot/chatwoot",
+          "homepage": "https://www.chatwoot.com",
+          "description": "Omnichannel live chat + shared inbox; the leading Intercom alternative.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 4096,
+            "arm64": false,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Helm",
+              "Kubernetes",
+              "bare-metal",
+              "Heroku"
+            ],
+            "oneClick": [
+              "DigitalOcean",
+              "Heroku"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://developers.chatwoot.com/self-hosted/deployment/requirements",
+            "https://www.chatwoot.com/deploy/",
+            "https://developers.chatwoot.com/self-hosted/deployment/heroku",
+            "https://marketplace.digitalocean.com/apps/chatwoot",
+            "https://github.com/chatwoot/chatwoot/issues/9579",
+            "https://github.com/chatwoot/chatwoot/issues/7939"
+          ]
+        },
+        {
+          "name": "Papercups",
+          "slug": "papercups",
+          "github": "papercups-io/papercups",
+          "homepage": "https://papercups.io",
+          "description": "Open-source live chat in Elixir; lightweight and embeddable.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 1024,
+            "arm64": false,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Heroku",
+              "bare-metal"
+            ],
+            "oneClick": [
+              "Heroku"
+            ]
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://github.com/papercups-io/papercups/wiki/Deploying-with-Docker",
+            "https://github.com/papercups-io/papercups/blob/master/README.md",
+            "https://docs.papercups.io/development",
+            "https://docs.papercups.io/heroku"
+          ]
+        },
+        {
+          "name": "Chaskiq",
+          "slug": "chaskiq",
+          "github": "chaskiq/chaskiq",
+          "homepage": "https://chaskiq.io",
+          "description": "Full conversational marketing/support platform; campaigns + bots.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 2048,
+            "arm64": false,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Heroku",
+              "bare-metal"
+            ],
+            "oneClick": [
+              "Heroku"
+            ]
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://github.com/chaskiq/chaskiq/blob/main/README.md",
+            "https://hub.docker.com/r/chaskiq/chaskiq",
+            "https://dev.chaskiq.io/en/articles/docker-for-development"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Jira",
+      "slug": "jira",
+      "category": "Issue tracking / project management",
+      "homepage": "https://www.atlassian.com/software/jira",
+      "blurb": "Agile issue tracking and project management. Self-hosted PM tools avoid per-user pricing and keep roadmaps in-house.",
+      "alternatives": [
+        {
+          "name": "Plane",
+          "slug": "plane",
+          "github": "makeplane/plane",
+          "homepage": "https://plane.so",
+          "description": "Modern open-source Jira/Linear alternative: issues, cycles, modules.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 4096,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Docker Swarm",
+              "Kubernetes/Helm",
+              "Podman"
+            ],
+            "oneClick": [
+              "Coolify",
+              "DigitalOcean"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://developers.plane.so/self-hosting/overview",
+            "https://developers.plane.so/self-hosting/methods/docker-compose",
+            "https://developers.plane.so/self-hosting/plane-architecture"
+          ]
+        },
+        {
+          "name": "OpenProject",
+          "slug": "openproject",
+          "github": "opf/openproject",
+          "homepage": "https://www.openproject.org",
+          "description": "Mature PM with Gantt, agile boards, time tracking and BIM.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 4096,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Kubernetes/Helm",
+              "bare-metal (packaged .deb/.rpm)",
+              "manual"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://www.openproject.org/docs/installation-and-operations/system-requirements/",
+            "https://www.openproject.org/docs/installation-and-operations/installation/docker-compose/"
+          ]
+        },
+        {
+          "name": "Taiga",
+          "slug": "taiga",
+          "github": "taigaio/taiga",
+          "homepage": "https://www.taiga.io",
+          "description": "Agile project management for Scrum and Kanban teams.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 1024,
+            "arm64": false,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "bare-metal (from source)"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://docs.taiga.io/setup-production.html",
+            "https://github.com/taigaio/taiga-docker"
+          ]
+        },
+        {
+          "name": "Redmine",
+          "slug": "redmine",
+          "github": "redmine/redmine",
+          "homepage": "https://www.redmine.org",
+          "description": "Long-standing flexible issue tracker; tiny footprint, many plugins.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 1024,
+            "arm64": true,
+            "deploy": [
+              "bare-metal (Ruby on Rails manual install)",
+              "Docker",
+              "docker-compose"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://www.redmine.org/projects/redmine/wiki/redmineinstall",
+            "https://hub.docker.com/_/redmine",
+            "https://github.com/docker-library/redmine"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dropbox",
+      "slug": "dropbox",
+      "category": "File storage / sync",
+      "homepage": "https://www.dropbox.com",
+      "blurb": "File sync and sharing. Self-hosted clouds give unlimited storage on your own disks and keep files off third-party servers.",
+      "alternatives": [
+        {
+          "name": "Nextcloud",
+          "slug": "nextcloud",
+          "github": "nextcloud/server",
+          "homepage": "https://nextcloud.com",
+          "description": "Full self-hosted cloud: files, calendar, contacts, office and apps.",
+          "footprint": {
+            "database": "MariaDB/MySQL (PostgreSQL also recommended; SQLite for tiny/test only)",
+            "minRamMB": 128,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Helm (AIO Helm chart)",
+              "Snap (community/AIO VM)",
+              "bare-metal (LAMP/manual archive)"
+            ],
+            "oneClick": [
+              "DigitalOcean",
+              "PikaPods"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.nextcloud.com/server/stable/admin_manual/installation/system_requirements.html",
+            "https://hub.docker.com/_/nextcloud",
+            "https://github.com/nextcloud/all-in-one",
+            "https://nextcloud.github.io/all-in-one/",
+            "https://docs.digitalocean.com/products/marketplace/catalog/nextcloud/",
+            "https://docs.pikapods.com/apps/nextcloud"
+          ]
+        },
+        {
+          "name": "Seafile",
+          "slug": "seafile",
+          "github": "haiwen/seafile",
+          "homepage": "https://www.seafile.com",
+          "description": "High-performance file sync with reliable client and block storage.",
+          "footprint": {
+            "database": "MySQL/MariaDB (required for Docker/production install; SQLite only for minimal non-Docker setups)",
+            "minRamMB": 1024,
+            "arm64": false,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "bare-metal (server binary package)"
+            ],
+            "oneClick": [
+              "PikaPods"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://manual.seafile.com/latest/setup/setup_ce_by_docker/",
+            "https://haiwen.github.io/seafile-admin-docs/12.0/setup/system_requirements/",
+            "https://forum.seafile.com/t/will-there-be-an-arm-build-for-v12-0/23016",
+            "https://www.pikapods.com/apps/"
+          ]
+        },
+        {
+          "name": "ownCloud",
+          "slug": "owncloud",
+          "github": "owncloud/core",
+          "homepage": "https://owncloud.com",
+          "description": "The original self-hosted file-sync platform for teams.",
+          "footprint": {
+            "database": "MariaDB (recommended; MySQL 8+/PostgreSQL also supported; SQLite not for production)",
+            "minRamMB": 128,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "bare-metal (LAMP/manual archive)"
+            ],
+            "oneClick": [
+              "PikaPods"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://doc.owncloud.com/server/next/admin_manual/installation/system_requirements.html",
+            "https://hub.docker.com/_/owncloud/",
+            "https://hub.docker.com/r/owncloud/server",
+            "https://www.pikapods.com/apps/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Looker",
+      "slug": "looker",
+      "category": "Business intelligence / dashboards",
+      "homepage": "https://cloud.google.com/looker",
+      "blurb": "BI dashboards and data exploration. Self-hosted BI removes seat-based pricing and keeps analytics next to your warehouse.",
+      "alternatives": [
+        {
+          "name": "Metabase",
+          "slug": "metabase",
+          "github": "metabase/metabase",
+          "homepage": "https://www.metabase.com",
+          "description": "The easiest open-source BI; ask questions, build dashboards fast.",
+          "footprint": {
+            "database": "PostgreSQL (production; ships with embedded H2 file DB by default but Postgres is emphatically recommended)",
+            "minRamMB": 1024,
+            "arm64": false,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "JAR (single-binary/bare-metal)",
+              "Podman",
+              "systemd",
+              "Azure Web Apps",
+              "Metabase Cloud"
+            ],
+            "oneClick": [
+              "DigitalOcean",
+              "Render",
+              "Railway"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://www.metabase.com/docs/latest/installation-and-operation/installing-metabase",
+            "https://www.metabase.com/docs/latest/installation-and-operation/running-metabase-on-docker",
+            "https://www.metabase.com/learn/metabase-basics/administration/administration-and-operation/metabase-in-production",
+            "https://github.com/metabase/metabase/issues/13119",
+            "https://marketplace.digitalocean.com/apps/metabase",
+            "https://render.com/templates/metabase",
+            "https://railway.com/deploy/metabase-latest"
+          ]
+        },
+        {
+          "name": "Apache Superset",
+          "slug": "superset",
+          "github": "apache/superset",
+          "homepage": "https://superset.apache.org",
+          "description": "Powerful exploration + dashboards across 40+ databases.",
+          "footprint": {
+            "database": "PostgreSQL (recommended metadata DB; bundled in docker-compose and Helm; PyPI install defaults to SQLite which is not recommended)",
+            "minRamMB": 4096,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Helm",
+              "Kubernetes",
+              "PyPI/pip (bare-metal Python)"
+            ],
+            "oneClick": [
+              "Railway"
+            ]
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://superset.apache.org/admin-docs/installation/installation-methods/",
+            "https://superset.apache.org/admin-docs/installation/docker-builds/",
+            "https://superset.apache.org/admin-docs/installation/kubernetes/",
+            "https://hub.docker.com/r/apache/superset",
+            "https://railway.com/deploy/superset"
+          ]
+        },
+        {
+          "name": "Redash",
+          "slug": "redash",
+          "github": "getredash/redash",
+          "homepage": "https://redash.io",
+          "description": "Connect, query and visualize any data source; share dashboards.",
+          "footprint": {
+            "database": "PostgreSQL (required, v9.6+; also requires Redis v3+)",
+            "minRamMB": 4096,
+            "arm64": false,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "setup script (bare-metal Linux)",
+              "AWS EC2 AMI",
+              "Google Compute Engine image"
+            ],
+            "oneClick": [
+              "Railway"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://redash.io/help/open-source/setup/",
+            "https://github.com/getredash/redash/issues/5765",
+            "https://github.com/getredash/redash/discussions/6812",
+            "https://railway.com/deploy/redash"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Firebase",
+      "slug": "firebase",
+      "category": "Backend-as-a-service (BaaS)",
+      "homepage": "https://firebase.google.com",
+      "blurb": "Backend platform: auth, database, storage, functions. Self-hosted BaaS avoids vendor lock-in and usage-based bills.",
+      "alternatives": [
+        {
+          "name": "Supabase",
+          "slug": "supabase",
+          "github": "supabase/supabase",
+          "homepage": "https://supabase.com",
+          "description": "Postgres-based Firebase alternative: auth, realtime, storage, edge fns.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 4096,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose"
+            ],
+            "oneClick": [
+              "DigitalOcean"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://supabase.com/docs/guides/self-hosting/docker",
+            "https://supabase.com/docs/guides/self-hosting",
+            "https://marketplace.digitalocean.com/apps/supabase",
+            "https://www.digitalocean.com/blog/supabase-template-app-platform",
+            "https://hub.docker.com/u/supabase"
+          ]
+        },
+        {
+          "name": "Appwrite",
+          "slug": "appwrite",
+          "github": "appwrite/appwrite",
+          "homepage": "https://appwrite.io",
+          "description": "Self-hosted backend: auth, DB, storage, functions and messaging.",
+          "footprint": {
+            "database": "MongoDB",
+            "minRamMB": 4096,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://appwrite.io/docs/advanced/self-hosting/installation",
+            "https://appwrite.io/docs/advanced/self-hosting/configuration/databases",
+            "https://appwrite.io/docs/advanced/self-hosting",
+            "https://dev.to/appwrite/appwrite-0-8-arm-support-59bc"
+          ]
+        },
+        {
+          "name": "PocketBase",
+          "slug": "pocketbase",
+          "github": "pocketbase/pocketbase",
+          "homepage": "https://pocketbase.io",
+          "description": "Single-binary backend (SQLite + auth + admin UI); featherweight.",
+          "footprint": {
+            "database": "SQLite",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "single-binary",
+              "bare-metal",
+              "Docker"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://pocketbase.io/docs/going-to-production/",
+            "https://pocketbase.io/faq/",
+            "https://pocketbase.io/docs/",
+            "https://github.com/pocketbase/pocketbase/releases/latest"
+          ]
+        },
+        {
+          "name": "Nhost",
+          "slug": "nhost",
+          "github": "nhost/nhost",
+          "homepage": "https://nhost.io",
+          "description": "Postgres + GraphQL backend with auth, storage and functions.",
+          "footprint": {
+            "database": "PostgreSQL (with Hasura GraphQL; MinIO for object storage)",
+            "minRamMB": 4096,
+            "arm64": true,
+            "deploy": [
+              "docker-compose"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "low",
+          "footprintSources": [
+            "https://github.com/nhost/nhost/tree/main/examples/docker-compose",
+            "https://github.com/nhost/nhost/blob/main/examples/docker-compose/docker-compose.yaml",
+            "https://github.com/nhost/nhost/discussions/970"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Algolia",
+      "slug": "algolia",
+      "category": "Search",
+      "homepage": "https://www.algolia.com",
+      "blurb": "Hosted search-as-a-service. Self-hosted search engines remove per-search pricing and keep the index on your infra.",
+      "alternatives": [
+        {
+          "name": "Meilisearch",
+          "slug": "meilisearch",
+          "github": "meilisearch/meilisearch",
+          "homepage": "https://www.meilisearch.com",
+          "description": "Lightning-fast, typo-tolerant search; single binary, easy to host.",
+          "footprint": {
+            "database": "none",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Helm",
+              "Kubernetes",
+              "single-binary",
+              "install-script (curl)",
+              "Homebrew",
+              "APT",
+              "source (cargo/Rust)"
+            ],
+            "oneClick": [
+              "Railway"
+            ]
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://www.meilisearch.com/docs/learn/getting_started/installation",
+            "https://www.meilisearch.com/docs/resources/help/faq",
+            "https://github.com/meilisearch/meilisearch-kubernetes",
+            "https://www.meilisearch.com/docs/guides/deployment/digitalocean",
+            "https://railway.com/deploy/meilisearch-1"
+          ]
+        },
+        {
+          "name": "Typesense",
+          "slug": "typesense",
+          "github": "typesense/typesense",
+          "homepage": "https://typesense.org",
+          "description": "Open-source instant-search engine; an Algolia drop-in.",
+          "footprint": {
+            "database": "none",
+            "minRamMB": 256,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Kubernetes",
+              "single-binary",
+              "DEB package",
+              "RPM package",
+              "Homebrew",
+              "Windows (WSL)"
+            ],
+            "oneClick": [
+              "Railway"
+            ]
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://typesense.org/docs/guide/system-requirements.html",
+            "https://typesense.org/docs/guide/install-typesense.html",
+            "https://hub.docker.com/r/typesense/typesense/",
+            "https://railway.com/deploy/typesense-latest"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bitly",
+      "slug": "bitly",
+      "category": "URL shortener",
+      "homepage": "https://bitly.com",
+      "blurb": "Branded short links and click analytics. Self-hosted shorteners use your own domain and keep click data private.",
+      "alternatives": [
+        {
+          "name": "Shlink",
+          "slug": "shlink",
+          "github": "shlinkio/shlink",
+          "homepage": "https://shlink.io",
+          "description": "Self-hosted URL shortener with a REST API and real-time stats.",
+          "footprint": {
+            "database": "MySQL/MariaDB (PostgreSQL also recommended; SQLite and MSSQL supported)",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "bare-metal"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://github.com/shlinkio/shlink",
+            "https://shlink.io/documentation/install-docker-image/",
+            "https://hub.docker.com/r/shlinkio/shlink"
+          ]
+        },
+        {
+          "name": "YOURLS",
+          "slug": "yourls",
+          "github": "YOURLS/YOURLS",
+          "homepage": "https://yourls.org",
+          "description": "Your Own URL Shortener; tiny PHP app with plugins and stats.",
+          "footprint": {
+            "database": "MySQL/MariaDB",
+            "minRamMB": 256,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "bare-metal"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://yourls.org/docs/guide/install",
+            "https://hub.docker.com/_/yourls",
+            "https://yourls.org/docs"
+          ]
+        },
+        {
+          "name": "Kutt",
+          "slug": "kutt",
+          "github": "thedevs-network/kutt",
+          "homepage": "https://kutt.it",
+          "description": "Modern URL shortener with custom domains and a clean UI.",
+          "footprint": {
+            "database": "SQLite (default); PostgreSQL or MySQL/MariaDB optional",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "bare-metal"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://github.com/thedevs-network/kutt",
+            "https://github.com/thedevs-network/kutt/blob/main/README.md",
+            "https://hub.docker.com/r/kutt/kutt"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "slug": "zoom",
+      "category": "Video meetings",
+      "homepage": "https://zoom.us",
+      "blurb": "Video conferencing. Self-hosted meeting servers keep calls private and remove per-host licensing.",
+      "alternatives": [
+        {
+          "name": "Jitsi Meet",
+          "slug": "jitsi-meet",
+          "github": "jitsi/jitsi-meet",
+          "homepage": "https://jitsi.org",
+          "description": "Secure, scalable video conferences you fully self-host.",
+          "footprint": {
+            "database": "none",
+            "minRamMB": 2048,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "bare-metal",
+              "Debian/Ubuntu apt packages"
+            ],
+            "oneClick": [
+              "DigitalOcean"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-requirements/",
+            "https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-quickstart/",
+            "https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-docker/",
+            "https://github.com/jitsi/docker-jitsi-meet",
+            "https://marketplace.digitalocean.com/apps/jitsi-server"
+          ]
+        },
+        {
+          "name": "BigBlueButton",
+          "slug": "bigbluebutton",
+          "github": "bigbluebutton/bigbluebutton",
+          "homepage": "https://bigbluebutton.org",
+          "description": "Virtual-classroom platform with whiteboard, breakouts and recording.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 16384,
+            "arm64": false,
+            "deploy": [
+              "bare-metal",
+              "Docker"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.bigbluebutton.org/administration/install/",
+            "https://docs.bigbluebutton.org/2.6/administration/install/",
+            "https://bigbluebutton.github.io/greenlight/gl-install.html",
+            "https://github.com/bigbluebutton/bbb-install"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GitHub",
+      "slug": "github",
+      "category": "Git hosting / code collaboration",
+      "homepage": "https://github.com",
+      "blurb": "Code hosting, pull requests and CI. Self-hosted git keeps source on your own infra without per-seat pricing.",
+      "alternatives": [
+        {
+          "name": "Gitea",
+          "slug": "gitea",
+          "github": "go-gitea/gitea",
+          "homepage": "https://gitea.io",
+          "description": "Lightweight self-hosted Git service with PRs, issues and actions.",
+          "footprint": {
+            "database": "SQLite (built-in; PostgreSQL/MySQL/MariaDB recommended for scale)",
+            "minRamMB": 1024,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "single-binary",
+              "bare-metal",
+              "Kubernetes",
+              "Helm",
+              "package-manager"
+            ],
+            "oneClick": [
+              "Railway",
+              "PikaPods",
+              "DigitalOcean"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.gitea.com/",
+            "https://docs.gitea.com/installation/install-from-binary",
+            "https://docs.gitea.com/installation/database-prep",
+            "https://railway.com/deploy/gitea",
+            "https://www.pikapods.com/apps/"
+          ]
+        },
+        {
+          "name": "Gogs",
+          "slug": "gogs",
+          "github": "gogs/gogs",
+          "homepage": "https://gogs.io",
+          "description": "Painless, low-footprint self-hosted Git service.",
+          "footprint": {
+            "database": "SQLite3 (built-in; PostgreSQL/MySQL/MariaDB also supported)",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "single-binary",
+              "bare-metal",
+              "package-manager"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://github.com/gogs/gogs",
+            "https://hub.docker.com/r/gogs/gogs/tags",
+            "https://hub.docker.com/r/gogs/gogs/"
+          ]
+        },
+        {
+          "name": "OneDev",
+          "slug": "onedev",
+          "github": "theonedev/onedev",
+          "homepage": "https://onedev.io",
+          "description": "Git server with built-in CI/CD, kanban and code search.",
+          "footprint": {
+            "database": "Embedded (HSQLDB by default; external PostgreSQL/MySQL/MariaDB supported)",
+            "minRamMB": 2048,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "bare-metal",
+              "Kubernetes"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.onedev.io/installation-guide/system-requirement",
+            "https://docs.onedev.io/installation-guide/run-as-docker-container",
+            "https://docs.onedev.io/tutorials/cicd/multi-arch-docker-image"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CircleCI",
+      "slug": "circleci",
+      "category": "CI/CD",
+      "homepage": "https://circleci.com",
+      "blurb": "Continuous integration and delivery. Self-hosted runners cut per-minute pricing and keep pipelines private.",
+      "alternatives": [
+        {
+          "name": "Woodpecker CI",
+          "slug": "woodpecker",
+          "github": "woodpecker-ci/woodpecker",
+          "homepage": "https://woodpecker-ci.org",
+          "description": "Simple, container-native CI engine; a community fork of Drone.",
+          "footprint": {
+            "database": "SQLite (embedded default; PostgreSQL/MySQL optionally supported)",
+            "minRamMB": 200,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Helm",
+              "single-binary",
+              "DEB",
+              "RPM",
+              "bare-metal"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://woodpecker-ci.org/docs/2.8/administration/getting-started",
+            "https://woodpecker-ci.org/docs/2.8/administration/database",
+            "https://github.com/woodpecker-ci/woodpecker",
+            "https://hub.docker.com/r/woodpeckerci/woodpecker-server"
+          ]
+        },
+        {
+          "name": "Drone",
+          "slug": "drone",
+          "github": "harness/drone",
+          "homepage": "https://www.drone.io",
+          "description": "Container-native CI/CD platform configured as code.",
+          "footprint": {
+            "database": "PostgreSQL (recommended; embedded SQLite is the zero-config default, MySQL also supported)",
+            "minRamMB": 1024,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Helm",
+              "Kubernetes"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.drone.io/server/overview/",
+            "https://docs.drone.io/server/storage/database/",
+            "https://github.com/drone/charts",
+            "https://hub.docker.com/r/drone/drone/tags"
+          ]
+        },
+        {
+          "name": "Concourse",
+          "slug": "concourse",
+          "github": "concourse/concourse",
+          "homepage": "https://concourse-ci.org",
+          "description": "Pipeline-based CI with reproducible, isolated builds.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 2048,
+            "arm64": true,
+            "deploy": [
+              "docker-compose",
+              "helm",
+              "binary",
+              "bosh"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://concourse-ci.org/docs/install/",
+            "https://concourse-ci.org/docs/install/running-web/",
+            "https://concourse-ci.org/docs/install/running-worker/",
+            "https://concourse-ci.org/postgresql-node.html"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Salesforce",
+      "slug": "salesforce",
+      "category": "CRM",
+      "homepage": "https://salesforce.com",
+      "blurb": "Customer relationship management. Self-hosted CRMs avoid steep per-user pricing and keep customer data in-house.",
+      "alternatives": [
+        {
+          "name": "Twenty",
+          "slug": "twenty",
+          "github": "twentyhq/twenty",
+          "homepage": "https://twenty.com",
+          "description": "Modern open-source CRM with a clean, customizable data model.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 2048,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Kubernetes (manifests)",
+              "1-click install script"
+            ],
+            "oneClick": [
+              "Railway"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.twenty.com/developers/self-host/capabilities/docker-compose",
+            "https://docs.twenty.com/developers/self-host/self-host",
+            "https://github.com/twentyhq/twenty",
+            "https://railway.com/deploy/twenty-open-source-crm"
+          ]
+        },
+        {
+          "name": "EspoCRM",
+          "slug": "espocrm",
+          "github": "espocrm/espocrm",
+          "homepage": "https://www.espocrm.com",
+          "description": "Fast, flexible CRM that runs on cheap LAMP.",
+          "footprint": {
+            "database": "MySQL/MariaDB",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "install script",
+              "bare-metal"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://docs.espocrm.com/administration/server-configuration/",
+            "https://docs.espocrm.com/administration/installation/",
+            "https://docs.espocrm.com/administration/docker/installation/",
+            "https://github.com/espocrm/espocrm-docker",
+            "https://hub.docker.com/r/espocrm/espocrm"
+          ]
+        },
+        {
+          "name": "SuiteCRM",
+          "slug": "suitecrm",
+          "github": "salesagility/SuiteCRM",
+          "homepage": "https://suitecrm.com",
+          "description": "Full-featured enterprise CRM, a SugarCRM successor.",
+          "footprint": {
+            "database": "MySQL/MariaDB",
+            "minRamMB": 2048,
+            "arm64": false,
+            "deploy": [
+              "bare-metal",
+              "CLI installer",
+              "UI installer"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://docs.suitecrm.com/8.x/admin/compatibility-matrix/",
+            "https://docs.suitecrm.com/8.x/admin/installation-guide/",
+            "https://community.suitecrm.com/t/minimum-server-droplet-requirements/58110"
+          ]
+        },
+        {
+          "name": "Krayin",
+          "slug": "krayin",
+          "github": "krayin/laravel-crm",
+          "homepage": "https://krayincrm.com",
+          "description": "Laravel-based open-source CRM for SMBs.",
+          "footprint": {
+            "database": "MySQL",
+            "minRamMB": 4096,
+            "arm64": false,
+            "deploy": [
+              "bare-metal",
+              "docker-compose"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://devdocs.krayincrm.com/1.x/introduction/requirements.html",
+            "https://github.com/krayin/krayin-docker",
+            "https://github.com/krayin/laravel-crm",
+            "https://hub.docker.com/r/webkul/krayin"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Doppler",
+      "slug": "doppler",
+      "category": "Secrets management",
+      "homepage": "https://www.doppler.com",
+      "blurb": "Centralized secrets/config management. Self-hosted vaults keep API keys and secrets under your control.",
+      "alternatives": [
+        {
+          "name": "Infisical",
+          "slug": "infisical",
+          "github": "Infisical/infisical",
+          "homepage": "https://infisical.com",
+          "description": "Open-source secrets manager with env sync and access controls.",
+          "footprint": {
+            "database": "PostgreSQL (plus Redis required)",
+            "minRamMB": 4096,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Helm/Kubernetes",
+              "AWS ECS (Fargate)",
+              "GCP GKE",
+              "Linux package (bare-metal)"
+            ],
+            "oneClick": [
+              "DigitalOcean",
+              "Coolify"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://infisical.com/docs/self-hosting/configuration/requirements",
+            "https://infisical.com/docs/self-hosting/overview",
+            "https://marketplace.digitalocean.com/apps/infisical",
+            "https://docs.digitalocean.com/products/marketplace/catalog/infisical/",
+            "https://coolify.io/docs/services/overview"
+          ]
+        },
+        {
+          "name": "OpenBao",
+          "slug": "openbao",
+          "github": "openbao/openbao",
+          "homepage": "https://openbao.org",
+          "description": "Community fork of HashiCorp Vault for secrets and encryption.",
+          "footprint": {
+            "database": "none",
+            "minRamMB": 256,
+            "arm64": true,
+            "deploy": [
+              "single-binary",
+              "Docker",
+              "Helm/Kubernetes",
+              "package managers (Homebrew, apt/deb, rpm, FreeBSD pkg)",
+              "source/bare-metal"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://openbao.org/docs/install/",
+            "https://openbao.org/docs/configuration/storage/",
+            "https://openbao.org/docs/internals/limits/",
+            "https://github.com/openbao/openbao/releases",
+            "https://hub.docker.com/r/openbao/openbao"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LaunchDarkly",
+      "slug": "launchdarkly",
+      "category": "Feature flags",
+      "homepage": "https://launchdarkly.com",
+      "blurb": "Feature flag management. Self-hosted flag services remove per-seat/MAU pricing and keep flag data private.",
+      "alternatives": [
+        {
+          "name": "Unleash",
+          "slug": "unleash",
+          "github": "Unleash/unleash",
+          "homepage": "https://www.getunleash.io",
+          "description": "Enterprise-ready feature flag platform with SDKs for every stack.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Helm",
+              "Node.js (bare-metal)"
+            ],
+            "oneClick": [
+              "Coolify",
+              "DigitalOcean"
+            ]
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://docs.getunleash.io/using-unleash/deploy/getting-started",
+            "https://github.com/Unleash/unleash",
+            "https://github.com/Unleash/helm-charts",
+            "https://hub.docker.com/r/unleashorg/unleash-server",
+            "https://coolify.io/docs/services/unleash"
+          ]
+        },
+        {
+          "name": "Flagsmith",
+          "slug": "flagsmith",
+          "github": "Flagsmith/flagsmith",
+          "homepage": "https://flagsmith.com",
+          "description": "Open-source feature flags + remote config across platforms.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 2048,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Helm",
+              "Kubernetes/OpenShift",
+              "bare-metal"
+            ],
+            "oneClick": [
+              "CapRover",
+              "Railway"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.flagsmith.com/deployment-self-hosting",
+            "https://docs.flagsmith.com/deployment-self-hosting/hosting-guides/docker",
+            "https://docs.flagsmith.com/deployment-self-hosting/hosting-guides/kubernetes-openshift",
+            "https://github.com/caprover/one-click-apps/tree/master/public/v4/apps",
+            "https://railway.com/deploy/flagsmith"
+          ]
+        },
+        {
+          "name": "GrowthBook",
+          "slug": "growthbook",
+          "github": "growthbook/growthbook",
+          "homepage": "https://www.growthbook.io",
+          "description": "Feature flags plus A/B testing on your own warehouse.",
+          "footprint": {
+            "database": "MongoDB",
+            "minRamMB": 2048,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Helm",
+              "Kubernetes"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.growthbook.io/self-host",
+            "https://docs.growthbook.io/self-host/production",
+            "https://hub.docker.com/r/growthbook/growthbook"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Statuspage",
+      "slug": "statuspage",
+      "category": "Status page",
+      "homepage": "https://www.atlassian.com/software/statuspage",
+      "blurb": "Public status/incident pages. Self-hosted status pages run on your domain at no per-page cost.",
+      "alternatives": [
+        {
+          "name": "Gatus",
+          "slug": "gatus",
+          "github": "TwiN/gatus",
+          "homepage": "https://gatus.io",
+          "description": "Developer-oriented health dashboard + status page in one binary.",
+          "footprint": {
+            "database": "SQLite (recommended for persistence; default storage is in-memory, PostgreSQL also supported)",
+            "minRamMB": 64,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Helm",
+              "Kubernetes",
+              "single-binary"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://github.com/TwiN/gatus",
+            "https://github.com/TwiN/gatus/blob/master/README.md",
+            "https://github.com/TwiN/gatus/tree/master/.examples/docker-compose-sqlite-storage",
+            "https://github.com/TwiN/gatus/tree/master/.examples/docker-compose-postgres-storage",
+            "https://github.com/TwiN/helm-charts/blob/master/charts/gatus/README.md"
+          ]
+        },
+        {
+          "name": "Cachet",
+          "slug": "cachet",
+          "github": "cachethq/cachet",
+          "homepage": "https://cachethq.io",
+          "description": "Beautiful open-source status page system.",
+          "footprint": {
+            "database": "PostgreSQL (official docker-compose default; MySQL/MariaDB 10.7+, SQLite, SQL Server also supported)",
+            "minRamMB": 1024,
+            "arm64": false,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "bare-metal"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://github.com/cachethq/cachet",
+            "https://docs.cachethq.io/v3.x/installation.md",
+            "https://docs.cachethq.io/v2.x/installation/docker",
+            "https://hub.docker.com/r/cachethq/docker/",
+            "https://github.com/cachethq/Docker"
+          ]
+        },
+        {
+          "name": "Statping-ng",
+          "slug": "statping-ng",
+          "github": "statping-ng/statping-ng",
+          "homepage": "https://statping-ng.github.io",
+          "description": "Status page + uptime monitor with notifications.",
+          "footprint": {
+            "database": "SQLite (default, embedded file; PostgreSQL and MySQL also supported)",
+            "minRamMB": 64,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "single-binary",
+              "bare-metal"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://github.com/statping-ng/statping-ng",
+            "https://github.com/statping-ng/statping-ng/wiki/Docker",
+            "https://github.com/statping-ng/statping-ng/wiki/Docker-Compose",
+            "https://statping-ng.github.io/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Google Photos",
+      "slug": "google-photos",
+      "category": "Photo storage / management",
+      "homepage": "https://photos.google.com",
+      "blurb": "Photo backup and library. Self-hosted photo apps keep memories on your own disks with AI search.",
+      "alternatives": [
+        {
+          "name": "Immich",
+          "slug": "immich",
+          "github": "immich-app/immich",
+          "homepage": "https://immich.app",
+          "description": "High-performance self-hosted photo/video backup with mobile apps.",
+          "footprint": {
+            "database": "PostgreSQL (with VectorChord/pgvector extension for vector search)",
+            "minRamMB": 6144,
+            "arm64": true,
+            "deploy": [
+              "Docker Compose",
+              "Kubernetes (official Helm chart)",
+              "Portainer",
+              "Unraid",
+              "install script (experimental)"
+            ],
+            "oneClick": [
+              "DigitalOcean",
+              "Vultr"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.immich.app/install/requirements/",
+            "https://docs.immich.app/install/docker-compose/",
+            "https://docs.immich.app/install/kubernetes/",
+            "https://github.com/immich-app/immich-charts",
+            "https://docs.immich.app/install/one-click/"
+          ]
+        },
+        {
+          "name": "PhotoPrism",
+          "slug": "photoprism",
+          "github": "photoprism/photoprism",
+          "homepage": "https://www.photoprism.app",
+          "description": "AI-powered photo app for browsing and organizing your library.",
+          "footprint": {
+            "database": "MariaDB (10.5.12+ recommended for production; SQLite supported for small/test libraries)",
+            "minRamMB": 4096,
+            "arm64": true,
+            "deploy": [
+              "Docker Compose",
+              "Docker",
+              "Portainer",
+              "Linux packages (bare-metal)",
+              "Kubernetes"
+            ],
+            "oneClick": [
+              "PikaPods",
+              "DigitalOcean",
+              "Railway"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://www.photoprism.app/plus/kb/requirements",
+            "https://docs.photoprism.app/getting-started/",
+            "https://docs.photoprism.app/getting-started/cloud/pikapods/",
+            "https://marketplace.digitalocean.com/apps/photoprism",
+            "https://railway.com/deploy/photoprism"
+          ]
+        },
+        {
+          "name": "LibrePhotos",
+          "slug": "librephotos",
+          "github": "LibrePhotos/librephotos",
+          "homepage": "https://librephotos.com",
+          "description": "Self-hosted photo management with face/object recognition.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 4096,
+            "arm64": true,
+            "deploy": [
+              "Single Container (docker)",
+              "Standard Docker (docker-compose)",
+              "Unraid"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://docs.librephotos.com/docs/installation/",
+            "https://docs.librephotos.com/docs/installation/standard-install/",
+            "https://docs.librephotos.com/docs/installation/unified-deployment/",
+            "https://docs.librephotos.com/docs/installation/unraid/",
+            "https://github.com/LibrePhotos/librephotos"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Evernote",
+      "slug": "evernote",
+      "category": "Note-taking",
+      "homepage": "https://evernote.com",
+      "blurb": "Personal note-taking. Self-hosted/open notes keep your knowledge private and sync-free of subscriptions.",
+      "alternatives": [
+        {
+          "name": "Joplin",
+          "slug": "joplin",
+          "github": "laurent22/joplin",
+          "homepage": "https://joplinapp.org",
+          "description": "Open-source notes + to-dos with end-to-end encrypted sync.",
+          "footprint": {
+            "database": "PostgreSQL (SQLite by default for testing; PostgreSQL recommended for production)",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose"
+            ],
+            "oneClick": [
+              "Coolify",
+              "Railway",
+              "PikaPods"
+            ]
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://github.com/laurent22/joplin/blob/dev/packages/server/README.md",
+            "https://hub.docker.com/r/joplin/server",
+            "https://discourse.joplinapp.org/t/an-official-arm64-version-of-joplin-server-is-now-available/44896",
+            "https://coolify.io/docs/services/joplin",
+            "https://railway.com/deploy/joplin"
+          ]
+        },
+        {
+          "name": "Trilium Notes",
+          "slug": "trilium",
+          "github": "TriliumNext/Notes",
+          "homepage": "https://github.com/TriliumNext/Notes",
+          "description": "Hierarchical personal knowledge base with a self-host server.",
+          "footprint": {
+            "database": "SQLite (embedded document.db file; no external database)",
+            "minRamMB": 256,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "bare-metal",
+              "single-binary"
+            ],
+            "oneClick": [
+              "Coolify",
+              "PikaPods"
+            ]
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://docs.triliumnotes.org/user-guide/setup/server/installation/docker",
+            "https://docs.triliumnotes.org/user-guide/advanced-usage/database",
+            "https://triliumnotes.org/get-started/",
+            "https://coolify.io/docs/services/overview"
+          ]
+        },
+        {
+          "name": "Notesnook",
+          "slug": "notesnook",
+          "github": "streetwriters/notesnook",
+          "homepage": "https://notesnook.com",
+          "description": "Privacy-first, end-to-end encrypted note app, self-hostable sync.",
+          "footprint": {
+            "database": "MongoDB (replica set) for metadata + MinIO/S3-compatible object storage for attachments",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "docker-compose"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "low",
+          "footprintSources": [
+            "https://github.com/streetwriters/notesnook-sync-server",
+            "https://help.notesnook.com/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pocket",
+      "slug": "pocket",
+      "category": "Bookmarks / read-later",
+      "homepage": "https://getpocket.com",
+      "blurb": "Save links and articles for later. Self-hosted bookmark apps keep your reading list private and permanent.",
+      "alternatives": [
+        {
+          "name": "Linkding",
+          "slug": "linkding",
+          "github": "sissbruecker/linkding",
+          "homepage": "https://linkding.link",
+          "description": "Minimal, fast self-hosted bookmark manager.",
+          "footprint": {
+            "database": "SQLite (default); PostgreSQL supported",
+            "minRamMB": 256,
+            "arm64": true,
+            "deploy": [
+              "docker",
+              "docker-compose"
+            ],
+            "oneClick": [
+              "PikaPods",
+              "CloudBreak"
+            ]
+          },
+          "footprintConfidence": "low",
+          "footprintSources": [
+            "https://linkding.link/installation/",
+            "https://linkding.link/managed-hosting/",
+            "https://github.com/sissbruecker/linkding"
+          ]
+        },
+        {
+          "name": "Karakeep",
+          "slug": "karakeep",
+          "github": "karakeep-app/karakeep",
+          "homepage": "https://karakeep.app",
+          "description": "Bookmark-everything app with AI tagging (formerly Hoarder).",
+          "footprint": {
+            "database": "SQLite (primary app DB in DATA_DIR via Drizzle) + Meilisearch (full-text search engine)",
+            "minRamMB": 2048,
+            "arm64": true,
+            "deploy": [
+              "docker",
+              "docker-compose",
+              "kubernetes"
+            ],
+            "oneClick": [
+              "PikaPods",
+              "TrueNAS",
+              "Unraid"
+            ]
+          },
+          "footprintConfidence": "low",
+          "footprintSources": [
+            "https://docs.karakeep.app/installation/docker/",
+            "https://docs.karakeep.app/installation/minimal-install/",
+            "https://docs.karakeep.app/installation/pikapods/",
+            "https://docs.karakeep.app/installation/truenas/",
+            "https://docs.karakeep.app/installation/unraid/",
+            "https://github.com/karakeep-app/karakeep"
+          ]
+        },
+        {
+          "name": "Wallabag",
+          "slug": "wallabag",
+          "github": "wallabag/wallabag",
+          "homepage": "https://wallabag.org",
+          "description": "Self-hosted read-it-later with clean article extraction.",
+          "footprint": {
+            "database": "SQLite (default in Docker); MySQL/MariaDB and PostgreSQL also supported (via PDO)",
+            "minRamMB": 512,
+            "arm64": false,
+            "deploy": [
+              "docker-compose",
+              "manual (Composer/source, PHP >= 7.4)"
+            ],
+            "oneClick": [
+              "PikaPods"
+            ]
+          },
+          "footprintConfidence": "low",
+          "footprintSources": [
+            "https://doc.wallabag.org/admin/installation/requirements/",
+            "https://github.com/wallabag/docker",
+            "https://www.pikapods.com/apps/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "NextDNS",
+      "slug": "nextdns",
+      "category": "DNS / network ad-blocking",
+      "homepage": "https://nextdns.io",
+      "blurb": "DNS filtering and ad/tracker blocking. Self-hosted DNS keeps queries on your network and is free at any scale.",
+      "alternatives": [
+        {
+          "name": "AdGuard Home",
+          "slug": "adguard-home",
+          "github": "AdguardTeam/AdGuardHome",
+          "homepage": "https://adguard.com/adguard-home/overview.html",
+          "description": "Network-wide ad/tracker blocking DNS server with a clean UI.",
+          "footprint": {
+            "database": "Embedded/file-based only - no external DBMS. Uses BoltDB (bbolt) for stats.db, a JSON file (querylog.json) for the query log, and a YAML file (AdGuardHome.yaml) for config. No SQLite/MySQL/Postgres required.",
+            "minRamMB": 256,
+            "arm64": true,
+            "deploy": [
+              "binary",
+              "docker",
+              "snap"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "low",
+          "footprintSources": [
+            "https://github.com/AdguardTeam/AdGuardHome/wiki/Platforms",
+            "https://github.com/AdguardTeam/AdGuardHome/wiki/Getting-Started",
+            "https://adguard.com/en/adguard-home/overview.html"
+          ]
+        },
+        {
+          "name": "Pi-hole",
+          "slug": "pi-hole",
+          "github": "pi-hole/pi-hole",
+          "homepage": "https://pi-hole.net",
+          "description": "The classic network-wide DNS sinkhole ad blocker.",
+          "footprint": {
+            "database": "none",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "install-script",
+              "bare-metal",
+              "Docker",
+              "docker-compose"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.pi-hole.net/main/prerequisites/",
+            "https://docs.pi-hole.net/docker/",
+            "https://github.com/pi-hole/docker-pi-hole",
+            "https://hub.docker.com/r/pihole/pihole"
+          ]
+        },
+        {
+          "name": "Technitium DNS",
+          "slug": "technitium",
+          "github": "TechnitiumSoftware/DnsServer",
+          "homepage": "https://technitium.com/dns/",
+          "description": "Full authoritative + recursive DNS server with blocking.",
+          "footprint": {
+            "database": "File-based for core data - server config and zone files stored under a 'config' folder (/etc/dns in Docker). Query logging is an OPTIONAL app: 'Query Logs (Sqlite)' uses SQLite, with MySQL and SQL Server also available as optional log-app backends. No external database required to run the DNS server itself.",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "binary",
+              "docker",
+              "installer-script",
+              "portable-dotnet"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "low",
+          "footprintSources": [
+            "https://technitium.com/dns/help.html",
+            "https://hub.docker.com/r/technitium/dns-server",
+            "https://github.com/TechnitiumSoftware/DnsServer/blob/master/docker-compose.yml"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Backblaze",
+      "slug": "backblaze",
+      "category": "Backup",
+      "homepage": "https://www.backblaze.com",
+      "blurb": "Cloud backup. Self-hosted backup tools let you back up to your own storage or any S3 cheaply.",
+      "alternatives": [
+        {
+          "name": "Restic",
+          "slug": "restic",
+          "github": "restic/restic",
+          "homepage": "https://restic.net",
+          "description": "Fast, secure, deduplicating backup CLI to many backends.",
+          "footprint": {
+            "database": "None - not a service and uses no database. Restic is a backup CLI that writes to a content-addressable repository on a storage backend (local dir, SFTP, REST server, S3/object storage, etc.). No DBMS.",
+            "minRamMB": 1024,
+            "arm64": true,
+            "deploy": [
+              "binary",
+              "docker",
+              "package-manager"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "low",
+          "footprintSources": [
+            "https://restic.readthedocs.io/en/stable/020_installation.html",
+            "https://restic.readthedocs.io/en/stable/047_tuning_backup_parameters.html",
+            "https://github.com/restic/restic/releases/latest"
+          ]
+        },
+        {
+          "name": "Duplicati",
+          "slug": "duplicati",
+          "github": "duplicati/duplicati",
+          "homepage": "https://www.duplicati.com",
+          "description": "Encrypted, scheduled backups to cloud/S3 with a web UI.",
+          "footprint": {
+            "database": "SQLite (one server database plus a per-backup local database; the local DB is a cache/catalog of remotely stored data and can be rebuilt from the destination)",
+            "minRamMB": 256,
+            "arm64": true,
+            "deploy": [
+              "Docker (official multi-arch image duplicati/duplicati: linux/amd64, linux/arm64, linux/arm/v7)",
+              "Native installers (Windows, Linux .deb/.rpm, macOS)",
+              "Linux packages for x64, Arm64, and Arm7/ArmHF (NAS / Raspberry Pi)",
+              "Runs as a service / Windows service"
+            ],
+            "oneClick": [
+              "Umbrel App Store (community-packaged listing)",
+              "Unraid Community Apps (community template)"
+            ]
+          },
+          "footprintConfidence": "low",
+          "footprintSources": [
+            "https://docs.duplicati.com/platform-specific-guides/using-duplicati-from-docker",
+            "https://hub.docker.com/r/duplicati/duplicati",
+            "https://docs.duplicati.com/getting-started/installation",
+            "https://docs.duplicati.com/community-docs/community-docs-installation",
+            "https://docs.duplicati.com/database-and-storage/the-local-database",
+            "https://docs.duplicati.com/detailed-descriptions/the-server-database",
+            "https://apps.umbrel.com/app/duplicati"
+          ]
+        },
+        {
+          "name": "Kopia",
+          "slug": "kopia",
+          "github": "kopia/kopia",
+          "homepage": "https://kopia.io",
+          "description": "Cross-platform encrypted backup with snapshots and a UI.",
+          "footprint": {
+            "database": "No traditional database - uses its own content-addressable block storage (CABS) repository format. Data/metadata/index BLOBs (p/q/x prefixed packs) are stored in the repository backend (filesystem/NAS, S3-compatible, cloud, etc.); a local cache directory is used for performance.",
+            "minRamMB": 256,
+            "arm64": true,
+            "deploy": [
+              "Docker (official kopia/kopia images for amd64, arm64, and arm on DockerHub)",
+              "Native binaries / packages (Windows 10+, macOS 10.11+, Linux: amd64, arm64, armhf)",
+              "Repository server mode (KopiaUI / kopia server)",
+              "Source build (Go)"
+            ],
+            "oneClick": [
+              "Unraid Community Apps (community template)"
+            ]
+          },
+          "footprintConfidence": "low",
+          "footprintSources": [
+            "https://kopia.io/docs/installation/",
+            "https://kopia.io/docs/faqs/",
+            "https://kopia.io/docs/repository-server/",
+            "https://kopia.io/docs/advanced/architecture/",
+            "https://kopia.io/docs/repositories/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "QuickBooks",
+      "slug": "quickbooks",
+      "category": "Accounting / invoicing",
+      "homepage": "https://quickbooks.intuit.com",
+      "blurb": "Accounting and invoicing. Self-hosted finance apps keep books private and remove subscriptions.",
+      "alternatives": [
+        {
+          "name": "Firefly III",
+          "slug": "firefly-iii",
+          "github": "firefly-iii/firefly-iii",
+          "homepage": "https://www.firefly-iii.org",
+          "description": "Personal finance manager for budgets, accounts and reports.",
+          "footprint": {
+            "database": "MySQL/MariaDB",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "bare-metal"
+            ],
+            "oneClick": [
+              "Coolify",
+              "Railway",
+              "PikaPods"
+            ]
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://docs.firefly-iii.org/how-to/firefly-iii/installation/docker/",
+            "https://docs.firefly-iii.org/references/faq/docker/",
+            "https://hub.docker.com/r/fireflyiii/core",
+            "https://coolify.io/docs/services/firefly",
+            "https://railway.com/deploy/firefly-iii",
+            "https://feedback.pikapods.com/posts/342/firefly-iii"
+          ]
+        },
+        {
+          "name": "Akaunting",
+          "slug": "akaunting",
+          "github": "akaunting/akaunting",
+          "homepage": "https://akaunting.com",
+          "description": "Free, online accounting software for small businesses.",
+          "footprint": {
+            "database": "MySQL/MariaDB",
+            "minRamMB": 1024,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "bare-metal"
+            ],
+            "oneClick": [
+              "DigitalOcean"
+            ]
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://akaunting.com/hc/docs/on-premise/requirements/",
+            "https://akaunting.com/hc/docs/on-premise/installation/",
+            "https://github.com/akaunting/docker",
+            "https://hub.docker.com/r/akaunting/akaunting",
+            "https://marketplace.digitalocean.com/apps/akaunting"
+          ]
+        },
+        {
+          "name": "Invoice Ninja",
+          "slug": "invoice-ninja",
+          "github": "invoiceninja/invoiceninja",
+          "homepage": "https://www.invoiceninja.com",
+          "description": "Invoicing, payments and expenses for freelancers/SMBs.",
+          "footprint": {
+            "database": "MySQL/MariaDB",
+            "minRamMB": 1024,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "bare-metal"
+            ],
+            "oneClick": [
+              "Coolify",
+              "Railway",
+              "DigitalOcean"
+            ]
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://invoiceninja.github.io/docs/self-host/self-host-installation",
+            "https://invoiceninja.com/installers/",
+            "https://hub.docker.com/r/invoiceninja/invoiceninja/",
+            "https://coolify.io/docs/services/invoice-ninja",
+            "https://railway.com/deploy/invoiceninja"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SAP",
+      "slug": "sap",
+      "category": "ERP",
+      "homepage": "https://www.sap.com",
+      "blurb": "Enterprise resource planning. Open-source ERPs run your whole business without seven-figure licensing.",
+      "alternatives": [
+        {
+          "name": "ERPNext",
+          "slug": "erpnext",
+          "github": "frappe/erpnext",
+          "homepage": "https://erpnext.com",
+          "description": "Full open-source ERP: accounting, inventory, HR, manufacturing.",
+          "footprint": {
+            "database": "MariaDB",
+            "minRamMB": 4096,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "Helm",
+              "bare-metal"
+            ],
+            "oneClick": [
+              "Railway"
+            ]
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://github.com/frappe/frappe_docker",
+            "https://github.com/frappe/helm",
+            "https://docs.frappe.io/erpnext/",
+            "https://hub.docker.com/r/frappe/erpnext",
+            "https://railway.com/deploy/erpnext"
+          ]
+        },
+        {
+          "name": "Odoo",
+          "slug": "odoo",
+          "github": "odoo/odoo",
+          "homepage": "https://www.odoo.com",
+          "description": "Modular business suite: CRM, sales, inventory, accounting.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 2048,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "deb/rpm packages",
+              "source",
+              "bare-metal"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://www.odoo.com/documentation/master/administration/on_premise/source.html",
+            "https://www.odoo.com/documentation/17.0/administration/on_premise/deploy.html",
+            "https://hub.docker.com/_/odoo"
+          ]
+        },
+        {
+          "name": "Dolibarr",
+          "slug": "dolibarr",
+          "github": "Dolibarr/dolibarr",
+          "homepage": "https://www.dolibarr.org",
+          "description": "Lightweight ERP/CRM for SMBs on LAMP.",
+          "footprint": {
+            "database": "MariaDB/MySQL",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "bare-metal",
+              "DoliWamp/DoliDeb/DoliRpm installers"
+            ],
+            "oneClick": []
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://wiki.dolibarr.org/index.php?title=Prerequisites",
+            "https://hub.docker.com/r/dolibarr/dolibarr",
+            "https://github.com/Dolibarr/dolibarr"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "WordPress.com",
+      "slug": "wordpress",
+      "category": "CMS / blog",
+      "homepage": "https://wordpress.com",
+      "blurb": "Hosted CMS/blogging. Self-hosted CMS and headless options keep content and revenue fully yours.",
+      "alternatives": [
+        {
+          "name": "Ghost",
+          "slug": "ghost",
+          "github": "TryGhost/Ghost",
+          "homepage": "https://ghost.org",
+          "description": "Modern publishing + newsletter platform for creators.",
+          "footprint": {
+            "database": "MySQL 8.0",
+            "minRamMB": 1024,
+            "arm64": true,
+            "deploy": [
+              "Ghost-CLI (bare-metal/VPS)",
+              "Docker",
+              "docker-compose"
+            ],
+            "oneClick": [
+              "DigitalOcean",
+              "Railway"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.ghost.org/hosting",
+            "https://hub.docker.com/_/ghost",
+            "https://github.com/TryGhost/digitalocean-1-click",
+            "https://railway.com/deploy/ghost-cms-mysql"
+          ]
+        },
+        {
+          "name": "Strapi",
+          "slug": "strapi",
+          "github": "strapi/strapi",
+          "homepage": "https://strapi.io",
+          "description": "Leading open-source headless CMS with a customizable API.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 2048,
+            "arm64": false,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "single-binary (Node/npm)",
+              "bare-metal"
+            ],
+            "oneClick": [
+              "Railway"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.strapi.io/snippets/hardware-require",
+            "https://docs.strapi.io/cms/installation/docker",
+            "https://docs.strapi.io/cms/configurations/database",
+            "https://railway.com/deploy/strapi"
+          ]
+        },
+        {
+          "name": "Directus",
+          "slug": "directus",
+          "github": "directus/directus",
+          "homepage": "https://directus.io",
+          "description": "Headless CMS + data platform over any SQL database.",
+          "footprint": {
+            "database": "PostgreSQL",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "Docker",
+              "docker-compose",
+              "PM2 / single-binary (Node)",
+              "systemd",
+              "bare-metal"
+            ],
+            "oneClick": [
+              "DigitalOcean",
+              "Railway"
+            ]
+          },
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://directus.com/docs/self-hosting/requirements",
+            "https://hub.docker.com/r/directus/directus/tags",
+            "https://github.com/directus/directus/discussions/6792",
+            "https://marketplace.digitalocean.com/apps/directus-1",
+            "https://railway.com/deploy/cms/directus"
+          ]
+        },
+        {
+          "name": "Payload",
+          "slug": "payload",
+          "github": "payloadcms/payload",
+          "homepage": "https://payloadcms.com",
+          "description": "TypeScript-native headless CMS and app framework.",
+          "footprint": {
+            "database": "MongoDB",
+            "minRamMB": 512,
+            "arm64": true,
+            "deploy": [
+              "Docker (provided Dockerfile)",
+              "docker-compose",
+              "single-binary (Next.js/Node, self-host)",
+              "serverless (Vercel/Cloudflare)"
+            ],
+            "oneClick": [
+              "Vercel"
+            ]
+          },
+          "footprintConfidence": "medium",
+          "footprintSources": [
+            "https://payloadcms.com/docs/production/deployment",
+            "https://payloadcms.com/docs/database/overview",
+            "https://payloadcms.com/docs/database/mongodb",
+            "https://github.com/payloadcms/vercel-deploy-payload-postgres",
+            "https://vercel.com/templates/next.js/payload-website-starter"
+          ]
+        }
+      ]
+    }
+  ]
+}

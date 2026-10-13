@@ -1,0 +1,17 @@
+{
+  "_howto": "Партнёры для one-click деплоя и блока 'managed hosting'. ПОСЛЕ регистрации в каждой программе замени `url` на СВОЮ реферальную ссылку. До этого — обычные полезные ссылки (доход = 0). На сайте все они помечаются rel='sponsored' автоматически.",
+  "_rule": "Только релевантные офферы (хостинг/деплой open-source). НЕ добавлять сюда сам платный SaaS или нерелевантные баннеры — не конвертит и вредит доверию/SEO.",
+  "_verifyPayout": "Проверь условия выплат: некоторые платят кредитами, не деньгами (как Hetzner) — такие не добавлять или пометить managed:false.",
+  "partners": [
+    { "name": "PikaPods",     "url": "https://www.pikapods.com",     "managed": true,  "note": "хостинг open-source приложений под ключ — идеальный фит" },
+    { "name": "Elestio",      "url": "https://elest.io",             "managed": true,  "note": "fully-managed open-source apps" },
+    { "name": "Railway",      "url": "https://railway.app",          "managed": true,  "note": "PaaS, one-click шаблоны; проверить выплату (часто кредиты)" },
+    { "name": "DigitalOcean", "url": "https://www.digitalocean.com", "managed": true,  "note": "VPS + 1-click marketplace; деньги + recurring через Impact" },
+    { "name": "Cloudways",    "url": "https://www.cloudways.com",    "managed": true,  "note": "managed hosting; сильная денежная партнёрка" },
+    { "name": "Vultr",        "url": "https://www.vultr.com",        "managed": false, "note": "VPS, есть referral" },
+    { "name": "Render",       "url": "https://render.com",           "managed": false, "note": "PaaS one-click" },
+    { "name": "RepoCloud",    "url": "https://repocloud.io",         "managed": false, "note": "1-click open-source apps" },
+    { "name": "Sealos",       "url": "https://sealos.io",            "managed": false, "note": "cloud OS, one-click" },
+    { "name": "Zeabur",       "url": "https://zeabur.com",           "managed": false, "note": "PaaS one-click" }
+  ]
+}

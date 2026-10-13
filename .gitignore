@@ -1,0 +1,36 @@
+# Whitelist mode: EVERYTHING is ignored unless explicitly re-included below.
+# This folder also holds unrelated local files; only the site engine ships.
+*
+
+!/.gitignore
+!/.gitattributes
+!/.github/
+!/.github/**
+!/package.json
+!/tsconfig.json
+!/wrangler.jsonc
+!/README.md
+!/LICENSE
+!/DATA-LICENSE.md
+!/awesome.md
+!/docs/
+!/docs/**
+!/scripts/
+!/scripts/**
+!/src/
+!/src/**
+!/public/
+!/public/**
+!/data/
+!/data/seed.json
+!/data/offers.json
+!/data/tools.json
+
+# Belt and braces: never, even if a rule above is loosened.
+.github-token
+.env
+.env.*
+dist/
+node_modules/
+data/enriched.json
+*.log

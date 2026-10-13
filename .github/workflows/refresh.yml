@@ -1,0 +1,65 @@
+name: Refresh data & deploy
+
+# Daily: pull fresh GitHub data -> rebuild -> commit README/awesome/dataset -> deploy to Cloudflare.
+# The daily commit is also what keeps this schedule alive (GitHub silently disables cron workflows
+# in public repos after 60 days without pushes); the keepalive step covers the API side too.
+
+on:
+  schedule:
+    - cron: "23 5 * * *" # 05:23 UTC daily (off the top-of-hour rush, when GitHub delays runs)
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write # commit refreshed data
+  actions: write # keepalive: re-enable the schedule if GitHub disabled it
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24" # native TypeScript (type stripping), zero deps
+
+      - name: Enrich from the GitHub API
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # built-in token, 1,000 req/h: enough for ~130 repos + releases
+        run: node scripts/enrich.ts
+
+      - name: Build site + README + dataset
+        run: node scripts/build-site.ts
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name "selfhostscore-bot"
+          git config user.email "team@selfhostscore.com"
+          git add README.md awesome.md data/tools.json
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "data: refresh $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Deploy to Cloudflare (Worker static assets)
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "::warning::CLOUDFLARE_API_TOKEN secret not set, skipping deploy (data was still committed)."
+            exit 0
+          fi
+          npx -y wrangler@4 deploy
+
+      - name: Keep the schedule alive
+        uses: gautamkrishnar/keepalive-workflow@v2
+        continue-on-error: true

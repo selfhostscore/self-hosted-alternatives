@@ -1,0 +1,3287 @@
+{
+  "site": "SelfHostScore",
+  "url": "https://selfhostscore.com",
+  "updated": "2026-10-13T11:16:23.207Z",
+  "license": "CC BY 4.0 — free to use with attribution to SelfHostScore (https://selfhostscore.com).",
+  "tools": [
+    {
+      "name": "Airtable",
+      "slug": "airtable",
+      "category": "Database / spreadsheet",
+      "page": "https://selfhostscore.com/alternatives/airtable/",
+      "alternatives": [
+        {
+          "name": "NocoDB",
+          "github": "nocodb/nocodb",
+          "homepage": "https://nocodb.com",
+          "description": "Turns any MySQL/Postgres/SQLite into a smart spreadsheet UI.",
+          "healthScore": 99,
+          "stars": 65264,
+          "language": "TypeScript",
+          "license": null,
+          "lastCommit": "2026-10-13T10:28:00Z",
+          "database": "PostgreSQL (recommended for production; ships with embedded SQLite by default, also supports MySQL/MariaDB/SQL Server)",
+          "minRamMB": 2048,
+          "arm64": true,
+          "oneClick": [
+            "Railway"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Helm",
+            "AWS",
+            "Heroku",
+            "Cloudron",
+            "single-binary"
+          ],
+          "footprintConfidence": "medium"
+        },
+        {
+          "name": "Teable",
+          "github": "teableio/teable",
+          "homepage": "https://teable.io",
+          "description": "Postgres-native Airtable alternative with real-DB performance.",
+          "healthScore": 95,
+          "stars": 21889,
+          "language": "TypeScript",
+          "license": null,
+          "lastCommit": "2026-10-13T11:12:16Z",
+          "database": "PostgreSQL (Redis also required for caching)",
+          "minRamMB": 4096,
+          "arm64": true,
+          "oneClick": [
+            "Railway",
+            "Sealos",
+            "Zeabur",
+            "RepoCloud",
+            "Elestio"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Grist",
+          "github": "gristlabs/grist-core",
+          "homepage": "https://www.getgrist.com",
+          "description": "Spreadsheet with real formulas + Python; lightweight SQLite backend.",
+          "healthScore": 93,
+          "stars": 11947,
+          "language": "TypeScript",
+          "license": "Apache-2.0",
+          "lastCommit": "2026-10-13T06:18:19Z",
+          "database": "none (embedded SQLite file storage; PostgreSQL optionally supported for the home/global DB)",
+          "minRamMB": 200,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "bare-metal"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Baserow",
+          "github": "baserow/baserow",
+          "homepage": "https://baserow.io",
+          "description": "No-code database with a clean Airtable-like UI and plugin API.",
+          "healthScore": 91,
+          "stars": 6145,
+          "language": "Python",
+          "license": null,
+          "lastCommit": "2026-10-13T11:07:43Z",
+          "database": "PostgreSQL",
+          "minRamMB": 2048,
+          "arm64": true,
+          "oneClick": [
+            "DigitalOcean",
+            "Render",
+            "Railway",
+            "Cloudron",
+            "Coolify"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Helm",
+            "Kubernetes",
+            "Ubuntu/bare-metal",
+            "AWS",
+            "DigitalOcean Apps",
+            "Heroku",
+            "Render",
+            "Railway",
+            "Cloudron"
+          ],
+          "footprintConfidence": "high"
+        }
+      ]
+    },
+    {
+      "name": "Notion",
+      "slug": "notion",
+      "category": "Docs / knowledge base",
+      "page": "https://selfhostscore.com/alternatives/notion/",
+      "alternatives": [
+        {
+          "name": "AppFlowy",
+          "github": "AppFlowy-IO/AppFlowy",
+          "homepage": "https://appflowy.io",
+          "description": "Open-source Notion alternative built in Rust + Flutter.",
+          "healthScore": 99,
+          "stars": 77278,
+          "language": "Dart",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-10-08T11:00:14Z",
+          "database": "PostgreSQL",
+          "minRamMB": 2048,
+          "arm64": true,
+          "oneClick": [
+            "Coolify",
+            "Railway"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose"
+          ],
+          "footprintConfidence": "medium"
+        },
+        {
+          "name": "AFFiNE",
+          "github": "toeverything/AFFiNE",
+          "homepage": "https://affine.pro",
+          "description": "Docs + whiteboard + database in one local-first workspace.",
+          "healthScore": 99,
+          "stars": 73451,
+          "language": "TypeScript",
+          "license": null,
+          "lastCommit": "2026-10-12T09:51:10Z",
+          "database": "PostgreSQL",
+          "minRamMB": 2048,
+          "arm64": true,
+          "oneClick": [
+            "Railway",
+            "Coolify"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Outline",
+          "github": "outline/outline",
+          "homepage": "https://www.getoutline.com",
+          "description": "Fast team wiki/knowledge base with Slack/Markdown integration.",
+          "healthScore": 98,
+          "stars": 40878,
+          "language": "TypeScript",
+          "license": null,
+          "lastCommit": "2026-10-13T11:14:30Z",
+          "database": "PostgreSQL",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "bare-metal"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Docmost",
+          "github": "docmost/docmost",
+          "homepage": "https://docmost.com",
+          "description": "Collaborative wiki & docs with real-time editing and spaces.",
+          "healthScore": 95,
+          "stars": 21965,
+          "language": "TypeScript",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-10-12T23:03:14Z",
+          "database": "PostgreSQL",
+          "minRamMB": 1024,
+          "arm64": true,
+          "oneClick": [
+            "Railway",
+            "Coolify",
+            "PikaPods"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose"
+          ],
+          "footprintConfidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": "Retool",
+      "slug": "retool",
+      "category": "Internal tools / admin panels",
+      "page": "https://selfhostscore.com/alternatives/retool/",
+      "alternatives": [
+        {
+          "name": "Appsmith",
+          "github": "appsmithorg/appsmith",
+          "homepage": "https://www.appsmith.com",
+          "description": "Low-code platform to build internal apps on any data source.",
+          "healthScore": 99,
+          "stars": 41059,
+          "language": "TypeScript",
+          "license": "Apache-2.0",
+          "lastCommit": "2026-10-13T08:35:44Z",
+          "database": "MongoDB (embedded by default; external MongoDB recommended for production)",
+          "minRamMB": 8192,
+          "arm64": true,
+          "oneClick": [
+            "DigitalOcean"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Kubernetes (Helm)",
+            "AWS (EC2/EKS)",
+            "Google Cloud Run",
+            "Azure",
+            "DigitalOcean"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "ToolJet",
+          "github": "ToolJet/ToolJet",
+          "homepage": "https://www.tooljet.com",
+          "description": "Open-source internal-tool builder with 50+ data connectors.",
+          "healthScore": 99,
+          "stars": 41091,
+          "language": "HTML",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-10-13T10:48:36Z",
+          "database": "PostgreSQL (Redis also required for caching/sessions)",
+          "minRamMB": 4096,
+          "arm64": false,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Kubernetes",
+            "Helm",
+            "OpenShift",
+            "AWS ECS",
+            "DigitalOcean (manual droplet)",
+            "bare-metal"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Budibase",
+          "github": "Budibase/budibase",
+          "homepage": "https://budibase.com",
+          "description": "Build internal apps + automations fast; bundled internal DB.",
+          "healthScore": 97,
+          "stars": 28336,
+          "language": "TypeScript",
+          "license": null,
+          "lastCommit": "2026-10-13T10:23:29Z",
+          "database": "CouchDB (internal; plus MinIO object store and Redis)",
+          "minRamMB": 4096,
+          "arm64": true,
+          "oneClick": [
+            "DigitalOcean"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Kubernetes (Helm)",
+            "Portainer",
+            "Podman",
+            "Ansible",
+            "DigitalOcean",
+            "Azure App Service",
+            "Azure Container Instances",
+            "Google Cloud Run",
+            "Budibase CLI",
+            "Windows Server"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "NocoBase",
+          "github": "nocobase/nocobase",
+          "homepage": "https://www.nocobase.com",
+          "description": "No-code platform with a data-model-driven plugin architecture.",
+          "healthScore": 96,
+          "stars": 24566,
+          "language": "TypeScript",
+          "license": null,
+          "lastCommit": "2026-10-13T11:07:14Z",
+          "database": "PostgreSQL (also supports MySQL/MariaDB; external DB required, deployed separately)",
+          "minRamMB": 2048,
+          "arm64": true,
+          "oneClick": [
+            "Railway"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Kubernetes (Helm)",
+            "bare-metal (Node.js/create-nocobase-app)"
+          ],
+          "footprintConfidence": "high"
+        }
+      ]
+    },
+    {
+      "name": "Zapier",
+      "slug": "zapier",
+      "category": "Automation / iPaaS",
+      "page": "https://selfhostscore.com/alternatives/zapier/",
+      "alternatives": [
+        {
+          "name": "n8n",
+          "github": "n8n-io/n8n",
+          "homepage": "https://n8n.io",
+          "description": "Fair-code workflow automation with 400+ nodes and code steps.",
+          "healthScore": 100,
+          "stars": 207194,
+          "language": "TypeScript",
+          "license": null,
+          "lastCommit": "2026-10-13T11:13:42Z",
+          "database": "SQLite (default, embedded); PostgreSQL recommended for production",
+          "minRamMB": 2048,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "npm/npx",
+            "Docker",
+            "docker-compose",
+            "Kubernetes",
+            "Helm"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Activepieces",
+          "github": "activepieces/activepieces",
+          "homepage": "https://www.activepieces.com",
+          "description": "Open-source Zapier alternative with an AI-friendly piece framework.",
+          "healthScore": 97,
+          "stars": 25031,
+          "language": "TypeScript",
+          "license": null,
+          "lastCommit": "2026-10-13T11:10:39Z",
+          "database": "PostgreSQL (with Redis for the BullMQ job queue); single-image testing mode uses embedded PGLite + in-memory queue",
+          "minRamMB": 4096,
+          "arm64": true,
+          "oneClick": [
+            "Railway",
+            "Easypanel",
+            "Elestio",
+            "PikaPods",
+            "Zeabur"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Kubernetes",
+            "Helm"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Automatisch",
+          "github": "automatisch/automatisch",
+          "homepage": "https://automatisch.io",
+          "description": "Privacy-first workflow automation you fully self-host.",
+          "healthScore": 52,
+          "stars": 13996,
+          "language": "JavaScript",
+          "license": null,
+          "lastCommit": "2026-02-11T19:53:04Z",
+          "database": "PostgreSQL (+ Redis required for job queue)",
+          "minRamMB": 2048,
+          "arm64": true,
+          "oneClick": [
+            "Render"
+          ],
+          "deploy": [
+            "docker-compose",
+            "docker",
+            "render"
+          ],
+          "footprintConfidence": "low"
+        }
+      ]
+    },
+    {
+      "name": "Calendly",
+      "slug": "calendly",
+      "category": "Scheduling",
+      "page": "https://selfhostscore.com/alternatives/calendly/",
+      "alternatives": [
+        {
+          "name": "Cal.com",
+          "github": "calcom/cal.com",
+          "homepage": "https://cal.com",
+          "description": "Scheduling infrastructure for everyone; deep integrations + API.",
+          "healthScore": 92,
+          "stars": 48976,
+          "language": "TypeScript",
+          "license": "MIT",
+          "lastCommit": "2026-09-26T07:48:40Z",
+          "database": "PostgreSQL",
+          "minRamMB": 2048,
+          "arm64": true,
+          "oneClick": [
+            "Railway",
+            "Render",
+            "Vercel"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "bare-metal"
+          ],
+          "footprintConfidence": "medium"
+        },
+        {
+          "name": "Easy!Appointments",
+          "github": "alextselegidis/easyappointments",
+          "homepage": "https://easyappointments.org",
+          "description": "Lightweight PHP appointment scheduler; runs on cheap LAMP.",
+          "healthScore": 88,
+          "stars": 4431,
+          "language": "PHP",
+          "license": "GPL-3.0",
+          "lastCommit": "2026-10-12T10:42:59Z",
+          "database": "MySQL",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "bare-metal"
+          ],
+          "footprintConfidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": "Trello",
+      "slug": "trello",
+      "category": "Kanban / project boards",
+      "page": "https://selfhostscore.com/alternatives/trello/",
+      "alternatives": [
+        {
+          "name": "WeKan",
+          "github": "wekan/wekan",
+          "homepage": "https://wekan.github.io",
+          "description": "Mature open-source kanban with granular permissions.",
+          "healthScore": 96,
+          "stars": 21116,
+          "language": "JavaScript",
+          "license": "MIT",
+          "lastCommit": "2026-10-13T10:20:10Z",
+          "database": "MongoDB",
+          "minRamMB": 1024,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Snap",
+            "Sandstorm",
+            "bundle",
+            "bare-metal"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Planka",
+          "github": "plankanban/planka",
+          "homepage": "https://planka.app",
+          "description": "Realtime Trello-style kanban; lightweight and snappy.",
+          "healthScore": 94,
+          "stars": 12616,
+          "language": "JavaScript",
+          "license": null,
+          "lastCommit": "2026-10-12T21:02:42Z",
+          "database": "PostgreSQL",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Helm",
+            "Kubernetes",
+            "bare-metal"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Kanboard",
+          "github": "kanboard/kanboard",
+          "homepage": "https://kanboard.org",
+          "description": "Minimalist PHP kanban; tiny footprint, runs anywhere.",
+          "healthScore": 93,
+          "stars": 9907,
+          "language": "PHP",
+          "license": "MIT",
+          "lastCommit": "2026-10-12T04:30:13Z",
+          "database": "PostgreSQL",
+          "minRamMB": 256,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "bare-metal",
+            "single-binary"
+          ],
+          "footprintConfidence": "high"
+        }
+      ]
+    },
+    {
+      "name": "Slack",
+      "slug": "slack",
+      "category": "Team chat",
+      "page": "https://selfhostscore.com/alternatives/slack/",
+      "alternatives": [
+        {
+          "name": "Rocket.Chat",
+          "github": "RocketChat/Rocket.Chat",
+          "homepage": "https://rocket.chat",
+          "description": "Feature-rich team chat with omnichannel + federation.",
+          "healthScore": 100,
+          "stars": 46250,
+          "language": "TypeScript",
+          "license": null,
+          "lastCommit": "2026-10-13T11:00:33Z",
+          "database": "MongoDB",
+          "minRamMB": 4096,
+          "arm64": true,
+          "oneClick": [
+            "Railway"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Helm",
+            "Snap",
+            "bare-metal"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Mattermost",
+          "github": "mattermost/mattermost",
+          "homepage": "https://mattermost.com",
+          "description": "Enterprise-grade self-hosted Slack alternative for ops/dev teams.",
+          "healthScore": 99,
+          "stars": 39324,
+          "language": "TypeScript",
+          "license": null,
+          "lastCommit": "2026-10-13T10:32:11Z",
+          "database": "PostgreSQL",
+          "minRamMB": 2048,
+          "arm64": false,
+          "oneClick": [
+            "DigitalOcean",
+            "Railway"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Kubernetes",
+            "bare-metal",
+            "single-binary"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Zulip",
+          "github": "zulip/zulip",
+          "homepage": "https://zulip.com",
+          "description": "Threaded team chat that scales to large async communities.",
+          "healthScore": 98,
+          "stars": 26042,
+          "language": "Python",
+          "license": "Apache-2.0",
+          "lastCommit": "2026-10-13T10:39:56Z",
+          "database": "PostgreSQL",
+          "minRamMB": 2048,
+          "arm64": false,
+          "oneClick": [
+            "DigitalOcean",
+            "Render"
+          ],
+          "deploy": [
+            "bare-metal",
+            "Docker",
+            "docker-compose",
+            "Helm"
+          ],
+          "footprintConfidence": "high"
+        }
+      ]
+    },
+    {
+      "name": "Confluence",
+      "slug": "confluence",
+      "category": "Wiki / knowledge base",
+      "page": "https://selfhostscore.com/alternatives/confluence/",
+      "alternatives": [
+        {
+          "name": "Outline",
+          "github": "outline/outline",
+          "homepage": "https://www.getoutline.com",
+          "description": "Fast, beautiful team knowledge base with great search.",
+          "healthScore": 98,
+          "stars": 40878,
+          "language": "TypeScript",
+          "license": null,
+          "lastCommit": "2026-10-13T11:14:30Z",
+          "database": "PostgreSQL",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "bare-metal"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Wiki.js",
+          "github": "requarks/wiki",
+          "homepage": "https://js.wiki",
+          "description": "Modern Node.js wiki with Markdown, Git sync and SSO.",
+          "healthScore": 97,
+          "stars": 29035,
+          "language": "Vue",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-10-13T08:18:52Z",
+          "database": "PostgreSQL",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Kubernetes",
+            "bare-metal"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "BookStack",
+          "github": "BookStackApp/BookStack",
+          "homepage": "https://www.bookstackapp.com",
+          "description": "Simple, organized wiki (books/chapters/pages) on LAMP.",
+          "healthScore": 96,
+          "stars": 19080,
+          "language": "PHP",
+          "license": "MIT",
+          "lastCommit": "2026-10-13T04:31:24Z",
+          "database": "MySQL >= 8.0 or MariaDB >= 10.6",
+          "minRamMB": 1024,
+          "arm64": false,
+          "oneClick": [
+            "Cloudron",
+            "PikaPods"
+          ],
+          "deploy": [
+            "manual",
+            "ubuntu-script",
+            "docker"
+          ],
+          "footprintConfidence": "low"
+        }
+      ]
+    },
+    {
+      "name": "Postman",
+      "slug": "postman",
+      "category": "API client",
+      "page": "https://selfhostscore.com/alternatives/postman/",
+      "alternatives": [
+        {
+          "name": "Hoppscotch",
+          "github": "hoppscotch/hoppscotch",
+          "homepage": "https://hoppscotch.io",
+          "description": "Fast, lightweight web API client; self-host the whole stack.",
+          "healthScore": 99,
+          "stars": 80614,
+          "language": "TypeScript",
+          "license": "MIT",
+          "lastCommit": "2026-10-12T04:41:25Z",
+          "database": "PostgreSQL",
+          "minRamMB": 2048,
+          "arm64": false,
+          "oneClick": [
+            "Coolify"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Bruno",
+          "github": "usebruno/bruno",
+          "homepage": "https://www.usebruno.com",
+          "description": "Git-friendly offline API client; collections live as files.",
+          "healthScore": 98,
+          "stars": 47482,
+          "language": "JavaScript",
+          "license": "MIT",
+          "lastCommit": "2026-10-13T07:11:43Z",
+          "database": "none",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "bare-metal",
+            "Snap",
+            "Flatpak"
+          ],
+          "footprintConfidence": "high"
+        }
+      ]
+    },
+    {
+      "name": "Typeform",
+      "slug": "typeform",
+      "category": "Forms / surveys",
+      "page": "https://selfhostscore.com/alternatives/typeform/",
+      "alternatives": [
+        {
+          "name": "Formbricks",
+          "github": "formbricks/formbricks",
+          "homepage": "https://formbricks.com",
+          "description": "Privacy-first surveys + experience management you self-host.",
+          "healthScore": 95,
+          "stars": 13094,
+          "language": "TypeScript",
+          "license": null,
+          "lastCommit": "2026-10-13T11:14:59Z",
+          "database": "PostgreSQL",
+          "minRamMB": 2048,
+          "arm64": true,
+          "oneClick": [
+            "Railway"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "shell-script",
+            "bare-metal"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "HeyForm",
+          "github": "heyform/heyform",
+          "homepage": "https://heyform.net",
+          "description": "Build conversational forms with a clean self-hosted stack.",
+          "healthScore": 92,
+          "stars": 9020,
+          "language": "TypeScript",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-10-10T02:16:01Z",
+          "database": "MongoDB",
+          "minRamMB": 1024,
+          "arm64": false,
+          "oneClick": [
+            "Railway",
+            "Zeabur",
+            "Sealos",
+            "RepoCloud",
+            "Alibaba Cloud"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose"
+          ],
+          "footprintConfidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": "Heroku",
+      "slug": "heroku",
+      "category": "PaaS / app hosting",
+      "page": "https://selfhostscore.com/alternatives/heroku/",
+      "alternatives": [
+        {
+          "name": "Coolify",
+          "github": "coollabsio/coolify",
+          "homepage": "https://coolify.io",
+          "description": "Self-hostable Heroku/Netlify/Vercel alternative; one-click services.",
+          "healthScore": 99,
+          "stars": 62924,
+          "language": "PHP",
+          "license": "Apache-2.0",
+          "lastCommit": "2026-10-13T10:41:20Z",
+          "database": "PostgreSQL",
+          "minRamMB": 2048,
+          "arm64": true,
+          "oneClick": [
+            "DigitalOcean"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "install-script"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Dokploy",
+          "github": "dokploy/dokploy",
+          "homepage": "https://dokploy.com",
+          "description": "Modern self-host PaaS for apps, databases and compose stacks.",
+          "healthScore": 97,
+          "stars": 37772,
+          "language": "TypeScript",
+          "license": null,
+          "lastCommit": "2026-10-12T14:46:10Z",
+          "database": "PostgreSQL",
+          "minRamMB": 2048,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "install-script"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Dokku",
+          "github": "dokku/dokku",
+          "homepage": "https://dokku.com",
+          "description": "The smallest PaaS; Heroku-like git push on a single host.",
+          "healthScore": 96,
+          "stars": 32176,
+          "language": "Go",
+          "license": "MIT",
+          "lastCommit": "2026-10-12T17:15:14Z",
+          "database": "none",
+          "minRamMB": 1024,
+          "arm64": true,
+          "oneClick": [
+            "DigitalOcean"
+          ],
+          "deploy": [
+            "bare-metal",
+            "install-script",
+            "Docker",
+            "Vagrant"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "CapRover",
+          "github": "caprover/caprover",
+          "homepage": "https://caprover.com",
+          "description": "Scalable PaaS with a web UI, one-click apps and Docker Swarm.",
+          "healthScore": 93,
+          "stars": 15185,
+          "language": "TypeScript",
+          "license": null,
+          "lastCommit": "2026-10-13T02:52:57Z",
+          "database": "none",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [
+            "DigitalOcean"
+          ],
+          "deploy": [
+            "Docker",
+            "single-binary"
+          ],
+          "footprintConfidence": "high"
+        }
+      ]
+    },
+    {
+      "name": "Auth0",
+      "slug": "auth0",
+      "category": "Auth / SSO / identity",
+      "page": "https://selfhostscore.com/alternatives/auth0/",
+      "alternatives": [
+        {
+          "name": "Keycloak",
+          "github": "keycloak/keycloak",
+          "homepage": "https://www.keycloak.org",
+          "description": "Battle-tested enterprise IAM/SSO from the CNCF ecosystem.",
+          "healthScore": 99,
+          "stars": 37328,
+          "language": "Java",
+          "license": "Apache-2.0",
+          "lastCommit": "2026-10-13T11:03:49Z",
+          "database": "PostgreSQL",
+          "minRamMB": 1250,
+          "arm64": true,
+          "oneClick": [
+            "DigitalOcean"
+          ],
+          "deploy": [
+            "Docker",
+            "Kubernetes Operator",
+            "Helm (community)",
+            "bare-metal",
+            "single-binary (zip distribution)"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Authentik",
+          "github": "goauthentik/authentik",
+          "homepage": "https://goauthentik.io",
+          "description": "Flexible self-hosted IdP: SAML, OIDC, LDAP, flows and policies.",
+          "healthScore": 95,
+          "stars": 25938,
+          "language": "Python",
+          "license": null,
+          "lastCommit": "2026-10-13T10:45:07Z",
+          "database": "PostgreSQL",
+          "minRamMB": 2048,
+          "arm64": true,
+          "oneClick": [
+            "Railway",
+            "Coolify"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Helm",
+            "Kubernetes"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Zitadel",
+          "github": "zitadel/zitadel",
+          "homepage": "https://zitadel.com",
+          "description": "Cloud-native identity with multi-tenancy and a modern API.",
+          "healthScore": 94,
+          "stars": 15302,
+          "language": "Go",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-10-13T09:48:26Z",
+          "database": "PostgreSQL",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [
+            "Railway"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Helm",
+            "Kubernetes",
+            "Linux single-binary"
+          ],
+          "footprintConfidence": "high"
+        }
+      ]
+    },
+    {
+      "name": "Datadog",
+      "slug": "datadog",
+      "category": "Observability / monitoring",
+      "page": "https://selfhostscore.com/alternatives/datadog/",
+      "alternatives": [
+        {
+          "name": "Uptime Kuma",
+          "github": "louislam/uptime-kuma",
+          "homepage": "https://uptime.kuma.pet",
+          "description": "Self-hosted uptime/status monitoring with a delightful UI.",
+          "healthScore": 100,
+          "stars": 92397,
+          "language": "JavaScript",
+          "license": "MIT",
+          "lastCommit": "2026-10-13T00:07:18Z",
+          "database": "SQLite",
+          "minRamMB": 256,
+          "arm64": true,
+          "oneClick": [
+            "PikaPods"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "bare-metal"
+          ],
+          "footprintConfidence": "medium"
+        },
+        {
+          "name": "SigNoz",
+          "github": "SigNoz/signoz",
+          "homepage": "https://signoz.io",
+          "description": "Open-source Datadog alternative: APM, logs, metrics on OpenTelemetry.",
+          "healthScore": 97,
+          "stars": 32346,
+          "language": "TypeScript",
+          "license": null,
+          "lastCommit": "2026-10-13T11:15:36Z",
+          "database": "ClickHouse",
+          "minRamMB": 4096,
+          "arm64": false,
+          "oneClick": [
+            "Render",
+            "Railway",
+            "DigitalOcean",
+            "Coolify"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Docker Swarm",
+            "Helm",
+            "Kubernetes",
+            "install-script"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "OpenObserve",
+          "github": "openobserve/openobserve",
+          "homepage": "https://openobserve.ai",
+          "description": "Petabyte-scale logs/metrics/traces with 140x lower storage cost.",
+          "healthScore": 94,
+          "stars": 22341,
+          "language": "TypeScript",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-10-13T11:15:03Z",
+          "database": "none",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [
+            "Railway"
+          ],
+          "deploy": [
+            "single-binary",
+            "Docker",
+            "Helm",
+            "Kubernetes"
+          ],
+          "footprintConfidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": "Zendesk",
+      "slug": "zendesk",
+      "category": "Helpdesk / support",
+      "page": "https://selfhostscore.com/alternatives/zendesk/",
+      "alternatives": [
+        {
+          "name": "Chatwoot",
+          "github": "chatwoot/chatwoot",
+          "homepage": "https://www.chatwoot.com",
+          "description": "Omnichannel support + live chat; modern Intercom/Zendesk alternative.",
+          "healthScore": 99,
+          "stars": 37746,
+          "language": "Ruby",
+          "license": null,
+          "lastCommit": "2026-10-13T10:59:59Z",
+          "database": "PostgreSQL",
+          "minRamMB": 4096,
+          "arm64": false,
+          "oneClick": [
+            "DigitalOcean",
+            "Heroku"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Helm",
+            "Kubernetes",
+            "bare-metal",
+            "Heroku"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "FreeScout",
+          "github": "freescout-help-desk/freescout",
+          "homepage": "https://freescout.net",
+          "description": "Lightweight Help Scout-style shared-inbox helpdesk on LAMP.",
+          "healthScore": 90,
+          "stars": 4594,
+          "language": "PHP",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-10-13T05:46:27Z",
+          "database": "MySQL/MariaDB",
+          "minRamMB": 1024,
+          "arm64": true,
+          "oneClick": [
+            "PikaPods",
+            "Cloudron"
+          ],
+          "deploy": [
+            "bare-metal (PHP/MySQL, manual install script)",
+            "Docker",
+            "docker-compose",
+            "Softaculous/auto-installer"
+          ],
+          "footprintConfidence": "medium"
+        },
+        {
+          "name": "Zammad",
+          "github": "zammad/zammad",
+          "homepage": "https://zammad.com",
+          "description": "Full-featured helpdesk with email/chat/social and a strong API.",
+          "healthScore": 71,
+          "stars": 6009,
+          "language": "Ruby",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-10-13T10:46:05Z",
+          "database": "PostgreSQL",
+          "minRamMB": 4096,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Kubernetes/Helm",
+            "DEB/RPM packages",
+            "bare-metal (source)"
+          ],
+          "footprintConfidence": "high"
+        }
+      ]
+    },
+    {
+      "name": "Google Analytics",
+      "slug": "google-analytics",
+      "category": "Web analytics",
+      "page": "https://selfhostscore.com/alternatives/google-analytics/",
+      "alternatives": [
+        {
+          "name": "Umami",
+          "github": "umami-software/umami",
+          "homepage": "https://umami.is",
+          "description": "Simple, fast, privacy-focused analytics; tiny footprint.",
+          "healthScore": 99,
+          "stars": 39346,
+          "language": "TypeScript",
+          "license": "MIT",
+          "lastCommit": "2026-10-13T06:39:24Z",
+          "database": "PostgreSQL",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [
+            "Railway",
+            "DigitalOcean",
+            "Coolify",
+            "Fly.io",
+            "Heroku",
+            "Vercel",
+            "Netlify",
+            "PikaPods"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "bare-metal",
+            "Helm"
+          ],
+          "footprintConfidence": "medium"
+        },
+        {
+          "name": "PostHog",
+          "github": "PostHog/posthog",
+          "homepage": "https://posthog.com",
+          "description": "Product analytics + session replay + flags; self-host the suite.",
+          "healthScore": 97,
+          "stars": 40254,
+          "language": "Python",
+          "license": null,
+          "lastCommit": "2026-10-13T11:17:03Z",
+          "database": "PostgreSQL + ClickHouse",
+          "minRamMB": 4096,
+          "arm64": true,
+          "oneClick": [
+            "Railway"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Plausible",
+          "github": "plausible/analytics",
+          "homepage": "https://plausible.io",
+          "description": "Lightweight, cookieless, privacy-friendly analytics.",
+          "healthScore": 93,
+          "stars": 29387,
+          "language": "Elixir",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-10-13T10:55:25Z",
+          "database": "PostgreSQL + ClickHouse",
+          "minRamMB": 2048,
+          "arm64": true,
+          "oneClick": [
+            "DigitalOcean",
+            "Coolify",
+            "Railway",
+            "PikaPods",
+            "CapRover"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose"
+          ],
+          "footprintConfidence": "high"
+        }
+      ]
+    },
+    {
+      "name": "DocuSign",
+      "slug": "docusign",
+      "category": "E-signature",
+      "page": "https://selfhostscore.com/alternatives/docusign/",
+      "alternatives": [
+        {
+          "name": "Documenso",
+          "github": "documenso/documenso",
+          "homepage": "https://documenso.com",
+          "description": "The open-source DocuSign alternative; modern signing flow + API.",
+          "healthScore": 95,
+          "stars": 15403,
+          "language": "TypeScript",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-10-13T10:10:37Z",
+          "database": "PostgreSQL",
+          "minRamMB": 1024,
+          "arm64": true,
+          "oneClick": [
+            "Railway"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Kubernetes"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Docuseal",
+          "github": "docusealco/docuseal",
+          "homepage": "https://www.docuseal.com",
+          "description": "Lightweight document signing with a simple builder; runs on SQLite.",
+          "healthScore": 95,
+          "stars": 18702,
+          "language": "Ruby",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-10-12T12:39:51Z",
+          "database": "PostgreSQL",
+          "minRamMB": 1024,
+          "arm64": true,
+          "oneClick": [
+            "Railway",
+            "Render",
+            "DigitalOcean",
+            "Heroku"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "OpenSign",
+          "github": "OpenSignLabs/OpenSign",
+          "homepage": "https://www.opensignlabs.com",
+          "description": "Open-source e-sign with templates, audit trails and self-host.",
+          "healthScore": 89,
+          "stars": 7094,
+          "language": "JavaScript",
+          "license": null,
+          "lastCommit": "2026-08-21T12:29:09Z",
+          "database": "MongoDB",
+          "minRamMB": 2048,
+          "arm64": true,
+          "oneClick": [
+            "DigitalOcean"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose"
+          ],
+          "footprintConfidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": "1Password",
+      "slug": "1password",
+      "category": "Password manager",
+      "page": "https://selfhostscore.com/alternatives/1password/",
+      "alternatives": [
+        {
+          "name": "Vaultwarden",
+          "github": "dani-garcia/vaultwarden",
+          "homepage": "https://github.com/dani-garcia/vaultwarden",
+          "description": "Lightweight Bitwarden-compatible server in Rust; tiny footprint.",
+          "healthScore": 98,
+          "stars": 68957,
+          "language": "Rust",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-10-10T17:58:41Z",
+          "database": "SQLite",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [
+            "PikaPods"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Podman",
+            "systemd service",
+            "single-binary (pre-built binaries)",
+            "bare-metal"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Passbolt",
+          "github": "passbolt/passbolt_api",
+          "homepage": "https://www.passbolt.com",
+          "description": "Team password manager built for collaboration and GPG-based sharing.",
+          "healthScore": 90,
+          "stars": 6161,
+          "language": "PHP",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-10-08T15:20:04Z",
+          "database": "MariaDB/MySQL",
+          "minRamMB": 2048,
+          "arm64": true,
+          "oneClick": [
+            "DigitalOcean"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Helm",
+            "bare-metal"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Padloc",
+          "github": "padloc/padloc",
+          "homepage": "https://padloc.app",
+          "description": "Modern open-source password manager with a clean UI.",
+          "healthScore": 27,
+          "stars": 2929,
+          "language": "JavaScript",
+          "license": "AGPL-3.0",
+          "lastCommit": "2025-03-29T04:40:17Z",
+          "database": "LevelDB",
+          "minRamMB": 512,
+          "arm64": false,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose"
+          ],
+          "footprintConfidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": "Loom",
+      "slug": "loom",
+      "category": "Screen recording",
+      "page": "https://selfhostscore.com/alternatives/loom/",
+      "alternatives": [
+        {
+          "name": "Cap",
+          "github": "CapSoftware/Cap",
+          "homepage": "https://cap.so",
+          "description": "Open-source Loom alternative; record, share, self-host the web app.",
+          "healthScore": 95,
+          "stars": 23266,
+          "language": "Rust",
+          "license": null,
+          "lastCommit": "2026-10-13T11:14:35Z",
+          "database": "MySQL",
+          "minRamMB": 1024,
+          "arm64": true,
+          "oneClick": [
+            "Railway",
+            "Coolify"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Coolify",
+            "Railway"
+          ],
+          "footprintConfidence": "medium"
+        },
+        {
+          "name": "Screenity",
+          "github": "alyssaxuu/screenity",
+          "homepage": "https://screenity.io",
+          "description": "Privacy-first screen recorder browser extension; no server, no limits.",
+          "healthScore": 95,
+          "stars": 18776,
+          "language": "JavaScript",
+          "license": "GPL-3.0",
+          "lastCommit": "2026-10-05T14:17:23Z",
+          "database": "none",
+          "minRamMB": null,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "browser-extension"
+          ],
+          "footprintConfidence": "high"
+        }
+      ]
+    },
+    {
+      "name": "Mailchimp",
+      "slug": "mailchimp",
+      "category": "Email marketing",
+      "page": "https://selfhostscore.com/alternatives/mailchimp/",
+      "alternatives": [
+        {
+          "name": "Listmonk",
+          "github": "knadh/listmonk",
+          "homepage": "https://listmonk.app",
+          "description": "Blazing-fast self-hosted newsletter + mailing-list manager (single binary).",
+          "healthScore": 95,
+          "stars": 23771,
+          "language": "Go",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-10-12T02:30:31Z",
+          "database": "PostgreSQL",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [
+            "PikaPods",
+            "Railway"
+          ],
+          "deploy": [
+            "single-binary",
+            "Docker",
+            "docker-compose",
+            "Helm",
+            "bare-metal",
+            "from-source"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Mautic",
+          "github": "mautic/mautic",
+          "homepage": "https://www.mautic.org",
+          "description": "Full marketing-automation suite: campaigns, segments, landing pages.",
+          "healthScore": 94,
+          "stars": 10754,
+          "language": "PHP",
+          "license": null,
+          "lastCommit": "2026-10-13T10:48:51Z",
+          "database": "MySQL/MariaDB",
+          "minRamMB": 2048,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Composer",
+            "zip-package",
+            "bare-metal",
+            "DDEV"
+          ],
+          "footprintConfidence": "medium"
+        },
+        {
+          "name": "phpList",
+          "github": "phpList/phplist3",
+          "homepage": "https://www.phplist.org",
+          "description": "Veteran open-source newsletter manager; runs on cheap LAMP.",
+          "healthScore": 85,
+          "stars": 877,
+          "language": "PHP",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-09-24T19:51:33Z",
+          "database": "MySQL/MariaDB",
+          "minRamMB": 512,
+          "arm64": false,
+          "oneClick": [],
+          "deploy": [
+            "bare-metal",
+            "Docker",
+            "docker-compose"
+          ],
+          "footprintConfidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": "Intercom",
+      "slug": "intercom",
+      "category": "Live chat / customer messaging",
+      "page": "https://selfhostscore.com/alternatives/intercom/",
+      "alternatives": [
+        {
+          "name": "Chatwoot",
+          "github": "chatwoot/chatwoot",
+          "homepage": "https://www.chatwoot.com",
+          "description": "Omnichannel live chat + shared inbox; the leading Intercom alternative.",
+          "healthScore": 99,
+          "stars": 37746,
+          "language": "Ruby",
+          "license": null,
+          "lastCommit": "2026-10-13T10:59:59Z",
+          "database": "PostgreSQL",
+          "minRamMB": 4096,
+          "arm64": false,
+          "oneClick": [
+            "DigitalOcean",
+            "Heroku"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Helm",
+            "Kubernetes",
+            "bare-metal",
+            "Heroku"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Chaskiq",
+          "github": "chaskiq/chaskiq",
+          "homepage": "https://chaskiq.io",
+          "description": "Full conversational marketing/support platform; campaigns + bots.",
+          "healthScore": 56,
+          "stars": 3573,
+          "language": "TypeScript",
+          "license": null,
+          "lastCommit": "2026-06-30T17:20:11Z",
+          "database": "PostgreSQL",
+          "minRamMB": 2048,
+          "arm64": false,
+          "oneClick": [
+            "Heroku"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Heroku",
+            "bare-metal"
+          ],
+          "footprintConfidence": "medium"
+        },
+        {
+          "name": "Papercups",
+          "github": "papercups-io/papercups",
+          "homepage": "https://papercups.io",
+          "description": "Open-source live chat in Elixir; lightweight and embeddable.",
+          "healthScore": 30,
+          "stars": 6115,
+          "language": "Elixir",
+          "license": "MIT",
+          "lastCommit": "2024-02-15T05:21:47Z",
+          "database": "PostgreSQL",
+          "minRamMB": 1024,
+          "arm64": false,
+          "oneClick": [
+            "Heroku"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Heroku",
+            "bare-metal"
+          ],
+          "footprintConfidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": "Jira",
+      "slug": "jira",
+      "category": "Issue tracking / project management",
+      "page": "https://selfhostscore.com/alternatives/jira/",
+      "alternatives": [
+        {
+          "name": "Plane",
+          "github": "makeplane/plane",
+          "homepage": "https://plane.so",
+          "description": "Modern open-source Jira/Linear alternative: issues, cycles, modules.",
+          "healthScore": 99,
+          "stars": 60759,
+          "language": "TypeScript",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-10-13T10:04:35Z",
+          "database": "PostgreSQL",
+          "minRamMB": 4096,
+          "arm64": true,
+          "oneClick": [
+            "Coolify",
+            "DigitalOcean"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Docker Swarm",
+            "Kubernetes/Helm",
+            "Podman"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "OpenProject",
+          "github": "opf/openproject",
+          "homepage": "https://www.openproject.org",
+          "description": "Mature PM with Gantt, agile boards, time tracking and BIM.",
+          "healthScore": 95,
+          "stars": 16404,
+          "language": "Ruby",
+          "license": "GPL-3.0",
+          "lastCommit": "2026-10-13T11:03:29Z",
+          "database": "PostgreSQL",
+          "minRamMB": 4096,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Kubernetes/Helm",
+            "bare-metal (packaged .deb/.rpm)",
+            "manual"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Redmine",
+          "github": "redmine/redmine",
+          "homepage": "https://www.redmine.org",
+          "description": "Long-standing flexible issue tracker; tiny footprint, many plugins.",
+          "healthScore": 73,
+          "stars": 6045,
+          "language": "Ruby",
+          "license": null,
+          "lastCommit": "2026-10-13T05:40:08Z",
+          "database": "PostgreSQL",
+          "minRamMB": 1024,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "bare-metal (Ruby on Rails manual install)",
+            "Docker",
+            "docker-compose"
+          ],
+          "footprintConfidence": "medium"
+        },
+        {
+          "name": "Taiga",
+          "github": "taigaio/taiga",
+          "homepage": "https://www.taiga.io",
+          "description": "Agile project management for Scrum and Kanban teams.",
+          "healthScore": 27,
+          "stars": 574,
+          "language": "Python",
+          "license": "MPL-2.0",
+          "lastCommit": "2023-12-13T09:37:30Z",
+          "database": "PostgreSQL",
+          "minRamMB": 1024,
+          "arm64": false,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "bare-metal (from source)"
+          ],
+          "footprintConfidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": "Dropbox",
+      "slug": "dropbox",
+      "category": "File storage / sync",
+      "page": "https://selfhostscore.com/alternatives/dropbox/",
+      "alternatives": [
+        {
+          "name": "Nextcloud",
+          "github": "nextcloud/server",
+          "homepage": "https://nextcloud.com",
+          "description": "Full self-hosted cloud: files, calendar, contacts, office and apps.",
+          "healthScore": 98,
+          "stars": 37084,
+          "language": "PHP",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-10-13T10:55:31Z",
+          "database": "MariaDB/MySQL (PostgreSQL also recommended; SQLite for tiny/test only)",
+          "minRamMB": 128,
+          "arm64": true,
+          "oneClick": [
+            "DigitalOcean",
+            "PikaPods"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Helm (AIO Helm chart)",
+            "Snap (community/AIO VM)",
+            "bare-metal (LAMP/manual archive)"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "ownCloud",
+          "github": "owncloud/core",
+          "homepage": "https://owncloud.com",
+          "description": "The original self-hosted file-sync platform for teams.",
+          "healthScore": 93,
+          "stars": 8833,
+          "language": "PHP",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-10-13T07:17:24Z",
+          "database": "MariaDB (recommended; MySQL 8+/PostgreSQL also supported; SQLite not for production)",
+          "minRamMB": 128,
+          "arm64": true,
+          "oneClick": [
+            "PikaPods"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "bare-metal (LAMP/manual archive)"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Seafile",
+          "github": "haiwen/seafile",
+          "homepage": "https://www.seafile.com",
+          "description": "High-performance file sync with reliable client and block storage.",
+          "healthScore": 69,
+          "stars": 15325,
+          "language": "C",
+          "license": null,
+          "lastCommit": "2026-10-10T03:24:58Z",
+          "database": "MySQL/MariaDB (required for Docker/production install; SQLite only for minimal non-Docker setups)",
+          "minRamMB": 1024,
+          "arm64": false,
+          "oneClick": [
+            "PikaPods"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "bare-metal (server binary package)"
+          ],
+          "footprintConfidence": "high"
+        }
+      ]
+    },
+    {
+      "name": "Looker",
+      "slug": "looker",
+      "category": "Business intelligence / dashboards",
+      "page": "https://selfhostscore.com/alternatives/looker/",
+      "alternatives": [
+        {
+          "name": "Metabase",
+          "github": "metabase/metabase",
+          "homepage": "https://www.metabase.com",
+          "description": "The easiest open-source BI; ask questions, build dashboards fast.",
+          "healthScore": 99,
+          "stars": 49643,
+          "language": "Clojure",
+          "license": null,
+          "lastCommit": "2026-10-13T11:05:06Z",
+          "database": "PostgreSQL (production; ships with embedded H2 file DB by default but Postgres is emphatically recommended)",
+          "minRamMB": 1024,
+          "arm64": false,
+          "oneClick": [
+            "DigitalOcean",
+            "Render",
+            "Railway"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "JAR (single-binary/bare-metal)",
+            "Podman",
+            "systemd",
+            "Azure Web Apps",
+            "Metabase Cloud"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Redash",
+          "github": "getredash/redash",
+          "homepage": "https://redash.io",
+          "description": "Connect, query and visualize any data source; share dashboards.",
+          "healthScore": 98,
+          "stars": 28833,
+          "language": "Python",
+          "license": "BSD-2-Clause",
+          "lastCommit": "2026-10-08T12:36:26Z",
+          "database": "PostgreSQL (required, v9.6+; also requires Redis v3+)",
+          "minRamMB": 4096,
+          "arm64": false,
+          "oneClick": [
+            "Railway"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "setup script (bare-metal Linux)",
+            "AWS EC2 AMI",
+            "Google Compute Engine image"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Apache Superset",
+          "github": "apache/superset",
+          "homepage": "https://superset.apache.org",
+          "description": "Powerful exploration + dashboards across 40+ databases.",
+          "healthScore": 97,
+          "stars": 75122,
+          "language": "Python",
+          "license": "Apache-2.0",
+          "lastCommit": "2026-10-13T10:27:36Z",
+          "database": "PostgreSQL (recommended metadata DB; bundled in docker-compose and Helm; PyPI install defaults to SQLite which is not recommended)",
+          "minRamMB": 4096,
+          "arm64": true,
+          "oneClick": [
+            "Railway"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Helm",
+            "Kubernetes",
+            "PyPI/pip (bare-metal Python)"
+          ],
+          "footprintConfidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": "Firebase",
+      "slug": "firebase",
+      "category": "Backend-as-a-service (BaaS)",
+      "page": "https://selfhostscore.com/alternatives/firebase/",
+      "alternatives": [
+        {
+          "name": "Supabase",
+          "github": "supabase/supabase",
+          "homepage": "https://supabase.com",
+          "description": "Postgres-based Firebase alternative: auth, realtime, storage, edge fns.",
+          "healthScore": 100,
+          "stars": 111445,
+          "language": "TypeScript",
+          "license": "Apache-2.0",
+          "lastCommit": "2026-10-13T10:52:04Z",
+          "database": "PostgreSQL",
+          "minRamMB": 4096,
+          "arm64": true,
+          "oneClick": [
+            "DigitalOcean"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Appwrite",
+          "github": "appwrite/appwrite",
+          "homepage": "https://appwrite.io",
+          "description": "Self-hosted backend: auth, DB, storage, functions and messaging.",
+          "healthScore": 99,
+          "stars": 57653,
+          "language": "TypeScript",
+          "license": "BSD-3-Clause",
+          "lastCommit": "2026-10-13T11:17:09Z",
+          "database": "MongoDB",
+          "minRamMB": 4096,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "PocketBase",
+          "github": "pocketbase/pocketbase",
+          "homepage": "https://pocketbase.io",
+          "description": "Single-binary backend (SQLite + auth + admin UI); featherweight.",
+          "healthScore": 98,
+          "stars": 61391,
+          "language": "Go",
+          "license": "MIT",
+          "lastCommit": "2026-10-12T15:45:39Z",
+          "database": "SQLite",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "single-binary",
+            "bare-metal",
+            "Docker"
+          ],
+          "footprintConfidence": "medium"
+        },
+        {
+          "name": "Nhost",
+          "github": "nhost/nhost",
+          "homepage": "https://nhost.io",
+          "description": "Postgres + GraphQL backend with auth, storage and functions.",
+          "healthScore": 92,
+          "stars": 9356,
+          "language": "TypeScript",
+          "license": "MIT",
+          "lastCommit": "2026-10-13T08:29:11Z",
+          "database": "PostgreSQL (with Hasura GraphQL; MinIO for object storage)",
+          "minRamMB": 4096,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "docker-compose"
+          ],
+          "footprintConfidence": "low"
+        }
+      ]
+    },
+    {
+      "name": "Algolia",
+      "slug": "algolia",
+      "category": "Search",
+      "page": "https://selfhostscore.com/alternatives/algolia/",
+      "alternatives": [
+        {
+          "name": "Meilisearch",
+          "github": "meilisearch/meilisearch",
+          "homepage": "https://www.meilisearch.com",
+          "description": "Lightning-fast, typo-tolerant search; single binary, easy to host.",
+          "healthScore": 98,
+          "stars": 59557,
+          "language": "Rust",
+          "license": null,
+          "lastCommit": "2026-10-13T08:46:22Z",
+          "database": "none",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [
+            "Railway"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Helm",
+            "Kubernetes",
+            "single-binary",
+            "install-script (curl)",
+            "Homebrew",
+            "APT",
+            "source (cargo/Rust)"
+          ],
+          "footprintConfidence": "medium"
+        },
+        {
+          "name": "Typesense",
+          "github": "typesense/typesense",
+          "homepage": "https://typesense.org",
+          "description": "Open-source instant-search engine; an Algolia drop-in.",
+          "healthScore": 90,
+          "stars": 26872,
+          "language": "C++",
+          "license": "GPL-3.0",
+          "lastCommit": "2026-10-13T05:46:12Z",
+          "database": "none",
+          "minRamMB": 256,
+          "arm64": true,
+          "oneClick": [
+            "Railway"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Kubernetes",
+            "single-binary",
+            "DEB package",
+            "RPM package",
+            "Homebrew",
+            "Windows (WSL)"
+          ],
+          "footprintConfidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": "Bitly",
+      "slug": "bitly",
+      "category": "URL shortener",
+      "page": "https://selfhostscore.com/alternatives/bitly/",
+      "alternatives": [
+        {
+          "name": "YOURLS",
+          "github": "YOURLS/YOURLS",
+          "homepage": "https://yourls.org",
+          "description": "Your Own URL Shortener; tiny PHP app with plugins and stats.",
+          "healthScore": 94,
+          "stars": 12262,
+          "language": "PHP",
+          "license": "MIT",
+          "lastCommit": "2026-10-12T14:22:31Z",
+          "database": "MySQL/MariaDB",
+          "minRamMB": 256,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "bare-metal"
+          ],
+          "footprintConfidence": "medium"
+        },
+        {
+          "name": "Kutt",
+          "github": "thedevs-network/kutt",
+          "homepage": "https://kutt.it",
+          "description": "Modern URL shortener with custom domains and a clean UI.",
+          "healthScore": 92,
+          "stars": 11154,
+          "language": "JavaScript",
+          "license": "MIT",
+          "lastCommit": "2026-09-03T06:31:18Z",
+          "database": "SQLite (default); PostgreSQL or MySQL/MariaDB optional",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "bare-metal"
+          ],
+          "footprintConfidence": "medium"
+        },
+        {
+          "name": "Shlink",
+          "github": "shlinkio/shlink",
+          "homepage": "https://shlink.io",
+          "description": "Self-hosted URL shortener with a REST API and real-time stats.",
+          "healthScore": 90,
+          "stars": 5336,
+          "language": "PHP",
+          "license": "MIT",
+          "lastCommit": "2026-10-12T22:04:12Z",
+          "database": "MySQL/MariaDB (PostgreSQL also recommended; SQLite and MSSQL supported)",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "bare-metal"
+          ],
+          "footprintConfidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "slug": "zoom",
+      "category": "Video meetings",
+      "page": "https://selfhostscore.com/alternatives/zoom/",
+      "alternatives": [
+        {
+          "name": "Jitsi Meet",
+          "github": "jitsi/jitsi-meet",
+          "homepage": "https://jitsi.org",
+          "description": "Secure, scalable video conferences you fully self-host.",
+          "healthScore": 99,
+          "stars": 30074,
+          "language": "TypeScript",
+          "license": "Apache-2.0",
+          "lastCommit": "2026-10-13T08:41:44Z",
+          "database": "none",
+          "minRamMB": 2048,
+          "arm64": true,
+          "oneClick": [
+            "DigitalOcean"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "bare-metal",
+            "Debian/Ubuntu apt packages"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "BigBlueButton",
+          "github": "bigbluebutton/bigbluebutton",
+          "homepage": "https://bigbluebutton.org",
+          "description": "Virtual-classroom platform with whiteboard, breakouts and recording.",
+          "healthScore": 95,
+          "stars": 9240,
+          "language": "JavaScript",
+          "license": "LGPL-3.0",
+          "lastCommit": "2026-10-12T13:04:06Z",
+          "database": "PostgreSQL",
+          "minRamMB": 16384,
+          "arm64": false,
+          "oneClick": [],
+          "deploy": [
+            "bare-metal",
+            "Docker"
+          ],
+          "footprintConfidence": "high"
+        }
+      ]
+    },
+    {
+      "name": "GitHub",
+      "slug": "github",
+      "category": "Git hosting / code collaboration",
+      "page": "https://selfhostscore.com/alternatives/github/",
+      "alternatives": [
+        {
+          "name": "Gitea",
+          "github": "go-gitea/gitea",
+          "homepage": "https://gitea.io",
+          "description": "Lightweight self-hosted Git service with PRs, issues and actions.",
+          "healthScore": 99,
+          "stars": 58466,
+          "language": "Go",
+          "license": "MIT",
+          "lastCommit": "2026-10-13T07:46:51Z",
+          "database": "SQLite (built-in; PostgreSQL/MySQL/MariaDB recommended for scale)",
+          "minRamMB": 1024,
+          "arm64": true,
+          "oneClick": [
+            "Railway",
+            "PikaPods",
+            "DigitalOcean"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "single-binary",
+            "bare-metal",
+            "Kubernetes",
+            "Helm",
+            "package-manager"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Gogs",
+          "github": "gogs/gogs",
+          "homepage": "https://gogs.io",
+          "description": "Painless, low-footprint self-hosted Git service.",
+          "healthScore": 97,
+          "stars": 47864,
+          "language": "Go",
+          "license": "MIT",
+          "lastCommit": "2026-09-12T20:28:48Z",
+          "database": "SQLite3 (built-in; PostgreSQL/MySQL/MariaDB also supported)",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "single-binary",
+            "bare-metal",
+            "package-manager"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "OneDev",
+          "github": "theonedev/onedev",
+          "homepage": "https://onedev.io",
+          "description": "Git server with built-in CI/CD, kanban and code search.",
+          "healthScore": 93,
+          "stars": 15301,
+          "language": "Java",
+          "license": "MIT",
+          "lastCommit": "2026-10-13T06:51:09Z",
+          "database": "Embedded (HSQLDB by default; external PostgreSQL/MySQL/MariaDB supported)",
+          "minRamMB": 2048,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "bare-metal",
+            "Kubernetes"
+          ],
+          "footprintConfidence": "high"
+        }
+      ]
+    },
+    {
+      "name": "CircleCI",
+      "slug": "circleci",
+      "category": "CI/CD",
+      "page": "https://selfhostscore.com/alternatives/circleci/",
+      "alternatives": [
+        {
+          "name": "Woodpecker CI",
+          "github": "woodpecker-ci/woodpecker",
+          "homepage": "https://woodpecker-ci.org",
+          "description": "Simple, container-native CI engine; a community fork of Drone.",
+          "healthScore": 92,
+          "stars": 7996,
+          "language": "Go",
+          "license": "Apache-2.0",
+          "lastCommit": "2026-10-13T08:51:57Z",
+          "database": "SQLite (embedded default; PostgreSQL/MySQL optionally supported)",
+          "minRamMB": 200,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Helm",
+            "single-binary",
+            "DEB",
+            "RPM",
+            "bare-metal"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Drone",
+          "github": "harness/drone",
+          "homepage": "https://www.drone.io",
+          "description": "Container-native CI/CD platform configured as code.",
+          "healthScore": 92,
+          "stars": 38530,
+          "language": "Go",
+          "license": "Apache-2.0",
+          "lastCommit": "2026-10-13T10:57:42Z",
+          "database": "PostgreSQL (recommended; embedded SQLite is the zero-config default, MySQL also supported)",
+          "minRamMB": 1024,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Helm",
+            "Kubernetes"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Concourse",
+          "github": "concourse/concourse",
+          "homepage": "https://concourse-ci.org",
+          "description": "Pipeline-based CI with reproducible, isolated builds.",
+          "healthScore": 92,
+          "stars": 7915,
+          "language": "Go",
+          "license": "Apache-2.0",
+          "lastCommit": "2026-10-13T04:24:43Z",
+          "database": "PostgreSQL",
+          "minRamMB": 2048,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "docker-compose",
+            "helm",
+            "binary",
+            "bosh"
+          ],
+          "footprintConfidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": "Salesforce",
+      "slug": "salesforce",
+      "category": "CRM",
+      "page": "https://selfhostscore.com/alternatives/salesforce/",
+      "alternatives": [
+        {
+          "name": "Twenty",
+          "github": "twentyhq/twenty",
+          "homepage": "https://twenty.com",
+          "description": "Modern open-source CRM with a clean, customizable data model.",
+          "healthScore": 100,
+          "stars": 58274,
+          "language": "TypeScript",
+          "license": null,
+          "lastCommit": "2026-10-13T11:17:35Z",
+          "database": "PostgreSQL",
+          "minRamMB": 2048,
+          "arm64": true,
+          "oneClick": [
+            "Railway"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Kubernetes (manifests)",
+            "1-click install script"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Krayin",
+          "github": "krayin/laravel-crm",
+          "homepage": "https://krayincrm.com",
+          "description": "Laravel-based open-source CRM for SMBs.",
+          "healthScore": 95,
+          "stars": 24001,
+          "language": "PHP",
+          "license": "MIT",
+          "lastCommit": "2026-10-09T13:42:40Z",
+          "database": "MySQL",
+          "minRamMB": 4096,
+          "arm64": false,
+          "oneClick": [],
+          "deploy": [
+            "bare-metal",
+            "docker-compose"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "SuiteCRM",
+          "github": "salesagility/SuiteCRM",
+          "homepage": "https://suitecrm.com",
+          "description": "Full-featured enterprise CRM, a SugarCRM successor.",
+          "healthScore": 93,
+          "stars": 5794,
+          "language": "PHP",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-10-07T15:42:55Z",
+          "database": "MySQL/MariaDB",
+          "minRamMB": 2048,
+          "arm64": false,
+          "oneClick": [],
+          "deploy": [
+            "bare-metal",
+            "CLI installer",
+            "UI installer"
+          ],
+          "footprintConfidence": "medium"
+        },
+        {
+          "name": "EspoCRM",
+          "github": "espocrm/espocrm",
+          "homepage": "https://www.espocrm.com",
+          "description": "Fast, flexible CRM that runs on cheap LAMP.",
+          "healthScore": 90,
+          "stars": 3483,
+          "language": "PHP",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-10-12T11:00:01Z",
+          "database": "MySQL/MariaDB",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "install script",
+            "bare-metal"
+          ],
+          "footprintConfidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": "Doppler",
+      "slug": "doppler",
+      "category": "Secrets management",
+      "page": "https://selfhostscore.com/alternatives/doppler/",
+      "alternatives": [
+        {
+          "name": "Infisical",
+          "github": "Infisical/infisical",
+          "homepage": "https://infisical.com",
+          "description": "Open-source secrets manager with env sync and access controls.",
+          "healthScore": 97,
+          "stars": 29732,
+          "language": "TypeScript",
+          "license": null,
+          "lastCommit": "2026-10-13T10:10:49Z",
+          "database": "PostgreSQL (plus Redis required)",
+          "minRamMB": 4096,
+          "arm64": true,
+          "oneClick": [
+            "DigitalOcean",
+            "Coolify"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Helm/Kubernetes",
+            "AWS ECS (Fargate)",
+            "GCP GKE",
+            "Linux package (bare-metal)"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "OpenBao",
+          "github": "openbao/openbao",
+          "homepage": "https://openbao.org",
+          "description": "Community fork of HashiCorp Vault for secrets and encryption.",
+          "healthScore": 91,
+          "stars": 8412,
+          "language": "Go",
+          "license": "MPL-2.0",
+          "lastCommit": "2026-10-13T09:41:03Z",
+          "database": "none",
+          "minRamMB": 256,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "single-binary",
+            "Docker",
+            "Helm/Kubernetes",
+            "package managers (Homebrew, apt/deb, rpm, FreeBSD pkg)",
+            "source/bare-metal"
+          ],
+          "footprintConfidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": "LaunchDarkly",
+      "slug": "launchdarkly",
+      "category": "Feature flags",
+      "page": "https://selfhostscore.com/alternatives/launchdarkly/",
+      "alternatives": [
+        {
+          "name": "Unleash",
+          "github": "Unleash/unleash",
+          "homepage": "https://www.getunleash.io",
+          "description": "Enterprise-ready feature flag platform with SDKs for every stack.",
+          "healthScore": 93,
+          "stars": 13870,
+          "language": "TypeScript",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-10-13T11:16:25Z",
+          "database": "PostgreSQL",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [
+            "Coolify",
+            "DigitalOcean"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Helm",
+            "Node.js (bare-metal)"
+          ],
+          "footprintConfidence": "medium"
+        },
+        {
+          "name": "GrowthBook",
+          "github": "growthbook/growthbook",
+          "homepage": "https://www.growthbook.io",
+          "description": "Feature flags plus A/B testing on your own warehouse.",
+          "healthScore": 92,
+          "stars": 8496,
+          "language": "TypeScript",
+          "license": null,
+          "lastCommit": "2026-10-13T05:37:05Z",
+          "database": "MongoDB",
+          "minRamMB": 2048,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Helm",
+            "Kubernetes"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Flagsmith",
+          "github": "Flagsmith/flagsmith",
+          "homepage": "https://flagsmith.com",
+          "description": "Open-source feature flags + remote config across platforms.",
+          "healthScore": 90,
+          "stars": 6591,
+          "language": "Python",
+          "license": "BSD-3-Clause",
+          "lastCommit": "2026-10-13T11:07:15Z",
+          "database": "PostgreSQL",
+          "minRamMB": 2048,
+          "arm64": true,
+          "oneClick": [
+            "CapRover",
+            "Railway"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Helm",
+            "Kubernetes/OpenShift",
+            "bare-metal"
+          ],
+          "footprintConfidence": "high"
+        }
+      ]
+    },
+    {
+      "name": "Statuspage",
+      "slug": "statuspage",
+      "category": "Status page",
+      "page": "https://selfhostscore.com/alternatives/statuspage/",
+      "alternatives": [
+        {
+          "name": "Gatus",
+          "github": "TwiN/gatus",
+          "homepage": "https://gatus.io",
+          "description": "Developer-oriented health dashboard + status page in one binary.",
+          "healthScore": 93,
+          "stars": 12292,
+          "language": "Go",
+          "license": "Apache-2.0",
+          "lastCommit": "2026-10-07T23:37:31Z",
+          "database": "SQLite (recommended for persistence; default storage is in-memory, PostgreSQL also supported)",
+          "minRamMB": 64,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Helm",
+            "Kubernetes",
+            "single-binary"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Cachet",
+          "github": "cachethq/cachet",
+          "homepage": "https://cachethq.io",
+          "description": "Beautiful open-source status page system.",
+          "healthScore": 69,
+          "stars": 15255,
+          "language": "PHP",
+          "license": null,
+          "lastCommit": "2026-10-12T20:56:07Z",
+          "database": "PostgreSQL (official docker-compose default; MySQL/MariaDB 10.7+, SQLite, SQL Server also supported)",
+          "minRamMB": 1024,
+          "arm64": false,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "bare-metal"
+          ],
+          "footprintConfidence": "medium"
+        },
+        {
+          "name": "Statping-ng",
+          "github": "statping-ng/statping-ng",
+          "homepage": "https://statping-ng.github.io",
+          "description": "Status page + uptime monitor with notifications.",
+          "healthScore": 28,
+          "stars": 1991,
+          "language": "Go",
+          "license": "GPL-3.0",
+          "lastCommit": "2025-06-04T20:21:10Z",
+          "database": "SQLite (default, embedded file; PostgreSQL and MySQL also supported)",
+          "minRamMB": 64,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "single-binary",
+            "bare-metal"
+          ],
+          "footprintConfidence": "high"
+        }
+      ]
+    },
+    {
+      "name": "Google Photos",
+      "slug": "google-photos",
+      "category": "Photo storage / management",
+      "page": "https://selfhostscore.com/alternatives/google-photos/",
+      "alternatives": [
+        {
+          "name": "Immich",
+          "github": "immich-app/immich",
+          "homepage": "https://immich.app",
+          "description": "High-performance self-hosted photo/video backup with mobile apps.",
+          "healthScore": 99,
+          "stars": 116135,
+          "language": "TypeScript",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-10-13T11:15:48Z",
+          "database": "PostgreSQL (with VectorChord/pgvector extension for vector search)",
+          "minRamMB": 6144,
+          "arm64": true,
+          "oneClick": [
+            "DigitalOcean",
+            "Vultr"
+          ],
+          "deploy": [
+            "Docker Compose",
+            "Kubernetes (official Helm chart)",
+            "Portainer",
+            "Unraid",
+            "install script (experimental)"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "PhotoPrism",
+          "github": "photoprism/photoprism",
+          "homepage": "https://www.photoprism.app",
+          "description": "AI-powered photo app for browsing and organizing your library.",
+          "healthScore": 98,
+          "stars": 40293,
+          "language": "Go",
+          "license": null,
+          "lastCommit": "2026-10-13T10:42:51Z",
+          "database": "MariaDB (10.5.12+ recommended for production; SQLite supported for small/test libraries)",
+          "minRamMB": 4096,
+          "arm64": true,
+          "oneClick": [
+            "PikaPods",
+            "DigitalOcean",
+            "Railway"
+          ],
+          "deploy": [
+            "Docker Compose",
+            "Docker",
+            "Portainer",
+            "Linux packages (bare-metal)",
+            "Kubernetes"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "LibrePhotos",
+          "github": "LibrePhotos/librephotos",
+          "homepage": "https://librephotos.com",
+          "description": "Self-hosted photo management with face/object recognition.",
+          "healthScore": 91,
+          "stars": 8105,
+          "language": "Python",
+          "license": "MIT",
+          "lastCommit": "2026-10-13T11:17:38Z",
+          "database": "PostgreSQL",
+          "minRamMB": 4096,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Single Container (docker)",
+            "Standard Docker (docker-compose)",
+            "Unraid"
+          ],
+          "footprintConfidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": "Evernote",
+      "slug": "evernote",
+      "category": "Note-taking",
+      "page": "https://selfhostscore.com/alternatives/evernote/",
+      "alternatives": [
+        {
+          "name": "Joplin",
+          "github": "laurent22/joplin",
+          "homepage": "https://joplinapp.org",
+          "description": "Open-source notes + to-dos with end-to-end encrypted sync.",
+          "healthScore": 99,
+          "stars": 56714,
+          "language": "TypeScript",
+          "license": null,
+          "lastCommit": "2026-10-13T08:59:42Z",
+          "database": "PostgreSQL (SQLite by default for testing; PostgreSQL recommended for production)",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [
+            "Coolify",
+            "Railway",
+            "PikaPods"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose"
+          ],
+          "footprintConfidence": "medium"
+        },
+        {
+          "name": "Notesnook",
+          "github": "streetwriters/notesnook",
+          "homepage": "https://notesnook.com",
+          "description": "Privacy-first, end-to-end encrypted note app, self-hostable sync.",
+          "healthScore": 93,
+          "stars": 14751,
+          "language": "TypeScript",
+          "license": "GPL-3.0",
+          "lastCommit": "2026-10-13T08:40:55Z",
+          "database": "MongoDB (replica set) for metadata + MinIO/S3-compatible object storage for attachments",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "docker-compose"
+          ],
+          "footprintConfidence": "low"
+        },
+        {
+          "name": "Trilium Notes",
+          "github": "TriliumNext/Notes",
+          "homepage": "https://github.com/TriliumNext/Notes",
+          "description": "Hierarchical personal knowledge base with a self-host server.",
+          "healthScore": 0,
+          "stars": 2927,
+          "language": "TypeScript",
+          "license": "AGPL-3.0",
+          "lastCommit": "2025-06-24T20:24:23Z",
+          "database": "SQLite (embedded document.db file; no external database)",
+          "minRamMB": 256,
+          "arm64": true,
+          "oneClick": [
+            "Coolify",
+            "PikaPods"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "bare-metal",
+            "single-binary"
+          ],
+          "footprintConfidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": "Pocket",
+      "slug": "pocket",
+      "category": "Bookmarks / read-later",
+      "page": "https://selfhostscore.com/alternatives/pocket/",
+      "alternatives": [
+        {
+          "name": "Karakeep",
+          "github": "karakeep-app/karakeep",
+          "homepage": "https://karakeep.app",
+          "description": "Bookmark-everything app with AI tagging (formerly Hoarder).",
+          "healthScore": 96,
+          "stars": 29623,
+          "language": "TypeScript",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-10-13T09:48:14Z",
+          "database": "SQLite (primary app DB in DATA_DIR via Drizzle) + Meilisearch (full-text search engine)",
+          "minRamMB": 2048,
+          "arm64": true,
+          "oneClick": [
+            "PikaPods",
+            "TrueNAS",
+            "Unraid"
+          ],
+          "deploy": [
+            "docker",
+            "docker-compose",
+            "kubernetes"
+          ],
+          "footprintConfidence": "low"
+        },
+        {
+          "name": "Linkding",
+          "github": "sissbruecker/linkding",
+          "homepage": "https://linkding.link",
+          "description": "Minimal, fast self-hosted bookmark manager.",
+          "healthScore": 93,
+          "stars": 11297,
+          "language": "Python",
+          "license": "MIT",
+          "lastCommit": "2026-10-01T17:49:41Z",
+          "database": "SQLite (default); PostgreSQL supported",
+          "minRamMB": 256,
+          "arm64": true,
+          "oneClick": [
+            "PikaPods",
+            "CloudBreak"
+          ],
+          "deploy": [
+            "docker",
+            "docker-compose"
+          ],
+          "footprintConfidence": "low"
+        },
+        {
+          "name": "Wallabag",
+          "github": "wallabag/wallabag",
+          "homepage": "https://wallabag.org",
+          "description": "Self-hosted read-it-later with clean article extraction.",
+          "healthScore": 77,
+          "stars": 13006,
+          "language": "PHP",
+          "license": "MIT",
+          "lastCommit": "2026-10-13T06:32:47Z",
+          "database": "SQLite (default in Docker); MySQL/MariaDB and PostgreSQL also supported (via PDO)",
+          "minRamMB": 512,
+          "arm64": false,
+          "oneClick": [
+            "PikaPods"
+          ],
+          "deploy": [
+            "docker-compose",
+            "manual (Composer/source, PHP >= 7.4)"
+          ],
+          "footprintConfidence": "low"
+        }
+      ]
+    },
+    {
+      "name": "NextDNS",
+      "slug": "nextdns",
+      "category": "DNS / network ad-blocking",
+      "page": "https://selfhostscore.com/alternatives/nextdns/",
+      "alternatives": [
+        {
+          "name": "Pi-hole",
+          "github": "pi-hole/pi-hole",
+          "homepage": "https://pi-hole.net",
+          "description": "The classic network-wide DNS sinkhole ad blocker.",
+          "healthScore": 98,
+          "stars": 61258,
+          "language": "Shell",
+          "license": null,
+          "lastCommit": "2026-10-11T14:38:48Z",
+          "database": "none",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "install-script",
+            "bare-metal",
+            "Docker",
+            "docker-compose"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "AdGuard Home",
+          "github": "AdguardTeam/AdGuardHome",
+          "homepage": "https://adguard.com/adguard-home/overview.html",
+          "description": "Network-wide ad/tracker blocking DNS server with a clean UI.",
+          "healthScore": 97,
+          "stars": 37391,
+          "language": "TypeScript",
+          "license": "GPL-3.0",
+          "lastCommit": "2026-10-08T09:17:20Z",
+          "database": "Embedded/file-based only - no external DBMS. Uses BoltDB (bbolt) for stats.db, a JSON file (querylog.json) for the query log, and a YAML file (AdGuardHome.yaml) for config. No SQLite/MySQL/Postgres required.",
+          "minRamMB": 256,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "binary",
+            "docker",
+            "snap"
+          ],
+          "footprintConfidence": "low"
+        },
+        {
+          "name": "Technitium DNS",
+          "github": "TechnitiumSoftware/DnsServer",
+          "homepage": "https://technitium.com/dns/",
+          "description": "Full authoritative + recursive DNS server with blocking.",
+          "healthScore": 92,
+          "stars": 10097,
+          "language": "C#",
+          "license": "GPL-3.0",
+          "lastCommit": "2026-10-11T15:21:50Z",
+          "database": "File-based for core data - server config and zone files stored under a 'config' folder (/etc/dns in Docker). Query logging is an OPTIONAL app: 'Query Logs (Sqlite)' uses SQLite, with MySQL and SQL Server also available as optional log-app backends. No external database required to run the DNS server itself.",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "binary",
+            "docker",
+            "installer-script",
+            "portable-dotnet"
+          ],
+          "footprintConfidence": "low"
+        }
+      ]
+    },
+    {
+      "name": "Backblaze",
+      "slug": "backblaze",
+      "category": "Backup",
+      "page": "https://selfhostscore.com/alternatives/backblaze/",
+      "alternatives": [
+        {
+          "name": "Restic",
+          "github": "restic/restic",
+          "homepage": "https://restic.net",
+          "description": "Fast, secure, deduplicating backup CLI to many backends.",
+          "healthScore": 95,
+          "stars": 36543,
+          "language": "Go",
+          "license": "BSD-2-Clause",
+          "lastCommit": "2026-10-11T20:17:42Z",
+          "database": "None - not a service and uses no database. Restic is a backup CLI that writes to a content-addressable repository on a storage backend (local dir, SFTP, REST server, S3/object storage, etc.). No DBMS.",
+          "minRamMB": 1024,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "binary",
+            "docker",
+            "package-manager"
+          ],
+          "footprintConfidence": "low"
+        },
+        {
+          "name": "Duplicati",
+          "github": "duplicati/duplicati",
+          "homepage": "https://www.duplicati.com",
+          "description": "Encrypted, scheduled backups to cloud/S3 with a web UI.",
+          "healthScore": 93,
+          "stars": 15085,
+          "language": "C#",
+          "license": null,
+          "lastCommit": "2026-10-12T13:50:02Z",
+          "database": "SQLite (one server database plus a per-backup local database; the local DB is a cache/catalog of remotely stored data and can be rebuilt from the destination)",
+          "minRamMB": 256,
+          "arm64": true,
+          "oneClick": [
+            "Umbrel App Store (community-packaged listing)",
+            "Unraid Community Apps (community template)"
+          ],
+          "deploy": [
+            "Docker (official multi-arch image duplicati/duplicati: linux/amd64, linux/arm64, linux/arm/v7)",
+            "Native installers (Windows, Linux .deb/.rpm, macOS)",
+            "Linux packages for x64, Arm64, and Arm7/ArmHF (NAS / Raspberry Pi)",
+            "Runs as a service / Windows service"
+          ],
+          "footprintConfidence": "low"
+        },
+        {
+          "name": "Kopia",
+          "github": "kopia/kopia",
+          "homepage": "https://kopia.io",
+          "description": "Cross-platform encrypted backup with snapshots and a UI.",
+          "healthScore": 91,
+          "stars": 14335,
+          "language": "Go",
+          "license": "Apache-2.0",
+          "lastCommit": "2026-10-13T01:36:39Z",
+          "database": "No traditional database - uses its own content-addressable block storage (CABS) repository format. Data/metadata/index BLOBs (p/q/x prefixed packs) are stored in the repository backend (filesystem/NAS, S3-compatible, cloud, etc.); a local cache directory is used for performance.",
+          "minRamMB": 256,
+          "arm64": true,
+          "oneClick": [
+            "Unraid Community Apps (community template)"
+          ],
+          "deploy": [
+            "Docker (official kopia/kopia images for amd64, arm64, and arm on DockerHub)",
+            "Native binaries / packages (Windows 10+, macOS 10.11+, Linux: amd64, arm64, armhf)",
+            "Repository server mode (KopiaUI / kopia server)",
+            "Source build (Go)"
+          ],
+          "footprintConfidence": "low"
+        }
+      ]
+    },
+    {
+      "name": "QuickBooks",
+      "slug": "quickbooks",
+      "category": "Accounting / invoicing",
+      "page": "https://selfhostscore.com/alternatives/quickbooks/",
+      "alternatives": [
+        {
+          "name": "Firefly III",
+          "github": "firefly-iii/firefly-iii",
+          "homepage": "https://www.firefly-iii.org",
+          "description": "Personal finance manager for budgets, accounts and reports.",
+          "healthScore": 96,
+          "stars": 24884,
+          "language": "PHP",
+          "license": "AGPL-3.0",
+          "lastCommit": "2026-10-13T09:11:28Z",
+          "database": "MySQL/MariaDB",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [
+            "Coolify",
+            "Railway",
+            "PikaPods"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "bare-metal"
+          ],
+          "footprintConfidence": "medium"
+        },
+        {
+          "name": "Akaunting",
+          "github": "akaunting/akaunting",
+          "homepage": "https://akaunting.com",
+          "description": "Free, online accounting software for small businesses.",
+          "healthScore": 94,
+          "stars": 10181,
+          "language": "PHP",
+          "license": null,
+          "lastCommit": "2026-10-08T17:43:07Z",
+          "database": "MySQL/MariaDB",
+          "minRamMB": 1024,
+          "arm64": true,
+          "oneClick": [
+            "DigitalOcean"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "bare-metal"
+          ],
+          "footprintConfidence": "medium"
+        },
+        {
+          "name": "Invoice Ninja",
+          "github": "invoiceninja/invoiceninja",
+          "homepage": "https://www.invoiceninja.com",
+          "description": "Invoicing, payments and expenses for freelancers/SMBs.",
+          "healthScore": 94,
+          "stars": 10268,
+          "language": "PHP",
+          "license": null,
+          "lastCommit": "2026-10-13T03:55:13Z",
+          "database": "MySQL/MariaDB",
+          "minRamMB": 1024,
+          "arm64": true,
+          "oneClick": [
+            "Coolify",
+            "Railway",
+            "DigitalOcean"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "bare-metal"
+          ],
+          "footprintConfidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": "SAP",
+      "slug": "sap",
+      "category": "ERP",
+      "page": "https://selfhostscore.com/alternatives/sap/",
+      "alternatives": [
+        {
+          "name": "ERPNext",
+          "github": "frappe/erpnext",
+          "homepage": "https://erpnext.com",
+          "description": "Full open-source ERP: accounting, inventory, HR, manufacturing.",
+          "healthScore": 99,
+          "stars": 40091,
+          "language": "Python",
+          "license": "GPL-3.0",
+          "lastCommit": "2026-10-13T11:04:19Z",
+          "database": "MariaDB",
+          "minRamMB": 4096,
+          "arm64": true,
+          "oneClick": [
+            "Railway"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "Helm",
+            "bare-metal"
+          ],
+          "footprintConfidence": "medium"
+        },
+        {
+          "name": "Dolibarr",
+          "github": "Dolibarr/dolibarr",
+          "homepage": "https://www.dolibarr.org",
+          "description": "Lightweight ERP/CRM for SMBs on LAMP.",
+          "healthScore": 94,
+          "stars": 7726,
+          "language": "PHP",
+          "license": "GPL-3.0",
+          "lastCommit": "2026-10-13T11:12:36Z",
+          "database": "MariaDB/MySQL",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "bare-metal",
+            "DoliWamp/DoliDeb/DoliRpm installers"
+          ],
+          "footprintConfidence": "medium"
+        },
+        {
+          "name": "Odoo",
+          "github": "odoo/odoo",
+          "homepage": "https://www.odoo.com",
+          "description": "Modular business suite: CRM, sales, inventory, accounting.",
+          "healthScore": 80,
+          "stars": 55006,
+          "language": "Python",
+          "license": null,
+          "lastCommit": "2026-10-13T10:42:26Z",
+          "database": "PostgreSQL",
+          "minRamMB": 2048,
+          "arm64": true,
+          "oneClick": [],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "deb/rpm packages",
+            "source",
+            "bare-metal"
+          ],
+          "footprintConfidence": "medium"
+        }
+      ]
+    },
+    {
+      "name": "WordPress.com",
+      "slug": "wordpress",
+      "category": "CMS / blog",
+      "page": "https://selfhostscore.com/alternatives/wordpress/",
+      "alternatives": [
+        {
+          "name": "Ghost",
+          "github": "TryGhost/Ghost",
+          "homepage": "https://ghost.org",
+          "description": "Modern publishing + newsletter platform for creators.",
+          "healthScore": 100,
+          "stars": 55526,
+          "language": "TypeScript",
+          "license": "MIT",
+          "lastCommit": "2026-10-13T11:18:10Z",
+          "database": "MySQL 8.0",
+          "minRamMB": 1024,
+          "arm64": true,
+          "oneClick": [
+            "DigitalOcean",
+            "Railway"
+          ],
+          "deploy": [
+            "Ghost-CLI (bare-metal/VPS)",
+            "Docker",
+            "docker-compose"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Strapi",
+          "github": "strapi/strapi",
+          "homepage": "https://strapi.io",
+          "description": "Leading open-source headless CMS with a customizable API.",
+          "healthScore": 100,
+          "stars": 73301,
+          "language": "TypeScript",
+          "license": null,
+          "lastCommit": "2026-10-13T10:59:17Z",
+          "database": "PostgreSQL",
+          "minRamMB": 2048,
+          "arm64": false,
+          "oneClick": [
+            "Railway"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "single-binary (Node/npm)",
+            "bare-metal"
+          ],
+          "footprintConfidence": "high"
+        },
+        {
+          "name": "Payload",
+          "github": "payloadcms/payload",
+          "homepage": "https://payloadcms.com",
+          "description": "TypeScript-native headless CMS and app framework.",
+          "healthScore": 99,
+          "stars": 45231,
+          "language": "TypeScript",
+          "license": "MIT",
+          "lastCommit": "2026-10-13T03:50:50Z",
+          "database": "MongoDB",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [
+            "Vercel"
+          ],
+          "deploy": [
+            "Docker (provided Dockerfile)",
+            "docker-compose",
+            "single-binary (Next.js/Node, self-host)",
+            "serverless (Vercel/Cloudflare)"
+          ],
+          "footprintConfidence": "medium"
+        },
+        {
+          "name": "Directus",
+          "github": "directus/directus",
+          "homepage": "https://directus.io",
+          "description": "Headless CMS + data platform over any SQL database.",
+          "healthScore": 98,
+          "stars": 38451,
+          "language": "TypeScript",
+          "license": null,
+          "lastCommit": "2026-10-13T09:37:13Z",
+          "database": "PostgreSQL",
+          "minRamMB": 512,
+          "arm64": true,
+          "oneClick": [
+            "DigitalOcean",
+            "Railway"
+          ],
+          "deploy": [
+            "Docker",
+            "docker-compose",
+            "PM2 / single-binary (Node)",
+            "systemd",
+            "bare-metal"
+          ],
+          "footprintConfidence": "high"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "selfhost-directory",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Self-hostable FOSS alternatives directory — autonomous data-moat engine (Path A). Working name, TBD.",
+  "engines": {
+    "node": ">=23.6"
+  },
+  "scripts": {
+    "enrich": "node scripts/enrich.ts",
+    "enrich:summary": "node scripts/enrich.ts --summary",
+    "check": "node scripts/check-repos.ts",
+    "build": "node scripts/build-site.ts",
+    "serve": "node scripts/serve.ts"
+  }
+}
