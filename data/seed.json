@@ -1,8 +1,8 @@
 {
   "meta": {
-    "wedge": "dev/SMB internal tooling — self-hostable FOSS alternatives",
+    "wedge": "dev/SMB internal tooling: self-hostable FOSS alternatives",
     "differentiator": "deploy footprint (database / minRamMB / arm64 / one-click) + Self-Host Health Score",
-    "footprintStatus": "VERIFIED — all 124 alternatives verified vs official docs (footprintConfidence/footprintSources per alt)",
+    "footprintStatus": "VERIFIED: all 124 alternatives verified against official docs (footprintConfidence/footprintSources per alt)",
     "version": "manual seed v0.3 (41 tools)",
     "lastCuratedNote": "github = owner/repo is the live freshness source; the enricher fills stars/license/last-commit/health"
   },
@@ -1169,7 +1169,7 @@
       "slug": "datadog",
       "category": "Observability / monitoring",
       "homepage": "https://www.datadoghq.com",
-      "blurb": "Metrics, logs and traces SaaS — famously expensive at scale. Self-hosted observability caps cost and keeps telemetry in-house.",
+      "blurb": "Metrics, logs and traces SaaS, known for its cost at scale. Self-hosted observability caps cost and keeps telemetry in-house.",
       "alternatives": [
         {
           "name": "SigNoz",

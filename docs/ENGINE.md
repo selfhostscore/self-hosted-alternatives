@@ -1,96 +1,82 @@
-# Self-Hostable FOSS Alternatives Directory
+# How the engine works
 
-> Working name — TBD. An **autonomous, data-moat content engine** (Path A: the quiet compounding asset).
-> One page per proprietary tool → its self-hostable open-source alternatives, enriched **live** from the
-> GitHub API and ranked by a transparent **Self-Host Health Score**.
+SelfHostScore is a zero-dependency static site generator written in TypeScript and run directly by Node (native type stripping, Node 23.6 or newer). There is no framework, no build tool and no database. One curated JSON file goes in, a finished site and a public dataset come out.
 
-## The wedge (why this can win in 2026)
-
-The "alternatives to X" SERP is crowded (AlternativeTo, OpenAlternative, selfh.st). We do **not** fight them
-on head terms. The differentiators:
-
-1. **Self-hostable only** — every alternative must be actually deployable (Docker/compose/Helm/one-click).
-2. **Deploy footprint column** — `database`, `minRamMB`, `arm64` (Raspberry-Pi), `oneClick` (Coolify/CapRover/Railway).
-   This is the data incumbents **don't compute** and AI Overviews **can't fabricate** → AIO-resistant.
-3. **Self-Host Health Score** — a published, transparent 0–100 composite from live GitHub data → freshness moat.
-4. **Narrow vertical** — start with **dev/SMB internal tooling** (strong r/selfhosted intent, weaker incumbent depth).
-
-Validated by an A/B/C niche workflow: this archetype scored highest for an autonomous solo engine; proof point
-is OpenAlternative (~$80k/yr solo). Real money is **sell-side featured listings + sponsors**, NOT hosting affiliate.
-
-## Architecture (autonomous, static, zero-dep pipeline)
+## Pipeline
 
 ```
-data/seed.json        Hand-curated moat: proprietary → self-hostable FOSS mappings + deploy footprint
-   │
-scripts/enrich.ts     GitHub REST enrichment (stars/forks/license/last-commit/release) + Health Score
-   │                  → data/enriched.json   (regenerated daily by cron)
-   │
-[Week 2] src/         Astro/Next static-site generator: 1 page per tool + per-alt detail + cluster guides
-   │                  schema.org, FAQ, internal linking, per-page synthesis layer (LLM, grounded in the data)
-   │
-[Week 2] deploy       Vercel/Netlify + sitemap ping; GitHub Actions cron re-runs enrich + rebuild nightly
+data/seed.json  ->  scripts/enrich.ts  ->  data/enriched.json  ->  scripts/build-site.ts  ->  dist/
+   (curated)         (GitHub API,            (generated,            (pages, feed, badges,      (deployed to
+                      Health Score)           ignored by git)        llms.txt, README)          Cloudflare)
 ```
 
-Pipeline is **zero-dependency** — Node ≥ 23.6 runs the `.ts` files natively (type-stripping), no build step.
+1. **Seed.** `data/seed.json` holds every category ("tool") and its self-hostable alternatives: name, slug, GitHub `owner/repo`, homepage, a one-line description and the deploy footprint (database, minimum RAM in MB, ARM64 support, deploy methods, one-click platforms) with a confidence level and the documentation URLs it was read from. The schema is in `src/types.ts`.
+2. **Enrich.** `scripts/enrich.ts` fetches each repository and its latest release from the GitHub REST API, computes the Self-Host Health Score with `src/healthScore.ts` and writes `data/enriched.json`. Requests retry with backoff on network errors, 5xx responses and secondary rate limits. With a token the script gets 5,000 requests per hour and release data; without one, 60 per hour and no releases.
+3. **Build.** `scripts/build-site.ts` renders every page from the enriched data: one page per category with a sortable, filterable table; the server matcher; four collections; methodology, API, about and sponsor pages; `api/tools.json`; `llms.txt`; per-project badges under `api/badge/`; `sitemap.xml` and `robots.txt`. It also writes `awesome.md`, assembles `README.md` from `docs/README-header.md` plus the generated tables, and copies the feed to `data/tools.json` so the dataset is versioned in git.
+4. **Deploy.** `dist/` is uploaded as static assets of a Cloudflare Worker named `selfhostscore` with `npx wrangler deploy` (configuration in `wrangler.jsonc`).
 
-## Status
+## Self-Host Health Score
 
-| Phase | State |
-|---|---|
-| **Week 1 — moat + pipeline** | ✅ Done. **41 tools, 124 alternatives** (seed v0.3), all repo slugs validated; enricher runs end-to-end with token (real Health Scores). |
-| **Week 2 — static site + synthesis layer** | ✅ Done. Zero-dep generator (`build-site.ts`) → **42 pages (home + 41 verified tools)**, data-grounded synthesis, schema.org (ItemList + FAQPage), sitemap/robots, affiliate layer (`offers.json`), preview server (`serve.ts`). |
-| Week 3 — deploy + Search Console | ⬜ Next |
-| Week 4 — depth pass + value-first r/selfhosted launch | ⬜ |
-| Week 5–6 — indexing, expand wedge, sell-side slot | ⬜ |
-| Week 7–8 — Ezoic/display, seed vendor listings | ⬜ |
+A 0 to 100 total of four components, each computed from one repository fetch plus the latest release. Component values are rounded before summing.
 
-## Run
+| Component | Max | Input | Rule |
+|---|---|---|---|
+| Activity | 35 | Days since the last push | Full points at 30 days or less, linear decay to 0 at 365 days |
+| Releases | 25 | Days since the latest release | Full points at 90 days or less, linear decay to 0 at 540 days; projects without releases get a fixed 5 points |
+| Maturity | 25 | Stars | log10(stars + 1) / log10(50,001), times 25 |
+| Adoption | 15 | Forks | log10(forks + 1) / log10(10,001), times 15 |
 
-```bash
-node scripts/enrich.ts            # enriches seed → data/enriched.json + summary
-node scripts/enrich.ts --summary  # summary only, no write
-node scripts/check-repos.ts       # validate all seed slugs via github.com (no API quota)
-```
+Archived repositories and repositories that cannot be fetched score 0. Bands: 80 and above Thriving, 60 Healthy, 40 Steady, 20 At risk, below 20 Dormant. The public explanation lives at <https://selfhostscore.com/methodology/>.
 
-> 79 alternatives > the anonymous 60/h API limit, so a **full** enrich now needs a `GITHUB_TOKEN`
-> (also required for the nightly cron). `check-repos.ts` validates slugs without touching API quota.
+## Deploy footprint and confidence
 
-For the **full Health Score range** and release data, set a token (5,000 req/h vs 60/h, + latest-release fetch):
+Footprint values are curated by hand from official documentation, Docker Hub or GitHub Container Registry listings and official platform templates. Each alternative records `footprintConfidence`:
 
-```powershell
-$env:GITHUB_TOKEN="ghp_xxx"; node scripts/enrich.ts
-```
+- `high`: the documentation states the value directly.
+- `medium`: derived from official material (a docker-compose file, image tags), no single stated number.
+- `low`: an estimate based on community reports.
 
-A read-only classic PAT with **no scopes** (public data) is enough. Do **not** commit it (`.gitignore` covers `.env`).
+When confidence is not `high`, the site marks the RAM figure as an estimate. `scripts/merge-footprint.ts` merges the output of a verification pass back into the seed and records sources and confidence; `scripts/check-repos.ts` validates that every GitHub slug resolves without spending API quota.
 
-## Self-Host Health Score — methodology (intentionally public)
-
-Transparency IS the moat (aggregation/curation, not a secret). 0–100 composite, computed in
-[`src/healthScore.ts`](src/healthScore.ts) from a single repo fetch + latest release:
-
-| Component | Max | Signal |
-|---|---|---|
-| **Activity** | 35 | last commit/push recency (full ≤30d, 0 at ≥365d) |
-| **Releases** | 25 | latest release recency (full ≤90d, 0 at ≥540d; 0.2 floor if no releases) |
-| **Maturity** | 25 | stars, log-scaled (≈full at 50k) |
-| **Adoption** | 15 | forks, log-scaled (≈full at 10k) |
-
-Archived/missing repos → 0. Inspired by OpenSSF Criticality Score + CHAOSS. Tune weights in `healthScore.ts`.
-
-## ⚠️ Before publishing — verify the footprint
-
-`data/seed.json` `footprintStatus` is **DRAFT-UNVERIFIED**. The `minRamMB / database / arm64 / oneClick`
-values are best-effort and MUST be checked against each project's official docs before a page goes live —
-accuracy of the deploy-footprint column is the differentiator; wrong numbers kill trust. This curation is the
-real (non-autonomous) human work; the GitHub enrichment + scoring is fully automated.
-
-## Layout
+## Run it locally
 
 ```
-data/seed.json          curated input (the moat)
-data/enriched.json      generated (gitignored)
-scripts/enrich.ts       GitHub enricher + scorer
-src/types.ts            shared types
-src/healthScore.ts      transparent scoring
+node scripts/check-repos.ts     # validate github slugs (no API quota)
+node scripts/enrich.ts          # GITHUB_TOKEN env var or a gitignored .github-token file
+node scripts/build-site.ts      # writes dist/, README.md, awesome.md, data/tools.json
+node scripts/serve.ts           # preview at http://localhost:4321
 ```
+
+The package.json scripts `enrich`, `check`, `build` and `serve` map to the same commands. `node scripts/enrich.ts --summary` prints the ranking without writing. `--slugs a,b` restricts a run to given categories and `--append` merges that subset into the existing enriched file.
+
+## Daily refresh (GitHub Actions)
+
+`.github/workflows/refresh.yml` runs every day at 05:23 UTC, on every push to `main` and on manual dispatch:
+
+1. Enrich with the workflow's built-in `GITHUB_TOKEN` (1,000 requests per hour, enough for the whole seed).
+2. Build.
+3. Commit `README.md`, `awesome.md` and `data/tools.json` if anything changed, as `selfhostscore-bot`.
+4. Deploy to Cloudflare when the `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` secrets are present; otherwise skip with a warning.
+5. Re-enable the schedule through the API. GitHub disables scheduled workflows in public repositories after 60 days without pushes; the daily data commit plus this step keep it alive. The step is inline on purpose: the third-party keepalive action this repository first used was later blocked by GitHub.
+
+## Repository layout
+
+```
+data/seed.json          curated input (edit this to add or fix a project)
+data/offers.json        managed-hosting partners shown as sponsored links
+data/tools.json         generated public dataset, committed daily
+scripts/                enrich, build, serve, check-repos, merge-footprint, expand-seed
+src/types.ts            data model
+src/healthScore.ts      score formula
+docs/README-header.md   hand-written top of the public README
+docs/ENGINE.md          this file
+public/                 static files copied into dist (og.png)
+.github/workflows/      daily refresh and deploy
+wrangler.jsonc          Cloudflare Worker configuration
+```
+
+`.gitignore` is a whitelist: only the files above are tracked. Generated output (`dist/`, `data/enriched.json`) and local secrets never enter the repository.
+
+## Contributing a project
+
+Edit `data/seed.json`. An alternative needs `name`, `slug`, `github`, `description` and a complete `footprint` (`database`, `minRamMB`, `arm64`, `deploy`, `oneClick`), plus `footprintConfidence` and `footprintSources` pointing at the official documentation that supports the values. Only self-hostable open-source projects with a public GitHub repository are accepted. Run `node scripts/check-repos.ts` before opening a pull request; the daily job recomputes scores after a merge.

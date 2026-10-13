@@ -10,15 +10,15 @@
 - **Self-Host Health Score (0-100)**, refreshed daily from the GitHub API: commit activity (35) + release recency (25) + stars (25) + forks (15). Archived or abandoned repos score 0. Transparent methodology: [selfhostscore.com/#methodology](https://selfhostscore.com/#methodology).
 - **Deploy footprint, verified against official docs**: minimum RAM, database, ARM64 / Raspberry Pi support, one-click deploy (Coolify, CapRover, Railway). This is the column other directories do not have.
 
-Interactive site: <https://selfhostscore.com> (sort, filter by Pi / one-click / RAM, and ["What can my server run?"](https://selfhostscore.com/can-i-run/)).
-Dataset / API: [`/api/tools.json`](https://selfhostscore.com/api/tools.json), also committed here as [`data/tools.json`](data/tools.json). For LLMs: [`llms.txt`](https://selfhostscore.com/llms.txt).
+Interactive site: <https://selfhostscore.com> (sort, filter by Raspberry Pi, one-click and RAM, and [find apps that fit your server](https://selfhostscore.com/can-i-run/)).
+Dataset and API: [`/api/tools.json`](https://selfhostscore.com/api/tools.json), documented at [selfhostscore.com/api](https://selfhostscore.com/api/) and committed here as [`data/tools.json`](data/tools.json). Exact score formula and footprint verification: [methodology](https://selfhostscore.com/methodology/). For LLMs: [`llms.txt`](https://selfhostscore.com/llms.txt).
 
 ## Maintainers: add the live badge to your README
 
 Every listed project gets a free badge that updates daily:
 
 ```markdown
-[![Self-Host Score](https://selfhostscore.com/api/badge/<slug>.svg)](https://selfhostscore.com/alternatives/<category>/)
+[![Self-Host Score](https://selfhostscore.com/api/badge/<slug>.svg)](https://selfhostscore.com/alternatives/<category>/#<slug>)
 ```
 
 Open your project's category page on the site and expand **"Add the live Self-Host Score badge"** for a ready-to-paste snippet. Shields.io users: `https://img.shields.io/endpoint?url=https://selfhostscore.com/api/badge/<slug>.json`.
