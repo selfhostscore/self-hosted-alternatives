@@ -176,6 +176,7 @@ const PLATFORMS: Record<string, string> = {
   vultr: "https://www.vultr.com",
   truenas: "https://apps.truenas.com",
   "umbrel app store": "https://apps.umbrel.com",
+  cloudbreak: "https://cloudbreak.app",
 };
 
 const oneClickChips = (arr: string[]): string =>
