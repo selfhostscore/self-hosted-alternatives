@@ -31,6 +31,9 @@ function sleep(ms: number): Promise<void> {
   return new Promise((r) => setTimeout(r, ms));
 }
 
+// Retry on transient failures: network errors ("fetch failed" on CI runners), 5xx, and
+// secondary rate limits (403/429 with retry-after or remaining=0). Backoff capped at 90s.
+const RETRY_DELAYS_MS = [1000, 3000, 8000, 20000];
 async function ghFetch(path: string): Promise<Response> {
   const headers: Record<string, string> = {
     Accept: "application/vnd.github+json",
@@ -38,7 +41,26 @@ async function ghFetch(path: string): Promise<Response> {
     "X-GitHub-Api-Version": "2022-11-28",
   };
   if (TOKEN) headers.Authorization = `Bearer ${TOKEN}`;
-  return fetch(API + path, { headers });
+  for (let attempt = 0; ; attempt++) {
+    const last = attempt >= RETRY_DELAYS_MS.length;
+    try {
+      const res = await fetch(API + path, { headers });
+      const limited = (res.status === 403 || res.status === 429) && (!!res.headers.get("retry-after") || res.headers.get("x-ratelimit-remaining") === "0");
+      if (!(res.status >= 500 || limited) || last) return res;
+      const retryAfter = Number(res.headers.get("retry-after")) * 1000 || 0;
+      const untilReset = Number(res.headers.get("x-ratelimit-reset")) * 1000 - Date.now();
+      const wait = Math.min(Math.max(retryAfter, untilReset > 0 ? untilReset : 0, RETRY_DELAYS_MS[attempt]), 90_000);
+      console.error(`
+  ↻ HTTP ${res.status} on ${path}; retry ${attempt + 1}/${RETRY_DELAYS_MS.length} in ${Math.round(wait / 1000)}s`);
+      await sleep(wait);
+    } catch (err) {
+      if (last) throw err;
+      const wait = RETRY_DELAYS_MS[attempt];
+      console.error(`
+  ↻ network error on ${path} (${(err as Error).message}); retry ${attempt + 1}/${RETRY_DELAYS_MS.length} in ${wait / 1000}s`);
+      await sleep(wait);
+    }
+  }
 }
 
 async function fetchRepo(ownerRepo: string): Promise<GithubData> {
