@@ -25,6 +25,7 @@
 !/data/seed.json
 !/data/offers.json
 !/data/tools.json
+!/data/deploy-links.json
 
 # Belt and braces: never, even if a rule above is loosened.
 .github-token

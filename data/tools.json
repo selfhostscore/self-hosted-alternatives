@@ -1,7 +1,7 @@
 {
   "site": "SelfHostScore",
   "url": "https://selfhostscore.com",
-  "updated": "2026-10-14T10:16:54.561Z",
+  "updated": "2026-10-13T12:00:13.871Z",
   "license": "CC BY 4.0. Free to use with attribution to SelfHostScore (https://selfhostscore.com).",
   "methodology": "https://selfhostscore.com/methodology/",
   "docs": "https://selfhostscore.com/api/",
@@ -25,9 +25,9 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 65271,
-          "forks": 5086,
-          "openIssues": 707,
+          "stars": 65265,
+          "forks": 5084,
+          "openIssues": 706,
           "language": "TypeScript",
           "license": null,
           "lastCommit": "2026-10-14T08:38:32Z",
@@ -47,7 +47,8 @@
             "single-binary"
           ],
           "oneClick": [
-            "Railway"
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "medium",
           "footprintSources": [
@@ -60,6 +61,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/nocodb.svg",
             "shields": "https://selfhostscore.com/api/badge/nocodb.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/nocodb",
+            "RepoCloud": "https://repocloud.io/details/NocoDB/"
           }
         },
         {
@@ -75,14 +80,14 @@
             "maturity": 23,
             "adoption": 12
           },
-          "stars": 21891,
-          "forks": 1357,
+          "stars": 21889,
+          "forks": 1356,
           "openIssues": 144,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T09:08:05Z",
-          "latestReleaseTag": "release.2026-10-14T00-38-05Z.3367",
-          "latestReleaseAt": "2026-10-14T01:35:01Z",
+          "lastCommit": "2026-10-13T11:59:26Z",
+          "latestReleaseTag": "release.2026-10-13T10-15-34Z.3346",
+          "latestReleaseAt": "2026-10-13T11:57:19Z",
           "createdAt": "2022-11-01T07:02:49Z",
           "database": "PostgreSQL (Redis also required for caching)",
           "minRamMB": 4096,
@@ -107,6 +112,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/teable.svg",
             "shields": "https://selfhostscore.com/api/badge/teable.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/teable",
+            "RepoCloud": "https://repocloud.io/details/Teable/"
           }
         },
         {
@@ -124,10 +133,10 @@
           },
           "stars": 11952,
           "forks": 658,
-          "openIssues": 746,
+          "openIssues": 744,
           "language": "TypeScript",
           "license": "Apache-2.0",
-          "lastCommit": "2026-10-14T01:33:24Z",
+          "lastCommit": "2026-10-13T06:18:19Z",
           "latestReleaseTag": "v1.7.21",
           "latestReleaseAt": "2026-10-09T20:08:10Z",
           "createdAt": "2020-05-22T06:16:02Z",
@@ -139,7 +148,10 @@
             "docker-compose",
             "bare-metal"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "high",
           "footprintSources": [
             "https://support.getgrist.com/self-managed/",
@@ -149,6 +161,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/grist.svg",
             "shields": "https://selfhostscore.com/api/badge/grist.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/grist",
+            "RepoCloud": "https://repocloud.io/details/Grist/"
           }
         },
         {
@@ -164,14 +180,14 @@
             "maturity": 20,
             "adoption": 11
           },
-          "stars": 6151,
-          "forks": 765,
-          "openIssues": 1167,
+          "stars": 6145,
+          "forks": 762,
+          "openIssues": 1224,
           "language": "Python",
           "license": null,
-          "lastCommit": "2026-10-14T10:04:53Z",
-          "latestReleaseTag": "2.4.1",
-          "latestReleaseAt": "2026-10-13T15:39:27Z",
+          "lastCommit": "2026-10-13T11:44:01Z",
+          "latestReleaseTag": "2.4.0",
+          "latestReleaseAt": "2026-09-30T08:29:05Z",
           "createdAt": "2020-07-20T09:32:04Z",
           "database": "PostgreSQL",
           "minRamMB": 2048,
@@ -194,7 +210,8 @@
             "Render",
             "Railway",
             "Cloudron",
-            "Coolify"
+            "Coolify",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -206,6 +223,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/baserow.svg",
             "shields": "https://selfhostscore.com/api/badge/baserow.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/baserow",
+            "RepoCloud": "https://repocloud.io/details/Baserow/"
           }
         }
       ]
@@ -229,9 +250,9 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 77308,
-          "forks": 6066,
-          "openIssues": 1035,
+          "stars": 77279,
+          "forks": 6061,
+          "openIssues": 1037,
           "language": "Dart",
           "license": "AGPL-3.0",
           "lastCommit": "2026-10-08T11:00:14Z",
@@ -247,7 +268,8 @@
           ],
           "oneClick": [
             "Coolify",
-            "Railway"
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "medium",
           "footprintSources": [
@@ -259,6 +281,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/appflowy.svg",
             "shields": "https://selfhostscore.com/api/badge/appflowy.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/appflowy",
+            "RepoCloud": "https://repocloud.io/details/AppFlowy/"
           }
         },
         {
@@ -274,8 +300,8 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 73494,
-          "forks": 5359,
+          "stars": 73452,
+          "forks": 5354,
           "openIssues": 772,
           "language": "TypeScript",
           "license": null,
@@ -292,7 +318,8 @@
           ],
           "oneClick": [
             "Railway",
-            "Coolify"
+            "Coolify",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -304,6 +331,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/affine.svg",
             "shields": "https://selfhostscore.com/api/badge/affine.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/affine-1",
+            "RepoCloud": "https://repocloud.io/details/AFFiNE/"
           }
         },
         {
@@ -319,12 +350,12 @@
             "maturity": 25,
             "adoption": 13
           },
-          "stars": 40895,
-          "forks": 3617,
-          "openIssues": 79,
+          "stars": 40878,
+          "forks": 3613,
+          "openIssues": 76,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T03:08:59Z",
+          "lastCommit": "2026-10-13T11:59:46Z",
           "latestReleaseTag": "v1.11.0",
           "latestReleaseAt": "2026-10-12T14:22:35Z",
           "createdAt": "2016-05-22T21:31:47Z",
@@ -336,7 +367,9 @@
             "docker-compose",
             "bare-metal"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway"
+          ],
           "footprintConfidence": "high",
           "footprintSources": [
             "https://docs.getoutline.com/s/hosting/doc/requirements-ULdYnwi4wG",
@@ -346,6 +379,9 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/outline.svg",
             "shields": "https://selfhostscore.com/api/badge/outline.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/outline"
           }
         },
         {
@@ -361,8 +397,8 @@
             "maturity": 23,
             "adoption": 12
           },
-          "stars": 21970,
-          "forks": 1631,
+          "stars": 21965,
+          "forks": 1625,
           "openIssues": 355,
           "language": "TypeScript",
           "license": "AGPL-3.0",
@@ -380,7 +416,8 @@
           "oneClick": [
             "Railway",
             "Coolify",
-            "PikaPods"
+            "PikaPods",
+            "RepoCloud"
           ],
           "footprintConfidence": "medium",
           "footprintSources": [
@@ -392,6 +429,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/docmost.svg",
             "shields": "https://selfhostscore.com/api/badge/docmost.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/docmost",
+            "RepoCloud": "https://repocloud.io/details/Docmost/"
           }
         }
       ]
@@ -417,10 +458,10 @@
           },
           "stars": 41061,
           "forks": 4806,
-          "openIssues": 4513,
+          "openIssues": 4515,
           "language": "TypeScript",
           "license": "Apache-2.0",
-          "lastCommit": "2026-10-14T09:37:17Z",
+          "lastCommit": "2026-10-13T08:35:44Z",
           "latestReleaseTag": "v2.5.0",
           "latestReleaseAt": "2026-10-09T15:59:16Z",
           "createdAt": "2020-06-30T04:07:36Z",
@@ -437,7 +478,9 @@
             "DigitalOcean"
           ],
           "oneClick": [
-            "DigitalOcean"
+            "DigitalOcean",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -450,6 +493,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/appsmith.svg",
             "shields": "https://selfhostscore.com/api/badge/appsmith.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/appsmith",
+            "RepoCloud": "https://repocloud.io/details/Appsmith/"
           }
         },
         {
@@ -465,14 +512,14 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 41090,
+          "stars": 41091,
           "forks": 5498,
-          "openIssues": 853,
+          "openIssues": 849,
           "language": "HTML",
           "license": "AGPL-3.0",
-          "lastCommit": "2026-10-14T10:12:45Z",
-          "latestReleaseTag": "v3.20.244-lts",
-          "latestReleaseAt": "2026-10-13T12:26:51Z",
+          "lastCommit": "2026-10-13T11:35:35Z",
+          "latestReleaseTag": "v3.20.243-lts",
+          "latestReleaseAt": "2026-10-09T14:43:28Z",
           "createdAt": "2021-03-30T08:51:34Z",
           "database": "PostgreSQL (Redis also required for caching/sessions)",
           "minRamMB": 4096,
@@ -487,7 +534,10 @@
             "DigitalOcean (manual droplet)",
             "bare-metal"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "high",
           "footprintSources": [
             "https://docs.tooljet.com/docs/setup/system-requirements/",
@@ -499,6 +549,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/tooljet.svg",
             "shields": "https://selfhostscore.com/api/badge/tooljet.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/tooljet",
+            "RepoCloud": "https://repocloud.io/details/ToolJet/"
           }
         },
         {
@@ -514,12 +568,12 @@
             "maturity": 24,
             "adoption": 13
           },
-          "stars": 28334,
-          "forks": 2231,
-          "openIssues": 273,
+          "stars": 28336,
+          "forks": 2232,
+          "openIssues": 269,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T10:16:31Z",
+          "lastCommit": "2026-10-13T11:51:58Z",
           "latestReleaseTag": "v3.49.0",
           "latestReleaseAt": "2026-10-12T07:58:29Z",
           "createdAt": "2019-06-07T11:03:41Z",
@@ -541,7 +595,9 @@
             "Windows Server"
           ],
           "oneClick": [
-            "DigitalOcean"
+            "DigitalOcean",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -554,6 +610,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/budibase.svg",
             "shields": "https://selfhostscore.com/api/badge/budibase.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/budibase",
+            "RepoCloud": "https://repocloud.io/details/Budibase/"
           }
         },
         {
@@ -569,12 +629,12 @@
             "maturity": 23,
             "adoption": 13
           },
-          "stars": 24578,
-          "forks": 2911,
-          "openIssues": 364,
+          "stars": 24567,
+          "forks": 2909,
+          "openIssues": 358,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T09:57:30Z",
+          "lastCommit": "2026-10-13T12:00:06Z",
           "latestReleaseTag": "v2.2.24",
           "latestReleaseAt": "2026-10-13T07:00:11Z",
           "createdAt": "2020-10-24T07:27:48Z",
@@ -588,7 +648,8 @@
             "bare-metal (Node.js/create-nocobase-app)"
           ],
           "oneClick": [
-            "Railway"
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -601,6 +662,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/nocobase.svg",
             "shields": "https://selfhostscore.com/api/badge/nocobase.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/nocobase",
+            "RepoCloud": "https://repocloud.io/details/NocoBase/"
           }
         }
       ]
@@ -624,14 +689,14 @@
             "maturity": 25,
             "adoption": 15
           },
-          "stars": 207331,
-          "forks": 61131,
-          "openIssues": 1184,
+          "stars": 207198,
+          "forks": 61110,
+          "openIssues": 1181,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T10:17:02Z",
-          "latestReleaseTag": "n8n@2.43.5",
-          "latestReleaseAt": "2026-10-14T08:15:51Z",
+          "lastCommit": "2026-10-13T12:00:10Z",
+          "latestReleaseTag": "n8n@2.43.4",
+          "latestReleaseAt": "2026-10-12T07:23:05Z",
           "createdAt": "2019-06-22T09:24:21Z",
           "database": "SQLite (default, embedded); PostgreSQL recommended for production",
           "minRamMB": 2048,
@@ -643,7 +708,10 @@
             "Kubernetes",
             "Helm"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "high",
           "footprintSources": [
             "https://docs.n8n.io/hosting/installation/docker/",
@@ -656,6 +724,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/n8n.svg",
             "shields": "https://selfhostscore.com/api/badge/n8n.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/n8n",
+            "RepoCloud": "https://repocloud.io/details/n8n/"
           }
         },
         {
@@ -671,12 +743,12 @@
             "maturity": 23,
             "adoption": 14
           },
-          "stars": 25044,
-          "forks": 4337,
-          "openIssues": 716,
+          "stars": 25032,
+          "forks": 4331,
+          "openIssues": 691,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T10:14:30Z",
+          "lastCommit": "2026-10-13T11:55:59Z",
           "latestReleaseTag": "0.92.3",
           "latestReleaseAt": "2026-10-12T18:43:34Z",
           "createdAt": "2022-12-03T02:52:46Z",
@@ -694,7 +766,8 @@
             "Easypanel",
             "Elestio",
             "PikaPods",
-            "Zeabur"
+            "Zeabur",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -706,6 +779,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/activepieces.svg",
             "shields": "https://selfhostscore.com/api/badge/activepieces.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/activepieces",
+            "RepoCloud": "https://repocloud.io/details/Activepieces/"
           }
         },
         {
@@ -721,8 +798,8 @@
             "maturity": 22,
             "adoption": 11
           },
-          "stars": 13994,
-          "forks": 1063,
+          "stars": 13996,
+          "forks": 1062,
           "openIssues": 288,
           "language": "JavaScript",
           "license": null,
@@ -739,7 +816,9 @@
             "render"
           ],
           "oneClick": [
-            "Render"
+            "Render",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "low",
           "footprintSources": [
@@ -751,6 +830,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/automatisch.svg",
             "shields": "https://selfhostscore.com/api/badge/automatisch.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/automatisch",
+            "RepoCloud": "https://repocloud.io/details/Automatisch/"
           }
         }
       ]
@@ -774,9 +857,9 @@
             "maturity": 25,
             "adoption": 15
           },
-          "stars": 48985,
-          "forks": 15340,
-          "openIssues": 1507,
+          "stars": 48976,
+          "forks": 15333,
+          "openIssues": 1506,
           "language": "TypeScript",
           "license": "MIT",
           "lastCommit": "2026-09-26T07:48:40Z",
@@ -794,7 +877,8 @@
           "oneClick": [
             "Railway",
             "Render",
-            "Vercel"
+            "Vercel",
+            "RepoCloud"
           ],
           "footprintConfidence": "medium",
           "footprintSources": [
@@ -806,6 +890,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/cal-com.svg",
             "shields": "https://selfhostscore.com/api/badge/cal-com.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/calcom",
+            "RepoCloud": "https://repocloud.io/details/calcom/"
           }
         },
         {
@@ -821,8 +909,8 @@
             "maturity": 19,
             "adoption": 12
           },
-          "stars": 4434,
-          "forks": 1575,
+          "stars": 4431,
+          "forks": 1574,
           "openIssues": 175,
           "language": "PHP",
           "license": "GPL-3.0",
@@ -838,7 +926,10 @@
             "docker-compose",
             "bare-metal"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "medium",
           "footprintSources": [
             "https://easyappointments.org/documentation/installation/",
@@ -849,6 +940,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/easyappointments.svg",
             "shields": "https://selfhostscore.com/api/badge/easyappointments.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/easyappointments",
+            "RepoCloud": "https://repocloud.io/details/easyappointments/"
           }
         }
       ]
@@ -872,14 +967,14 @@
             "maturity": 23,
             "adoption": 13
           },
-          "stars": 21117,
-          "forks": 3001,
-          "openIssues": 46,
+          "stars": 21116,
+          "forks": 3000,
+          "openIssues": 65,
           "language": "JavaScript",
           "license": "MIT",
-          "lastCommit": "2026-10-14T10:16:46Z",
-          "latestReleaseTag": "v12.41",
-          "latestReleaseAt": "2026-10-14T08:15:05Z",
+          "lastCommit": "2026-10-13T11:28:55Z",
+          "latestReleaseTag": "v12.39",
+          "latestReleaseAt": "2026-10-13T09:20:36Z",
           "createdAt": "2014-01-21T01:26:28Z",
           "database": "MongoDB",
           "minRamMB": 1024,
@@ -892,7 +987,9 @@
             "bundle",
             "bare-metal"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway"
+          ],
           "footprintConfidence": "high",
           "footprintSources": [
             "https://github.com/wekan/wekan",
@@ -904,6 +1001,9 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/wekan.svg",
             "shields": "https://selfhostscore.com/api/badge/wekan.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/wekan"
           }
         },
         {
@@ -919,9 +1019,9 @@
             "maturity": 22,
             "adoption": 12
           },
-          "stars": 12615,
-          "forks": 1382,
-          "openIssues": 385,
+          "stars": 12616,
+          "forks": 1381,
+          "openIssues": 383,
           "language": "JavaScript",
           "license": null,
           "lastCommit": "2026-10-12T21:02:42Z",
@@ -938,7 +1038,10 @@
             "Kubernetes",
             "bare-metal"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "high",
           "footprintSources": [
             "https://docs.planka.cloud/docs/welcome/",
@@ -950,6 +1053,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/planka.svg",
             "shields": "https://selfhostscore.com/api/badge/planka.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/planka",
+            "RepoCloud": "https://repocloud.io/details/Planka/"
           }
         },
         {
@@ -965,9 +1072,9 @@
             "maturity": 21,
             "adoption": 12
           },
-          "stars": 9906,
-          "forks": 1999,
-          "openIssues": 162,
+          "stars": 9907,
+          "forks": 1998,
+          "openIssues": 161,
           "language": "PHP",
           "license": "MIT",
           "lastCommit": "2026-10-12T04:30:13Z",
@@ -983,7 +1090,10 @@
             "bare-metal",
             "single-binary"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "high",
           "footprintSources": [
             "https://docs.kanboard.org/v1/admin/requirements/",
@@ -995,6 +1105,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/kanboard.svg",
             "shields": "https://selfhostscore.com/api/badge/kanboard.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/kanboard",
+            "RepoCloud": "https://repocloud.io/details/Kanboard/"
           }
         }
       ]
@@ -1018,12 +1132,12 @@
             "maturity": 25,
             "adoption": 15
           },
-          "stars": 46271,
-          "forks": 13986,
-          "openIssues": 4210,
+          "stars": 46250,
+          "forks": 13974,
+          "openIssues": 4219,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T09:30:22Z",
+          "lastCommit": "2026-10-13T11:41:31Z",
           "latestReleaseTag": "8.9.0",
           "latestReleaseAt": "2026-10-05T17:41:21Z",
           "createdAt": "2015-05-19T07:36:09Z",
@@ -1038,7 +1152,8 @@
             "bare-metal"
           ],
           "oneClick": [
-            "Railway"
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -1050,6 +1165,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/rocket-chat.svg",
             "shields": "https://selfhostscore.com/api/badge/rocket-chat.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/rocketchat",
+            "RepoCloud": "https://repocloud.io/details/Rocket.Chat/"
           }
         },
         {
@@ -1065,12 +1184,12 @@
             "maturity": 24,
             "adoption": 15
           },
-          "stars": 39327,
+          "stars": 39325,
           "forks": 9048,
-          "openIssues": 1082,
+          "openIssues": 1090,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T10:13:34Z",
+          "lastCommit": "2026-10-13T11:32:49Z",
           "latestReleaseTag": "v11.11.1",
           "latestReleaseAt": "2026-09-24T06:27:30Z",
           "createdAt": "2015-06-15T06:50:02Z",
@@ -1086,7 +1205,8 @@
           ],
           "oneClick": [
             "DigitalOcean",
-            "Railway"
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -1098,6 +1218,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/mattermost.svg",
             "shields": "https://selfhostscore.com/api/badge/mattermost.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/mattermost",
+            "RepoCloud": "https://repocloud.io/details/Mattermost/"
           }
         },
         {
@@ -1113,9 +1237,9 @@
             "maturity": 23,
             "adoption": 15
           },
-          "stars": 26048,
-          "forks": 10403,
-          "openIssues": 2048,
+          "stars": 26044,
+          "forks": 10399,
+          "openIssues": 2050,
           "language": "Python",
           "license": "Apache-2.0",
           "lastCommit": "2026-10-14T08:17:25Z",
@@ -1133,7 +1257,9 @@
           ],
           "oneClick": [
             "DigitalOcean",
-            "Render"
+            "Render",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -1145,6 +1271,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/zulip.svg",
             "shields": "https://selfhostscore.com/api/badge/zulip.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/zulip",
+            "RepoCloud": "https://repocloud.io/details/Zulip/"
           }
         }
       ]
@@ -1168,12 +1298,12 @@
             "maturity": 25,
             "adoption": 13
           },
-          "stars": 40895,
-          "forks": 3617,
-          "openIssues": 79,
+          "stars": 40878,
+          "forks": 3613,
+          "openIssues": 76,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T03:08:59Z",
+          "lastCommit": "2026-10-13T11:59:46Z",
           "latestReleaseTag": "v1.11.0",
           "latestReleaseAt": "2026-10-12T14:22:35Z",
           "createdAt": "2016-05-22T21:31:47Z",
@@ -1185,7 +1315,9 @@
             "docker-compose",
             "bare-metal"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway"
+          ],
           "footprintConfidence": "high",
           "footprintSources": [
             "https://docs.getoutline.com/s/hosting/doc/requirements-ULdYnwi4wG",
@@ -1195,6 +1327,9 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/outline.svg",
             "shields": "https://selfhostscore.com/api/badge/outline.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/outline"
           }
         },
         {
@@ -1228,7 +1363,10 @@
             "Kubernetes",
             "bare-metal"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "high",
           "footprintSources": [
             "https://beta.js.wiki/docs/requirements",
@@ -1239,6 +1377,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/wikijs.svg",
             "shields": "https://selfhostscore.com/api/badge/wikijs.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/wikijs",
+            "RepoCloud": "https://repocloud.io/details/Wiki.js/"
           }
         },
         {
@@ -1254,7 +1396,7 @@
             "maturity": 23,
             "adoption": 13
           },
-          "stars": 19081,
+          "stars": 19080,
           "forks": 2428,
           "openIssues": 3,
           "language": "PHP",
@@ -1273,7 +1415,9 @@
           ],
           "oneClick": [
             "Cloudron",
-            "PikaPods"
+            "PikaPods",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "low",
           "footprintSources": [
@@ -1283,6 +1427,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/bookstack.svg",
             "shields": "https://selfhostscore.com/api/badge/bookstack.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/bookstack",
+            "RepoCloud": "https://repocloud.io/details/BookStack/"
           }
         }
       ]
@@ -1306,9 +1454,9 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 80621,
-          "forks": 6161,
-          "openIssues": 853,
+          "stars": 80614,
+          "forks": 6155,
+          "openIssues": 852,
           "language": "TypeScript",
           "license": "MIT",
           "lastCommit": "2026-10-12T04:41:25Z",
@@ -1323,7 +1471,9 @@
             "docker-compose"
           ],
           "oneClick": [
-            "Coolify"
+            "Coolify",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -1336,6 +1486,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/hoppscotch.svg",
             "shields": "https://selfhostscore.com/api/badge/hoppscotch.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/hoppscotch",
+            "RepoCloud": "https://repocloud.io/details/Hoppscotch/"
           }
         },
         {
@@ -1351,12 +1505,12 @@
             "maturity": 25,
             "adoption": 13
           },
-          "stars": 47544,
-          "forks": 2987,
-          "openIssues": 1886,
+          "stars": 47482,
+          "forks": 2978,
+          "openIssues": 1882,
           "language": "JavaScript",
           "license": "MIT",
-          "lastCommit": "2026-10-13T17:53:31Z",
+          "lastCommit": "2026-10-13T07:11:43Z",
           "latestReleaseTag": "v4.2.1",
           "latestReleaseAt": "2026-09-30T13:52:52Z",
           "createdAt": "2022-09-27T20:51:45Z",
@@ -1379,7 +1533,8 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/bruno.svg",
             "shields": "https://selfhostscore.com/api/badge/bruno.json"
-          }
+          },
+          "deployLinks": {}
         }
       ]
     },
@@ -1402,12 +1557,12 @@
             "maturity": 22,
             "adoption": 13
           },
-          "stars": 13099,
-          "forks": 2575,
-          "openIssues": 189,
+          "stars": 13094,
+          "forks": 2571,
+          "openIssues": 187,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T09:54:33Z",
+          "lastCommit": "2026-10-13T11:47:58Z",
           "latestReleaseTag": "6.0.2",
           "latestReleaseAt": "2026-10-01T14:56:02Z",
           "createdAt": "2022-06-06T04:25:21Z",
@@ -1421,7 +1576,8 @@
             "bare-metal"
           ],
           "oneClick": [
-            "Railway"
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -1434,6 +1590,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/formbricks.svg",
             "shields": "https://selfhostscore.com/api/badge/formbricks.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/formbricks-survey-platform",
+            "RepoCloud": "https://repocloud.io/details/Formbricks/"
           }
         },
         {
@@ -1449,9 +1609,9 @@
             "maturity": 21,
             "adoption": 11
           },
-          "stars": 9021,
-          "forks": 720,
-          "openIssues": 13,
+          "stars": 9020,
+          "forks": 718,
+          "openIssues": 11,
           "language": "TypeScript",
           "license": "AGPL-3.0",
           "lastCommit": "2026-10-10T02:16:01Z",
@@ -1481,6 +1641,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/heyform.svg",
             "shields": "https://selfhostscore.com/api/badge/heyform.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/heyform",
+            "RepoCloud": "https://repocloud.io/details/HeyForm/"
           }
         }
       ]
@@ -1504,12 +1668,12 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 62958,
-          "forks": 5653,
-          "openIssues": 718,
+          "stars": 62926,
+          "forks": 5647,
+          "openIssues": 720,
           "language": "PHP",
           "license": "Apache-2.0",
-          "lastCommit": "2026-10-14T09:29:37Z",
+          "lastCommit": "2026-10-13T10:41:20Z",
           "latestReleaseTag": "v4.4.6",
           "latestReleaseAt": "2026-10-09T18:42:05Z",
           "createdAt": "2021-01-25T20:54:01Z",
@@ -1522,7 +1686,8 @@
             "install-script"
           ],
           "oneClick": [
-            "DigitalOcean"
+            "DigitalOcean",
+            "Railway"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -1533,6 +1698,9 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/coolify.svg",
             "shields": "https://selfhostscore.com/api/badge/coolify.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/coolify"
           }
         },
         {
@@ -1548,9 +1716,9 @@
             "maturity": 24,
             "adoption": 13
           },
-          "stars": 37782,
-          "forks": 3075,
-          "openIssues": 776,
+          "stars": 37772,
+          "forks": 3073,
+          "openIssues": 780,
           "language": "TypeScript",
           "license": null,
           "lastCommit": "2026-10-12T14:46:10Z",
@@ -1574,7 +1742,8 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/dokploy.svg",
             "shields": "https://selfhostscore.com/api/badge/dokploy.json"
-          }
+          },
+          "deployLinks": {}
         },
         {
           "name": "Dokku",
@@ -1594,7 +1763,7 @@
           "openIssues": 38,
           "language": "Go",
           "license": "MIT",
-          "lastCommit": "2026-10-14T05:06:56Z",
+          "lastCommit": "2026-10-12T17:15:14Z",
           "latestReleaseTag": "v0.38.31",
           "latestReleaseAt": "2026-09-27T01:46:26Z",
           "createdAt": "2013-06-08T10:26:57Z",
@@ -1608,7 +1777,8 @@
             "Vagrant"
           ],
           "oneClick": [
-            "DigitalOcean"
+            "DigitalOcean",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -1619,6 +1789,9 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/dokku.svg",
             "shields": "https://selfhostscore.com/api/badge/dokku.json"
+          },
+          "deployLinks": {
+            "RepoCloud": "https://repocloud.io/details/Dokku/"
           }
         },
         {
@@ -1634,7 +1807,7 @@
             "maturity": 22,
             "adoption": 11
           },
-          "stars": 15184,
+          "stars": 15185,
           "forks": 1005,
           "openIssues": 175,
           "language": "TypeScript",
@@ -1651,7 +1824,8 @@
             "single-binary"
           ],
           "oneClick": [
-            "DigitalOcean"
+            "DigitalOcean",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -1662,6 +1836,9 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/caprover.svg",
             "shields": "https://selfhostscore.com/api/badge/caprover.json"
+          },
+          "deployLinks": {
+            "RepoCloud": "https://repocloud.io/details/CapRover/"
           }
         }
       ]
@@ -1685,12 +1862,12 @@
             "maturity": 24,
             "adoption": 15
           },
-          "stars": 37339,
-          "forks": 9047,
-          "openIssues": 3250,
+          "stars": 37329,
+          "forks": 9045,
+          "openIssues": 3246,
           "language": "Java",
           "license": "Apache-2.0",
-          "lastCommit": "2026-10-14T09:55:04Z",
+          "lastCommit": "2026-10-13T11:53:52Z",
           "latestReleaseTag": "26.8.1",
           "latestReleaseAt": "2026-10-13T08:58:15Z",
           "createdAt": "2013-07-02T13:38:51Z",
@@ -1705,7 +1882,8 @@
             "single-binary (zip distribution)"
           ],
           "oneClick": [
-            "DigitalOcean"
+            "DigitalOcean",
+            "Railway"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -1718,6 +1896,9 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/keycloak.svg",
             "shields": "https://selfhostscore.com/api/badge/keycloak.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/keycloak"
           }
         },
         {
@@ -1733,12 +1914,12 @@
             "maturity": 23,
             "adoption": 12
           },
-          "stars": 25954,
-          "forks": 2073,
+          "stars": 25940,
+          "forks": 2071,
           "openIssues": 1129,
           "language": "Python",
           "license": null,
-          "lastCommit": "2026-10-14T09:06:56Z",
+          "lastCommit": "2026-10-13T11:51:35Z",
           "latestReleaseTag": "version/2026.8.3",
           "latestReleaseAt": "2026-09-17T22:15:01Z",
           "createdAt": "2019-12-30T09:19:48Z",
@@ -1753,7 +1934,8 @@
           ],
           "oneClick": [
             "Railway",
-            "Coolify"
+            "Coolify",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -1765,6 +1947,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/authentik.svg",
             "shields": "https://selfhostscore.com/api/badge/authentik.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/authentik",
+            "RepoCloud": "https://repocloud.io/details/Authentik/"
           }
         },
         {
@@ -1780,9 +1966,9 @@
             "maturity": 22,
             "adoption": 12
           },
-          "stars": 15311,
-          "forks": 1367,
-          "openIssues": 1277,
+          "stars": 15302,
+          "forks": 1366,
+          "openIssues": 1275,
           "language": "Go",
           "license": "AGPL-3.0",
           "lastCommit": "2026-10-14T08:10:28Z",
@@ -1800,7 +1986,8 @@
             "Linux single-binary"
           ],
           "oneClick": [
-            "Railway"
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -1813,6 +2000,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/zitadel.svg",
             "shields": "https://selfhostscore.com/api/badge/zitadel.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/zitadel",
+            "RepoCloud": "https://repocloud.io/details/Zitadel/"
           }
         }
       ]
@@ -1836,12 +2027,12 @@
             "maturity": 25,
             "adoption": 15
           },
-          "stars": 92440,
-          "forks": 8556,
-          "openIssues": 837,
+          "stars": 92397,
+          "forks": 8555,
+          "openIssues": 834,
           "language": "JavaScript",
           "license": "MIT",
-          "lastCommit": "2026-10-14T05:19:45Z",
+          "lastCommit": "2026-10-13T00:07:18Z",
           "latestReleaseTag": "2.5.6",
           "latestReleaseAt": "2026-10-09T15:46:26Z",
           "createdAt": "2021-07-03T01:02:42Z",
@@ -1854,7 +2045,9 @@
             "bare-metal"
           ],
           "oneClick": [
-            "PikaPods"
+            "PikaPods",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "medium",
           "footprintSources": [
@@ -1865,6 +2058,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/uptime-kuma.svg",
             "shields": "https://selfhostscore.com/api/badge/uptime-kuma.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/uptime-kuma",
+            "RepoCloud": "https://repocloud.io/details/UptimeKuma/"
           }
         },
         {
@@ -1880,14 +2077,14 @@
             "maturity": 24,
             "adoption": 13
           },
-          "stars": 32353,
+          "stars": 32346,
           "forks": 2532,
           "openIssues": 1543,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T10:15:20Z",
-          "latestReleaseTag": "v0.146.0",
-          "latestReleaseAt": "2026-10-14T06:42:10Z",
+          "lastCommit": "2026-10-13T11:56:11Z",
+          "latestReleaseTag": "v0.145.0",
+          "latestReleaseAt": "2026-10-05T06:41:26Z",
           "createdAt": "2021-01-03T12:44:36Z",
           "database": "ClickHouse",
           "minRamMB": 4096,
@@ -1904,7 +2101,8 @@
             "Render",
             "Railway",
             "DigitalOcean",
-            "Coolify"
+            "Coolify",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -1916,6 +2114,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/signoz.svg",
             "shields": "https://selfhostscore.com/api/badge/signoz.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/signoz",
+            "RepoCloud": "https://repocloud.io/details/SigNoz/"
           }
         },
         {
@@ -1931,14 +2133,14 @@
             "maturity": 23,
             "adoption": 11
           },
-          "stars": 22361,
-          "forks": 1135,
-          "openIssues": 546,
+          "stars": 22341,
+          "forks": 1130,
+          "openIssues": 547,
           "language": "TypeScript",
           "license": "AGPL-3.0",
-          "lastCommit": "2026-10-14T10:14:22Z",
-          "latestReleaseTag": "v1.1.0-rc3",
-          "latestReleaseAt": "2026-10-14T10:07:45Z",
+          "lastCommit": "2026-10-13T11:59:15Z",
+          "latestReleaseTag": "v1.1.0-rc2",
+          "latestReleaseAt": "2026-10-08T04:30:23Z",
           "createdAt": "2023-02-02T03:29:51Z",
           "database": "none",
           "minRamMB": 512,
@@ -1950,7 +2152,8 @@
             "Kubernetes"
           ],
           "oneClick": [
-            "Railway"
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "medium",
           "footprintSources": [
@@ -1964,6 +2167,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/openobserve.svg",
             "shields": "https://selfhostscore.com/api/badge/openobserve.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/openobserve",
+            "RepoCloud": "https://repocloud.io/details/OpenObserve/"
           }
         }
       ]
@@ -1987,12 +2194,12 @@
             "maturity": 24,
             "adoption": 15
           },
-          "stars": 37772,
-          "forks": 9198,
-          "openIssues": 1587,
+          "stars": 37749,
+          "forks": 9196,
+          "openIssues": 1590,
           "language": "Ruby",
           "license": null,
-          "lastCommit": "2026-10-14T10:16:54Z",
+          "lastCommit": "2026-10-13T11:43:06Z",
           "latestReleaseTag": "v4.18.0",
           "latestReleaseAt": "2026-09-18T00:02:33Z",
           "createdAt": "2019-08-14T06:50:51Z",
@@ -2009,7 +2216,9 @@
           ],
           "oneClick": [
             "DigitalOcean",
-            "Heroku"
+            "Heroku",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -2023,6 +2232,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/chatwoot.svg",
             "shields": "https://selfhostscore.com/api/badge/chatwoot.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/chatwoot",
+            "RepoCloud": "https://repocloud.io/details/Chatwoot/"
           }
         },
         {
@@ -2038,9 +2251,9 @@
             "maturity": 19,
             "adoption": 11
           },
-          "stars": 4596,
-          "forks": 731,
-          "openIssues": 19,
+          "stars": 4594,
+          "forks": 730,
+          "openIssues": 16,
           "language": "PHP",
           "license": "AGPL-3.0",
           "lastCommit": "2026-10-14T10:12:24Z",
@@ -2058,7 +2271,9 @@
           ],
           "oneClick": [
             "PikaPods",
-            "Cloudron"
+            "Cloudron",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "medium",
           "footprintSources": [
@@ -2072,6 +2287,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/freescout.svg",
             "shields": "https://selfhostscore.com/api/badge/freescout.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/freescout",
+            "RepoCloud": "https://repocloud.io/details/FreeScout/"
           }
         },
         {
@@ -2087,12 +2306,12 @@
             "maturity": 20,
             "adoption": 11
           },
-          "stars": 6011,
+          "stars": 6009,
           "forks": 1073,
-          "openIssues": 477,
+          "openIssues": 470,
           "language": "Ruby",
           "license": "AGPL-3.0",
-          "lastCommit": "2026-10-14T08:09:57Z",
+          "lastCommit": "2026-10-13T11:55:24Z",
           "latestReleaseTag": null,
           "latestReleaseAt": null,
           "createdAt": "2012-04-02T08:50:33Z",
@@ -2106,7 +2325,10 @@
             "DEB/RPM packages",
             "bare-metal (source)"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "high",
           "footprintSources": [
             "https://docs.zammad.org/en/latest/prerequisites/hardware.html",
@@ -2118,6 +2340,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/zammad.svg",
             "shields": "https://selfhostscore.com/api/badge/zammad.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/zammad",
+            "RepoCloud": "https://repocloud.io/details/Zammad/"
           }
         }
       ]
@@ -2141,9 +2367,9 @@
             "maturity": 24,
             "adoption": 15
           },
-          "stars": 39364,
-          "forks": 8299,
-          "openIssues": 99,
+          "stars": 39348,
+          "forks": 8286,
+          "openIssues": 122,
           "language": "TypeScript",
           "license": "MIT",
           "lastCommit": "2026-10-13T23:23:14Z",
@@ -2167,7 +2393,8 @@
             "Heroku",
             "Vercel",
             "Netlify",
-            "PikaPods"
+            "PikaPods",
+            "RepoCloud"
           ],
           "footprintConfidence": "medium",
           "footprintSources": [
@@ -2180,6 +2407,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/umami.svg",
             "shields": "https://selfhostscore.com/api/badge/umami.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/umami-analytics",
+            "RepoCloud": "https://repocloud.io/details/Umami/"
           }
         },
         {
@@ -2195,14 +2426,14 @@
             "maturity": 25,
             "adoption": 13
           },
-          "stars": 40280,
-          "forks": 3510,
-          "openIssues": 5477,
+          "stars": 40255,
+          "forks": 3507,
+          "openIssues": 5468,
           "language": "Python",
           "license": null,
-          "lastCommit": "2026-10-14T10:14:48Z",
-          "latestReleaseTag": "desktop-v0.61.694",
-          "latestReleaseAt": "2026-10-14T01:51:07Z",
+          "lastCommit": "2026-10-13T12:00:22Z",
+          "latestReleaseTag": "desktop-v0.61.686",
+          "latestReleaseAt": "2026-10-13T02:00:25Z",
           "createdAt": "2020-01-23T22:46:58Z",
           "database": "PostgreSQL + ClickHouse",
           "minRamMB": 4096,
@@ -2212,7 +2443,8 @@
             "docker-compose"
           ],
           "oneClick": [
-            "Railway"
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -2223,6 +2455,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/posthog.svg",
             "shields": "https://selfhostscore.com/api/badge/posthog.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/posthog-1",
+            "RepoCloud": "https://repocloud.io/details/PostHog/"
           }
         },
         {
@@ -2238,12 +2474,12 @@
             "maturity": 24,
             "adoption": 12
           },
-          "stars": 29395,
-          "forks": 1898,
-          "openIssues": 68,
+          "stars": 29387,
+          "forks": 1896,
+          "openIssues": 69,
           "language": "Elixir",
           "license": "AGPL-3.0",
-          "lastCommit": "2026-10-14T09:06:33Z",
+          "lastCommit": "2026-10-13T10:55:25Z",
           "latestReleaseTag": "v3.2.1",
           "latestReleaseAt": "2026-05-15T09:15:56Z",
           "createdAt": "2018-12-04T22:33:36Z",
@@ -2259,7 +2495,8 @@
             "Coolify",
             "Railway",
             "PikaPods",
-            "CapRover"
+            "CapRover",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -2272,6 +2509,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/plausible.svg",
             "shields": "https://selfhostscore.com/api/badge/plausible.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/plausible",
+            "RepoCloud": "https://repocloud.io/details/Plausible/"
           }
         }
       ]
@@ -2295,12 +2536,12 @@
             "maturity": 22,
             "adoption": 13
           },
-          "stars": 15412,
-          "forks": 3336,
-          "openIssues": 213,
+          "stars": 15403,
+          "forks": 3330,
+          "openIssues": 212,
           "language": "TypeScript",
           "license": "AGPL-3.0",
-          "lastCommit": "2026-10-14T10:08:55Z",
+          "lastCommit": "2026-10-13T10:10:37Z",
           "latestReleaseTag": "v2.20.0",
           "latestReleaseAt": "2026-10-08T04:21:22Z",
           "createdAt": "2023-03-12T16:28:56Z",
@@ -2313,7 +2554,8 @@
             "Kubernetes"
           ],
           "oneClick": [
-            "Railway"
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -2324,6 +2566,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/documenso.svg",
             "shields": "https://selfhostscore.com/api/badge/documenso.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/documenso",
+            "RepoCloud": "https://repocloud.io/details/Documenso/"
           }
         },
         {
@@ -2339,8 +2585,8 @@
             "maturity": 23,
             "adoption": 12
           },
-          "stars": 18717,
-          "forks": 1892,
+          "stars": 18702,
+          "forks": 1889,
           "openIssues": 126,
           "language": "Ruby",
           "license": "AGPL-3.0",
@@ -2359,7 +2605,8 @@
             "Railway",
             "Render",
             "DigitalOcean",
-            "Heroku"
+            "Heroku",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -2370,6 +2617,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/docuseal.svg",
             "shields": "https://selfhostscore.com/api/badge/docuseal.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/docuseal",
+            "RepoCloud": "https://repocloud.io/details/Docuseal/"
           }
         },
         {
@@ -2385,8 +2636,8 @@
             "maturity": 20,
             "adoption": 11
           },
-          "stars": 7095,
-          "forks": 841,
+          "stars": 7094,
+          "forks": 840,
           "openIssues": 154,
           "language": "JavaScript",
           "license": null,
@@ -2402,7 +2653,9 @@
             "docker-compose"
           ],
           "oneClick": [
-            "DigitalOcean"
+            "DigitalOcean",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "medium",
           "footprintSources": [
@@ -2414,6 +2667,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/opensign.svg",
             "shields": "https://selfhostscore.com/api/badge/opensign.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/opensign",
+            "RepoCloud": "https://repocloud.io/details/OpenSign/"
           }
         }
       ]
@@ -2437,9 +2694,9 @@
             "maturity": 25,
             "adoption": 13
           },
-          "stars": 69018,
-          "forks": 3322,
-          "openIssues": 94,
+          "stars": 68960,
+          "forks": 3315,
+          "openIssues": 93,
           "language": "Rust",
           "license": "AGPL-3.0",
           "lastCommit": "2026-10-10T17:58:41Z",
@@ -2458,7 +2715,9 @@
             "bare-metal"
           ],
           "oneClick": [
-            "PikaPods"
+            "PikaPods",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -2470,6 +2729,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/vaultwarden.svg",
             "shields": "https://selfhostscore.com/api/badge/vaultwarden.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/vaultwarden",
+            "RepoCloud": "https://repocloud.io/details/Vaultwarden/"
           }
         },
         {
@@ -2485,7 +2748,7 @@
             "maturity": 20,
             "adoption": 10
           },
-          "stars": 6164,
+          "stars": 6163,
           "forks": 405,
           "openIssues": 26,
           "language": "PHP",
@@ -2504,7 +2767,9 @@
             "bare-metal"
           ],
           "oneClick": [
-            "DigitalOcean"
+            "DigitalOcean",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -2518,6 +2783,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/passbolt.svg",
             "shields": "https://selfhostscore.com/api/badge/passbolt.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/passbolt",
+            "RepoCloud": "https://repocloud.io/details/Passbolt/"
           }
         },
         {
@@ -2560,7 +2829,8 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/padloc.svg",
             "shields": "https://selfhostscore.com/api/badge/padloc.json"
-          }
+          },
+          "deployLinks": {}
         }
       ]
     },
@@ -2583,12 +2853,12 @@
             "maturity": 23,
             "adoption": 12
           },
-          "stars": 23299,
-          "forks": 2071,
-          "openIssues": 466,
+          "stars": 23267,
+          "forks": 2035,
+          "openIssues": 420,
           "language": "Rust",
           "license": null,
-          "lastCommit": "2026-10-14T10:08:41Z",
+          "lastCommit": "2026-10-13T11:14:35Z",
           "latestReleaseTag": "cap-v0.6.0",
           "latestReleaseAt": "2026-09-15T13:10:21Z",
           "createdAt": "2023-11-17T20:31:46Z",
@@ -2616,6 +2886,9 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/cap.svg",
             "shields": "https://selfhostscore.com/api/badge/cap.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/new/template/PwpGcf"
           }
         },
         {
@@ -2631,8 +2904,8 @@
             "maturity": 23,
             "adoption": 12
           },
-          "stars": 18777,
-          "forks": 1530,
+          "stars": 18776,
+          "forks": 1529,
           "openIssues": 12,
           "language": "JavaScript",
           "license": "GPL-3.0",
@@ -2655,7 +2928,8 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/screenity.svg",
             "shields": "https://selfhostscore.com/api/badge/screenity.json"
-          }
+          },
+          "deployLinks": {}
         }
       ]
     },
@@ -2678,12 +2952,12 @@
             "maturity": 23,
             "adoption": 13
           },
-          "stars": 23777,
-          "forks": 2674,
-          "openIssues": 107,
+          "stars": 23771,
+          "forks": 2669,
+          "openIssues": 108,
           "language": "Go",
           "license": "AGPL-3.0",
-          "lastCommit": "2026-10-14T02:12:57Z",
+          "lastCommit": "2026-10-12T02:30:31Z",
           "latestReleaseTag": "v6.2.0",
           "latestReleaseAt": "2026-06-26T10:24:34Z",
           "createdAt": "2019-06-26T05:08:39Z",
@@ -2700,7 +2974,8 @@
           ],
           "oneClick": [
             "PikaPods",
-            "Railway"
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -2713,6 +2988,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/listmonk.svg",
             "shields": "https://selfhostscore.com/api/badge/listmonk.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/listmonk-1",
+            "RepoCloud": "https://repocloud.io/details/Listmonk/"
           }
         },
         {
@@ -2728,12 +3007,12 @@
             "maturity": 21,
             "adoption": 13
           },
-          "stars": 10765,
-          "forks": 3495,
-          "openIssues": 297,
+          "stars": 10754,
+          "forks": 3492,
+          "openIssues": 284,
           "language": "PHP",
           "license": null,
-          "lastCommit": "2026-10-14T10:15:14Z",
+          "lastCommit": "2026-10-13T11:31:12Z",
           "latestReleaseTag": "7.2.1",
           "latestReleaseAt": "2026-09-23T13:55:48Z",
           "createdAt": "2013-08-19T00:36:28Z",
@@ -2748,7 +3027,10 @@
             "bare-metal",
             "DDEV"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "medium",
           "footprintSources": [
             "https://mautic.org/mautic-requirements/",
@@ -2759,6 +3041,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/mautic.svg",
             "shields": "https://selfhostscore.com/api/badge/mautic.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/mautic",
+            "RepoCloud": "https://repocloud.io/details/Mautic/"
           }
         },
         {
@@ -2802,7 +3088,8 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/phplist.svg",
             "shields": "https://selfhostscore.com/api/badge/phplist.json"
-          }
+          },
+          "deployLinks": {}
         }
       ]
     },
@@ -2825,12 +3112,12 @@
             "maturity": 24,
             "adoption": 15
           },
-          "stars": 37772,
-          "forks": 9198,
-          "openIssues": 1587,
+          "stars": 37749,
+          "forks": 9196,
+          "openIssues": 1590,
           "language": "Ruby",
           "license": null,
-          "lastCommit": "2026-10-14T10:16:54Z",
+          "lastCommit": "2026-10-13T11:43:06Z",
           "latestReleaseTag": "v4.18.0",
           "latestReleaseAt": "2026-09-18T00:02:33Z",
           "createdAt": "2019-08-14T06:50:51Z",
@@ -2847,7 +3134,9 @@
           ],
           "oneClick": [
             "DigitalOcean",
-            "Heroku"
+            "Heroku",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -2861,6 +3150,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/chatwoot.svg",
             "shields": "https://selfhostscore.com/api/badge/chatwoot.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/chatwoot",
+            "RepoCloud": "https://repocloud.io/details/Chatwoot/"
           }
         },
         {
@@ -2876,7 +3169,7 @@
             "maturity": 19,
             "adoption": 10
           },
-          "stars": 3572,
+          "stars": 3573,
           "forks": 510,
           "openIssues": 83,
           "language": "TypeScript",
@@ -2906,7 +3199,8 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/chaskiq.svg",
             "shields": "https://selfhostscore.com/api/badge/chaskiq.json"
-          }
+          },
+          "deployLinks": {}
         },
         {
           "name": "Papercups",
@@ -2921,8 +3215,8 @@
             "maturity": 20,
             "adoption": 10
           },
-          "stars": 6116,
-          "forks": 581,
+          "stars": 6115,
+          "forks": 580,
           "openIssues": 179,
           "language": "Elixir",
           "license": "MIT",
@@ -2940,7 +3234,8 @@
             "bare-metal"
           ],
           "oneClick": [
-            "Heroku"
+            "Heroku",
+            "RepoCloud"
           ],
           "footprintConfidence": "medium",
           "footprintSources": [
@@ -2952,6 +3247,9 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/papercups.svg",
             "shields": "https://selfhostscore.com/api/badge/papercups.json"
+          },
+          "deployLinks": {
+            "RepoCloud": "https://repocloud.io/details/Papercups/"
           }
         }
       ]
@@ -2975,9 +3273,9 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 60817,
-          "forks": 6057,
-          "openIssues": 1130,
+          "stars": 60760,
+          "forks": 6042,
+          "openIssues": 1119,
           "language": "TypeScript",
           "license": "AGPL-3.0",
           "lastCommit": "2026-10-14T10:17:11Z",
@@ -2996,7 +3294,9 @@
           ],
           "oneClick": [
             "Coolify",
-            "DigitalOcean"
+            "DigitalOcean",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -3007,6 +3307,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/plane.svg",
             "shields": "https://selfhostscore.com/api/badge/plane.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/plane",
+            "RepoCloud": "https://repocloud.io/details/Plane/"
           }
         },
         {
@@ -3022,12 +3326,12 @@
             "maturity": 22,
             "adoption": 13
           },
-          "stars": 16414,
-          "forks": 3553,
-          "openIssues": 297,
+          "stars": 16404,
+          "forks": 3550,
+          "openIssues": 294,
           "language": "Ruby",
           "license": "GPL-3.0",
-          "lastCommit": "2026-10-14T10:11:30Z",
+          "lastCommit": "2026-10-13T11:57:12Z",
           "latestReleaseTag": "v17.9.1",
           "latestReleaseAt": "2026-10-01T10:50:28Z",
           "createdAt": "2012-11-28T09:59:11Z",
@@ -3041,7 +3345,9 @@
             "bare-metal (packaged .deb/.rpm)",
             "manual"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway"
+          ],
           "footprintConfidence": "high",
           "footprintSources": [
             "https://www.openproject.org/docs/installation-and-operations/system-requirements/",
@@ -3050,6 +3356,9 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/openproject.svg",
             "shields": "https://selfhostscore.com/api/badge/openproject.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/openproject"
           }
         },
         {
@@ -3066,11 +3375,11 @@
             "adoption": 13
           },
           "stars": 6045,
-          "forks": 2472,
+          "forks": 2473,
           "openIssues": 3,
           "language": "Ruby",
           "license": null,
-          "lastCommit": "2026-10-14T09:50:08Z",
+          "lastCommit": "2026-10-13T05:40:08Z",
           "latestReleaseTag": null,
           "latestReleaseAt": null,
           "createdAt": "2012-11-19T22:47:09Z",
@@ -3082,7 +3391,10 @@
             "Docker",
             "docker-compose"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "medium",
           "footprintSources": [
             "https://www.redmine.org/projects/redmine/wiki/redmineinstall",
@@ -3092,6 +3404,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/redmine.svg",
             "shields": "https://selfhostscore.com/api/badge/redmine.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/redmine",
+            "RepoCloud": "https://repocloud.io/details/Redmine/"
           }
         },
         {
@@ -3124,7 +3440,10 @@
             "docker-compose",
             "bare-metal (from source)"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "medium",
           "footprintSources": [
             "https://docs.taiga.io/setup-production.html",
@@ -3133,6 +3452,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/taiga.svg",
             "shields": "https://selfhostscore.com/api/badge/taiga.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/taiga-1",
+            "RepoCloud": "https://repocloud.io/details/Taiga/"
           }
         }
       ]
@@ -3156,12 +3479,12 @@
             "maturity": 24,
             "adoption": 14
           },
-          "stars": 37100,
-          "forks": 5276,
-          "openIssues": 3830,
+          "stars": 37085,
+          "forks": 5274,
+          "openIssues": 3814,
           "language": "PHP",
           "license": "AGPL-3.0",
-          "lastCommit": "2026-10-14T10:10:50Z",
+          "lastCommit": "2026-10-13T11:34:07Z",
           "latestReleaseTag": "v35.0.1",
           "latestReleaseAt": "2026-09-24T13:54:44Z",
           "createdAt": "2016-06-02T07:44:14Z",
@@ -3177,7 +3500,9 @@
           ],
           "oneClick": [
             "DigitalOcean",
-            "PikaPods"
+            "PikaPods",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -3191,6 +3516,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/nextcloud.svg",
             "shields": "https://selfhostscore.com/api/badge/nextcloud.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/nextcloud",
+            "RepoCloud": "https://repocloud.io/details/Nextcloud/"
           }
         },
         {
@@ -3207,7 +3536,7 @@
             "adoption": 12
           },
           "stars": 8833,
-          "forks": 2059,
+          "forks": 2060,
           "openIssues": 142,
           "language": "PHP",
           "license": "AGPL-3.0",
@@ -3224,7 +3553,9 @@
             "bare-metal (LAMP/manual archive)"
           ],
           "oneClick": [
-            "PikaPods"
+            "PikaPods",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -3236,6 +3567,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/owncloud.svg",
             "shields": "https://selfhostscore.com/api/badge/owncloud.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/owncloud",
+            "RepoCloud": "https://repocloud.io/details/ownCloud/"
           }
         },
         {
@@ -3251,7 +3586,7 @@
             "maturity": 22,
             "adoption": 12
           },
-          "stars": 15330,
+          "stars": 15325,
           "forks": 1674,
           "openIssues": 92,
           "language": "C",
@@ -3269,7 +3604,8 @@
             "bare-metal (server binary package)"
           ],
           "oneClick": [
-            "PikaPods"
+            "PikaPods",
+            "Railway"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -3281,6 +3617,9 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/seafile.svg",
             "shields": "https://selfhostscore.com/api/badge/seafile.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/seafile"
           }
         }
       ]
@@ -3304,12 +3643,12 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 49656,
-          "forks": 6900,
-          "openIssues": 4588,
+          "stars": 49643,
+          "forks": 6899,
+          "openIssues": 4579,
           "language": "Clojure",
           "license": null,
-          "lastCommit": "2026-10-14T10:06:42Z",
+          "lastCommit": "2026-10-13T12:01:02Z",
           "latestReleaseTag": "v0.64.1",
           "latestReleaseAt": "2026-10-07T18:42:49Z",
           "createdAt": "2015-02-02T19:25:47Z",
@@ -3328,7 +3667,8 @@
           "oneClick": [
             "DigitalOcean",
             "Render",
-            "Railway"
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -3343,6 +3683,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/metabase.svg",
             "shields": "https://selfhostscore.com/api/badge/metabase.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/metabase-latest",
+            "RepoCloud": "https://repocloud.io/details/Metabase/"
           }
         },
         {
@@ -3358,8 +3702,8 @@
             "maturity": 24,
             "adoption": 14
           },
-          "stars": 28834,
-          "forks": 4633,
+          "stars": 28833,
+          "forks": 4632,
           "openIssues": 813,
           "language": "Python",
           "license": "BSD-2-Clause",
@@ -3378,7 +3722,8 @@
             "Google Compute Engine image"
           ],
           "oneClick": [
-            "Railway"
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -3390,6 +3735,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/redash.svg",
             "shields": "https://selfhostscore.com/api/badge/redash.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/redash",
+            "RepoCloud": "https://repocloud.io/details/Redash/"
           }
         },
         {
@@ -3405,12 +3754,12 @@
             "maturity": 25,
             "adoption": 15
           },
-          "stars": 75133,
-          "forks": 18476,
-          "openIssues": 530,
+          "stars": 75122,
+          "forks": 18460,
+          "openIssues": 545,
           "language": "Python",
           "license": "Apache-2.0",
-          "lastCommit": "2026-10-14T10:07:20Z",
+          "lastCommit": "2026-10-13T11:56:12Z",
           "latestReleaseTag": "6.1.0",
           "latestReleaseAt": "2026-05-13T18:32:25Z",
           "createdAt": "2015-07-21T18:55:34Z",
@@ -3425,7 +3774,8 @@
             "PyPI/pip (bare-metal Python)"
           ],
           "oneClick": [
-            "Railway"
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "medium",
           "footprintSources": [
@@ -3438,6 +3788,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/superset.svg",
             "shields": "https://selfhostscore.com/api/badge/superset.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/superset",
+            "RepoCloud": "https://repocloud.io/details/Apache%20Superset/"
           }
         }
       ]
@@ -3461,12 +3815,12 @@
             "maturity": 25,
             "adoption": 15
           },
-          "stars": 111517,
-          "forks": 16789,
-          "openIssues": 1169,
+          "stars": 111448,
+          "forks": 16627,
+          "openIssues": 1150,
           "language": "TypeScript",
           "license": "Apache-2.0",
-          "lastCommit": "2026-10-14T09:52:22Z",
+          "lastCommit": "2026-10-13T11:40:51Z",
           "latestReleaseTag": "v1.26.08",
           "latestReleaseAt": "2026-08-07T13:57:57Z",
           "createdAt": "2019-10-12T05:56:49Z",
@@ -3478,7 +3832,9 @@
             "docker-compose"
           ],
           "oneClick": [
-            "DigitalOcean"
+            "DigitalOcean",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -3491,6 +3847,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/supabase.svg",
             "shields": "https://selfhostscore.com/api/badge/supabase.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/supabase",
+            "RepoCloud": "https://repocloud.io/details/Supabase/"
           }
         },
         {
@@ -3506,14 +3866,14 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 57676,
-          "forks": 5790,
-          "openIssues": 784,
+          "stars": 57653,
+          "forks": 5781,
+          "openIssues": 774,
           "language": "TypeScript",
           "license": "BSD-3-Clause",
-          "lastCommit": "2026-10-14T10:16:53Z",
-          "latestReleaseTag": "2.5.0",
-          "latestReleaseAt": "2026-10-13T13:04:26Z",
+          "lastCommit": "2026-10-13T12:00:08Z",
+          "latestReleaseTag": "2.4.0",
+          "latestReleaseAt": "2026-10-08T10:21:50Z",
           "createdAt": "2019-04-08T16:36:25Z",
           "database": "MongoDB",
           "minRamMB": 4096,
@@ -3522,7 +3882,10 @@
             "Docker",
             "docker-compose"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "high",
           "footprintSources": [
             "https://appwrite.io/docs/advanced/self-hosting/installation",
@@ -3533,6 +3896,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/appwrite.svg",
             "shields": "https://selfhostscore.com/api/badge/appwrite.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/appwrite",
+            "RepoCloud": "https://repocloud.io/details/Appwrite/"
           }
         },
         {
@@ -3548,8 +3915,8 @@
             "maturity": 25,
             "adoption": 13
           },
-          "stars": 61401,
-          "forks": 3731,
+          "stars": 61392,
+          "forks": 3729,
           "openIssues": 19,
           "language": "Go",
           "license": "MIT",
@@ -3565,7 +3932,10 @@
             "bare-metal",
             "Docker"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "medium",
           "footprintSources": [
             "https://pocketbase.io/docs/going-to-production/",
@@ -3576,6 +3946,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/pocketbase.svg",
             "shields": "https://selfhostscore.com/api/badge/pocketbase.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/pocketbase",
+            "RepoCloud": "https://repocloud.io/details/PocketBase/"
           }
         },
         {
@@ -3592,11 +3966,11 @@
             "adoption": 11
           },
           "stars": 9356,
-          "forks": 634,
-          "openIssues": 186,
+          "forks": 633,
+          "openIssues": 181,
           "language": "TypeScript",
           "license": "MIT",
-          "lastCommit": "2026-10-14T09:54:08Z",
+          "lastCommit": "2026-10-13T08:29:11Z",
           "latestReleaseTag": "cli@1.51.2",
           "latestReleaseAt": "2026-09-30T09:52:20Z",
           "createdAt": "2021-02-09T13:33:34Z",
@@ -3606,7 +3980,10 @@
           "deploy": [
             "docker-compose"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "low",
           "footprintSources": [
             "https://github.com/nhost/nhost/tree/main/examples/docker-compose",
@@ -3616,6 +3993,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/nhost.svg",
             "shields": "https://selfhostscore.com/api/badge/nhost.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/nhost",
+            "RepoCloud": "https://repocloud.io/details/Nhost/"
           }
         }
       ]
@@ -3639,12 +4020,12 @@
             "maturity": 25,
             "adoption": 13
           },
-          "stars": 59564,
-          "forks": 2735,
-          "openIssues": 323,
+          "stars": 59557,
+          "forks": 2729,
+          "openIssues": 321,
           "language": "Rust",
           "license": null,
-          "lastCommit": "2026-10-13T15:51:39Z",
+          "lastCommit": "2026-10-13T08:46:22Z",
           "latestReleaseTag": "v1.55.0",
           "latestReleaseAt": "2026-10-12T09:21:50Z",
           "createdAt": "2018-04-23T11:45:28Z",
@@ -3676,6 +4057,9 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/meilisearch.svg",
             "shields": "https://selfhostscore.com/api/badge/meilisearch.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/meilisearch-1"
           }
         },
         {
@@ -3691,7 +4075,7 @@
             "maturity": 24,
             "adoption": 11
           },
-          "stars": 26869,
+          "stars": 26872,
           "forks": 1012,
           "openIssues": 908,
           "language": "C++",
@@ -3726,6 +4110,9 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/typesense.svg",
             "shields": "https://selfhostscore.com/api/badge/typesense.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/typesense-latest"
           }
         }
       ]
@@ -3749,9 +4136,9 @@
             "maturity": 22,
             "adoption": 12
           },
-          "stars": 12260,
+          "stars": 12262,
           "forks": 2075,
-          "openIssues": 51,
+          "openIssues": 50,
           "language": "PHP",
           "license": "MIT",
           "lastCommit": "2026-10-12T14:22:31Z",
@@ -3766,7 +4153,9 @@
             "docker-compose",
             "bare-metal"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway"
+          ],
           "footprintConfidence": "medium",
           "footprintSources": [
             "https://yourls.org/docs/guide/install",
@@ -3776,6 +4165,9 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/yourls.svg",
             "shields": "https://selfhostscore.com/api/badge/yourls.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/yourls"
           }
         },
         {
@@ -3792,7 +4184,7 @@
             "adoption": 12
           },
           "stars": 11154,
-          "forks": 1506,
+          "forks": 1505,
           "openIssues": 83,
           "language": "JavaScript",
           "license": "MIT",
@@ -3808,7 +4200,10 @@
             "docker-compose",
             "bare-metal"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "medium",
           "footprintSources": [
             "https://github.com/thedevs-network/kutt",
@@ -3818,6 +4213,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/kutt.svg",
             "shields": "https://selfhostscore.com/api/badge/kutt.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/kutt",
+            "RepoCloud": "https://repocloud.io/details/Kutt/"
           }
         },
         {
@@ -3833,7 +4232,7 @@
             "maturity": 20,
             "adoption": 10
           },
-          "stars": 5338,
+          "stars": 5336,
           "forks": 425,
           "openIssues": 24,
           "language": "PHP",
@@ -3850,7 +4249,10 @@
             "docker-compose",
             "bare-metal"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "medium",
           "footprintSources": [
             "https://github.com/shlinkio/shlink",
@@ -3860,6 +4262,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/shlink.svg",
             "shields": "https://selfhostscore.com/api/badge/shlink.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/shlink",
+            "RepoCloud": "https://repocloud.io/details/Shlink/"
           }
         }
       ]
@@ -3883,12 +4289,12 @@
             "maturity": 24,
             "adoption": 15
           },
-          "stars": 30075,
-          "forks": 8076,
-          "openIssues": 140,
+          "stars": 30074,
+          "forks": 8074,
+          "openIssues": 145,
           "language": "TypeScript",
           "license": "Apache-2.0",
-          "lastCommit": "2026-10-14T04:32:05Z",
+          "lastCommit": "2026-10-13T08:41:44Z",
           "latestReleaseTag": "stable/jitsi-meet_11248",
           "latestReleaseAt": "2026-09-14T13:07:11Z",
           "createdAt": "2013-12-16T12:51:09Z",
@@ -3902,7 +4308,8 @@
             "Debian/Ubuntu apt packages"
           ],
           "oneClick": [
-            "DigitalOcean"
+            "DigitalOcean",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -3915,6 +4322,9 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/jitsi-meet.svg",
             "shields": "https://selfhostscore.com/api/badge/jitsi-meet.json"
+          },
+          "deployLinks": {
+            "RepoCloud": "https://repocloud.io/details/Jitsi%20Meet/"
           }
         },
         {
@@ -3930,12 +4340,12 @@
             "maturity": 21,
             "adoption": 14
           },
-          "stars": 9239,
-          "forks": 5976,
-          "openIssues": 760,
+          "stars": 9240,
+          "forks": 5975,
+          "openIssues": 764,
           "language": "JavaScript",
           "license": "LGPL-3.0",
-          "lastCommit": "2026-10-14T00:16:00Z",
+          "lastCommit": "2026-10-12T13:04:06Z",
           "latestReleaseTag": "v3.0.39",
           "latestReleaseAt": "2026-10-02T20:05:35Z",
           "createdAt": "2010-05-25T01:42:41Z",
@@ -3946,7 +4356,9 @@
             "bare-metal",
             "Docker"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "RepoCloud"
+          ],
           "footprintConfidence": "high",
           "footprintSources": [
             "https://docs.bigbluebutton.org/administration/install/",
@@ -3957,6 +4369,9 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/bigbluebutton.svg",
             "shields": "https://selfhostscore.com/api/badge/bigbluebutton.json"
+          },
+          "deployLinks": {
+            "RepoCloud": "https://repocloud.io/details/BigBlueButton/"
           }
         }
       ]
@@ -3980,9 +4395,9 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 58490,
-          "forks": 7261,
-          "openIssues": 2313,
+          "stars": 58467,
+          "forks": 7254,
+          "openIssues": 2311,
           "language": "Go",
           "license": "MIT",
           "lastCommit": "2026-10-14T07:19:50Z",
@@ -4004,7 +4419,8 @@
           "oneClick": [
             "Railway",
             "PikaPods",
-            "DigitalOcean"
+            "DigitalOcean",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -4017,6 +4433,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/gitea.svg",
             "shields": "https://selfhostscore.com/api/badge/gitea.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/gitea",
+            "RepoCloud": "https://repocloud.io/details/Gitea/"
           }
         },
         {
@@ -4032,9 +4452,9 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 47866,
-          "forks": 5077,
-          "openIssues": 1011,
+          "stars": 47864,
+          "forks": 5076,
+          "openIssues": 1009,
           "language": "Go",
           "license": "MIT",
           "lastCommit": "2026-09-12T20:28:48Z",
@@ -4060,7 +4480,8 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/gogs.svg",
             "shields": "https://selfhostscore.com/api/badge/gogs.json"
-          }
+          },
+          "deployLinks": {}
         },
         {
           "name": "OneDev",
@@ -4080,7 +4501,7 @@
           "openIssues": 0,
           "language": "Java",
           "license": "MIT",
-          "lastCommit": "2026-10-14T05:49:21Z",
+          "lastCommit": "2026-10-13T06:51:09Z",
           "latestReleaseTag": "v16.8.8",
           "latestReleaseAt": "2026-10-11T23:14:27Z",
           "createdAt": "2018-11-06T02:57:01Z",
@@ -4092,7 +4513,10 @@
             "bare-metal",
             "Kubernetes"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "high",
           "footprintSources": [
             "https://docs.onedev.io/installation-guide/system-requirement",
@@ -4102,6 +4526,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/onedev.svg",
             "shields": "https://selfhostscore.com/api/badge/onedev.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/onedev",
+            "RepoCloud": "https://repocloud.io/details/OneDev/"
           }
         }
       ]
@@ -4125,12 +4553,12 @@
             "maturity": 21,
             "adoption": 11
           },
-          "stars": 8000,
-          "forks": 708,
-          "openIssues": 384,
+          "stars": 7996,
+          "forks": 707,
+          "openIssues": 378,
           "language": "Go",
           "license": "Apache-2.0",
-          "lastCommit": "2026-10-14T06:19:26Z",
+          "lastCommit": "2026-10-13T08:51:57Z",
           "latestReleaseTag": "v3.19.0",
           "latestReleaseAt": "2026-10-07T18:04:00Z",
           "createdAt": "2019-04-03T18:06:38Z",
@@ -4146,7 +4574,10 @@
             "RPM",
             "bare-metal"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "high",
           "footprintSources": [
             "https://woodpecker-ci.org/docs/2.8/administration/getting-started",
@@ -4157,6 +4588,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/woodpecker.svg",
             "shields": "https://selfhostscore.com/api/badge/woodpecker.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/woodpecker",
+            "RepoCloud": "https://repocloud.io/details/Woodpecker%20CI/"
           }
         },
         {
@@ -4172,12 +4607,12 @@
             "maturity": 24,
             "adoption": 13
           },
-          "stars": 38537,
-          "forks": 3422,
+          "stars": 38531,
+          "forks": 3420,
           "openIssues": 117,
           "language": "Go",
           "license": "Apache-2.0",
-          "lastCommit": "2026-10-13T15:39:00Z",
+          "lastCommit": "2026-10-13T10:57:42Z",
           "latestReleaseTag": "v2.28.2",
           "latestReleaseAt": "2026-04-20T11:19:42Z",
           "createdAt": "2014-02-07T07:54:44Z",
@@ -4201,7 +4636,8 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/drone.svg",
             "shields": "https://selfhostscore.com/api/badge/drone.json"
-          }
+          },
+          "deployLinks": {}
         },
         {
           "name": "Concourse",
@@ -4221,7 +4657,7 @@
           "openIssues": 77,
           "language": "Go",
           "license": "Apache-2.0",
-          "lastCommit": "2026-10-14T08:26:16Z",
+          "lastCommit": "2026-10-13T04:24:43Z",
           "latestReleaseTag": "v8.3.1",
           "latestReleaseAt": "2026-09-28T15:49:57Z",
           "createdAt": "2014-04-19T20:45:45Z",
@@ -4245,7 +4681,8 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/concourse.svg",
             "shields": "https://selfhostscore.com/api/badge/concourse.json"
-          }
+          },
+          "deployLinks": {}
         }
       ]
     },
@@ -4268,12 +4705,12 @@
             "maturity": 25,
             "adoption": 15
           },
-          "stars": 58315,
-          "forks": 9526,
-          "openIssues": 132,
+          "stars": 58274,
+          "forks": 9516,
+          "openIssues": 135,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T10:17:57Z",
+          "lastCommit": "2026-10-13T12:01:28Z",
           "latestReleaseTag": "twenty/v2.46.0",
           "latestReleaseAt": "2026-10-12T08:20:57Z",
           "createdAt": "2022-12-01T13:04:40Z",
@@ -4287,7 +4724,8 @@
             "1-click install script"
           ],
           "oneClick": [
-            "Railway"
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -4299,6 +4737,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/twenty.svg",
             "shields": "https://selfhostscore.com/api/badge/twenty.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/twenty-open-source-crm",
+            "RepoCloud": "https://repocloud.io/details/Twenty/"
           }
         },
         {
@@ -4314,12 +4756,12 @@
             "maturity": 23,
             "adoption": 12
           },
-          "stars": 24006,
-          "forks": 1665,
+          "stars": 24001,
+          "forks": 1664,
           "openIssues": 117,
           "language": "PHP",
           "license": "MIT",
-          "lastCommit": "2026-10-13T14:05:16Z",
+          "lastCommit": "2026-10-09T13:42:40Z",
           "latestReleaseTag": "v2.2.6",
           "latestReleaseAt": "2026-09-10T12:21:01Z",
           "createdAt": "2021-06-05T14:18:48Z",
@@ -4330,7 +4772,10 @@
             "bare-metal",
             "docker-compose"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "high",
           "footprintSources": [
             "https://devdocs.krayincrm.com/1.x/introduction/requirements.html",
@@ -4341,6 +4786,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/krayin.svg",
             "shields": "https://selfhostscore.com/api/badge/krayin.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/krayin",
+            "RepoCloud": "https://repocloud.io/details/Krayin/"
           }
         },
         {
@@ -4356,8 +4805,8 @@
             "maturity": 20,
             "adoption": 13
           },
-          "stars": 5797,
-          "forks": 2431,
+          "stars": 5794,
+          "forks": 2430,
           "openIssues": 1393,
           "language": "PHP",
           "license": "AGPL-3.0",
@@ -4373,7 +4822,9 @@
             "CLI installer",
             "UI installer"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway"
+          ],
           "footprintConfidence": "medium",
           "footprintSources": [
             "https://docs.suitecrm.com/8.x/admin/compatibility-matrix/",
@@ -4383,6 +4834,9 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/suitecrm.svg",
             "shields": "https://selfhostscore.com/api/badge/suitecrm.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/suitecrm"
           }
         },
         {
@@ -4398,12 +4852,12 @@
             "maturity": 19,
             "adoption": 11
           },
-          "stars": 3486,
-          "forks": 1002,
-          "openIssues": 64,
+          "stars": 3484,
+          "forks": 999,
+          "openIssues": 65,
           "language": "PHP",
           "license": "AGPL-3.0",
-          "lastCommit": "2026-10-13T16:25:44Z",
+          "lastCommit": "2026-10-12T11:00:01Z",
           "latestReleaseTag": "10.0.9",
           "latestReleaseAt": "2026-09-29T07:12:28Z",
           "createdAt": "2014-09-25T13:38:46Z",
@@ -4416,7 +4870,10 @@
             "install script",
             "bare-metal"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "medium",
           "footprintSources": [
             "https://docs.espocrm.com/administration/server-configuration/",
@@ -4428,6 +4885,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/espocrm.svg",
             "shields": "https://selfhostscore.com/api/badge/espocrm.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/espocrm",
+            "RepoCloud": "https://repocloud.io/details/EspoCRM/"
           }
         }
       ]
@@ -4451,14 +4912,14 @@
             "maturity": 24,
             "adoption": 13
           },
-          "stars": 29752,
-          "forks": 2332,
-          "openIssues": 818,
+          "stars": 29733,
+          "forks": 2328,
+          "openIssues": 803,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T07:53:33Z",
-          "latestReleaseTag": "v0.166.6",
-          "latestReleaseAt": "2026-10-13T22:35:32Z",
+          "lastCommit": "2026-10-13T10:10:49Z",
+          "latestReleaseTag": "v0.166.5",
+          "latestReleaseAt": "2026-10-12T20:28:28Z",
           "createdAt": "2022-08-05T13:50:00Z",
           "database": "PostgreSQL (plus Redis required)",
           "minRamMB": 4096,
@@ -4473,7 +4934,9 @@
           ],
           "oneClick": [
             "DigitalOcean",
-            "Coolify"
+            "Coolify",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -4486,6 +4949,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/infisical.svg",
             "shields": "https://selfhostscore.com/api/badge/infisical.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/infisical",
+            "RepoCloud": "https://repocloud.io/details/Infisical/"
           }
         },
         {
@@ -4501,12 +4968,12 @@
             "maturity": 21,
             "adoption": 10
           },
-          "stars": 8436,
-          "forks": 627,
-          "openIssues": 332,
+          "stars": 8412,
+          "forks": 625,
+          "openIssues": 343,
           "language": "Go",
           "license": "MPL-2.0",
-          "lastCommit": "2026-10-14T07:27:13Z",
+          "lastCommit": "2026-10-13T11:24:46Z",
           "latestReleaseTag": "v2.7.1",
           "latestReleaseAt": "2026-10-01T14:03:19Z",
           "createdAt": "2023-11-09T18:17:33Z",
@@ -4520,7 +4987,9 @@
             "package managers (Homebrew, apt/deb, rpm, FreeBSD pkg)",
             "source/bare-metal"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway"
+          ],
           "footprintConfidence": "medium",
           "footprintSources": [
             "https://openbao.org/docs/install/",
@@ -4532,6 +5001,9 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/openbao.svg",
             "shields": "https://selfhostscore.com/api/badge/openbao.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/openbao"
           }
         }
       ]
@@ -4557,10 +5029,10 @@
           },
           "stars": 13872,
           "forks": 909,
-          "openIssues": 40,
+          "openIssues": 41,
           "language": "TypeScript",
           "license": "AGPL-3.0",
-          "lastCommit": "2026-10-14T09:18:37Z",
+          "lastCommit": "2026-10-13T11:16:25Z",
           "latestReleaseTag": "v8.2.0",
           "latestReleaseAt": "2026-09-08T09:57:08Z",
           "createdAt": "2014-09-29T12:50:46Z",
@@ -4575,7 +5047,9 @@
           ],
           "oneClick": [
             "Coolify",
-            "DigitalOcean"
+            "DigitalOcean",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "medium",
           "footprintSources": [
@@ -4588,6 +5062,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/unleash.svg",
             "shields": "https://selfhostscore.com/api/badge/unleash.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/unleash",
+            "RepoCloud": "https://repocloud.io/details/Unleash/"
           }
         },
         {
@@ -4608,7 +5086,7 @@
           "openIssues": 829,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T07:59:42Z",
+          "lastCommit": "2026-10-13T05:37:05Z",
           "latestReleaseTag": "v5.1.0",
           "latestReleaseAt": "2026-09-22T03:07:54Z",
           "createdAt": "2021-05-07T23:11:51Z",
@@ -4621,7 +5099,10 @@
             "Helm",
             "Kubernetes"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "high",
           "footprintSources": [
             "https://docs.growthbook.io/self-host",
@@ -4631,6 +5112,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/growthbook.svg",
             "shields": "https://selfhostscore.com/api/badge/growthbook.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/growthbook",
+            "RepoCloud": "https://repocloud.io/details/GrowthBook/"
           }
         },
         {
@@ -4647,13 +5132,13 @@
             "adoption": 10
           },
           "stars": 6591,
-          "forks": 584,
+          "forks": 583,
           "openIssues": 745,
           "language": "Python",
           "license": "BSD-3-Clause",
-          "lastCommit": "2026-10-14T10:05:28Z",
-          "latestReleaseTag": "v2.284.0",
-          "latestReleaseAt": "2026-10-13T13:44:08Z",
+          "lastCommit": "2026-10-13T11:54:49Z",
+          "latestReleaseTag": "v2.283.0",
+          "latestReleaseAt": "2026-10-13T09:21:33Z",
           "createdAt": "2018-06-05T10:49:57Z",
           "database": "PostgreSQL",
           "minRamMB": 2048,
@@ -4667,7 +5152,8 @@
           ],
           "oneClick": [
             "CapRover",
-            "Railway"
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -4680,6 +5166,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/flagsmith.svg",
             "shields": "https://selfhostscore.com/api/badge/flagsmith.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/flagsmith",
+            "RepoCloud": "https://repocloud.io/details/Flagsmith/"
           }
         }
       ]
@@ -4703,8 +5193,8 @@
             "maturity": 22,
             "adoption": 11
           },
-          "stars": 12302,
-          "forks": 858,
+          "stars": 12293,
+          "forks": 857,
           "openIssues": 409,
           "language": "Go",
           "license": "Apache-2.0",
@@ -4722,7 +5212,10 @@
             "Kubernetes",
             "single-binary"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "high",
           "footprintSources": [
             "https://github.com/TwiN/gatus",
@@ -4734,6 +5227,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/gatus.svg",
             "shields": "https://selfhostscore.com/api/badge/gatus.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/gatus",
+            "RepoCloud": "https://repocloud.io/details/Gatus/"
           }
         },
         {
@@ -4766,7 +5263,9 @@
             "docker-compose",
             "bare-metal"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway"
+          ],
           "footprintConfidence": "medium",
           "footprintSources": [
             "https://github.com/cachethq/cachet",
@@ -4778,6 +5277,9 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/cachet.svg",
             "shields": "https://selfhostscore.com/api/badge/cachet.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/cachet"
           }
         },
         {
@@ -4793,7 +5295,7 @@
             "maturity": 18,
             "adoption": 8
           },
-          "stars": 1989,
+          "stars": 1991,
           "forks": 179,
           "openIssues": 193,
           "language": "Go",
@@ -4811,7 +5313,10 @@
             "single-binary",
             "bare-metal"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "high",
           "footprintSources": [
             "https://github.com/statping-ng/statping-ng",
@@ -4822,6 +5327,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/statping-ng.svg",
             "shields": "https://selfhostscore.com/api/badge/statping-ng.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/statping-ng",
+            "RepoCloud": "https://repocloud.io/details/Statping-ng/"
           }
         }
       ]
@@ -4845,12 +5354,12 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 116208,
-          "forks": 7218,
-          "openIssues": 728,
+          "stars": 116140,
+          "forks": 7208,
+          "openIssues": 725,
           "language": "TypeScript",
           "license": "AGPL-3.0",
-          "lastCommit": "2026-10-14T09:58:06Z",
+          "lastCommit": "2026-10-13T11:41:16Z",
           "latestReleaseTag": "v3.3.1",
           "latestReleaseAt": "2026-10-08T21:52:06Z",
           "createdAt": "2022-02-03T15:56:27Z",
@@ -4866,7 +5375,9 @@
           ],
           "oneClick": [
             "DigitalOcean",
-            "Vultr"
+            "Vultr",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -4879,6 +5390,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/immich.svg",
             "shields": "https://selfhostscore.com/api/badge/immich.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/immich",
+            "RepoCloud": "https://repocloud.io/details/Immich/"
           }
         },
         {
@@ -4894,12 +5409,12 @@
             "maturity": 25,
             "adoption": 13
           },
-          "stars": 40290,
-          "forks": 2332,
-          "openIssues": 463,
+          "stars": 40293,
+          "forks": 2331,
+          "openIssues": 461,
           "language": "Go",
           "license": null,
-          "lastCommit": "2026-10-14T09:48:44Z",
+          "lastCommit": "2026-10-13T11:58:40Z",
           "latestReleaseTag": "261007-65faaae5d",
           "latestReleaseAt": "2026-10-07T09:20:36Z",
           "createdAt": "2018-01-27T12:00:15Z",
@@ -4929,6 +5444,9 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/photoprism.svg",
             "shields": "https://selfhostscore.com/api/badge/photoprism.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/photoprism"
           }
         },
         {
@@ -4944,12 +5462,12 @@
             "maturity": 21,
             "adoption": 10
           },
-          "stars": 8103,
+          "stars": 8105,
           "forks": 411,
-          "openIssues": 114,
+          "openIssues": 182,
           "language": "Python",
           "license": "MIT",
-          "lastCommit": "2026-10-14T10:17:10Z",
+          "lastCommit": "2026-10-13T12:01:50Z",
           "latestReleaseTag": "1.3.0",
           "latestReleaseAt": "2026-10-11T11:36:15Z",
           "createdAt": "2020-11-11T23:08:19Z",
@@ -4961,7 +5479,9 @@
             "Standard Docker (docker-compose)",
             "Unraid"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "RepoCloud"
+          ],
           "footprintConfidence": "medium",
           "footprintSources": [
             "https://docs.librephotos.com/docs/installation/",
@@ -4973,6 +5493,9 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/librephotos.svg",
             "shields": "https://selfhostscore.com/api/badge/librephotos.json"
+          },
+          "deployLinks": {
+            "RepoCloud": "https://repocloud.io/details/LibrePhotos/"
           }
         }
       ]
@@ -4996,12 +5519,12 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 56724,
-          "forks": 6340,
-          "openIssues": 645,
+          "stars": 56714,
+          "forks": 6336,
+          "openIssues": 642,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T07:41:31Z",
+          "lastCommit": "2026-10-13T08:59:42Z",
           "latestReleaseTag": "v3.7.21",
           "latestReleaseAt": "2026-09-25T21:31:12Z",
           "createdAt": "2017-01-16T21:49:41Z",
@@ -5015,7 +5538,8 @@
           "oneClick": [
             "Coolify",
             "Railway",
-            "PikaPods"
+            "PikaPods",
+            "RepoCloud"
           ],
           "footprintConfidence": "medium",
           "footprintSources": [
@@ -5028,6 +5552,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/joplin.svg",
             "shields": "https://selfhostscore.com/api/badge/joplin.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/joplin",
+            "RepoCloud": "https://repocloud.io/details/Joplin/"
           }
         },
         {
@@ -5043,9 +5571,9 @@
             "maturity": 22,
             "adoption": 11
           },
-          "stars": 14753,
-          "forks": 1029,
-          "openIssues": 1087,
+          "stars": 14751,
+          "forks": 1028,
+          "openIssues": 1088,
           "language": "TypeScript",
           "license": "GPL-3.0",
           "lastCommit": "2026-10-14T09:52:43Z",
@@ -5067,7 +5595,8 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/notesnook.svg",
             "shields": "https://selfhostscore.com/api/badge/notesnook.json"
-          }
+          },
+          "deployLinks": {}
         },
         {
           "name": "Trilium Notes",
@@ -5102,7 +5631,8 @@
           ],
           "oneClick": [
             "Coolify",
-            "PikaPods"
+            "PikaPods",
+            "Railway"
           ],
           "footprintConfidence": "medium",
           "footprintSources": [
@@ -5114,6 +5644,9 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/trilium.svg",
             "shields": "https://selfhostscore.com/api/badge/trilium.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/trilium"
           }
         }
       ]
@@ -5137,9 +5670,9 @@
             "maturity": 24,
             "adoption": 12
           },
-          "stars": 29633,
-          "forks": 1570,
-          "openIssues": 695,
+          "stars": 29623,
+          "forks": 1569,
+          "openIssues": 694,
           "language": "TypeScript",
           "license": "AGPL-3.0",
           "lastCommit": "2026-10-13T09:48:14Z",
@@ -5157,7 +5690,9 @@
           "oneClick": [
             "PikaPods",
             "TrueNAS",
-            "Unraid"
+            "Unraid",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "low",
           "footprintSources": [
@@ -5171,6 +5706,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/karakeep.svg",
             "shields": "https://selfhostscore.com/api/badge/karakeep.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/karakeep",
+            "RepoCloud": "https://repocloud.io/details/Karakeep/"
           }
         },
         {
@@ -5204,7 +5743,9 @@
           ],
           "oneClick": [
             "PikaPods",
-            "CloudBreak"
+            "CloudBreak",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "low",
           "footprintSources": [
@@ -5215,6 +5756,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/linkding.svg",
             "shields": "https://selfhostscore.com/api/badge/linkding.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/linkding",
+            "RepoCloud": "https://repocloud.io/details/Linkding/"
           }
         },
         {
@@ -5230,9 +5775,9 @@
             "maturity": 22,
             "adoption": 11
           },
-          "stars": 13007,
-          "forks": 900,
-          "openIssues": 769,
+          "stars": 13006,
+          "forks": 899,
+          "openIssues": 770,
           "language": "PHP",
           "license": "MIT",
           "lastCommit": "2026-10-13T06:32:47Z",
@@ -5247,7 +5792,9 @@
             "manual (Composer/source, PHP >= 7.4)"
           ],
           "oneClick": [
-            "PikaPods"
+            "PikaPods",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "low",
           "footprintSources": [
@@ -5258,6 +5805,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/wallabag.svg",
             "shields": "https://selfhostscore.com/api/badge/wallabag.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/wallabag",
+            "RepoCloud": "https://repocloud.io/details/Wallabag/"
           }
         }
       ]
@@ -5268,6 +5819,51 @@
       "category": "DNS / network ad-blocking",
       "page": "https://selfhostscore.com/alternatives/nextdns/",
       "alternatives": [
+        {
+          "name": "Pi-hole",
+          "slug": "pi-hole",
+          "github": "pi-hole/pi-hole",
+          "homepage": "https://pi-hole.net",
+          "description": "The classic network-wide DNS sinkhole ad blocker.",
+          "healthScore": 98,
+          "healthBreakdown": {
+            "activity": 35,
+            "releases": 25,
+            "maturity": 25,
+            "adoption": 13
+          },
+          "stars": 61258,
+          "forks": 3319,
+          "openIssues": 45,
+          "language": "Shell",
+          "license": null,
+          "lastCommit": "2026-10-11T14:38:48Z",
+          "latestReleaseTag": "v6.4.3",
+          "latestReleaseAt": "2026-07-06T20:42:05Z",
+          "createdAt": "2014-06-08T15:02:55Z",
+          "database": "none",
+          "minRamMB": 512,
+          "arm64": true,
+          "deploy": [
+            "install-script",
+            "bare-metal",
+            "Docker",
+            "docker-compose"
+          ],
+          "oneClick": [],
+          "footprintConfidence": "high",
+          "footprintSources": [
+            "https://docs.pi-hole.net/main/prerequisites/",
+            "https://docs.pi-hole.net/docker/",
+            "https://github.com/pi-hole/docker-pi-hole",
+            "https://hub.docker.com/r/pihole/pihole"
+          ],
+          "badge": {
+            "svg": "https://selfhostscore.com/api/badge/pi-hole.svg",
+            "shields": "https://selfhostscore.com/api/badge/pi-hole.json"
+          },
+          "deployLinks": {}
+        },
         {
           "name": "AdGuard Home",
           "slug": "adguard-home",
@@ -5281,12 +5877,12 @@
             "maturity": 24,
             "adoption": 13
           },
-          "stars": 37412,
+          "stars": 37391,
           "forks": 2546,
-          "openIssues": 1256,
+          "openIssues": 1254,
           "language": "TypeScript",
           "license": "GPL-3.0",
-          "lastCommit": "2026-10-13T12:26:15Z",
+          "lastCommit": "2026-10-08T09:17:20Z",
           "latestReleaseTag": "v0.107.79",
           "latestReleaseAt": "2026-08-18T15:45:27Z",
           "createdAt": "2016-07-06T10:31:47Z",
@@ -5308,7 +5904,8 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/adguard-home.svg",
             "shields": "https://selfhostscore.com/api/badge/adguard-home.json"
-          }
+          },
+          "deployLinks": {}
         },
         {
           "name": "Pi-hole",
@@ -5367,7 +5964,7 @@
             "maturity": 21,
             "adoption": 11
           },
-          "stars": 10112,
+          "stars": 10098,
           "forks": 802,
           "openIssues": 152,
           "language": "C#",
@@ -5395,7 +5992,8 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/technitium.svg",
             "shields": "https://selfhostscore.com/api/badge/technitium.json"
-          }
+          },
+          "deployLinks": {}
         }
       ]
     },
@@ -5418,8 +6016,8 @@
             "maturity": 24,
             "adoption": 12
           },
-          "stars": 36555,
-          "forks": 1923,
+          "stars": 36543,
+          "forks": 1922,
           "openIssues": 622,
           "language": "Go",
           "license": "BSD-2-Clause",
@@ -5445,7 +6043,8 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/restic.svg",
             "shields": "https://selfhostscore.com/api/badge/restic.json"
-          }
+          },
+          "deployLinks": {}
         },
         {
           "name": "Duplicati",
@@ -5460,9 +6059,9 @@
             "maturity": 22,
             "adoption": 11
           },
-          "stars": 15084,
+          "stars": 15085,
           "forks": 1082,
-          "openIssues": 595,
+          "openIssues": 599,
           "language": "C#",
           "license": null,
           "lastCommit": "2026-10-14T07:43:37Z",
@@ -5480,7 +6079,8 @@
           ],
           "oneClick": [
             "Umbrel App Store (community-packaged listing)",
-            "Unraid Community Apps (community template)"
+            "Unraid Community Apps (community template)",
+            "RepoCloud"
           ],
           "footprintConfidence": "low",
           "footprintSources": [
@@ -5495,6 +6095,9 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/duplicati.svg",
             "shields": "https://selfhostscore.com/api/badge/duplicati.json"
+          },
+          "deployLinks": {
+            "RepoCloud": "https://repocloud.io/details/Duplicati/"
           }
         },
         {
@@ -5510,9 +6113,9 @@
             "maturity": 22,
             "adoption": 11
           },
-          "stars": 14342,
-          "forks": 755,
-          "openIssues": 906,
+          "stars": 14335,
+          "forks": 753,
+          "openIssues": 902,
           "language": "Go",
           "license": "Apache-2.0",
           "lastCommit": "2026-10-14T03:12:24Z",
@@ -5529,7 +6132,9 @@
             "Source build (Go)"
           ],
           "oneClick": [
-            "Unraid Community Apps (community template)"
+            "Unraid Community Apps (community template)",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "low",
           "footprintSources": [
@@ -5542,6 +6147,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/kopia.svg",
             "shields": "https://selfhostscore.com/api/badge/kopia.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/kopia",
+            "RepoCloud": "https://repocloud.io/details/Kopia/"
           }
         }
       ]
@@ -5565,12 +6174,12 @@
             "maturity": 23,
             "adoption": 13
           },
-          "stars": 24889,
-          "forks": 2338,
-          "openIssues": 160,
+          "stars": 24885,
+          "forks": 2335,
+          "openIssues": 157,
           "language": "PHP",
           "license": "AGPL-3.0",
-          "lastCommit": "2026-10-13T16:34:27Z",
+          "lastCommit": "2026-10-13T09:11:28Z",
           "latestReleaseTag": "v6.7.9",
           "latestReleaseAt": "2026-10-11T19:16:51Z",
           "createdAt": "2014-06-28T07:37:32Z",
@@ -5585,7 +6194,8 @@
           "oneClick": [
             "Coolify",
             "Railway",
-            "PikaPods"
+            "PikaPods",
+            "RepoCloud"
           ],
           "footprintConfidence": "medium",
           "footprintSources": [
@@ -5599,6 +6209,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/firefly-iii.svg",
             "shields": "https://selfhostscore.com/api/badge/firefly-iii.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/firefly-iii",
+            "RepoCloud": "https://repocloud.io/details/FireflyIII/"
           }
         },
         {
@@ -5614,8 +6228,8 @@
             "maturity": 21,
             "adoption": 13
           },
-          "stars": 10182,
-          "forks": 3001,
+          "stars": 10181,
+          "forks": 3000,
           "openIssues": 7,
           "language": "PHP",
           "license": null,
@@ -5632,7 +6246,9 @@
             "bare-metal"
           ],
           "oneClick": [
-            "DigitalOcean"
+            "DigitalOcean",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "medium",
           "footprintSources": [
@@ -5645,6 +6261,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/akaunting.svg",
             "shields": "https://selfhostscore.com/api/badge/akaunting.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/akaunting",
+            "RepoCloud": "https://repocloud.io/details/Akaunting/"
           }
         },
         {
@@ -5660,9 +6280,9 @@
             "maturity": 21,
             "adoption": 13
           },
-          "stars": 10274,
-          "forks": 2750,
-          "openIssues": 232,
+          "stars": 10268,
+          "forks": 2744,
+          "openIssues": 230,
           "language": "PHP",
           "license": null,
           "lastCommit": "2026-10-13T21:03:09Z",
@@ -5680,7 +6300,8 @@
           "oneClick": [
             "Coolify",
             "Railway",
-            "DigitalOcean"
+            "DigitalOcean",
+            "RepoCloud"
           ],
           "footprintConfidence": "medium",
           "footprintSources": [
@@ -5693,6 +6314,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/invoice-ninja.svg",
             "shields": "https://selfhostscore.com/api/badge/invoice-ninja.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/invoiceninja",
+            "RepoCloud": "https://repocloud.io/details/Invoice%20Ninja/"
           }
         }
       ]
@@ -5716,12 +6341,12 @@
             "maturity": 24,
             "adoption": 15
           },
-          "stars": 40128,
-          "forks": 13125,
-          "openIssues": 1460,
+          "stars": 40091,
+          "forks": 13114,
+          "openIssues": 1448,
           "language": "Python",
           "license": "GPL-3.0",
-          "lastCommit": "2026-10-14T09:55:50Z",
+          "lastCommit": "2026-10-13T11:04:19Z",
           "latestReleaseTag": "v15.122.0",
           "latestReleaseAt": "2026-10-07T09:21:41Z",
           "createdAt": "2011-06-08T08:20:56Z",
@@ -5735,7 +6360,8 @@
             "bare-metal"
           ],
           "oneClick": [
-            "Railway"
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "medium",
           "footprintSources": [
@@ -5748,6 +6374,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/erpnext.svg",
             "shields": "https://selfhostscore.com/api/badge/erpnext.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/erpnext",
+            "RepoCloud": "https://repocloud.io/details/ERPNext/"
           }
         },
         {
@@ -5763,12 +6393,12 @@
             "maturity": 21,
             "adoption": 13
           },
-          "stars": 7727,
-          "forks": 3568,
-          "openIssues": 979,
+          "stars": 7726,
+          "forks": 3565,
+          "openIssues": 1054,
           "language": "PHP",
           "license": "GPL-3.0",
-          "lastCommit": "2026-10-14T09:18:46Z",
+          "lastCommit": "2026-10-13T11:42:48Z",
           "latestReleaseTag": "24.0.1",
           "latestReleaseAt": "2026-09-07T12:58:22Z",
           "createdAt": "2011-06-26T21:55:03Z",
@@ -5781,7 +6411,10 @@
             "bare-metal",
             "DoliWamp/DoliDeb/DoliRpm installers"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "medium",
           "footprintSources": [
             "https://wiki.dolibarr.org/index.php?title=Prerequisites",
@@ -5791,6 +6424,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/dolibarr.svg",
             "shields": "https://selfhostscore.com/api/badge/dolibarr.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/dolibarr",
+            "RepoCloud": "https://repocloud.io/details/Dolibarr/"
           }
         },
         {
@@ -5806,12 +6443,12 @@
             "maturity": 25,
             "adoption": 15
           },
-          "stars": 55023,
-          "forks": 34013,
-          "openIssues": 10913,
+          "stars": 55006,
+          "forks": 34002,
+          "openIssues": 10806,
           "language": "Python",
           "license": null,
-          "lastCommit": "2026-10-14T10:17:38Z",
+          "lastCommit": "2026-10-13T11:32:55Z",
           "latestReleaseTag": null,
           "latestReleaseAt": null,
           "createdAt": "2014-05-13T15:38:58Z",
@@ -5825,7 +6462,10 @@
             "source",
             "bare-metal"
           ],
-          "oneClick": [],
+          "oneClick": [
+            "Railway",
+            "RepoCloud"
+          ],
           "footprintConfidence": "medium",
           "footprintSources": [
             "https://www.odoo.com/documentation/master/administration/on_premise/source.html",
@@ -5835,6 +6475,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/odoo.svg",
             "shields": "https://selfhostscore.com/api/badge/odoo.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/odoo",
+            "RepoCloud": "https://repocloud.io/details/Odoo/"
           }
         }
       ]
@@ -5858,14 +6502,14 @@
             "maturity": 25,
             "adoption": 15
           },
-          "stars": 55532,
-          "forks": 11993,
-          "openIssues": 199,
+          "stars": 55526,
+          "forks": 11992,
+          "openIssues": 189,
           "language": "TypeScript",
           "license": "MIT",
-          "lastCommit": "2026-10-14T10:10:29Z",
-          "latestReleaseTag": "v6.70.0",
-          "latestReleaseAt": "2026-10-13T15:11:13Z",
+          "lastCommit": "2026-10-13T12:01:09Z",
+          "latestReleaseTag": "v6.69.0",
+          "latestReleaseAt": "2026-10-07T13:58:59Z",
           "createdAt": "2013-05-04T11:09:13Z",
           "database": "MySQL 8.0",
           "minRamMB": 1024,
@@ -5877,7 +6521,8 @@
           ],
           "oneClick": [
             "DigitalOcean",
-            "Railway"
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -5889,6 +6534,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/ghost.svg",
             "shields": "https://selfhostscore.com/api/badge/ghost.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/ghost-cms-mysql",
+            "RepoCloud": "https://repocloud.io/details/Ghost/"
           }
         },
         {
@@ -5904,12 +6553,12 @@
             "maturity": 25,
             "adoption": 15
           },
-          "stars": 73302,
-          "forks": 9884,
-          "openIssues": 601,
+          "stars": 73301,
+          "forks": 9879,
+          "openIssues": 595,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T10:07:14Z",
+          "lastCommit": "2026-10-13T10:59:17Z",
           "latestReleaseTag": "v5.57.0",
           "latestReleaseAt": "2026-10-07T07:18:50Z",
           "createdAt": "2015-09-30T15:34:48Z",
@@ -5923,7 +6572,8 @@
             "bare-metal"
           ],
           "oneClick": [
-            "Railway"
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -5935,6 +6585,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/strapi.svg",
             "shields": "https://selfhostscore.com/api/badge/strapi.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/strapi",
+            "RepoCloud": "https://repocloud.io/details/Strapi/"
           }
         },
         {
@@ -5950,12 +6604,12 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 45238,
-          "forks": 4293,
-          "openIssues": 1316,
+          "stars": 45231,
+          "forks": 4289,
+          "openIssues": 1297,
           "language": "TypeScript",
           "license": "MIT",
-          "lastCommit": "2026-10-14T06:37:23Z",
+          "lastCommit": "2026-10-13T03:50:50Z",
           "latestReleaseTag": "v3.90.2",
           "latestReleaseAt": "2026-09-23T14:04:34Z",
           "createdAt": "2021-01-05T18:49:45Z",
@@ -5969,7 +6623,9 @@
             "serverless (Vercel/Cloudflare)"
           ],
           "oneClick": [
-            "Vercel"
+            "Vercel",
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "medium",
           "footprintSources": [
@@ -5982,6 +6638,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/payload.svg",
             "shields": "https://selfhostscore.com/api/badge/payload.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/payload",
+            "RepoCloud": "https://repocloud.io/details/Payload/"
           }
         },
         {
@@ -5997,9 +6657,9 @@
             "maturity": 24,
             "adoption": 14
           },
-          "stars": 38480,
-          "forks": 4971,
-          "openIssues": 361,
+          "stars": 38452,
+          "forks": 4969,
+          "openIssues": 360,
           "language": "TypeScript",
           "license": null,
           "lastCommit": "2026-10-13T09:37:13Z",
@@ -6018,7 +6678,8 @@
           ],
           "oneClick": [
             "DigitalOcean",
-            "Railway"
+            "Railway",
+            "RepoCloud"
           ],
           "footprintConfidence": "high",
           "footprintSources": [
@@ -6031,6 +6692,10 @@
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/directus.svg",
             "shields": "https://selfhostscore.com/api/badge/directus.json"
+          },
+          "deployLinks": {
+            "Railway": "https://railway.com/deploy/directus",
+            "RepoCloud": "https://repocloud.io/details/Directus/"
           }
         }
       ]

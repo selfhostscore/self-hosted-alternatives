@@ -1,0 +1,428 @@
+{
+  "_about": "Verified one-click deploy pages per alternative slug. Each URL was fetched on the verified date and its page title or linked GitHub repo matched the project. Affiliate parameters are NOT stored here; build-site.ts appends them from data/offers.json. Re-check with: node scripts/check-deploy-links.ts",
+  "_verified": "2026-10-14",
+  "_excluded": {
+    "Railway": {
+      "cap": "railway.com/deploy/cap is a CAPTCHA (tiagozip/cap); the official Cap template is railway.com/new/template/PwpGcf (from CapSoftware/Cap docs)",
+      "pi-hole": "needs UDP 53, Railway has no UDP",
+      "adguard-home": "needs UDP 53, Railway has no UDP",
+      "jitsi-meet": "media needs UDP 10000, Railway has no UDP"
+    },
+    "RepoCloud": {
+      "cap": "repocloud.io/details/Cap is mCaptcha, not CapSoftware/Cap",
+      "trilium": "deploys zadam/trilium (old upstream), not TriliumNext"
+    }
+  },
+  "links": {
+    "activepieces": {
+      "Railway": "https://railway.com/deploy/activepieces",
+      "RepoCloud": "https://repocloud.io/details/Activepieces/"
+    },
+    "affine": {
+      "Railway": "https://railway.com/deploy/affine-1",
+      "RepoCloud": "https://repocloud.io/details/AFFiNE/"
+    },
+    "akaunting": {
+      "Railway": "https://railway.com/deploy/akaunting",
+      "RepoCloud": "https://repocloud.io/details/Akaunting/"
+    },
+    "appflowy": {
+      "Railway": "https://railway.com/deploy/appflowy",
+      "RepoCloud": "https://repocloud.io/details/AppFlowy/"
+    },
+    "appsmith": {
+      "Railway": "https://railway.com/deploy/appsmith",
+      "RepoCloud": "https://repocloud.io/details/Appsmith/"
+    },
+    "appwrite": {
+      "Railway": "https://railway.com/deploy/appwrite",
+      "RepoCloud": "https://repocloud.io/details/Appwrite/"
+    },
+    "authentik": {
+      "Railway": "https://railway.com/deploy/authentik",
+      "RepoCloud": "https://repocloud.io/details/Authentik/"
+    },
+    "automatisch": {
+      "Railway": "https://railway.com/deploy/automatisch",
+      "RepoCloud": "https://repocloud.io/details/Automatisch/"
+    },
+    "baserow": {
+      "Railway": "https://railway.com/deploy/baserow",
+      "RepoCloud": "https://repocloud.io/details/Baserow/"
+    },
+    "bigbluebutton": {
+      "RepoCloud": "https://repocloud.io/details/BigBlueButton/"
+    },
+    "bookstack": {
+      "Railway": "https://railway.com/deploy/bookstack",
+      "RepoCloud": "https://repocloud.io/details/BookStack/"
+    },
+    "budibase": {
+      "Railway": "https://railway.com/deploy/budibase",
+      "RepoCloud": "https://repocloud.io/details/Budibase/"
+    },
+    "cachet": {
+      "Railway": "https://railway.com/deploy/cachet"
+    },
+    "cal-com": {
+      "Railway": "https://railway.com/deploy/calcom",
+      "RepoCloud": "https://repocloud.io/details/calcom/"
+    },
+    "cap": {
+      "Railway": "https://railway.com/new/template/PwpGcf"
+    },
+    "caprover": {
+      "RepoCloud": "https://repocloud.io/details/CapRover/"
+    },
+    "chatwoot": {
+      "Railway": "https://railway.com/deploy/chatwoot",
+      "RepoCloud": "https://repocloud.io/details/Chatwoot/"
+    },
+    "coolify": {
+      "Railway": "https://railway.com/deploy/coolify"
+    },
+    "directus": {
+      "Railway": "https://railway.com/deploy/directus",
+      "RepoCloud": "https://repocloud.io/details/Directus/"
+    },
+    "docmost": {
+      "Railway": "https://railway.com/deploy/docmost",
+      "RepoCloud": "https://repocloud.io/details/Docmost/"
+    },
+    "documenso": {
+      "Railway": "https://railway.com/deploy/documenso",
+      "RepoCloud": "https://repocloud.io/details/Documenso/"
+    },
+    "docuseal": {
+      "Railway": "https://railway.com/deploy/docuseal",
+      "RepoCloud": "https://repocloud.io/details/Docuseal/"
+    },
+    "dokku": {
+      "RepoCloud": "https://repocloud.io/details/Dokku/"
+    },
+    "dolibarr": {
+      "Railway": "https://railway.com/deploy/dolibarr",
+      "RepoCloud": "https://repocloud.io/details/Dolibarr/"
+    },
+    "duplicati": {
+      "RepoCloud": "https://repocloud.io/details/Duplicati/"
+    },
+    "easyappointments": {
+      "Railway": "https://railway.com/deploy/easyappointments",
+      "RepoCloud": "https://repocloud.io/details/easyappointments/"
+    },
+    "erpnext": {
+      "Railway": "https://railway.com/deploy/erpnext",
+      "RepoCloud": "https://repocloud.io/details/ERPNext/"
+    },
+    "espocrm": {
+      "Railway": "https://railway.com/deploy/espocrm",
+      "RepoCloud": "https://repocloud.io/details/EspoCRM/"
+    },
+    "firefly-iii": {
+      "Railway": "https://railway.com/deploy/firefly-iii",
+      "RepoCloud": "https://repocloud.io/details/FireflyIII/"
+    },
+    "flagsmith": {
+      "Railway": "https://railway.com/deploy/flagsmith",
+      "RepoCloud": "https://repocloud.io/details/Flagsmith/"
+    },
+    "formbricks": {
+      "Railway": "https://railway.com/deploy/formbricks-survey-platform",
+      "RepoCloud": "https://repocloud.io/details/Formbricks/"
+    },
+    "freescout": {
+      "Railway": "https://railway.com/deploy/freescout",
+      "RepoCloud": "https://repocloud.io/details/FreeScout/"
+    },
+    "gatus": {
+      "Railway": "https://railway.com/deploy/gatus",
+      "RepoCloud": "https://repocloud.io/details/Gatus/"
+    },
+    "ghost": {
+      "Railway": "https://railway.com/deploy/ghost-cms-mysql",
+      "RepoCloud": "https://repocloud.io/details/Ghost/"
+    },
+    "gitea": {
+      "Railway": "https://railway.com/deploy/gitea",
+      "RepoCloud": "https://repocloud.io/details/Gitea/"
+    },
+    "grist": {
+      "Railway": "https://railway.com/deploy/grist",
+      "RepoCloud": "https://repocloud.io/details/Grist/"
+    },
+    "growthbook": {
+      "Railway": "https://railway.com/deploy/growthbook",
+      "RepoCloud": "https://repocloud.io/details/GrowthBook/"
+    },
+    "heyform": {
+      "Railway": "https://railway.com/deploy/heyform",
+      "RepoCloud": "https://repocloud.io/details/HeyForm/"
+    },
+    "hoppscotch": {
+      "Railway": "https://railway.com/deploy/hoppscotch",
+      "RepoCloud": "https://repocloud.io/details/Hoppscotch/"
+    },
+    "immich": {
+      "Railway": "https://railway.com/deploy/immich",
+      "RepoCloud": "https://repocloud.io/details/Immich/"
+    },
+    "infisical": {
+      "Railway": "https://railway.com/deploy/infisical",
+      "RepoCloud": "https://repocloud.io/details/Infisical/"
+    },
+    "invoice-ninja": {
+      "Railway": "https://railway.com/deploy/invoiceninja",
+      "RepoCloud": "https://repocloud.io/details/Invoice%20Ninja/"
+    },
+    "jitsi-meet": {
+      "RepoCloud": "https://repocloud.io/details/Jitsi%20Meet/"
+    },
+    "joplin": {
+      "Railway": "https://railway.com/deploy/joplin",
+      "RepoCloud": "https://repocloud.io/details/Joplin/"
+    },
+    "kanboard": {
+      "Railway": "https://railway.com/deploy/kanboard",
+      "RepoCloud": "https://repocloud.io/details/Kanboard/"
+    },
+    "karakeep": {
+      "Railway": "https://railway.com/deploy/karakeep",
+      "RepoCloud": "https://repocloud.io/details/Karakeep/"
+    },
+    "keycloak": {
+      "Railway": "https://railway.com/deploy/keycloak"
+    },
+    "kopia": {
+      "Railway": "https://railway.com/deploy/kopia",
+      "RepoCloud": "https://repocloud.io/details/Kopia/"
+    },
+    "krayin": {
+      "Railway": "https://railway.com/deploy/krayin",
+      "RepoCloud": "https://repocloud.io/details/Krayin/"
+    },
+    "kutt": {
+      "Railway": "https://railway.com/deploy/kutt",
+      "RepoCloud": "https://repocloud.io/details/Kutt/"
+    },
+    "librephotos": {
+      "RepoCloud": "https://repocloud.io/details/LibrePhotos/"
+    },
+    "linkding": {
+      "Railway": "https://railway.com/deploy/linkding",
+      "RepoCloud": "https://repocloud.io/details/Linkding/"
+    },
+    "listmonk": {
+      "Railway": "https://railway.com/deploy/listmonk-1",
+      "RepoCloud": "https://repocloud.io/details/Listmonk/"
+    },
+    "mattermost": {
+      "Railway": "https://railway.com/deploy/mattermost",
+      "RepoCloud": "https://repocloud.io/details/Mattermost/"
+    },
+    "mautic": {
+      "Railway": "https://railway.com/deploy/mautic",
+      "RepoCloud": "https://repocloud.io/details/Mautic/"
+    },
+    "meilisearch": {
+      "Railway": "https://railway.com/deploy/meilisearch-1"
+    },
+    "metabase": {
+      "Railway": "https://railway.com/deploy/metabase-latest",
+      "RepoCloud": "https://repocloud.io/details/Metabase/"
+    },
+    "n8n": {
+      "Railway": "https://railway.com/deploy/n8n",
+      "RepoCloud": "https://repocloud.io/details/n8n/"
+    },
+    "nextcloud": {
+      "Railway": "https://railway.com/deploy/nextcloud",
+      "RepoCloud": "https://repocloud.io/details/Nextcloud/"
+    },
+    "nhost": {
+      "Railway": "https://railway.com/deploy/nhost",
+      "RepoCloud": "https://repocloud.io/details/Nhost/"
+    },
+    "nocobase": {
+      "Railway": "https://railway.com/deploy/nocobase",
+      "RepoCloud": "https://repocloud.io/details/NocoBase/"
+    },
+    "nocodb": {
+      "Railway": "https://railway.com/deploy/nocodb",
+      "RepoCloud": "https://repocloud.io/details/NocoDB/"
+    },
+    "odoo": {
+      "Railway": "https://railway.com/deploy/odoo",
+      "RepoCloud": "https://repocloud.io/details/Odoo/"
+    },
+    "onedev": {
+      "Railway": "https://railway.com/deploy/onedev",
+      "RepoCloud": "https://repocloud.io/details/OneDev/"
+    },
+    "openbao": {
+      "Railway": "https://railway.com/deploy/openbao"
+    },
+    "openobserve": {
+      "Railway": "https://railway.com/deploy/openobserve",
+      "RepoCloud": "https://repocloud.io/details/OpenObserve/"
+    },
+    "openproject": {
+      "Railway": "https://railway.com/deploy/openproject"
+    },
+    "opensign": {
+      "Railway": "https://railway.com/deploy/opensign",
+      "RepoCloud": "https://repocloud.io/details/OpenSign/"
+    },
+    "outline": {
+      "Railway": "https://railway.com/deploy/outline"
+    },
+    "owncloud": {
+      "Railway": "https://railway.com/deploy/owncloud",
+      "RepoCloud": "https://repocloud.io/details/ownCloud/"
+    },
+    "papercups": {
+      "RepoCloud": "https://repocloud.io/details/Papercups/"
+    },
+    "passbolt": {
+      "Railway": "https://railway.com/deploy/passbolt",
+      "RepoCloud": "https://repocloud.io/details/Passbolt/"
+    },
+    "payload": {
+      "Railway": "https://railway.com/deploy/payload",
+      "RepoCloud": "https://repocloud.io/details/Payload/"
+    },
+    "photoprism": {
+      "Railway": "https://railway.com/deploy/photoprism"
+    },
+    "plane": {
+      "Railway": "https://railway.com/deploy/plane",
+      "RepoCloud": "https://repocloud.io/details/Plane/"
+    },
+    "planka": {
+      "Railway": "https://railway.com/deploy/planka",
+      "RepoCloud": "https://repocloud.io/details/Planka/"
+    },
+    "plausible": {
+      "Railway": "https://railway.com/deploy/plausible",
+      "RepoCloud": "https://repocloud.io/details/Plausible/"
+    },
+    "pocketbase": {
+      "Railway": "https://railway.com/deploy/pocketbase",
+      "RepoCloud": "https://repocloud.io/details/PocketBase/"
+    },
+    "posthog": {
+      "Railway": "https://railway.com/deploy/posthog-1",
+      "RepoCloud": "https://repocloud.io/details/PostHog/"
+    },
+    "redash": {
+      "Railway": "https://railway.com/deploy/redash",
+      "RepoCloud": "https://repocloud.io/details/Redash/"
+    },
+    "redmine": {
+      "Railway": "https://railway.com/deploy/redmine",
+      "RepoCloud": "https://repocloud.io/details/Redmine/"
+    },
+    "rocket-chat": {
+      "Railway": "https://railway.com/deploy/rocketchat",
+      "RepoCloud": "https://repocloud.io/details/Rocket.Chat/"
+    },
+    "seafile": {
+      "Railway": "https://railway.com/deploy/seafile"
+    },
+    "shlink": {
+      "Railway": "https://railway.com/deploy/shlink",
+      "RepoCloud": "https://repocloud.io/details/Shlink/"
+    },
+    "signoz": {
+      "Railway": "https://railway.com/deploy/signoz",
+      "RepoCloud": "https://repocloud.io/details/SigNoz/"
+    },
+    "statping-ng": {
+      "Railway": "https://railway.com/deploy/statping-ng",
+      "RepoCloud": "https://repocloud.io/details/Statping-ng/"
+    },
+    "strapi": {
+      "Railway": "https://railway.com/deploy/strapi",
+      "RepoCloud": "https://repocloud.io/details/Strapi/"
+    },
+    "suitecrm": {
+      "Railway": "https://railway.com/deploy/suitecrm"
+    },
+    "supabase": {
+      "Railway": "https://railway.com/deploy/supabase",
+      "RepoCloud": "https://repocloud.io/details/Supabase/"
+    },
+    "superset": {
+      "Railway": "https://railway.com/deploy/superset",
+      "RepoCloud": "https://repocloud.io/details/Apache%20Superset/"
+    },
+    "taiga": {
+      "Railway": "https://railway.com/deploy/taiga-1",
+      "RepoCloud": "https://repocloud.io/details/Taiga/"
+    },
+    "teable": {
+      "Railway": "https://railway.com/deploy/teable",
+      "RepoCloud": "https://repocloud.io/details/Teable/"
+    },
+    "tooljet": {
+      "Railway": "https://railway.com/deploy/tooljet",
+      "RepoCloud": "https://repocloud.io/details/ToolJet/"
+    },
+    "trilium": {
+      "Railway": "https://railway.com/deploy/trilium"
+    },
+    "twenty": {
+      "Railway": "https://railway.com/deploy/twenty-open-source-crm",
+      "RepoCloud": "https://repocloud.io/details/Twenty/"
+    },
+    "typesense": {
+      "Railway": "https://railway.com/deploy/typesense-latest"
+    },
+    "umami": {
+      "Railway": "https://railway.com/deploy/umami-analytics",
+      "RepoCloud": "https://repocloud.io/details/Umami/"
+    },
+    "unleash": {
+      "Railway": "https://railway.com/deploy/unleash",
+      "RepoCloud": "https://repocloud.io/details/Unleash/"
+    },
+    "uptime-kuma": {
+      "Railway": "https://railway.com/deploy/uptime-kuma",
+      "RepoCloud": "https://repocloud.io/details/UptimeKuma/"
+    },
+    "vaultwarden": {
+      "Railway": "https://railway.com/deploy/vaultwarden",
+      "RepoCloud": "https://repocloud.io/details/Vaultwarden/"
+    },
+    "wallabag": {
+      "Railway": "https://railway.com/deploy/wallabag",
+      "RepoCloud": "https://repocloud.io/details/Wallabag/"
+    },
+    "wekan": {
+      "Railway": "https://railway.com/deploy/wekan"
+    },
+    "wikijs": {
+      "Railway": "https://railway.com/deploy/wikijs",
+      "RepoCloud": "https://repocloud.io/details/Wiki.js/"
+    },
+    "woodpecker": {
+      "Railway": "https://railway.com/deploy/woodpecker",
+      "RepoCloud": "https://repocloud.io/details/Woodpecker%20CI/"
+    },
+    "yourls": {
+      "Railway": "https://railway.com/deploy/yourls"
+    },
+    "zammad": {
+      "Railway": "https://railway.com/deploy/zammad",
+      "RepoCloud": "https://repocloud.io/details/Zammad/"
+    },
+    "zitadel": {
+      "Railway": "https://railway.com/deploy/zitadel",
+      "RepoCloud": "https://repocloud.io/details/Zitadel/"
+    },
+    "zulip": {
+      "Railway": "https://railway.com/deploy/zulip",
+      "RepoCloud": "https://repocloud.io/details/Zulip/"
+    }
+  }
+}

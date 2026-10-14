@@ -1,67 +1,82 @@
 {
-  "_howto": "Managed hosting partners for the one-click column and the hosting note on category pages. After joining each affiliate program, replace url with your referral link. Until then these are plain links and earn nothing. The site marks all of them rel=sponsored automatically.",
+  "_howto": "Hosting partners. affiliate:true means url is a real referral link and refParam is appended to deep links (data/deploy-links.json); those links get rel=sponsored and count toward the affiliate disclosure. affiliate:false partners are plain helpful links. managed:true puts the partner in the 'No server to run it on?' box on category pages, in the listed order. Verified program terms: see notes. Research date 2026-10-14.",
   "_rule": "Only relevant offers: hosting or deployment of open-source apps. Do not add the proprietary SaaS itself or unrelated banners; they do not convert and they cost trust and rankings.",
-  "_verifyPayout": "Check payout terms before adding a partner. Some pay in credits rather than cash (Hetzner did); leave those out or set managed to false.",
   "partners": [
+    {
+      "name": "Railway",
+      "url": "https://railway.com?referralCode=ISTzUG",
+      "affiliate": true,
+      "refParam": {
+        "referralCode": "ISTzUG"
+      },
+      "managed": true,
+      "note": "Affiliate: 15% of every invoice for 12 months, cash via Stripe Connect from $100 or credits, no approval."
+    },
+    {
+      "name": "RepoCloud",
+      "url": "https://repocloud.io/?ref=wm1a1ur",
+      "affiliate": true,
+      "refParam": {
+        "ref": "wm1a1ur"
+      },
+      "managed": true,
+      "note": "Affiliate: 25% for 12 months, 30-day cookie, $50 minimum, PayPal or Payoneer, Net 60. ?ref works on any app page."
+    },
     {
       "name": "PikaPods",
       "url": "https://www.pikapods.com",
+      "affiliate": false,
       "managed": true,
-      "note": "turnkey hosting for open-source apps, the closest fit"
+      "note": "No affiliate program (checked 2026-10-14). Best product fit; ask hello@pikapods.com for a direct deal."
     },
     {
       "name": "Elestio",
       "url": "https://elest.io",
+      "affiliate": false,
       "managed": true,
-      "note": "fully managed open-source apps"
-    },
-    {
-      "name": "Railway",
-      "url": "https://railway.app",
-      "managed": true,
-      "note": "PaaS with one-click templates; check whether the payout is cash or credits"
+      "note": "No affiliate program (checked 2026-10-14). Partnership contact on elest.io/contact."
     },
     {
       "name": "DigitalOcean",
       "url": "https://www.digitalocean.com",
-      "managed": true,
-      "note": "VPS plus a one-click marketplace; cash and recurring via Impact"
+      "affiliate": false,
+      "managed": false,
+      "note": "Cash affiliate via Awin merchant 123996: 10% of monthly spend for 12 months, 30-day cookie. Replace url with the Awin link and set affiliate:true once approved."
     },
     {
       "name": "Cloudways",
       "url": "https://www.cloudways.com",
-      "managed": true,
-      "note": "managed hosting with a strong cash affiliate program"
+      "affiliate": false,
+      "managed": false,
+      "note": "Cash affiliate (Hybrid $30 + 7% lifetime, 90-day cookie) but WordPress/PHP only, cannot run the listed apps."
     },
     {
       "name": "Vultr",
       "url": "https://www.vultr.com",
+      "affiliate": false,
       "managed": false,
-      "note": "VPS with a referral program"
+      "note": "Referral up to $100 one-off; terms behind login, may be credits."
     },
     {
       "name": "Render",
       "url": "https://render.com",
+      "affiliate": false,
       "managed": false,
-      "note": "PaaS with one-click deploys"
-    },
-    {
-      "name": "RepoCloud",
-      "url": "https://repocloud.io",
-      "managed": false,
-      "note": "one-click open-source apps"
+      "note": "No affiliate program (render.com/partners is 404)."
     },
     {
       "name": "Sealos",
       "url": "https://sealos.io",
+      "affiliate": false,
       "managed": false,
-      "note": "cloud OS with one-click deploys"
+      "note": "No public program for sealos.io."
     },
     {
       "name": "Zeabur",
       "url": "https://zeabur.com",
+      "affiliate": false,
       "managed": false,
-      "note": "PaaS with one-click deploys"
+      "note": "Referral pays credits only; cash only for enterprise sales partners."
     }
   ]
 }

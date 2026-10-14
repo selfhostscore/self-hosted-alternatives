@@ -139,17 +139,45 @@ function sourcesSection(tool: EnrichedTool): string {
 <ul>${items}</ul></details>`;
 }
 
-// ---- offers (managed hosting partners; links are marked rel=sponsored) ----
-const OFFERS: Record<string, string> = {};
-const MANAGED: { name: string; url: string }[] = [];
+// ---- hosting partners (data/offers.json) and verified deploy pages (data/deploy-links.json) ----
+// affiliate:true partners carry a referral link; their refParam is appended to deep links and the link gets
+// rel="sponsored". Everything else is a plain nofollow link. Deep links are only used when verified.
+type Partner = { name: string; url: string; affiliate: boolean; managed: boolean; refParam?: Record<string, string> };
+const PARTNERS: Record<string, Partner> = {};
+const MANAGED: Partner[] = [];
 try {
   const o = JSON.parse(await readFile(join(ROOT, "data", "offers.json"), "utf8")) as { partners?: any[] };
   for (const p of o.partners ?? []) {
-    if (p?.name && p?.url) OFFERS[String(p.name).toLowerCase()] = p.url;
-    if (p?.managed && p?.name && p?.url) MANAGED.push({ name: p.name, url: p.url });
+    if (!p?.name || !p?.url) continue;
+    const partner: Partner = { name: String(p.name), url: String(p.url), affiliate: !!p.affiliate, managed: !!p.managed, refParam: p.refParam };
+    PARTNERS[partner.name.toLowerCase()] = partner;
+    if (partner.managed) MANAGED.push(partner);
   }
 } catch {
   /* no offers file */
+}
+// alternative slug -> lowercased platform name -> verified deploy page URL (no affiliate params stored)
+const DEPLOY: Record<string, Record<string, { platform: string; url: string }>> = {};
+try {
+  const d = JSON.parse(await readFile(join(ROOT, "data", "deploy-links.json"), "utf8")) as { links?: Record<string, Record<string, string>> };
+  for (const [slug, m] of Object.entries(d.links ?? {})) {
+    DEPLOY[slug] = {};
+    for (const [platform, url] of Object.entries(m)) DEPLOY[slug][platform.toLowerCase()] = { platform, url };
+  }
+} catch {
+  /* no deploy links file */
+}
+const HAS_AFFILIATE = Object.values(PARTNERS).some((p) => p.affiliate);
+
+function withRef(url: string, p: Partner | undefined): string {
+  if (!p?.affiliate || !p.refParam) return url;
+  try {
+    const u = new URL(url);
+    for (const [k, v] of Object.entries(p.refParam)) u.searchParams.set(k, v);
+    return u.toString();
+  } catch {
+    return url;
+  }
 }
 
 // Official sites of one-click platforms that are not affiliate partners (plain nofollow links).
@@ -179,27 +207,40 @@ const PLATFORMS: Record<string, string> = {
   cloudbreak: "https://cloudbreak.app",
 };
 
-const oneClickChips = (arr: string[]): string =>
-  arr.length
-    ? arr
-        .map((x) => {
-          const short = x.split(" (")[0];
-          const key = short.toLowerCase();
-          const sponsored = OFFERS[key] ?? OFFERS[x.toLowerCase()];
-          const plain = PLATFORMS[key];
-          if (sponsored) return `<a class="chip" href="${esc(sponsored)}" rel="sponsored nofollow" title="${esc(x)}">${esc(short)}</a>`;
-          if (plain) return `<a class="chip" href="${esc(plain)}" rel="nofollow noopener" title="${esc(x)}">${esc(short)}</a>`;
-          return `<span class="chip" title="${esc(x)}">${esc(short)}</span>`;
-        })
-        .join(" ")
-    : '<span class="muted">none</span>';
+function platformLink(name: string, altSlug?: string): { href: string; sponsored: boolean } | null {
+  const short = name.split(" (")[0];
+  const key = short.toLowerCase();
+  const partner = PARTNERS[key];
+  const deep = altSlug ? DEPLOY[altSlug]?.[key]?.url : undefined;
+  if (partner?.affiliate) return { href: deep ? withRef(deep, partner) : partner.url, sponsored: true };
+  const plain = deep ?? PLATFORMS[key] ?? partner?.url;
+  return plain ? { href: plain, sponsored: false } : null;
+}
+
+const linkAttrs = (sponsored: boolean): string => `rel="${sponsored ? "sponsored nofollow noopener" : "nofollow noopener"}" target="_blank"`;
+
+function oneClickChips(a: EnrichedAlternative): string {
+  const arr = a.footprint.oneClick;
+  if (!arr.length) return '<span class="muted">none</span>';
+  return arr
+    .map((x) => {
+      const short = x.split(" (")[0];
+      const l = platformLink(x, a.slug);
+      if (!l) return `<span class="chip" title="${esc(x)}">${esc(short)}</span>`;
+      const title = l.sponsored ? `Deploy ${a.name} on ${short} (affiliate link)` : `Deploy ${a.name} on ${short}`;
+      return `<a class="chip" href="${esc(l.href)}" ${linkAttrs(l.sponsored)} title="${esc(title)}">${esc(short)}</a>`;
+    })
+    .join(" ");
+}
 
 const ctaBox = (): string => {
   if (!MANAGED.length) return "";
-  const links = MANAGED.slice(0, 4)
-    .map((p) => `<a href="${esc(p.url)}" rel="sponsored nofollow">${esc(p.name)}</a>`)
-    .join(", ");
-  return `<aside class="cta"><strong>No server to run it on?</strong> Managed open-source hosting deploys apps like these in one click: ${links}. <span class="muted sm">Sponsored links.</span></aside>`;
+  const shown = MANAGED.slice(0, 4);
+  const links = shown.map((p) => `<a href="${esc(p.url)}" ${linkAttrs(p.affiliate)}>${esc(p.name)}</a>`).join(", ");
+  const disclosure = shown.some((p) => p.affiliate)
+    ? ` <span class="muted sm">Some of these are affiliate links: if you sign up, we may earn a commission at no cost to you. Commissions never affect scores.</span>`
+    : "";
+  return `<aside class="cta"><strong>No server to run it on?</strong> Managed open-source hosting deploys apps like these in one click: ${links}.${disclosure}</aside>`;
 };
 
 // flatten alternatives with their tool context (matcher feed, collections, badges)
@@ -297,7 +338,7 @@ ${ld.map((o) => `<script type="application/ld+json">${JSON.stringify(o)}</script
 const foot = (updated: string): string => `</main>
 <footer>
 <p>The Self-Host Health Score adds commit activity (35), release recency (25), stars (25) and forks (15) from the live GitHub API. The deploy footprint (RAM, database, ARM64, one-click) is checked against each project's official documentation; <span class="est">est</span> marks a RAM figure the docs do not state. <a href="/methodology/">Methodology</a>. Machine-readable data: <a href="/api/tools.json">/api/tools.json</a> (<a href="/api/">API docs</a>).</p>
-<p class="muted">Data updated ${esc(updated.slice(0, 10))}. <a href="${REPO_URL}" rel="noopener">Source code and dataset on GitHub</a> (code MIT, data CC BY 4.0). <a href="/about/">About</a>. <a href="/sponsor/">Sponsor</a>. Not affiliated with the listed vendors.</p>
+<p class="muted">Data updated ${esc(updated.slice(0, 10))}. <a href="${REPO_URL}" rel="noopener">Source code and dataset on GitHub</a> (code MIT, data CC BY 4.0). <a href="/about/">About</a>. <a href="/sponsor/">Sponsor</a>. Not affiliated with the listed vendors.${HAS_AFFILIATE ? " Some hosting links are affiliate links: we may earn a commission when you sign up. Commissions never affect scores or rankings." : ""}</p>
 </footer>
 </body></html>`;
 
@@ -323,7 +364,7 @@ function toolPage(tool: EnrichedTool, all: EnrichedTool[]): string {
 <td data-label="Database" title="${esc(a.footprint.database)}">${esc(dbShort(a.footprint.database))}</td>
 <td data-label="Min RAM">${ramCell(a)}</td>
 <td class="ctr" data-label="ARM64 / Pi">${yesNo(a.footprint.arm64)} ${conf}</td>
-<td data-label="One-click">${oneClickChips(a.footprint.oneClick)}</td>
+<td data-label="One-click">${oneClickChips(a)}</td>
 <td class="sm" data-label="Activity">commit ${rel(a.gh.pushedAt)}<div>release ${release}</div><div class="muted">${esc(lic(a.gh.license))}</div></td>
 </tr>`;
     })
@@ -456,7 +497,7 @@ function collectionPage(c: Collection, data: Enriched): string {
 <td class="num" data-label="Stars">${stars(f.a.gh.stars)}</td>
 <td data-label="Min RAM">${ramCell(f.a)}</td>
 <td class="ctr" data-label="ARM64 / Pi">${yesNo(f.a.footprint.arm64)}</td>
-<td data-label="One-click">${oneClickChips(f.a.footprint.oneClick)}</td>
+<td data-label="One-click">${oneClickChips(f.a)}</td>
 </tr>`,
     )
     .join("\n");
@@ -580,6 +621,7 @@ function methodologyPage(data: Enriched): string {
 
 <section class="doc" id="footprint"><h2>Deploy footprint</h2>
 <p>The footprint records what it takes to run the app yourself: the primary database, the minimum RAM for a small instance, whether official ARM64 images exist (Raspberry Pi, Apple Silicon servers), the supported deploy methods, and one-click templates on hosting platforms. Each value was read from the project's official documentation, Docker Hub or GitHub Container Registry listing, or official platform templates. The links are listed under "Footprint sources and confidence" on every category page.</p>
+<p>Each one-click chip opens the platform's deploy page for that specific app when such a page exists and was checked to deploy the same project; otherwise it opens the platform's home page. Some platforms pay us a referral commission. Those links carry <code>rel="sponsored"</code>, and commissions never change a score, a footprint value or the order of a table.</p>
 <h3>Confidence levels</h3>
 <ul>
 <li><strong>High</strong>: the documentation states the value directly.</li>
@@ -625,6 +667,7 @@ function apiPage(data: Enriched): string {
     ["database, minRamMB, arm64, deploy, oneClick", "Deploy footprint: primary database, minimum RAM in MB (null if not documented), official ARM64 images, deploy methods, one-click platforms"],
     ["footprintConfidence, footprintSources", "high / medium / low and the documentation URLs the footprint was read from"],
     ["badge", "URLs of this project's SVG badge and Shields endpoint"],
+    ["deployLinks", "Verified one-click deploy pages for this project, keyed by platform (no referral parameters)"],
   ];
   return (
     head(title, desc, url, [jsonLd, breadcrumbLd(crumbs)]) +
@@ -801,6 +844,7 @@ function jsonFeed(data: Enriched): string {
           footprintConfidence: a.footprintConfidence ?? null,
           footprintSources: a.footprintSources ?? [],
           badge: { svg: `${SITE_URL}/api/badge/${a.slug}.svg`, shields: `${SITE_URL}/api/badge/${a.slug}.json` },
+          deployLinks: Object.fromEntries(Object.values(DEPLOY[a.slug] ?? {}).map((d) => [d.platform, d.url])),
         })),
       })),
     },
@@ -1042,6 +1086,11 @@ const FAVICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><re
 // ---------- build ----------
 async function main(): Promise<void> {
   const data = JSON.parse(await readFile(DATA, "utf8")) as Enriched;
+  // A verified deploy page (data/deploy-links.json) is a one-click option even if the seed did not list it yet.
+  for (const t of data.tools)
+    for (const a of t.alternatives)
+      for (const d of Object.values(DEPLOY[a.slug] ?? {}))
+        if (!a.footprint.oneClick.some((x) => x.split(" (")[0].toLowerCase() === d.platform.toLowerCase())) a.footprint.oneClick.push(d.platform);
   const altCount = data.tools.reduce((n, t) => n + t.alternatives.length, 0);
   await rm(OUT, { recursive: true, force: true });
   await mkdir(OUT, { recursive: true });
