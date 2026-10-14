@@ -152,7 +152,7 @@ async function main(): Promise<void> {
       if (gh.found) found++;
       else missing.push(alt.github);
 
-      const { score, breakdown } = computeHealth(gh, nowMs);
+      const { score, breakdown } = computeHealth(alt.moved ? { ...gh, archived: false } : gh, nowMs);
       alts.push({ ...alt, gh, healthScore: score, healthBreakdown: breakdown });
       process.stdout.write(".");
       await sleep(120); // polite

@@ -498,11 +498,11 @@
       "blurb": "Automated meeting scheduling. Self-host keeps booking data private and removes per-seat costs.",
       "alternatives": [
         {
-          "name": "Cal.com",
+          "name": "Cal.diy",
           "slug": "cal-com",
-          "github": "calcom/cal.com",
-          "homepage": "https://cal.com",
-          "description": "Scheduling infrastructure for everyone; deep integrations + API.",
+          "github": "calcom/cal.diy",
+          "homepage": "https://cal.diy",
+          "description": "Open-source community edition spun out of Cal.com, for self-hosting; the project recommends it for personal, non-production use.",
           "footprint": {
             "database": "PostgreSQL",
             "minRamMB": 2048,
@@ -520,9 +520,10 @@
           },
           "footprintConfidence": "medium",
           "footprintSources": [
+            "https://cal.diy",
             "https://cal.com/docs/introduction/quick-start/self-hosting/docker",
             "https://cal.com/docs/self-hosting/installation",
-            "https://github.com/calcom/cal.com",
+            "https://github.com/calcom/cal.diy",
             "https://hub.docker.com/r/calcom/cal.com"
           ]
         },
@@ -2287,7 +2288,12 @@
             "https://pocketbase.io/faq/",
             "https://pocketbase.io/docs/",
             "https://github.com/pocketbase/pocketbase/releases/latest"
-          ]
+          ],
+          "moved": {
+            "to": "https://ganigeorgiev.com/pocketbase/pocketbase",
+            "announcement": "https://github.com/pocketbase/pocketbase/discussions/7841",
+            "note": "announced 2026-09-12: the author moves development to a self-hosted forge in mid October 2026 and archives the GitHub repository without a mirror."
+          }
         },
         {
           "name": "Nhost",

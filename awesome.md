@@ -1,6 +1,6 @@
 # SelfHostScore: self-hostable open-source alternatives
 
-Open-source, self-hostable alternatives to popular SaaS, each with a **Self-Host Health Score** (live GitHub activity, releases, stars and forks) and a **deploy footprint** verified against official documentation (minimum RAM, database, ARM64 and Raspberry Pi support, one-click deploy).
+Open-source, self-hostable alternatives to popular SaaS, each with a **Self-Host Health Score** (live GitHub activity, releases, stars and forks) and a **deploy footprint** with sources and a confidence level (minimum RAM, database, ARM64 and Raspberry Pi support, one-click deploy).
 
 Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-10-14.
 
@@ -20,7 +20,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/airtabl
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) | 99 | 77k | PostgreSQL | about 2048 MB | Yes | Yes |
-| [AFFiNE](https://github.com/toeverything/AFFiNE) | 99 | 73k | PostgreSQL | 2048 MB | Yes | Yes |
+| [AFFiNE](https://github.com/toeverything/AFFiNE) | 99 | 74k | PostgreSQL | 2048 MB | Yes | Yes |
 | [Outline](https://github.com/outline/outline) | 98 | 41k | PostgreSQL | 512 MB | Yes | Yes |
 | [Docmost](https://github.com/docmost/docmost) | 95 | 22k | PostgreSQL | about 1024 MB | Yes | Yes |
 
@@ -51,7 +51,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/zapier/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Cal.com](https://github.com/calcom/cal.com) | 92 | 49k | PostgreSQL | about 2048 MB | Yes | Yes |
+| [Cal.diy](https://github.com/calcom/cal.diy) | 92 | 49k | PostgreSQL | about 2048 MB | Yes | Yes |
 | [Easy!Appointments](https://github.com/alextselegidis/easyappointments) | 88 | 4.4k | MySQL | about 512 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/calendly/

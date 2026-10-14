@@ -8,7 +8,7 @@
 **Open-source, self-hostable alternatives to popular SaaS** (Notion, Airtable, Slack, Zapier, Auth0, Datadog and more), each with:
 
 - **Self-Host Health Score (0-100)**, refreshed daily from the GitHub API: commit activity (35) + release recency (25) + stars (25) + forks (15). Archived or abandoned repos score 0. Transparent methodology: [selfhostscore.com/#methodology](https://selfhostscore.com/#methodology).
-- **Deploy footprint, verified against official docs**: minimum RAM, database, ARM64 / Raspberry Pi support, one-click deploy (Coolify, CapRover, Railway). This is the column other directories do not have.
+- **Deploy footprint with sources**: minimum RAM, database, ARM64 / Raspberry Pi support, one-click deploy (Coolify, CapRover, Railway), read from official docs where they state it, with a confidence level per app (high, medium, low). This is the column other directories do not have.
 
 Interactive site: <https://selfhostscore.com> (sort, filter by Raspberry Pi, one-click and RAM, and [find apps that fit your server](https://selfhostscore.com/can-i-run/)).
 Dataset and API: [`/api/tools.json`](https://selfhostscore.com/api/tools.json), documented at [selfhostscore.com/api](https://selfhostscore.com/api/) and committed here as [`data/tools.json`](data/tools.json). Exact score formula and footprint verification: [methodology](https://selfhostscore.com/methodology/). For LLMs: [`llms.txt`](https://selfhostscore.com/llms.txt).
@@ -51,7 +51,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/airtabl
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) | 99 | 77k | PostgreSQL | about 2048 MB | Yes | Yes |
-| [AFFiNE](https://github.com/toeverything/AFFiNE) | 99 | 73k | PostgreSQL | 2048 MB | Yes | Yes |
+| [AFFiNE](https://github.com/toeverything/AFFiNE) | 99 | 74k | PostgreSQL | 2048 MB | Yes | Yes |
 | [Outline](https://github.com/outline/outline) | 98 | 41k | PostgreSQL | 512 MB | Yes | Yes |
 | [Docmost](https://github.com/docmost/docmost) | 95 | 22k | PostgreSQL | about 1024 MB | Yes | Yes |
 
@@ -82,7 +82,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/zapier/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Cal.com](https://github.com/calcom/cal.com) | 92 | 49k | PostgreSQL | about 2048 MB | Yes | Yes |
+| [Cal.diy](https://github.com/calcom/cal.diy) | 92 | 49k | PostgreSQL | about 2048 MB | Yes | Yes |
 | [Easy!Appointments](https://github.com/alextselegidis/easyappointments) | 88 | 4.4k | MySQL | about 512 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/calendly/

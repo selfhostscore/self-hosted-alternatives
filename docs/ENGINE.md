@@ -26,11 +26,11 @@ A 0 to 100 total of four components, each computed from one repository fetch plu
 | Maturity | 25 | Stars | log10(stars + 1) / log10(50,001), times 25 |
 | Adoption | 15 | Forks | log10(forks + 1) / log10(10,001), times 15 |
 
-Archived repositories and repositories that cannot be fetched score 0. Bands: 80 and above Thriving, 60 Healthy, 40 Steady, 20 At risk, below 20 Dormant. The public explanation lives at <https://selfhostscore.com/methodology/>.
+Archived repositories and repositories that cannot be fetched score 0, unless the seed marks the project as `moved` (development left GitHub on purpose); then the last GitHub data is scored and the page shows a notice. Bands: 80 and above Thriving, 60 Healthy, 40 Steady, 20 At risk, below 20 Dormant. The public explanation lives at <https://selfhostscore.com/methodology/>.
 
 ## Deploy footprint and confidence
 
-Footprint values are curated by hand from official documentation, Docker Hub or GitHub Container Registry listings and official platform templates. Each alternative records `footprintConfidence`:
+Footprint values are curated by hand from official documentation, Docker Hub or GitHub Container Registry listings and official platform templates, and as a last resort from community reports. Each alternative records `footprintConfidence`:
 
 - `high`: the documentation states the value directly.
 - `medium`: derived from official material (a docker-compose file, image tags), no single stated number.

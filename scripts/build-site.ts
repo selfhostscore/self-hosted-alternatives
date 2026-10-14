@@ -238,10 +238,13 @@ const ctaBox = (): string => {
   const shown = MANAGED.slice(0, 4);
   const links = shown.map((p) => `<a href="${esc(p.url)}" ${linkAttrs(p.affiliate)}>${esc(p.name)}</a>`).join(", ");
   const disclosure = shown.some((p) => p.affiliate)
-    ? ` <span class="muted sm">Some of these are affiliate links: if you sign up, we may earn a commission at no cost to you. Commissions never affect scores.</span>`
+    ? ` <span class="muted sm">Some of these are affiliate links: if you sign up, SelfHostScore may earn a commission at no cost to you. Commissions never affect scores.</span>`
     : "";
   return `<aside class="cta"><strong>No server to run it on?</strong> Managed open-source hosting deploys apps like these in one click: ${links}.${disclosure}</aside>`;
 };
+
+// unique apps: an alternative listed under two SaaS products (for example Outline) counts once
+const uniqueAlts = (data: Enriched): EnrichedAlternative[] => [...new Map(data.tools.flatMap((t) => t.alternatives).map((a) => [a.slug, a])).values()];
 
 // flatten alternatives with their tool context (matcher feed, collections, badges)
 type FlatAlt = { cat: string; tool: string; toolSlug: string; a: EnrichedAlternative };
@@ -331,14 +334,14 @@ function head(title: string, desc: string, canonical: string, jsonLd: object | o
 ${ld.map((o) => `<script type="application/ld+json">${JSON.stringify(o)}</script>`).join("\n")}
 </head>
 <body>
-<header class="site"><a class="brand" href="/">${BRAND_MARK}<span>${esc(SITE_NAME)}</span></a><nav class="nav" aria-label="Main"><a href="/self-host/">All apps</a><a href="/can-i-run/">Fit my server</a><a href="/collections/raspberry-pi/">Collections</a><a href="/methodology/">Methodology</a><a href="/api/">API</a><a href="/sponsor/">Sponsor</a></nav><span class="tag">Deploy data verified against official docs</span></header>
+<header class="site"><a class="brand" href="/">${BRAND_MARK}<span>${esc(SITE_NAME)}</span></a><nav class="nav" aria-label="Main"><a href="/self-host/">All apps</a><a href="/can-i-run/">Fit my server</a><a href="/collections/raspberry-pi/">Collections</a><a href="/methodology/">Methodology</a><a href="/api/">API</a><a href="/sponsor/">Sponsor</a></nav><span class="tag">Deploy data with sources and a confidence level per app</span></header>
 <main>`;
 }
 
 const foot = (updated: string): string => `</main>
 <footer>
-<p>The Self-Host Health Score adds commit activity (35), release recency (25), stars (25) and forks (15) from the live GitHub API. The deploy footprint (RAM, database, ARM64, one-click) is checked against each project's official documentation; <span class="est">est</span> marks a RAM figure the docs do not state. <a href="/methodology/">Methodology</a>. Machine-readable data: <a href="/api/tools.json">/api/tools.json</a> (<a href="/api/">API docs</a>).</p>
-<p class="muted">Data updated ${esc(updated.slice(0, 10))}. <a href="${REPO_URL}" rel="noopener">Source code and dataset on GitHub</a> (code MIT, data CC BY 4.0). <a href="/about/">About</a>. <a href="/sponsor/">Sponsor</a>. Not affiliated with the listed vendors.${HAS_AFFILIATE ? " Some hosting links are affiliate links: we may earn a commission when you sign up. Commissions never affect scores or rankings." : ""}</p>
+<p>The Self-Host Health Score adds commit activity (35), release recency (25), stars (25) and forks (15) from the live GitHub API. The deploy footprint (RAM, database, ARM64, one-click) is read from each project's documentation, images or compose files, with sources and a confidence level on every page; <span class="est">est</span> marks a RAM figure the docs do not state. <a href="/methodology/">Methodology</a>. Machine-readable data: <a href="/api/tools.json">/api/tools.json</a> (<a href="/api/">API docs</a>).</p>
+<p class="muted">Data updated ${esc(updated.slice(0, 10))}. <a href="${REPO_URL}" rel="noopener">Source code and dataset on GitHub</a> (code MIT, data CC BY 4.0). <a href="/about/">About</a>. <a href="/sponsor/">Sponsor</a>. Not affiliated with the listed vendors.${HAS_AFFILIATE ? " Some hosting links are affiliate links: SelfHostScore may earn a commission when you sign up. Commissions never affect scores or rankings." : ""}</p>
 </footer>
 </body></html>`;
 
@@ -346,7 +349,7 @@ const foot = (updated: string): string => `</main>
 function toolPage(tool: EnrichedTool, all: EnrichedTool[]): string {
   const url = `${SITE_URL}/alternatives/${tool.slug}/`;
   const title = `Self-Hostable Open-Source ${tool.name} Alternatives (${YEAR})`;
-  const desc = `${tool.alternatives.length} self-hostable open-source ${tool.name} alternatives ranked by a live Self-Host Health Score, with verified deploy footprint: minimum RAM, database, Raspberry Pi and ARM64 support, one-click deploy. Sort and filter to fit your hardware.`;
+  const desc = `${tool.alternatives.length} self-hostable open-source ${tool.name} alternatives ranked by a live Self-Host Health Score, with the deploy footprint and its sources: minimum RAM, database, Raspberry Pi and ARM64 support, one-click deploy. Sort and filter to fit your hardware.`;
 
   const rows = tool.alternatives
     .map((a: EnrichedAlternative) => {
@@ -385,8 +388,8 @@ function toolPage(tool: EnrichedTool, all: EnrichedTool[]): string {
       a: lightest ? `${lightest.name}, at ${ramText(lightest)} with ${dbProse(lightest.footprint.database)}.` : "The documentation of these projects does not state a minimum.",
     },
     {
-      q: `How is the deploy footprint verified?`,
-      a: `Minimum RAM, database, ARM64 support and one-click templates are taken from each project's official documentation and linked below the table. Values the docs do not state are marked as estimates.`,
+      q: `Where does the deploy footprint come from?`,
+      a: `Minimum RAM, database, ARM64 support and one-click templates are read from each project's official documentation where it states them, otherwise from official images and compose files or, as a last resort, community reports. Every app shows its sources and a confidence level below the table, and estimates are marked.`,
     },
   ];
 
@@ -445,7 +448,7 @@ function matcherPage(data: Enriched): string {
   const url = `${SITE_URL}/can-i-run/`;
   const title = `Which Self-Hostable Apps Fit My Server? RAM and ARM Matcher`;
   const desc = `Pick your available RAM and whether you run ARM64 (Raspberry Pi) and get the self-hostable open-source apps that fit, ranked by Self-Host Health Score.`;
-  const altCount = data.tools.reduce((n, t) => n + t.alternatives.length, 0);
+  const altCount = uniqueAlts(data).length;
   const jsonLd = { "@context": "https://schema.org", "@type": "WebApplication", name: title, url, description: desc, applicationCategory: "DeveloperApplication", operatingSystem: "Any" };
   const crumbs: Crumb[] = [
     { name: "Home", url: `${SITE_URL}/` },
@@ -471,7 +474,7 @@ function matcherPage(data: Enriched): string {
 </div>
 <div id="m-out" class="mlist"></div>
 <noscript><p class="muted">This tool needs JavaScript. Browse the <a href="/">full directory</a> instead.</p></noscript>
-<p class="muted sm">Minimums come from each project's official documentation. Apps without a documented minimum are listed only when you choose 8 GB or more.</p>
+<p class="muted sm">Minimums come from each project's documentation where it states one; other values are marked as estimates on the app page. Apps without any minimum are listed only when you choose 8 GB or more.</p>
 ` +
     foot(data.generatedAt)
   );
@@ -537,7 +540,7 @@ function sponsorPage(data: Enriched): string {
   const url = `${SITE_URL}/sponsor/`;
   const title = `Sponsor or Get Listed on ${SITE_NAME}`;
   const desc = `Put your open-source tool in front of developers and self-hosters who are comparing what to deploy. Featured listings and a free live badge for every listed project.`;
-  const altCount = data.tools.reduce((n, t) => n + t.alternatives.length, 0);
+  const altCount = uniqueAlts(data).length;
   const jsonLd = { "@context": "https://schema.org", "@type": "WebPage", name: title, url, description: desc };
   const mail = (sub: string) => `mailto:${CONTACT}?subject=${encodeURIComponent(sub)}`;
   const crumbs: Crumb[] = [
@@ -578,7 +581,7 @@ function sponsorPage(data: Enriched): string {
 </div>
 </div>
 <section class="meth"><h2>What sponsorship does and does not change</h2>
-<p>A featured slot changes placement only. Health Scores come from the GitHub API and footprint values come from official documentation; neither is edited for sponsors. Sponsored links carry <code>rel="sponsored"</code> and are labelled on the page. If your project is not listed yet, open a pull request against <a href="${REPO_URL}" rel="noopener">the dataset on GitHub</a> or email us.</p>
+<p>A featured slot changes placement only. Health Scores come from the GitHub API and footprint values come from the sources listed on each page; neither is edited for sponsors. Sponsored links carry <code>rel="sponsored"</code> and are labelled on the page. If your project is not listed yet, open a pull request against <a href="${REPO_URL}" rel="noopener">the dataset on GitHub</a> or email us.</p>
 <p>Custom placements (newsletter mention, category sponsorship): <a href="${mail("Sponsorship question")}">${CONTACT}</a>.</p></section>
 ` +
     foot(data.generatedAt)
@@ -589,8 +592,8 @@ function sponsorPage(data: Enriched): string {
 function methodologyPage(data: Enriched): string {
   const url = `${SITE_URL}/methodology/`;
   const title = `Methodology: Self-Host Health Score and Deploy Footprint`;
-  const desc = `How ${SITE_NAME} computes the 0 to 100 Self-Host Health Score from GitHub data and how the deploy footprint (RAM, database, ARM64, one-click) is verified against official documentation.`;
-  const altCount = data.tools.reduce((n, t) => n + t.alternatives.length, 0);
+  const desc = `How ${SITE_NAME} computes the 0 to 100 Self-Host Health Score from GitHub data and where the deploy footprint (RAM, database, ARM64, one-click) comes from, with confidence levels.`;
+  const altCount = uniqueAlts(data).length;
   const jsonLd = { "@context": "https://schema.org", "@type": "Article", headline: title, url, description: desc, dateModified: data.generatedAt.slice(0, 10), author: { "@type": "Organization", name: SITE_NAME } };
   const crumbs: Crumb[] = [
     { name: "Home", url: `${SITE_URL}/` },
@@ -620,7 +623,7 @@ function methodologyPage(data: Enriched): string {
 </section>
 
 <section class="doc" id="footprint"><h2>Deploy footprint</h2>
-<p>The footprint records what it takes to run the app yourself: the primary database, the minimum RAM for a small instance, whether official ARM64 images exist (Raspberry Pi, Apple Silicon servers), the supported deploy methods, and one-click templates on hosting platforms. Each value was read from the project's official documentation, Docker Hub or GitHub Container Registry listing, or official platform templates. The links are listed under "Footprint sources and confidence" on every category page.</p>
+<p>The footprint records what it takes to run the app yourself: the primary database, the minimum RAM for a small instance, whether official ARM64 images exist (Raspberry Pi, Apple Silicon servers), the supported deploy methods, and one-click templates on hosting platforms. Each value was read from the project's official documentation, Docker Hub or GitHub Container Registry listing, or official platform templates, and where none of these state it, from community reports (marked low confidence). The links are listed under "Footprint sources and confidence" on every category page.</p>
 <p>Each one-click chip opens the platform's deploy page for that specific app when such a page exists and was checked to deploy the same project; otherwise it opens the platform's home page. Some platforms pay us a referral commission. Those links carry <code>rel="sponsored"</code>, and commissions never change a score, a footprint value or the order of a table.</p>
 <h3>Confidence levels</h3>
 <ul>
@@ -650,7 +653,7 @@ function methodologyPage(data: Enriched): string {
 function apiPage(data: Enriched): string {
   const url = `${SITE_URL}/api/`;
   const title = `API: Dataset, Feed and Badges`;
-  const desc = `Free JSON feed of ${SITE_NAME}: every self-hostable alternative with its Health Score and verified deploy footprint, plus per-project badge endpoints and an llms.txt index. CC BY 4.0.`;
+  const desc = `Free JSON feed of ${SITE_NAME}: every self-hostable alternative with its Health Score and deploy footprint with sources, plus per-project badge endpoints and an llms.txt index. CC BY 4.0.`;
   const sample = flatten(data).find((f) => f.a.slug === "n8n") ?? flatten(data)[0];
   const jsonLd = { "@context": "https://schema.org", "@type": "TechArticle", headline: title, url, description: desc, dateModified: data.generatedAt.slice(0, 10) };
   const crumbs: Crumb[] = [
@@ -676,7 +679,7 @@ function apiPage(data: Enriched): string {
 <p class="lead">Everything on this site is available as JSON. The data is licensed CC BY 4.0: use it in your product, research or answer engine with a link back to ${SITE_URL}.</p>
 
 <section class="doc" id="feed"><h2>Feed: <code>/api/tools.json</code></h2>
-<p>One file with every category and every alternative, regenerated daily. Current size: ${data.tools.length} tools, ${flatten(data).length} alternatives, updated ${esc(data.generatedAt.slice(0, 10))}. The same file is committed to <a href="${REPO_URL}/blob/main/data/tools.json" rel="noopener">data/tools.json in the repository</a>, so you can pin a version or diff changes.</p>
+<p>One file with every category and every alternative, regenerated daily. Current size: ${data.tools.length} SaaS categories, ${uniqueAlts(data).length} apps, updated ${esc(data.generatedAt.slice(0, 10))}. The same file is committed to <a href="${REPO_URL}/blob/main/data/tools.json" rel="noopener">data/tools.json in the repository</a>, so you can pin a version or diff changes.</p>
 <pre><code>GET ${SITE_URL}/api/tools.json
 
 {
@@ -719,8 +722,8 @@ https://img.shields.io/endpoint?url=${SITE_URL}/api/badge/${esc(sample.a.slug)}.
 function aboutPage(data: Enriched): string {
   const url = `${SITE_URL}/about/`;
   const title = `About ${SITE_NAME}`;
-  const desc = `${SITE_NAME} is an independent directory of self-hostable open-source alternatives with a daily GitHub Health Score and deploy data verified against official documentation. How it is run, how to add a project, how to reach us.`;
-  const altCount = data.tools.reduce((n, t) => n + t.alternatives.length, 0);
+  const desc = `${SITE_NAME} is an independent directory of self-hostable open-source alternatives with a daily GitHub Health Score and sourced deploy data. How it is run, how to add a project, how to reach us.`;
+  const altCount = uniqueAlts(data).length;
   const jsonLd = { "@context": "https://schema.org", "@type": "AboutPage", name: title, url, description: desc };
   const crumbs: Crumb[] = [
     { name: "Home", url: `${SITE_URL}/` },
@@ -736,7 +739,7 @@ function aboutPage(data: Enriched): string {
 <ul>
 <li><strong>Self-hostable only.</strong> Every entry has documented instructions for running it on your own infrastructure.</li>
 <li><strong>A live Health Score.</strong> Commit activity, release recency, stars and forks from the GitHub API, refreshed daily. <a href="/methodology/">Full formula</a>.</li>
-<li><strong>A verified deploy footprint.</strong> Minimum RAM, database, ARM64 support and one-click templates, read from official documentation with the sources linked on each page.</li>
+<li><strong>A sourced deploy footprint.</strong> Minimum RAM, database, ARM64 support and one-click templates, read from official documentation where it states them, with the sources and a confidence level on each page.</li>
 <li><strong>Open data.</strong> The whole dataset is published as JSON under CC BY 4.0 and versioned in a public repository.</li>
 </ul>
 </section>
@@ -781,6 +784,7 @@ const hostOf = (u: string): string => {
 };
 
 function maintenanceSentence(a: EnrichedAlternative): string {
+  if (a.moved) return `Development is moving off GitHub (${a.moved.note}). The score uses the GitHub repository and will go stale after the move; check ${a.moved.to} for current activity.`;
   if (a.gh.archived) return `The GitHub repository is archived (read-only), so the Health Score is 0.`;
   const rel2 = a.gh.latestReleaseTag ? `latest release ${a.gh.latestReleaseTag} ${rel(a.gh.latestReleaseAt)}` : "no published releases";
   return `Health Score ${a.healthScore} of 100 (${healthLabel(a.healthScore)}): last commit ${rel(a.gh.pushedAt)}, ${rel2}.`;
@@ -803,7 +807,7 @@ function deployBox(a: EnrichedAlternative): string {
   return `<section class="deploy" id="deploy"><h2>Deploy ${esc(a.name)}</h2>
 ${items.length ? `<p class="muted sm">One-click templates that deploy this exact project:</p><div class="btns">${items.join("")}</div>` : `<p class="muted sm">No one-click template is listed for ${esc(a.name)}. Use the official installation guide below.</p>`}
 <p class="sm"><strong>Run it on your own server:</strong> ${esc(a.footprint.deploy.join(", ") || "see the official docs")}. <a href="${esc(a.homepage ?? "https://github.com/" + a.github)}" rel="nofollow noopener" target="_blank">Official site</a>, <a href="https://github.com/${esc(a.github)}" rel="nofollow noopener" target="_blank">GitHub repository</a>${docs.length ? `, installation docs: ${docs.map((u) => `<a href="${esc(u)}" rel="nofollow noopener" target="_blank">${esc(hostOf(u))}</a>`).join(", ")}` : ""}.</p>
-${anySponsored ? `<p class="muted sm">Some deploy links are affiliate links: if you sign up, we may earn a commission at no cost to you. Commissions never affect scores.</p>` : ""}</section>`;
+${anySponsored ? `<p class="muted sm">Some deploy links are affiliate links: if you sign up, SelfHostScore may earn a commission at no cost to you. Commissions never affect scores.</p>` : ""}</section>`;
 }
 
 function healthBreakdownSection(a: EnrichedAlternative): string {
@@ -820,7 +824,7 @@ function healthBreakdownSection(a: EnrichedAlternative): string {
     ["Adoption", b.adoption, 15, `${fmtInt(a.gh.forks)} forks on a log scale; full points near 10,000.`],
   ];
   return `<section class="doc wide" id="health"><h2>Health Score: ${a.healthScore} of 100 (${healthLabel(a.healthScore)})</h2>
-${a.gh.archived ? `<p class="notice">The GitHub repository is archived, so every component scores 0. Check the official site for a successor before you deploy it.</p>` : ""}
+${a.moved ? `<p class="notice">Development is moving off GitHub: ${esc(a.moved.note)} New home: <a href="${esc(a.moved.to)}" rel="nofollow noopener" target="_blank">${esc(a.moved.to)}</a> (<a href="${esc(a.moved.announcement)}" rel="nofollow noopener" target="_blank">announcement</a>). The components below come from the GitHub repository and stop updating after the move.</p>` : a.gh.archived ? `<p class="notice">The GitHub repository is archived, so every component scores 0. Check the official site for a successor before you deploy it.</p>` : ""}
 <div class="hbs">${rows
     .map(
       ([n, p, max, why]) =>
@@ -1001,8 +1005,8 @@ ${rows}
 // ---------- homepage ----------
 function homePage(data: Enriched): string {
   const url = `${SITE_URL}/`;
-  const title = `${SITE_NAME}: Self-Hostable Open-Source Alternatives, Verified`;
-  const desc = `Self-hostable open-source alternatives to popular SaaS, ranked by a live GitHub Self-Host Health Score, with deploy data verified against official docs: minimum RAM, database, Raspberry Pi support and one-click deploy.`;
+  const title = `${SITE_NAME}: Self-Hostable Open-Source Alternatives, Sized and Scored`;
+  const desc = `Self-hostable open-source alternatives to popular SaaS, ranked by a live GitHub Self-Host Health Score, with sourced deploy data: minimum RAM, database, Raspberry Pi support and one-click deploy.`;
   const cards = data.tools
     .map((t) => {
       const top = t.alternatives[0];
@@ -1013,15 +1017,15 @@ function homePage(data: Enriched): string {
 </a>`;
     })
     .join("\n");
-  const altCount = data.tools.reduce((n, t) => n + t.alternatives.length, 0);
-  const thriving = flatten(data).filter((f) => f.a.healthScore >= 80).length;
-  const pi = flatten(data).filter((f) => f.a.footprint.arm64).length;
+  const altCount = uniqueAlts(data).length;
+  const thriving = uniqueAlts(data).filter((a) => a.healthScore >= 80).length;
+  const pi = uniqueAlts(data).filter((a) => a.footprint.arm64).length;
   const collectionPage = { "@context": "https://schema.org", "@type": "CollectionPage", name: title, url, description: desc };
   const dataset = {
     "@context": "https://schema.org",
     "@type": "Dataset",
     name: `${SITE_NAME}: self-hostable open-source alternatives with health score and deploy footprint`,
-    description: `${altCount} self-hostable open-source alternatives across ${data.tools.length} SaaS categories, each with a GitHub-derived health score and a deploy footprint verified against official documentation (RAM, database, ARM64, one-click).`,
+    description: `${altCount} self-hostable open-source alternatives across ${data.tools.length} SaaS categories, each with a GitHub-derived health score and a deploy footprint with sources and confidence levels (RAM, database, ARM64, one-click).`,
     url,
     license: "https://creativecommons.org/licenses/by/4.0/",
     creator: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
@@ -1031,9 +1035,9 @@ function homePage(data: Enriched): string {
   };
   return (
     head(title, desc, url, [collectionPage, dataset]) +
-    `<h1>Self-hostable, open-source alternatives, <span class="hl">verified</span></h1>
-<p class="lead">One page per SaaS product. Each alternative is ranked by a live <strong>Self-Host Health Score</strong> from the GitHub API and comes with a <strong>deploy footprint</strong> checked against official documentation: minimum RAM, database, Raspberry Pi and ARM64 support, one-click deploy.</p>
-<div class="stats" aria-label="Directory statistics"><div><b>${data.tools.length}</b><span>categories</span></div><div><b>${altCount}</b><span>alternatives</span></div><div><b>${thriving}</b><span>scored 80 or higher</span></div><div><b>${pi}</b><span>with official ARM64 images</span></div><div><b>${esc(data.generatedAt.slice(0, 10))}</b><span>data updated</span></div></div>
+    `<h1>Self-hostable open-source alternatives, <span class="hl">sized and scored</span></h1>
+<p class="lead">One page per SaaS product. Each alternative is ranked by a live <strong>Self-Host Health Score</strong> from the GitHub API and comes with a <strong>deploy footprint</strong>: minimum RAM, database, Raspberry Pi and ARM64 support, one-click deploy, each with its source and a confidence level.</p>
+<div class="stats" aria-label="Directory statistics"><div><b>${data.tools.length}</b><span>categories</span></div><div><b>${altCount}</b><span>apps</span></div><div><b>${thriving}</b><span>scored 80 or higher</span></div><div><b>${pi}</b><span>with official ARM64 images</span></div><div><b>${esc(data.generatedAt.slice(0, 10))}</b><span>data updated</span></div></div>
 <a class="bigcta" href="/can-i-run/"><strong>Which apps fit my server?</strong> Pick your RAM and architecture and get the matching list.</a>
 <input id="search" type="search" placeholder="Search ${data.tools.length} categories, for example notion, backup, crm, photos" autocomplete="off" aria-label="Search categories">
 <div class="grid">${cards}</div>
@@ -1086,6 +1090,7 @@ function jsonFeed(data: Enriched): string {
           oneClick: a.footprint.oneClick,
           footprintConfidence: a.footprintConfidence ?? null,
           footprintSources: a.footprintSources ?? [],
+          moved: a.moved ?? null,
           badge: { svg: `${SITE_URL}/api/badge/${a.slug}.svg`, shields: `${SITE_URL}/api/badge/${a.slug}.json` },
           deployLinks: Object.fromEntries(Object.values(DEPLOY[a.slug] ?? {}).map((d) => [d.platform, d.url])),
         })),
@@ -1097,11 +1102,11 @@ function jsonFeed(data: Enriched): string {
 }
 
 function llmsTxt(data: Enriched): string {
-  const altCount = data.tools.reduce((n, t) => n + t.alternatives.length, 0);
+  const altCount = uniqueAlts(data).length;
   const lines = [
     `# ${SITE_NAME}`,
     "",
-    `> Directory of self-hostable open-source alternatives to popular SaaS. Each alternative has a live GitHub Self-Host Health Score (0 to 100) and a deploy footprint verified against official documentation: minimum RAM, database, ARM64 and Raspberry Pi support, one-click deploy availability.`,
+    `> Directory of self-hostable open-source alternatives to popular SaaS. Each alternative has a live GitHub Self-Host Health Score (0 to 100) and a deploy footprint (minimum RAM, database, ARM64 and Raspberry Pi support, one-click deploy) with linked sources and a confidence level: high when the official docs state it, medium when derived from official images or compose files, low when estimated from community reports.`,
     "",
     `Machine-readable dataset: ${SITE_URL}/api/tools.json (CC BY 4.0, documented at ${SITE_URL}/api/)`,
     `Updated: ${data.generatedAt.slice(0, 10)}. ${data.tools.length} tools, ${altCount} alternatives. Please cite the page URL and the update date.`,
@@ -1131,7 +1136,7 @@ function awesomeMd(data: Enriched): string {
   const out = [
     `# SelfHostScore: self-hostable open-source alternatives`,
     "",
-    `Open-source, self-hostable alternatives to popular SaaS, each with a **Self-Host Health Score** (live GitHub activity, releases, stars and forks) and a **deploy footprint** verified against official documentation (minimum RAM, database, ARM64 and Raspberry Pi support, one-click deploy).`,
+    `Open-source, self-hostable alternatives to popular SaaS, each with a **Self-Host Health Score** (live GitHub activity, releases, stars and forks) and a **deploy footprint** with sources and a confidence level (minimum RAM, database, ARM64 and Raspberry Pi support, one-click deploy).`,
     "",
     `Interactive site: ${SITE_URL}. Dataset: ${SITE_URL}/api/tools.json. Methodology: ${SITE_URL}/methodology/. Updated ${data.generatedAt.slice(0, 10)}.`,
     "",
@@ -1335,8 +1340,8 @@ function ogCard(toolCount: number, altCount: number): string {
   .pill{background:#171a21;border:1px solid #262b36;border-radius:10px;padding:14px 20px;font-size:24px;color:#c7ccd6}.pill b{color:#e8eaed}
   </style></head><body>
   <div class="b"><svg viewBox="0 0 64 64" width="44" height="44"><rect width="64" height="64" rx="14" fill="#171a21"/><path d="M17 33l10 11 20-24" fill="none" stroke="#3ddc97" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>SelfHostScore</div>
-  <h1>Self-hostable, open-source<br>alternatives, <span class="g">verified</span></h1>
-  <p>Ranked by a live GitHub Health Score, with deploy data checked against official documentation.</p>
+  <h1>Self-hostable, open-source<br>alternatives, <span class="g">sized and scored</span></h1>
+  <p>Ranked by a live GitHub Health Score, with deploy data, sources and confidence levels.</p>
   <div class="row"><div class="pill"><b>${toolCount}</b> categories</div><div class="pill"><b>${altCount}</b> alternatives</div><div class="pill">RAM, ARM64, one-click</div></div>
   </body></html>`;
 }
@@ -1351,7 +1356,7 @@ async function main(): Promise<void> {
     for (const a of t.alternatives)
       for (const d of Object.values(DEPLOY[a.slug] ?? {}))
         if (!a.footprint.oneClick.some((x) => x.split(" (")[0].toLowerCase() === d.platform.toLowerCase())) a.footprint.oneClick.push(d.platform);
-  const altCount = data.tools.reduce((n, t) => n + t.alternatives.length, 0);
+  const altCount = uniqueAlts(data).length;
   await rm(OUT, { recursive: true, force: true });
   await mkdir(OUT, { recursive: true });
   await mkdir(join(OUT, "api"), { recursive: true });

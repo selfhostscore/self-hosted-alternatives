@@ -1,7 +1,7 @@
 {
   "site": "SelfHostScore",
   "url": "https://selfhostscore.com",
-  "updated": "2026-10-14T16:20:00.820Z",
+  "updated": "2026-10-14T17:16:35.325Z",
   "license": "CC BY 4.0. Free to use with attribution to SelfHostScore (https://selfhostscore.com).",
   "methodology": "https://selfhostscore.com/methodology/",
   "docs": "https://selfhostscore.com/api/",
@@ -59,6 +59,7 @@
             "https://github.com/nocodb/nocodb/issues/183",
             "https://github.com/railwayapp-templates/nocodb"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/nocodb.svg",
             "shields": "https://selfhostscore.com/api/badge/nocodb.json"
@@ -111,6 +112,7 @@
             "https://github.com/teableio/teable",
             "https://railway.com/deploy/teable"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/teable.svg",
             "shields": "https://selfhostscore.com/api/badge/teable.json"
@@ -136,10 +138,10 @@
           },
           "stars": 11953,
           "forks": 660,
-          "openIssues": 748,
+          "openIssues": 754,
           "language": "TypeScript",
           "license": "Apache-2.0",
-          "lastCommit": "2026-10-14T15:36:04Z",
+          "lastCommit": "2026-10-14T17:01:01Z",
           "latestReleaseTag": "v1.7.21",
           "latestReleaseAt": "2026-10-09T20:08:10Z",
           "createdAt": "2020-05-22T06:16:02Z",
@@ -161,6 +163,7 @@
             "https://github.com/gristlabs/grist-core/",
             "https://hub.docker.com/r/gristlabs/grist"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/grist.svg",
             "shields": "https://selfhostscore.com/api/badge/grist.json"
@@ -184,7 +187,7 @@
             "maturity": 20,
             "adoption": 11
           },
-          "stars": 6152,
+          "stars": 6153,
           "forks": 765,
           "openIssues": 1166,
           "language": "Python",
@@ -224,6 +227,7 @@
             "https://hub.docker.com/r/baserow/baserow",
             "https://community.baserow.io/t/baserow-container-image-for-64-bit-arm-cpus/1574"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/baserow.svg",
             "shields": "https://selfhostscore.com/api/badge/baserow.json"
@@ -255,7 +259,7 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 77321,
+          "stars": 77323,
           "forks": 6066,
           "openIssues": 1034,
           "language": "Dart",
@@ -283,6 +287,7 @@
             "https://github.com/AppFlowy-IO/AppFlowy-Cloud/blob/main/docker-compose.yml",
             "https://appflowy.com/docs/How-to-install-AppFlowy-Cloud-using-Coolify"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/appflowy.svg",
             "shields": "https://selfhostscore.com/api/badge/appflowy.json"
@@ -306,7 +311,7 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 73499,
+          "stars": 73502,
           "forks": 5358,
           "openIssues": 772,
           "language": "TypeScript",
@@ -334,6 +339,7 @@
             "https://coolify.io/docs/services/affine",
             "https://railway.com/deploy/affine-1"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/affine.svg",
             "shields": "https://selfhostscore.com/api/badge/affine.json"
@@ -383,6 +389,7 @@
             "https://docs.getoutline.com/s/hosting/doc/docker-7pfeLP5a8t",
             "https://hub.docker.com/r/outlinewiki/outline"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/outline.svg",
             "shields": "https://selfhostscore.com/api/badge/outline.json"
@@ -405,12 +412,12 @@
             "maturity": 23,
             "adoption": 12
           },
-          "stars": 21977,
+          "stars": 21979,
           "forks": 1635,
-          "openIssues": 354,
+          "openIssues": 355,
           "language": "TypeScript",
           "license": "AGPL-3.0",
-          "lastCommit": "2026-10-14T00:52:43Z",
+          "lastCommit": "2026-10-14T17:14:05Z",
           "latestReleaseTag": "v0.96.0",
           "latestReleaseAt": "2026-09-08T14:18:03Z",
           "createdAt": "2023-08-03T15:35:48Z",
@@ -434,6 +441,7 @@
             "https://www.pikapods.com/apps",
             "https://railway.com/deploy/docmost"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/docmost.svg",
             "shields": "https://selfhostscore.com/api/badge/docmost.json"
@@ -465,12 +473,12 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 41061,
+          "stars": 41062,
           "forks": 4806,
-          "openIssues": 4502,
+          "openIssues": 4500,
           "language": "TypeScript",
           "license": "Apache-2.0",
-          "lastCommit": "2026-10-14T16:14:33Z",
+          "lastCommit": "2026-10-14T17:01:45Z",
           "latestReleaseTag": "v2.5.0",
           "latestReleaseAt": "2026-10-09T15:59:16Z",
           "createdAt": "2020-06-30T04:07:36Z",
@@ -499,6 +507,7 @@
             "https://docs.appsmith.com/getting-started/setup/installation-guides/digitalocean",
             "https://docs.appsmith.com/getting-started/setup/installation-guides/kubernetes"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/appsmith.svg",
             "shields": "https://selfhostscore.com/api/badge/appsmith.json"
@@ -522,14 +531,14 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 41094,
+          "stars": 41093,
           "forks": 5498,
-          "openIssues": 852,
+          "openIssues": 855,
           "language": "HTML",
           "license": "AGPL-3.0",
-          "lastCommit": "2026-10-14T16:15:03Z",
-          "latestReleaseTag": "v3.20.244-lts",
-          "latestReleaseAt": "2026-10-13T12:26:51Z",
+          "lastCommit": "2026-10-14T17:11:38Z",
+          "latestReleaseTag": "v3.20.245-lts",
+          "latestReleaseAt": "2026-10-14T16:27:55Z",
           "createdAt": "2021-03-30T08:51:34Z",
           "database": "PostgreSQL (Redis also required for caching/sessions)",
           "minRamMB": 4096,
@@ -556,6 +565,7 @@
             "https://docs.tooljet.com/docs/setup/helm/",
             "https://docs.tooljet.com/docs/setup/digitalocean/"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/tooljet.svg",
             "shields": "https://selfhostscore.com/api/badge/tooljet.json"
@@ -579,12 +589,12 @@
             "maturity": 24,
             "adoption": 13
           },
-          "stars": 28336,
+          "stars": 28335,
           "forks": 2231,
           "openIssues": 276,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T16:18:48Z",
+          "lastCommit": "2026-10-14T16:20:44Z",
           "latestReleaseTag": "v3.49.0",
           "latestReleaseAt": "2026-10-12T07:58:29Z",
           "createdAt": "2019-06-07T11:03:41Z",
@@ -618,6 +628,7 @@
             "https://marketplace.digitalocean.com/apps/budibase",
             "https://docs.budibase.com/docs/kubernetes-k8s"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/budibase.svg",
             "shields": "https://selfhostscore.com/api/badge/budibase.json"
@@ -642,11 +653,11 @@
             "adoption": 13
           },
           "stars": 24581,
-          "forks": 2911,
+          "forks": 2912,
           "openIssues": 365,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T16:16:18Z",
+          "lastCommit": "2026-10-14T17:12:28Z",
           "latestReleaseTag": "v2.2.25",
           "latestReleaseAt": "2026-10-14T13:37:08Z",
           "createdAt": "2020-10-24T07:27:48Z",
@@ -671,6 +682,7 @@
             "https://hub.docker.com/r/nocobase/nocobase/tags",
             "https://railway.com/deploy/nocobase"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/nocobase.svg",
             "shields": "https://selfhostscore.com/api/badge/nocobase.json"
@@ -702,12 +714,12 @@
             "maturity": 25,
             "adoption": 15
           },
-          "stars": 207360,
+          "stars": 207361,
           "forks": 61113,
-          "openIssues": 1193,
+          "openIssues": 1189,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T16:15:50Z",
+          "lastCommit": "2026-10-14T17:01:50Z",
           "latestReleaseTag": "n8n@2.43.5",
           "latestReleaseAt": "2026-10-14T08:15:51Z",
           "createdAt": "2019-06-22T09:24:21Z",
@@ -734,6 +746,7 @@
             "https://github.com/n8n-io/n8n-hosting",
             "https://github.com/n8n-io/n8n-hosting/blob/main/charts/n8n/README.md"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/n8n.svg",
             "shields": "https://selfhostscore.com/api/badge/n8n.json"
@@ -757,12 +770,12 @@
             "maturity": 23,
             "adoption": 14
           },
-          "stars": 25049,
+          "stars": 25050,
           "forks": 4337,
           "openIssues": 725,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T15:57:35Z",
+          "lastCommit": "2026-10-14T16:26:43Z",
           "latestReleaseTag": "0.92.3",
           "latestReleaseAt": "2026-10-12T18:43:34Z",
           "createdAt": "2022-12-03T02:52:46Z",
@@ -790,6 +803,7 @@
             "https://www.activepieces.com/docs/install/overview",
             "https://www.activepieces.com/docs/install/options/easypanel"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/activepieces.svg",
             "shields": "https://selfhostscore.com/api/badge/activepieces.json"
@@ -842,6 +856,7 @@
             "https://github.com/automatisch/automatisch/blob/main/render.yaml",
             "https://github.com/automatisch/automatisch/blob/main/.github/workflows/release.yml"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/automatisch.svg",
             "shields": "https://selfhostscore.com/api/badge/automatisch.json"
@@ -860,12 +875,12 @@
       "page": "https://selfhostscore.com/alternatives/calendly/",
       "alternatives": [
         {
-          "name": "Cal.com",
+          "name": "Cal.diy",
           "slug": "cal-com",
           "page": "https://selfhostscore.com/self-host/cal-com/",
-          "github": "calcom/cal.com",
-          "homepage": "https://cal.com",
-          "description": "Scheduling infrastructure for everyone; deep integrations + API.",
+          "github": "calcom/cal.diy",
+          "homepage": "https://cal.diy",
+          "description": "Open-source community edition spun out of Cal.com, for self-hosting; the project recommends it for personal, non-production use.",
           "healthScore": 92,
           "healthBreakdown": {
             "activity": 35,
@@ -898,11 +913,13 @@
           ],
           "footprintConfidence": "medium",
           "footprintSources": [
+            "https://cal.diy",
             "https://cal.com/docs/introduction/quick-start/self-hosting/docker",
             "https://cal.com/docs/self-hosting/installation",
-            "https://github.com/calcom/cal.com",
+            "https://github.com/calcom/cal.diy",
             "https://hub.docker.com/r/calcom/cal.com"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/cal-com.svg",
             "shields": "https://selfhostscore.com/api/badge/cal-com.json"
@@ -931,7 +948,7 @@
           "openIssues": 176,
           "language": "PHP",
           "license": "GPL-3.0",
-          "lastCommit": "2026-10-12T10:42:59Z",
+          "lastCommit": "2026-10-14T16:58:59Z",
           "latestReleaseTag": "1.6.0",
           "latestReleaseAt": "2026-05-27T12:45:42Z",
           "createdAt": "2014-11-26T20:51:50Z",
@@ -954,6 +971,7 @@
             "https://github.com/alextselegidis/easyappointments-docker",
             "https://hub.docker.com/r/alextselegidis/easyappointments"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/easyappointments.svg",
             "shields": "https://selfhostscore.com/api/badge/easyappointments.json"
@@ -990,7 +1008,7 @@
           "openIssues": 6,
           "language": "JavaScript",
           "license": "MIT",
-          "lastCommit": "2026-10-14T15:58:42Z",
+          "lastCommit": "2026-10-14T16:33:16Z",
           "latestReleaseTag": "v12.44",
           "latestReleaseAt": "2026-10-14T14:38:10Z",
           "createdAt": "2014-01-21T01:26:28Z",
@@ -1016,6 +1034,7 @@
             "https://github.com/wekan/wekan/wiki/Raspberry-Pi",
             "https://wekan.github.io/wekan-doc/installation/docker.html"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/wekan.svg",
             "shields": "https://selfhostscore.com/api/badge/wekan.json"
@@ -1038,7 +1057,7 @@
             "maturity": 22,
             "adoption": 12
           },
-          "stars": 12616,
+          "stars": 12615,
           "forks": 1382,
           "openIssues": 385,
           "language": "JavaScript",
@@ -1069,6 +1088,7 @@
             "https://github.com/orgs/plankanban/packages/container/package/planka",
             "https://github.com/plankanban/planka/blob/master/docker-compose.yml"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/planka.svg",
             "shields": "https://selfhostscore.com/api/badge/planka.json"
@@ -1122,6 +1142,7 @@
             "https://hub.docker.com/r/kanboard/kanboard",
             "https://github.com/kanboard/kanboard"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/kanboard.svg",
             "shields": "https://selfhostscore.com/api/badge/kanboard.json"
@@ -1153,12 +1174,12 @@
             "maturity": 25,
             "adoption": 15
           },
-          "stars": 46274,
+          "stars": 46273,
           "forks": 13986,
-          "openIssues": 4209,
+          "openIssues": 4211,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T16:20:03Z",
+          "lastCommit": "2026-10-14T17:15:44Z",
           "latestReleaseTag": "8.9.0",
           "latestReleaseAt": "2026-10-05T17:41:21Z",
           "createdAt": "2015-05-19T07:36:09Z",
@@ -1183,6 +1204,7 @@
             "https://docs.rocket.chat/docs/deploy-with-snaps",
             "https://railway.com/deploy/rocketchat"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/rocket-chat.svg",
             "shields": "https://selfhostscore.com/api/badge/rocket-chat.json"
@@ -1211,7 +1233,7 @@
           "openIssues": 1078,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T16:19:04Z",
+          "lastCommit": "2026-10-14T16:56:19Z",
           "latestReleaseTag": "v11.11.1",
           "latestReleaseAt": "2026-09-24T06:27:30Z",
           "createdAt": "2015-06-15T06:50:02Z",
@@ -1237,6 +1259,7 @@
             "https://mattermost.com/blog/install-mattermost-digitalocean/",
             "https://github.com/mattermost/mattermost/issues/26440"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/mattermost.svg",
             "shields": "https://selfhostscore.com/api/badge/mattermost.json"
@@ -1291,6 +1314,7 @@
             "https://zulip.com/self-hosting/",
             "https://github.com/zulip/docker-zulip"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/zulip.svg",
             "shields": "https://selfhostscore.com/api/badge/zulip.json"
@@ -1348,6 +1372,7 @@
             "https://docs.getoutline.com/s/hosting/doc/docker-7pfeLP5a8t",
             "https://hub.docker.com/r/outlinewiki/outline"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/outline.svg",
             "shields": "https://selfhostscore.com/api/badge/outline.json"
@@ -1399,6 +1424,7 @@
             "https://docs.requarks.io/install/docker",
             "https://hub.docker.com/r/requarks/wiki"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/wikijs.svg",
             "shields": "https://selfhostscore.com/api/badge/wikijs.json"
@@ -1422,7 +1448,7 @@
             "maturity": 23,
             "adoption": 13
           },
-          "stars": 19081,
+          "stars": 19082,
           "forks": 2428,
           "openIssues": 3,
           "language": "PHP",
@@ -1450,6 +1476,7 @@
             "https://www.bookstackapp.com/docs/admin/installation/",
             "https://www.bookstackapp.com/docs/admin/"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/bookstack.svg",
             "shields": "https://selfhostscore.com/api/badge/bookstack.json"
@@ -1510,6 +1537,7 @@
             "https://github.com/hoppscotch/hoppscotch/issues/3199",
             "https://coolify.io/docs/services/hoppscotch"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/hoppscotch.svg",
             "shields": "https://selfhostscore.com/api/badge/hoppscotch.json"
@@ -1533,9 +1561,9 @@
             "maturity": 25,
             "adoption": 13
           },
-          "stars": 47573,
+          "stars": 47575,
           "forks": 2989,
-          "openIssues": 1883,
+          "openIssues": 1882,
           "language": "JavaScript",
           "license": "MIT",
           "lastCommit": "2026-10-14T15:52:06Z",
@@ -1558,6 +1586,7 @@
             "https://www.usebruno.com/downloads",
             "https://flathub.org/en/apps/com.usebruno.Bruno"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/bruno.svg",
             "shields": "https://selfhostscore.com/api/badge/bruno.json"
@@ -1586,7 +1615,7 @@
             "maturity": 22,
             "adoption": 13
           },
-          "stars": 13101,
+          "stars": 13102,
           "forks": 2575,
           "openIssues": 186,
           "language": "TypeScript",
@@ -1616,6 +1645,7 @@
             "https://railway.com/deploy/formbricks-survey-platform",
             "https://github.com/formbricks/formbricks/pull/4421"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/formbricks.svg",
             "shields": "https://selfhostscore.com/api/badge/formbricks.json"
@@ -1668,6 +1698,7 @@
             "https://docs.heyform.net/open-source/configuration/environment-variables",
             "https://github.com/heyform/heyform"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/heyform.svg",
             "shields": "https://selfhostscore.com/api/badge/heyform.json"
@@ -1699,9 +1730,9 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 62974,
+          "stars": 62976,
           "forks": 5656,
-          "openIssues": 716,
+          "openIssues": 717,
           "language": "PHP",
           "license": "Apache-2.0",
           "lastCommit": "2026-10-14T16:10:40Z",
@@ -1726,6 +1757,7 @@
             "https://marketplace.digitalocean.com/apps/coolify",
             "https://docs.digitalocean.com/products/marketplace/catalog/coolify/"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/coolify.svg",
             "shields": "https://selfhostscore.com/api/badge/coolify.json"
@@ -1771,6 +1803,7 @@
             "https://hub.docker.com/r/dokploy/dokploy/tags",
             "https://docs.dokploy.com/docs/core/cloud"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/dokploy.svg",
             "shields": "https://selfhostscore.com/api/badge/dokploy.json"
@@ -1819,6 +1852,7 @@
             "https://docs.digitalocean.com/products/marketplace/catalog/dokku/",
             "https://marketplace.digitalocean.com/apps/dokku"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/dokku.svg",
             "shields": "https://selfhostscore.com/api/badge/dokku.json"
@@ -1867,6 +1901,7 @@
             "https://github.com/caprover/caprover",
             "https://caprover.com/docs/backup-and-restore.html"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/caprover.svg",
             "shields": "https://selfhostscore.com/api/badge/caprover.json"
@@ -1897,9 +1932,9 @@
             "maturity": 24,
             "adoption": 15
           },
-          "stars": 37347,
+          "stars": 37346,
           "forks": 9048,
-          "openIssues": 3233,
+          "openIssues": 3236,
           "language": "Java",
           "license": "Apache-2.0",
           "lastCommit": "2026-10-14T15:59:32Z",
@@ -1928,6 +1963,7 @@
             "https://docs.digitalocean.com/products/marketplace/catalog/keycloak/",
             "https://www.keycloak.org/2026/01/keycloak-2650-released"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/keycloak.svg",
             "shields": "https://selfhostscore.com/api/badge/keycloak.json"
@@ -1950,12 +1986,12 @@
             "maturity": 23,
             "adoption": 12
           },
-          "stars": 25958,
+          "stars": 25957,
           "forks": 2073,
           "openIssues": 1134,
           "language": "Python",
           "license": null,
-          "lastCommit": "2026-10-14T16:16:34Z",
+          "lastCommit": "2026-10-14T16:52:43Z",
           "latestReleaseTag": "version/2026.8.3",
           "latestReleaseAt": "2026-09-17T22:15:01Z",
           "createdAt": "2019-12-30T09:19:48Z",
@@ -1980,6 +2016,7 @@
             "https://railway.com/deploy/authentik",
             "https://coolify.io/docs/services/authentik"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/authentik.svg",
             "shields": "https://selfhostscore.com/api/badge/authentik.json"
@@ -2003,12 +2040,12 @@
             "maturity": 22,
             "adoption": 12
           },
-          "stars": 15313,
+          "stars": 15314,
           "forks": 1369,
           "openIssues": 1280,
           "language": "Go",
           "license": "AGPL-3.0",
-          "lastCommit": "2026-10-14T15:11:03Z",
+          "lastCommit": "2026-10-14T16:49:51Z",
           "latestReleaseTag": "v4.19.4",
           "latestReleaseAt": "2026-10-01T13:03:38Z",
           "createdAt": "2020-03-16T13:51:31Z",
@@ -2034,6 +2071,7 @@
             "https://zitadel.com/docs/self-hosting/deploy/kubernetes",
             "https://railway.com/deploy/zitadel"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/zitadel.svg",
             "shields": "https://selfhostscore.com/api/badge/zitadel.json"
@@ -2065,7 +2103,7 @@
             "maturity": 25,
             "adoption": 15
           },
-          "stars": 92454,
+          "stars": 92453,
           "forks": 8556,
           "openIssues": 838,
           "language": "JavaScript",
@@ -2093,6 +2131,7 @@
             "https://hub.docker.com/r/louislam/uptime-kuma/",
             "https://docs.pikapods.com/apps/uptime-kuma"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/uptime-kuma.svg",
             "shields": "https://selfhostscore.com/api/badge/uptime-kuma.json"
@@ -2121,7 +2160,7 @@
           "openIssues": 1543,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T16:15:09Z",
+          "lastCommit": "2026-10-14T17:15:27Z",
           "latestReleaseTag": "v0.146.0",
           "latestReleaseAt": "2026-10-14T06:42:10Z",
           "createdAt": "2021-01-03T12:44:36Z",
@@ -2150,6 +2189,7 @@
             "https://signoz.io/docs/install/",
             "https://github.com/SigNoz/signoz/issues/194"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/signoz.svg",
             "shields": "https://selfhostscore.com/api/badge/signoz.json"
@@ -2173,9 +2213,9 @@
             "maturity": 23,
             "adoption": 11
           },
-          "stars": 22366,
+          "stars": 22367,
           "forks": 1135,
-          "openIssues": 555,
+          "openIssues": 556,
           "language": "TypeScript",
           "license": "AGPL-3.0",
           "lastCommit": "2026-10-14T16:17:00Z",
@@ -2204,6 +2244,7 @@
             "https://railway.com/deploy/openobserve",
             "https://github.com/openobserve/openobserve/issues/7937"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/openobserve.svg",
             "shields": "https://selfhostscore.com/api/badge/openobserve.json"
@@ -2270,6 +2311,7 @@
             "https://github.com/chatwoot/chatwoot/issues/9579",
             "https://github.com/chatwoot/chatwoot/issues/7939"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/chatwoot.svg",
             "shields": "https://selfhostscore.com/api/badge/chatwoot.json"
@@ -2295,7 +2337,7 @@
           },
           "stars": 4596,
           "forks": 731,
-          "openIssues": 18,
+          "openIssues": 19,
           "language": "PHP",
           "license": "AGPL-3.0",
           "lastCommit": "2026-10-14T10:26:36Z",
@@ -2326,6 +2368,7 @@
             "https://freescout.net/blog/new-ios-app-community-modules-pikapods/",
             "https://github.com/freescout-help-desk/freescout/wiki/Cloud-Hosted-FreeScout"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/freescout.svg",
             "shields": "https://selfhostscore.com/api/badge/freescout.json"
@@ -2380,6 +2423,7 @@
             "https://hub.docker.com/r/zammad/zammad-docker-compose/tags",
             "https://community.zammad.org/t/arm64-docker-image/9700"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/zammad.svg",
             "shields": "https://selfhostscore.com/api/badge/zammad.json"
@@ -2411,12 +2455,12 @@
             "maturity": 24,
             "adoption": 15
           },
-          "stars": 39371,
-          "forks": 8301,
-          "openIssues": 101,
+          "stars": 39372,
+          "forks": 8303,
+          "openIssues": 102,
           "language": "TypeScript",
           "license": "MIT",
-          "lastCommit": "2026-10-13T23:23:14Z",
+          "lastCommit": "2026-10-14T17:08:09Z",
           "latestReleaseTag": "v3.4.0",
           "latestReleaseAt": "2026-09-17T04:21:49Z",
           "createdAt": "2020-07-17T07:59:00Z",
@@ -2448,6 +2492,7 @@
             "https://railway.com/deploy/umami-analytics",
             "https://coolify.io/docs/services/umami"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/umami.svg",
             "shields": "https://selfhostscore.com/api/badge/umami.json"
@@ -2473,10 +2518,10 @@
           },
           "stars": 40283,
           "forks": 3508,
-          "openIssues": 5536,
+          "openIssues": 5527,
           "language": "Python",
           "license": null,
-          "lastCommit": "2026-10-14T16:19:50Z",
+          "lastCommit": "2026-10-14T17:17:05Z",
           "latestReleaseTag": "desktop-v0.61.694",
           "latestReleaseAt": "2026-10-14T01:51:07Z",
           "createdAt": "2020-01-23T22:46:58Z",
@@ -2497,6 +2542,7 @@
             "https://hub.docker.com/r/posthog/posthog/tags",
             "https://railway.com/deploy/posthog-1"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/posthog.svg",
             "shields": "https://selfhostscore.com/api/badge/posthog.json"
@@ -2520,7 +2566,7 @@
             "maturity": 24,
             "adoption": 12
           },
-          "stars": 29399,
+          "stars": 29402,
           "forks": 1900,
           "openIssues": 62,
           "language": "Elixir",
@@ -2552,6 +2598,7 @@
             "https://coolify.io/docs/services/plausible",
             "https://github.com/railwayapp-templates/plausible"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/plausible.svg",
             "shields": "https://selfhostscore.com/api/badge/plausible.json"
@@ -2583,7 +2630,7 @@
             "maturity": 22,
             "adoption": 13
           },
-          "stars": 15415,
+          "stars": 15416,
           "forks": 3337,
           "openIssues": 215,
           "language": "TypeScript",
@@ -2610,6 +2657,7 @@
             "https://docs.documenso.com/docs/self-hosting",
             "https://hub.docker.com/r/documenso/documenso/tags"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/documenso.svg",
             "shields": "https://selfhostscore.com/api/badge/documenso.json"
@@ -2662,6 +2710,7 @@
             "https://www.docuseal.com/install",
             "https://hub.docker.com/r/docuseal/docuseal/tags"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/docuseal.svg",
             "shields": "https://selfhostscore.com/api/badge/docuseal.json"
@@ -2713,6 +2762,7 @@
             "https://docs.opensignlabs.com/docs/self-host/One-click-Install/DigitalOcean/",
             "https://hub.docker.com/r/opensign/opensignserver/tags"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/opensign.svg",
             "shields": "https://selfhostscore.com/api/badge/opensign.json"
@@ -2744,7 +2794,7 @@
             "maturity": 25,
             "adoption": 13
           },
-          "stars": 69037,
+          "stars": 69039,
           "forks": 3324,
           "openIssues": 95,
           "language": "Rust",
@@ -2776,6 +2826,7 @@
             "https://github.com/dani-garcia/vaultwarden",
             "https://github.com/dani-garcia/vaultwarden/discussions/2903"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/vaultwarden.svg",
             "shields": "https://selfhostscore.com/api/badge/vaultwarden.json"
@@ -2831,6 +2882,7 @@
             "https://docs.digitalocean.com/products/marketplace/catalog/passbolt-ce/",
             "https://hub.docker.com/r/passbolt/passbolt"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/passbolt.svg",
             "shields": "https://selfhostscore.com/api/badge/passbolt.json"
@@ -2859,7 +2911,7 @@
           "openIssues": 106,
           "language": "JavaScript",
           "license": "AGPL-3.0",
-          "lastCommit": "2026-10-14T15:50:26Z",
+          "lastCommit": "2026-10-14T16:35:19Z",
           "latestReleaseTag": "v4.3.0",
           "latestReleaseAt": "2023-03-06T16:05:49Z",
           "createdAt": "2013-11-10T21:06:35Z",
@@ -2878,6 +2930,7 @@
             "https://github.com/padloc/padloc/blob/main/docker-compose.yml",
             "https://hub.docker.com/r/padloc/server"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/padloc.svg",
             "shields": "https://selfhostscore.com/api/badge/padloc.json"
@@ -2906,12 +2959,12 @@
             "maturity": 23,
             "adoption": 12
           },
-          "stars": 23310,
-          "forks": 2082,
-          "openIssues": 473,
+          "stars": 23315,
+          "forks": 2083,
+          "openIssues": 464,
           "language": "Rust",
           "license": null,
-          "lastCommit": "2026-10-14T16:13:08Z",
+          "lastCommit": "2026-10-14T17:09:34Z",
           "latestReleaseTag": "cap-v0.6.0",
           "latestReleaseAt": "2026-09-15T13:10:21Z",
           "createdAt": "2023-11-17T20:31:46Z",
@@ -2936,6 +2989,7 @@
             "https://github.com/CapSoftware/Cap/blob/main/.github/workflows/docker-build-web.yml",
             "https://coolify.io/docs/services/cap"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/cap.svg",
             "shields": "https://selfhostscore.com/api/badge/cap.json"
@@ -2979,6 +3033,7 @@
             "https://github.com/alyssaxuu/screenity",
             "https://github.com/alyssaxuu/screenity/blob/master/README.md"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/screenity.svg",
             "shields": "https://selfhostscore.com/api/badge/screenity.json"
@@ -3007,8 +3062,8 @@
             "maturity": 23,
             "adoption": 13
           },
-          "stars": 23779,
-          "forks": 2675,
+          "stars": 23782,
+          "forks": 2676,
           "openIssues": 108,
           "language": "Go",
           "license": "AGPL-3.0",
@@ -3040,6 +3095,7 @@
             "https://docs.pikapods.com/apps/listmonk",
             "https://railway.com/deploy/listmonk-1"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/listmonk.svg",
             "shields": "https://selfhostscore.com/api/badge/listmonk.json"
@@ -3094,6 +3150,7 @@
             "https://github.com/mautic/docker-mautic",
             "https://hub.docker.com/r/mautic/mautic/"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/mautic.svg",
             "shields": "https://selfhostscore.com/api/badge/mautic.json"
@@ -3142,6 +3199,7 @@
             "https://github.com/phpList/phplist-docker",
             "https://hub.docker.com/r/phplist/phplist"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/phplist.svg",
             "shields": "https://selfhostscore.com/api/badge/phplist.json"
@@ -3205,6 +3263,7 @@
             "https://github.com/chatwoot/chatwoot/issues/9579",
             "https://github.com/chatwoot/chatwoot/issues/7939"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/chatwoot.svg",
             "shields": "https://selfhostscore.com/api/badge/chatwoot.json"
@@ -3255,6 +3314,7 @@
             "https://hub.docker.com/r/chaskiq/chaskiq",
             "https://dev.chaskiq.io/en/articles/docker-for-development"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/chaskiq.svg",
             "shields": "https://selfhostscore.com/api/badge/chaskiq.json"
@@ -3304,6 +3364,7 @@
             "https://docs.papercups.io/development",
             "https://docs.papercups.io/heroku"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/papercups.svg",
             "shields": "https://selfhostscore.com/api/badge/papercups.json"
@@ -3334,9 +3395,9 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 60835,
+          "stars": 60839,
           "forks": 6060,
-          "openIssues": 1130,
+          "openIssues": 1131,
           "language": "TypeScript",
           "license": "AGPL-3.0",
           "lastCommit": "2026-10-14T14:18:52Z",
@@ -3365,6 +3426,7 @@
             "https://developers.plane.so/self-hosting/methods/docker-compose",
             "https://developers.plane.so/self-hosting/plane-architecture"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/plane.svg",
             "shields": "https://selfhostscore.com/api/badge/plane.json"
@@ -3388,12 +3450,12 @@
             "maturity": 22,
             "adoption": 13
           },
-          "stars": 16416,
+          "stars": 16417,
           "forks": 3553,
           "openIssues": 307,
           "language": "Ruby",
           "license": "GPL-3.0",
-          "lastCommit": "2026-10-14T16:12:20Z",
+          "lastCommit": "2026-10-14T17:16:49Z",
           "latestReleaseTag": "v17.9.1",
           "latestReleaseAt": "2026-10-01T10:50:28Z",
           "createdAt": "2012-11-28T09:59:11Z",
@@ -3415,6 +3477,7 @@
             "https://www.openproject.org/docs/installation-and-operations/system-requirements/",
             "https://www.openproject.org/docs/installation-and-operations/installation/docker-compose/"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/openproject.svg",
             "shields": "https://selfhostscore.com/api/badge/openproject.json"
@@ -3464,6 +3527,7 @@
             "https://hub.docker.com/_/redmine",
             "https://github.com/docker-library/redmine"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/redmine.svg",
             "shields": "https://selfhostscore.com/api/badge/redmine.json"
@@ -3513,6 +3577,7 @@
             "https://docs.taiga.io/setup-production.html",
             "https://github.com/taigaio/taiga-docker"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/taiga.svg",
             "shields": "https://selfhostscore.com/api/badge/taiga.json"
@@ -3544,12 +3609,12 @@
             "maturity": 24,
             "adoption": 14
           },
-          "stars": 37103,
+          "stars": 37104,
           "forks": 5277,
-          "openIssues": 3821,
+          "openIssues": 3823,
           "language": "PHP",
           "license": "AGPL-3.0",
-          "lastCommit": "2026-10-14T16:08:02Z",
+          "lastCommit": "2026-10-14T16:34:28Z",
           "latestReleaseTag": "v35.0.1",
           "latestReleaseAt": "2026-09-24T13:54:44Z",
           "createdAt": "2016-06-02T07:44:14Z",
@@ -3578,6 +3643,7 @@
             "https://docs.digitalocean.com/products/marketplace/catalog/nextcloud/",
             "https://docs.pikapods.com/apps/nextcloud"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/nextcloud.svg",
             "shields": "https://selfhostscore.com/api/badge/nextcloud.json"
@@ -3630,6 +3696,7 @@
             "https://hub.docker.com/r/owncloud/server",
             "https://www.pikapods.com/apps/"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/owncloud.svg",
             "shields": "https://selfhostscore.com/api/badge/owncloud.json"
@@ -3681,6 +3748,7 @@
             "https://forum.seafile.com/t/will-there-be-an-arm-build-for-v12-0/23016",
             "https://www.pikapods.com/apps/"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/seafile.svg",
             "shields": "https://selfhostscore.com/api/badge/seafile.json"
@@ -3711,12 +3779,12 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 49661,
+          "stars": 49662,
           "forks": 6901,
           "openIssues": 4578,
           "language": "Clojure",
           "license": null,
-          "lastCommit": "2026-10-14T16:15:43Z",
+          "lastCommit": "2026-10-14T17:11:44Z",
           "latestReleaseTag": "v0.64.1",
           "latestReleaseAt": "2026-10-07T18:42:49Z",
           "createdAt": "2015-02-02T19:25:47Z",
@@ -3748,6 +3816,7 @@
             "https://render.com/templates/metabase",
             "https://railway.com/deploy/metabase-latest"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/metabase.svg",
             "shields": "https://selfhostscore.com/api/badge/metabase.json"
@@ -3771,7 +3840,7 @@
             "maturity": 24,
             "adoption": 14
           },
-          "stars": 28834,
+          "stars": 28833,
           "forks": 4634,
           "openIssues": 812,
           "language": "Python",
@@ -3801,6 +3870,7 @@
             "https://github.com/getredash/redash/discussions/6812",
             "https://railway.com/deploy/redash"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/redash.svg",
             "shields": "https://selfhostscore.com/api/badge/redash.json"
@@ -3824,12 +3894,12 @@
             "maturity": 25,
             "adoption": 15
           },
-          "stars": 75140,
+          "stars": 75141,
           "forks": 18477,
-          "openIssues": 538,
+          "openIssues": 539,
           "language": "Python",
           "license": "Apache-2.0",
-          "lastCommit": "2026-10-14T15:35:40Z",
+          "lastCommit": "2026-10-14T17:17:08Z",
           "latestReleaseTag": "6.1.0",
           "latestReleaseAt": "2026-05-13T18:32:25Z",
           "createdAt": "2015-07-21T18:55:34Z",
@@ -3855,6 +3925,7 @@
             "https://hub.docker.com/r/apache/superset",
             "https://railway.com/deploy/superset"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/superset.svg",
             "shields": "https://selfhostscore.com/api/badge/superset.json"
@@ -3886,12 +3957,12 @@
             "maturity": 25,
             "adoption": 15
           },
-          "stars": 111536,
-          "forks": 16828,
-          "openIssues": 1160,
+          "stars": 111541,
+          "forks": 16835,
+          "openIssues": 1159,
           "language": "TypeScript",
           "license": "Apache-2.0",
-          "lastCommit": "2026-10-14T15:56:18Z",
+          "lastCommit": "2026-10-14T17:01:12Z",
           "latestReleaseTag": "v1.26.08",
           "latestReleaseAt": "2026-08-07T13:57:57Z",
           "createdAt": "2019-10-12T05:56:49Z",
@@ -3915,6 +3986,7 @@
             "https://www.digitalocean.com/blog/supabase-template-app-platform",
             "https://hub.docker.com/u/supabase"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/supabase.svg",
             "shields": "https://selfhostscore.com/api/badge/supabase.json"
@@ -3943,7 +4015,7 @@
           "openIssues": 792,
           "language": "TypeScript",
           "license": "BSD-3-Clause",
-          "lastCommit": "2026-10-14T15:55:56Z",
+          "lastCommit": "2026-10-14T17:02:17Z",
           "latestReleaseTag": "2.5.0",
           "latestReleaseAt": "2026-10-13T13:04:26Z",
           "createdAt": "2019-04-08T16:36:25Z",
@@ -3965,6 +4037,7 @@
             "https://appwrite.io/docs/advanced/self-hosting",
             "https://dev.to/appwrite/appwrite-0-8-arm-support-59bc"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/appwrite.svg",
             "shields": "https://selfhostscore.com/api/badge/appwrite.json"
@@ -4016,6 +4089,11 @@
             "https://pocketbase.io/docs/",
             "https://github.com/pocketbase/pocketbase/releases/latest"
           ],
+          "moved": {
+            "to": "https://ganigeorgiev.com/pocketbase/pocketbase",
+            "announcement": "https://github.com/pocketbase/pocketbase/discussions/7841",
+            "note": "announced 2026-09-12: the author moves development to a self-hosted forge in mid October 2026 and archives the GitHub repository without a mirror."
+          },
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/pocketbase.svg",
             "shields": "https://selfhostscore.com/api/badge/pocketbase.json"
@@ -4039,12 +4117,12 @@
             "maturity": 21,
             "adoption": 11
           },
-          "stars": 9356,
+          "stars": 9357,
           "forks": 634,
           "openIssues": 157,
           "language": "TypeScript",
           "license": "MIT",
-          "lastCommit": "2026-10-14T15:57:47Z",
+          "lastCommit": "2026-10-14T17:09:41Z",
           "latestReleaseTag": "cli@1.52.0",
           "latestReleaseAt": "2026-10-14T14:56:52Z",
           "createdAt": "2021-02-09T13:33:34Z",
@@ -4064,6 +4142,7 @@
             "https://github.com/nhost/nhost/blob/main/examples/docker-compose/docker-compose.yaml",
             "https://github.com/nhost/nhost/discussions/970"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/nhost.svg",
             "shields": "https://selfhostscore.com/api/badge/nhost.json"
@@ -4095,12 +4174,12 @@
             "maturity": 25,
             "adoption": 13
           },
-          "stars": 59566,
+          "stars": 59567,
           "forks": 2735,
-          "openIssues": 319,
+          "openIssues": 318,
           "language": "Rust",
           "license": null,
-          "lastCommit": "2026-10-14T15:57:50Z",
+          "lastCommit": "2026-10-14T16:30:13Z",
           "latestReleaseTag": "v1.55.0",
           "latestReleaseAt": "2026-10-12T09:21:50Z",
           "createdAt": "2018-04-23T11:45:28Z",
@@ -4129,6 +4208,7 @@
             "https://www.meilisearch.com/docs/guides/deployment/digitalocean",
             "https://railway.com/deploy/meilisearch-1"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/meilisearch.svg",
             "shields": "https://selfhostscore.com/api/badge/meilisearch.json"
@@ -4151,8 +4231,8 @@
             "maturity": 24,
             "adoption": 11
           },
-          "stars": 26870,
-          "forks": 1012,
+          "stars": 26872,
+          "forks": 1013,
           "openIssues": 909,
           "language": "C++",
           "license": "GPL-3.0",
@@ -4183,6 +4263,7 @@
             "https://hub.docker.com/r/typesense/typesense/",
             "https://railway.com/deploy/typesense-latest"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/typesense.svg",
             "shields": "https://selfhostscore.com/api/badge/typesense.json"
@@ -4239,6 +4320,7 @@
             "https://hub.docker.com/_/yourls",
             "https://yourls.org/docs"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/yourls.svg",
             "shields": "https://selfhostscore.com/api/badge/yourls.json"
@@ -4262,8 +4344,8 @@
             "adoption": 12
           },
           "stars": 11155,
-          "forks": 1506,
-          "openIssues": 83,
+          "forks": 1507,
+          "openIssues": 84,
           "language": "JavaScript",
           "license": "MIT",
           "lastCommit": "2026-09-03T06:31:18Z",
@@ -4288,6 +4370,7 @@
             "https://github.com/thedevs-network/kutt/blob/main/README.md",
             "https://hub.docker.com/r/kutt/kutt"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/kutt.svg",
             "shields": "https://selfhostscore.com/api/badge/kutt.json"
@@ -4338,6 +4421,7 @@
             "https://shlink.io/documentation/install-docker-image/",
             "https://hub.docker.com/r/shlinkio/shlink"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/shlink.svg",
             "shields": "https://selfhostscore.com/api/badge/shlink.json"
@@ -4370,11 +4454,11 @@
             "adoption": 15
           },
           "stars": 30079,
-          "forks": 8077,
+          "forks": 8078,
           "openIssues": 144,
           "language": "TypeScript",
           "license": "Apache-2.0",
-          "lastCommit": "2026-10-14T15:52:55Z",
+          "lastCommit": "2026-10-14T16:54:24Z",
           "latestReleaseTag": "stable/jitsi-meet_11248",
           "latestReleaseAt": "2026-09-14T13:07:11Z",
           "createdAt": "2013-12-16T12:51:09Z",
@@ -4399,6 +4483,7 @@
             "https://github.com/jitsi/docker-jitsi-meet",
             "https://marketplace.digitalocean.com/apps/jitsi-server"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/jitsi-meet.svg",
             "shields": "https://selfhostscore.com/api/badge/jitsi-meet.json"
@@ -4447,6 +4532,7 @@
             "https://bigbluebutton.github.io/greenlight/gl-install.html",
             "https://github.com/bigbluebutton/bbb-install"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/bigbluebutton.svg",
             "shields": "https://selfhostscore.com/api/badge/bigbluebutton.json"
@@ -4477,12 +4563,12 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 58497,
+          "stars": 58498,
           "forks": 7264,
           "openIssues": 2318,
           "language": "Go",
           "license": "MIT",
-          "lastCommit": "2026-10-14T12:07:32Z",
+          "lastCommit": "2026-10-14T16:29:39Z",
           "latestReleaseTag": "v28.1.0",
           "latestReleaseAt": "2026-10-06T20:14:45Z",
           "createdAt": "2016-11-01T02:13:26Z",
@@ -4512,6 +4598,7 @@
             "https://railway.com/deploy/gitea",
             "https://www.pikapods.com/apps/"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/gitea.svg",
             "shields": "https://selfhostscore.com/api/badge/gitea.json"
@@ -4560,6 +4647,7 @@
             "https://hub.docker.com/r/gogs/gogs/tags",
             "https://hub.docker.com/r/gogs/gogs/"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/gogs.svg",
             "shields": "https://selfhostscore.com/api/badge/gogs.json"
@@ -4607,6 +4695,7 @@
             "https://docs.onedev.io/installation-guide/run-as-docker-container",
             "https://docs.onedev.io/tutorials/cicd/multi-arch-docker-image"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/onedev.svg",
             "shields": "https://selfhostscore.com/api/badge/onedev.json"
@@ -4638,12 +4727,12 @@
             "maturity": 21,
             "adoption": 11
           },
-          "stars": 8000,
+          "stars": 8001,
           "forks": 708,
-          "openIssues": 387,
+          "openIssues": 386,
           "language": "Go",
           "license": "Apache-2.0",
-          "lastCommit": "2026-10-14T11:59:26Z",
+          "lastCommit": "2026-10-14T16:45:03Z",
           "latestReleaseTag": "v3.19.0",
           "latestReleaseAt": "2026-10-07T18:04:00Z",
           "createdAt": "2019-04-03T18:06:38Z",
@@ -4670,6 +4759,7 @@
             "https://github.com/woodpecker-ci/woodpecker",
             "https://hub.docker.com/r/woodpeckerci/woodpecker-server"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/woodpecker.svg",
             "shields": "https://selfhostscore.com/api/badge/woodpecker.json"
@@ -4693,8 +4783,8 @@
             "maturity": 24,
             "adoption": 13
           },
-          "stars": 38537,
-          "forks": 3423,
+          "stars": 38538,
+          "forks": 3424,
           "openIssues": 119,
           "language": "Go",
           "license": "Apache-2.0",
@@ -4719,6 +4809,7 @@
             "https://github.com/drone/charts",
             "https://hub.docker.com/r/drone/drone/tags"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/drone.svg",
             "shields": "https://selfhostscore.com/api/badge/drone.json"
@@ -4744,7 +4835,7 @@
           "openIssues": 77,
           "language": "Go",
           "license": "Apache-2.0",
-          "lastCommit": "2026-10-14T16:19:47Z",
+          "lastCommit": "2026-10-14T16:22:04Z",
           "latestReleaseTag": "v8.3.1",
           "latestReleaseAt": "2026-09-28T15:49:57Z",
           "createdAt": "2014-04-19T20:45:45Z",
@@ -4765,6 +4856,7 @@
             "https://concourse-ci.org/docs/install/running-worker/",
             "https://concourse-ci.org/postgresql-node.html"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/concourse.svg",
             "shields": "https://selfhostscore.com/api/badge/concourse.json"
@@ -4793,12 +4885,12 @@
             "maturity": 25,
             "adoption": 15
           },
-          "stars": 58331,
+          "stars": 58335,
           "forks": 9529,
-          "openIssues": 129,
+          "openIssues": 131,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T16:20:04Z",
+          "lastCommit": "2026-10-14T17:17:21Z",
           "latestReleaseTag": "twenty/v2.46.0",
           "latestReleaseAt": "2026-10-12T08:20:57Z",
           "createdAt": "2022-12-01T13:04:40Z",
@@ -4822,6 +4914,7 @@
             "https://github.com/twentyhq/twenty",
             "https://railway.com/deploy/twenty-open-source-crm"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/twenty.svg",
             "shields": "https://selfhostscore.com/api/badge/twenty.json"
@@ -4872,6 +4965,7 @@
             "https://github.com/krayin/laravel-crm",
             "https://hub.docker.com/r/webkul/krayin"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/krayin.svg",
             "shields": "https://selfhostscore.com/api/badge/krayin.json"
@@ -4921,6 +5015,7 @@
             "https://docs.suitecrm.com/8.x/admin/installation-guide/",
             "https://community.suitecrm.com/t/minimum-server-droplet-requirements/58110"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/suitecrm.svg",
             "shields": "https://selfhostscore.com/api/badge/suitecrm.json"
@@ -4948,7 +5043,7 @@
           "openIssues": 64,
           "language": "PHP",
           "license": "AGPL-3.0",
-          "lastCommit": "2026-10-14T15:49:20Z",
+          "lastCommit": "2026-10-14T16:31:06Z",
           "latestReleaseTag": "10.0.10",
           "latestReleaseAt": "2026-10-14T15:47:37Z",
           "createdAt": "2014-09-25T13:38:46Z",
@@ -4973,6 +5068,7 @@
             "https://github.com/espocrm/espocrm-docker",
             "https://hub.docker.com/r/espocrm/espocrm"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/espocrm.svg",
             "shields": "https://selfhostscore.com/api/badge/espocrm.json"
@@ -5009,7 +5105,7 @@
           "openIssues": 811,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T16:20:34Z",
+          "lastCommit": "2026-10-14T17:17:50Z",
           "latestReleaseTag": "v0.166.6",
           "latestReleaseAt": "2026-10-13T22:35:32Z",
           "createdAt": "2022-08-05T13:50:00Z",
@@ -5038,6 +5134,7 @@
             "https://docs.digitalocean.com/products/marketplace/catalog/infisical/",
             "https://coolify.io/docs/services/overview"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/infisical.svg",
             "shields": "https://selfhostscore.com/api/badge/infisical.json"
@@ -5091,6 +5188,7 @@
             "https://github.com/openbao/openbao/releases",
             "https://hub.docker.com/r/openbao/openbao"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/openbao.svg",
             "shields": "https://selfhostscore.com/api/badge/openbao.json"
@@ -5153,6 +5251,7 @@
             "https://hub.docker.com/r/unleashorg/unleash-server",
             "https://coolify.io/docs/services/unleash"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/unleash.svg",
             "shields": "https://selfhostscore.com/api/badge/unleash.json"
@@ -5181,7 +5280,7 @@
           "openIssues": 834,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T16:02:51Z",
+          "lastCommit": "2026-10-14T17:12:04Z",
           "latestReleaseTag": "v5.1.0",
           "latestReleaseAt": "2026-09-22T03:07:54Z",
           "createdAt": "2021-05-07T23:11:51Z",
@@ -5204,6 +5303,7 @@
             "https://docs.growthbook.io/self-host/production",
             "https://hub.docker.com/r/growthbook/growthbook"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/growthbook.svg",
             "shields": "https://selfhostscore.com/api/badge/growthbook.json"
@@ -5229,10 +5329,10 @@
           },
           "stars": 6591,
           "forks": 584,
-          "openIssues": 743,
+          "openIssues": 744,
           "language": "Python",
           "license": "BSD-3-Clause",
-          "lastCommit": "2026-10-14T16:20:39Z",
+          "lastCommit": "2026-10-14T17:13:34Z",
           "latestReleaseTag": "v2.284.0",
           "latestReleaseAt": "2026-10-13T13:44:08Z",
           "createdAt": "2018-06-05T10:49:57Z",
@@ -5259,6 +5359,7 @@
             "https://github.com/caprover/one-click-apps/tree/master/public/v4/apps",
             "https://railway.com/deploy/flagsmith"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/flagsmith.svg",
             "shields": "https://selfhostscore.com/api/badge/flagsmith.json"
@@ -5321,6 +5422,7 @@
             "https://github.com/TwiN/gatus/tree/master/.examples/docker-compose-postgres-storage",
             "https://github.com/TwiN/helm-charts/blob/master/charts/gatus/README.md"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/gatus.svg",
             "shields": "https://selfhostscore.com/api/badge/gatus.json"
@@ -5372,6 +5474,7 @@
             "https://hub.docker.com/r/cachethq/docker/",
             "https://github.com/cachethq/Docker"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/cachet.svg",
             "shields": "https://selfhostscore.com/api/badge/cachet.json"
@@ -5394,7 +5497,7 @@
             "maturity": 18,
             "adoption": 8
           },
-          "stars": 1989,
+          "stars": 1990,
           "forks": 179,
           "openIssues": 193,
           "language": "Go",
@@ -5423,6 +5526,7 @@
             "https://github.com/statping-ng/statping-ng/wiki/Docker-Compose",
             "https://statping-ng.github.io/"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/statping-ng.svg",
             "shields": "https://selfhostscore.com/api/badge/statping-ng.json"
@@ -5454,14 +5558,14 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 116230,
-          "forks": 7220,
-          "openIssues": 723,
+          "stars": 116233,
+          "forks": 7219,
+          "openIssues": 720,
           "language": "TypeScript",
           "license": "AGPL-3.0",
-          "lastCommit": "2026-10-14T16:11:35Z",
-          "latestReleaseTag": "v3.3.1",
-          "latestReleaseAt": "2026-10-08T21:52:06Z",
+          "lastCommit": "2026-10-14T17:17:39Z",
+          "latestReleaseTag": "v3.3.3",
+          "latestReleaseAt": "2026-10-14T16:56:21Z",
           "createdAt": "2022-02-03T15:56:27Z",
           "database": "PostgreSQL (with VectorChord/pgvector extension for vector search)",
           "minRamMB": 6144,
@@ -5487,6 +5591,7 @@
             "https://github.com/immich-app/immich-charts",
             "https://docs.immich.app/install/one-click/"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/immich.svg",
             "shields": "https://selfhostscore.com/api/badge/immich.json"
@@ -5542,6 +5647,7 @@
             "https://marketplace.digitalocean.com/apps/photoprism",
             "https://railway.com/deploy/photoprism"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/photoprism.svg",
             "shields": "https://selfhostscore.com/api/badge/photoprism.json"
@@ -5566,10 +5672,10 @@
           },
           "stars": 8104,
           "forks": 411,
-          "openIssues": 105,
+          "openIssues": 106,
           "language": "Python",
           "license": "MIT",
-          "lastCommit": "2026-10-14T12:14:51Z",
+          "lastCommit": "2026-10-14T17:05:24Z",
           "latestReleaseTag": "1.3.0",
           "latestReleaseAt": "2026-10-11T11:36:15Z",
           "createdAt": "2020-11-11T23:08:19Z",
@@ -5592,6 +5698,7 @@
             "https://docs.librephotos.com/docs/installation/unraid/",
             "https://github.com/LibrePhotos/librephotos"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/librephotos.svg",
             "shields": "https://selfhostscore.com/api/badge/librephotos.json"
@@ -5622,12 +5729,12 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 56728,
+          "stars": 56730,
           "forks": 6340,
-          "openIssues": 646,
+          "openIssues": 644,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T15:34:08Z",
+          "lastCommit": "2026-10-14T17:03:26Z",
           "latestReleaseTag": "v3.7.21",
           "latestReleaseAt": "2026-09-25T21:31:12Z",
           "createdAt": "2017-01-16T21:49:41Z",
@@ -5652,6 +5759,7 @@
             "https://coolify.io/docs/services/joplin",
             "https://railway.com/deploy/joplin"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/joplin.svg",
             "shields": "https://selfhostscore.com/api/badge/joplin.json"
@@ -5675,7 +5783,7 @@
             "maturity": 24,
             "adoption": 13
           },
-          "stars": 38321,
+          "stars": 38322,
           "forks": 2579,
           "openIssues": 608,
           "language": "TypeScript",
@@ -5705,6 +5813,7 @@
             "https://triliumnotes.org/get-started/",
             "https://coolify.io/docs/services/overview"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/trilium.svg",
             "shields": "https://selfhostscore.com/api/badge/trilium.json"
@@ -5748,6 +5857,7 @@
             "https://github.com/streetwriters/notesnook-sync-server",
             "https://help.notesnook.com/"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/notesnook.svg",
             "shields": "https://selfhostscore.com/api/badge/notesnook.json"
@@ -5776,7 +5886,7 @@
             "maturity": 24,
             "adoption": 12
           },
-          "stars": 29646,
+          "stars": 29647,
           "forks": 1569,
           "openIssues": 695,
           "language": "TypeScript",
@@ -5809,6 +5919,7 @@
             "https://docs.karakeep.app/installation/unraid/",
             "https://github.com/karakeep-app/karakeep"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/karakeep.svg",
             "shields": "https://selfhostscore.com/api/badge/karakeep.json"
@@ -5832,7 +5943,7 @@
             "maturity": 22,
             "adoption": 11
           },
-          "stars": 11302,
+          "stars": 11303,
           "forks": 647,
           "openIssues": 230,
           "language": "Python",
@@ -5860,6 +5971,7 @@
             "https://linkding.link/managed-hosting/",
             "https://github.com/sissbruecker/linkding"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/linkding.svg",
             "shields": "https://selfhostscore.com/api/badge/linkding.json"
@@ -5910,6 +6022,7 @@
             "https://github.com/wallabag/docker",
             "https://www.pikapods.com/apps/"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/wallabag.svg",
             "shields": "https://selfhostscore.com/api/badge/wallabag.json"
@@ -5941,7 +6054,7 @@
             "maturity": 24,
             "adoption": 13
           },
-          "stars": 37422,
+          "stars": 37423,
           "forks": 2546,
           "openIssues": 1253,
           "language": "TypeScript",
@@ -5965,6 +6078,7 @@
             "https://github.com/AdguardTeam/AdGuardHome/wiki/Getting-Started",
             "https://adguard.com/en/adguard-home/overview.html"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/adguard-home.svg",
             "shields": "https://selfhostscore.com/api/badge/adguard-home.json"
@@ -5985,7 +6099,7 @@
             "maturity": 25,
             "adoption": 13
           },
-          "stars": 61269,
+          "stars": 61272,
           "forks": 3320,
           "openIssues": 44,
           "language": "Shell",
@@ -6011,6 +6125,7 @@
             "https://github.com/pi-hole/docker-pi-hole",
             "https://hub.docker.com/r/pihole/pihole"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/pi-hole.svg",
             "shields": "https://selfhostscore.com/api/badge/pi-hole.json"
@@ -6056,6 +6171,7 @@
             "https://hub.docker.com/r/technitium/dns-server",
             "https://github.com/TechnitiumSoftware/DnsServer/blob/master/docker-compose.yml"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/technitium.svg",
             "shields": "https://selfhostscore.com/api/badge/technitium.json"
@@ -6108,6 +6224,7 @@
             "https://restic.readthedocs.io/en/stable/047_tuning_backup_parameters.html",
             "https://github.com/restic/restic/releases/latest"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/restic.svg",
             "shields": "https://selfhostscore.com/api/badge/restic.json"
@@ -6161,6 +6278,7 @@
             "https://docs.duplicati.com/detailed-descriptions/the-server-database",
             "https://apps.umbrel.com/app/duplicati"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/duplicati.svg",
             "shields": "https://selfhostscore.com/api/badge/duplicati.json"
@@ -6185,10 +6303,10 @@
           },
           "stars": 14343,
           "forks": 756,
-          "openIssues": 906,
+          "openIssues": 905,
           "language": "Go",
           "license": "Apache-2.0",
-          "lastCommit": "2026-10-14T14:04:01Z",
+          "lastCommit": "2026-10-14T16:29:49Z",
           "latestReleaseTag": "v0.23.1",
           "latestReleaseAt": "2026-06-16T01:27:33Z",
           "createdAt": "2015-12-19T22:47:14Z",
@@ -6214,6 +6332,7 @@
             "https://kopia.io/docs/advanced/architecture/",
             "https://kopia.io/docs/repositories/"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/kopia.svg",
             "shields": "https://selfhostscore.com/api/badge/kopia.json"
@@ -6245,8 +6364,8 @@
             "maturity": 23,
             "adoption": 13
           },
-          "stars": 24894,
-          "forks": 2338,
+          "stars": 24895,
+          "forks": 2339,
           "openIssues": 160,
           "language": "PHP",
           "license": "AGPL-3.0",
@@ -6277,6 +6396,7 @@
             "https://railway.com/deploy/firefly-iii",
             "https://feedback.pikapods.com/posts/342/firefly-iii"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/firefly-iii.svg",
             "shields": "https://selfhostscore.com/api/badge/firefly-iii.json"
@@ -6330,6 +6450,7 @@
             "https://hub.docker.com/r/akaunting/akaunting",
             "https://marketplace.digitalocean.com/apps/akaunting"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/akaunting.svg",
             "shields": "https://selfhostscore.com/api/badge/akaunting.json"
@@ -6353,7 +6474,7 @@
             "maturity": 21,
             "adoption": 13
           },
-          "stars": 10275,
+          "stars": 10276,
           "forks": 2750,
           "openIssues": 233,
           "language": "PHP",
@@ -6384,6 +6505,7 @@
             "https://coolify.io/docs/services/invoice-ninja",
             "https://railway.com/deploy/invoiceninja"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/invoice-ninja.svg",
             "shields": "https://selfhostscore.com/api/badge/invoice-ninja.json"
@@ -6415,12 +6537,12 @@
             "maturity": 24,
             "adoption": 15
           },
-          "stars": 40141,
-          "forks": 13130,
-          "openIssues": 1468,
+          "stars": 40142,
+          "forks": 13131,
+          "openIssues": 1438,
           "language": "Python",
           "license": "GPL-3.0",
-          "lastCommit": "2026-10-14T16:18:31Z",
+          "lastCommit": "2026-10-14T17:12:47Z",
           "latestReleaseTag": "v15.122.0",
           "latestReleaseAt": "2026-10-07T09:21:41Z",
           "createdAt": "2011-06-08T08:20:56Z",
@@ -6445,6 +6567,7 @@
             "https://hub.docker.com/r/frappe/erpnext",
             "https://railway.com/deploy/erpnext"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/erpnext.svg",
             "shields": "https://selfhostscore.com/api/badge/erpnext.json"
@@ -6470,10 +6593,10 @@
           },
           "stars": 7728,
           "forks": 3568,
-          "openIssues": 966,
+          "openIssues": 965,
           "language": "PHP",
           "license": "GPL-3.0",
-          "lastCommit": "2026-10-14T16:16:54Z",
+          "lastCommit": "2026-10-14T16:45:28Z",
           "latestReleaseTag": "24.0.1",
           "latestReleaseAt": "2026-09-07T12:58:22Z",
           "createdAt": "2011-06-26T21:55:03Z",
@@ -6496,6 +6619,7 @@
             "https://hub.docker.com/r/dolibarr/dolibarr",
             "https://github.com/Dolibarr/dolibarr"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/dolibarr.svg",
             "shields": "https://selfhostscore.com/api/badge/dolibarr.json"
@@ -6520,11 +6644,11 @@
             "adoption": 15
           },
           "stars": 55033,
-          "forks": 34015,
-          "openIssues": 10928,
+          "forks": 34014,
+          "openIssues": 10926,
           "language": "Python",
           "license": null,
-          "lastCommit": "2026-10-14T16:19:28Z",
+          "lastCommit": "2026-10-14T17:04:03Z",
           "latestReleaseTag": null,
           "latestReleaseAt": null,
           "createdAt": "2014-05-13T15:38:58Z",
@@ -6548,6 +6672,7 @@
             "https://www.odoo.com/documentation/17.0/administration/on_premise/deploy.html",
             "https://hub.docker.com/_/odoo"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/odoo.svg",
             "shields": "https://selfhostscore.com/api/badge/odoo.json"
@@ -6581,10 +6706,10 @@
           },
           "stars": 55538,
           "forks": 11994,
-          "openIssues": 189,
+          "openIssues": 185,
           "language": "TypeScript",
           "license": "MIT",
-          "lastCommit": "2026-10-14T16:11:57Z",
+          "lastCommit": "2026-10-14T17:16:06Z",
           "latestReleaseTag": "v6.70.0",
           "latestReleaseAt": "2026-10-13T15:11:13Z",
           "createdAt": "2013-05-04T11:09:13Z",
@@ -6608,6 +6733,7 @@
             "https://github.com/TryGhost/digitalocean-1-click",
             "https://railway.com/deploy/ghost-cms-mysql"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/ghost.svg",
             "shields": "https://selfhostscore.com/api/badge/ghost.json"
@@ -6631,12 +6757,12 @@
             "maturity": 25,
             "adoption": 15
           },
-          "stars": 73307,
+          "stars": 73308,
           "forks": 9885,
           "openIssues": 610,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T16:19:42Z",
+          "lastCommit": "2026-10-14T17:17:06Z",
           "latestReleaseTag": "v5.58.0",
           "latestReleaseAt": "2026-10-14T10:20:42Z",
           "createdAt": "2015-09-30T15:34:48Z",
@@ -6660,6 +6786,7 @@
             "https://docs.strapi.io/cms/configurations/database",
             "https://railway.com/deploy/strapi"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/strapi.svg",
             "shields": "https://selfhostscore.com/api/badge/strapi.json"
@@ -6683,12 +6810,12 @@
             "maturity": 25,
             "adoption": 14
           },
-          "stars": 45242,
+          "stars": 45241,
           "forks": 4295,
-          "openIssues": 1325,
+          "openIssues": 1328,
           "language": "TypeScript",
           "license": "MIT",
-          "lastCommit": "2026-10-14T16:20:47Z",
+          "lastCommit": "2026-10-14T17:17:54Z",
           "latestReleaseTag": "v3.90.2",
           "latestReleaseAt": "2026-09-23T14:04:34Z",
           "createdAt": "2021-01-05T18:49:45Z",
@@ -6714,6 +6841,7 @@
             "https://github.com/payloadcms/vercel-deploy-payload-postgres",
             "https://vercel.com/templates/next.js/payload-website-starter"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/payload.svg",
             "shields": "https://selfhostscore.com/api/badge/payload.json"
@@ -6737,12 +6865,12 @@
             "maturity": 24,
             "adoption": 14
           },
-          "stars": 38492,
-          "forks": 4970,
-          "openIssues": 361,
+          "stars": 38494,
+          "forks": 4971,
+          "openIssues": 364,
           "language": "TypeScript",
           "license": null,
-          "lastCommit": "2026-10-14T16:10:15Z",
+          "lastCommit": "2026-10-14T16:32:42Z",
           "latestReleaseTag": "v12.5.0",
           "latestReleaseAt": "2026-10-07T18:44:06Z",
           "createdAt": "2012-12-12T01:35:36Z",
@@ -6769,6 +6897,7 @@
             "https://marketplace.digitalocean.com/apps/directus-1",
             "https://railway.com/deploy/cms/directus"
           ],
+          "moved": null,
           "badge": {
             "svg": "https://selfhostscore.com/api/badge/directus.svg",
             "shields": "https://selfhostscore.com/api/badge/directus.json"

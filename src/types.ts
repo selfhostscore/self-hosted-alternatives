@@ -31,6 +31,8 @@ export interface SeedAlternative {
   /** Set by merge-footprint.ts once verified against official docs. */
   footprintConfidence?: "high" | "medium" | "low";
   footprintSources?: string[];
+  /** Development moved off GitHub: the repo may be archived on purpose, so the score is not zeroed. */
+  moved?: { to: string; announcement: string; note: string };
 }
 
 /** A proprietary tool people seek alternatives to (one directory page per tool). */
