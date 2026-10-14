@@ -18,10 +18,10 @@ Dataset and API: [`/api/tools.json`](https://selfhostscore.com/api/tools.json), 
 Every listed project gets a free badge that updates daily:
 
 ```markdown
-[![Self-Host Score](https://selfhostscore.com/api/badge/<slug>.svg)](https://selfhostscore.com/alternatives/<category>/#<slug>)
+[![Self-Host Score](https://selfhostscore.com/api/badge/<slug>.svg)](https://selfhostscore.com/self-host/<slug>/)
 ```
 
-Open your project's category page on the site and expand **"Add the live Self-Host Score badge"** for a ready-to-paste snippet. Shields.io users: `https://img.shields.io/endpoint?url=https://selfhostscore.com/api/badge/<slug>.json`.
+Open your project's page on the site (`https://selfhostscore.com/self-host/<slug>/`) and expand **"Add the live Self-Host Score badge"** for a ready-to-paste snippet. Shields.io users: `https://img.shields.io/endpoint?url=https://selfhostscore.com/api/badge/<slug>.json`.
 
 ## Contributing
 

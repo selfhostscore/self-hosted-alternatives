@@ -18,10 +18,10 @@ Dataset and API: [`/api/tools.json`](https://selfhostscore.com/api/tools.json), 
 Every listed project gets a free badge that updates daily:
 
 ```markdown
-[![Self-Host Score](https://selfhostscore.com/api/badge/<slug>.svg)](https://selfhostscore.com/alternatives/<category>/#<slug>)
+[![Self-Host Score](https://selfhostscore.com/api/badge/<slug>.svg)](https://selfhostscore.com/self-host/<slug>/)
 ```
 
-Open your project's category page on the site and expand **"Add the live Self-Host Score badge"** for a ready-to-paste snippet. Shields.io users: `https://img.shields.io/endpoint?url=https://selfhostscore.com/api/badge/<slug>.json`.
+Open your project's page on the site (`https://selfhostscore.com/self-host/<slug>/`) and expand **"Add the live Self-Host Score badge"** for a ready-to-paste snippet. Shields.io users: `https://img.shields.io/endpoint?url=https://selfhostscore.com/api/badge/<slug>.json`.
 
 ## Contributing
 
@@ -380,8 +380,8 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/google-
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Joplin](https://github.com/laurent22/joplin) | 99 | 57k | PostgreSQL | about 512 MB | Yes | Yes |
+| [Trilium Notes](https://github.com/TriliumNext/Trilium) | 97 | 38k | SQLite | about 256 MB | Yes | Yes |
 | [Notesnook](https://github.com/streetwriters/notesnook) | 93 | 15k | MongoDB | about 512 MB | Yes | No |
-| [Trilium Notes](https://github.com/TriliumNext/Notes) | 0 | 2.9k | SQLite | about 256 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/evernote/
 

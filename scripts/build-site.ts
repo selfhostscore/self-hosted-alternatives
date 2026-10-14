@@ -103,14 +103,14 @@ function badgeSvg(a: EnrichedAlternative): string {
     `<text x="${x}" y="15" fill="#010101" fill-opacity=".3">${esc(txt)}</text><text x="${x}" y="14">${esc(txt)}</text>`;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${tw}" height="20" role="img" aria-label="${esc(label)}: ${esc(msg)}"><title>${esc(label)}: ${esc(msg)}</title><linearGradient id="s" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="r"><rect width="${tw}" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#r)"><rect width="${lw}" height="20" fill="#555"/><rect x="${lw}" width="${mw}" height="20" fill="${color}"/><rect width="${tw}" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">${t(lw / 2, label)}${t(lw + mw / 2, msg)}</g></svg>`;
 }
-const badgeMarkdown = (a: EnrichedAlternative, toolSlug: string): string =>
-  `[![Self-Host Score](${SITE_URL}/api/badge/${a.slug}.svg)](${SITE_URL}/alternatives/${toolSlug}/#${a.slug})`;
+const badgeMarkdown = (a: EnrichedAlternative): string =>
+  `[![Self-Host Score](${SITE_URL}/api/badge/${a.slug}.svg)](${SITE_URL}/self-host/${a.slug}/)`;
 
 function badgeSection(tool: EnrichedTool): string {
   const rows = tool.alternatives
     .map(
       (a) =>
-        `<div class="snip"><img src="/api/badge/${esc(a.slug)}.svg" alt="${esc(a.name)} Self-Host Score badge" height="20" loading="lazy"><strong>${esc(a.name)}</strong><code>${esc(badgeMarkdown(a, tool.slug))}</code></div>`,
+        `<div class="snip"><img src="/api/badge/${esc(a.slug)}.svg" alt="${esc(a.name)} Self-Host Score badge" height="20" loading="lazy"><strong>${esc(a.name)}</strong><code>${esc(badgeMarkdown(a))}</code></div>`,
     )
     .join("");
   return `<details class="embed" id="badge"><summary>Maintain one of these projects? Add the live Self-Host Score badge to your README</summary>
@@ -142,14 +142,14 @@ function sourcesSection(tool: EnrichedTool): string {
 // ---- hosting partners (data/offers.json) and verified deploy pages (data/deploy-links.json) ----
 // affiliate:true partners carry a referral link; their refParam is appended to deep links and the link gets
 // rel="sponsored". Everything else is a plain nofollow link. Deep links are only used when verified.
-type Partner = { name: string; url: string; affiliate: boolean; managed: boolean; refParam?: Record<string, string> };
+type Partner = { name: string; url: string; affiliate: boolean; managed: boolean; refParam?: Record<string, string>; perk?: string };
 const PARTNERS: Record<string, Partner> = {};
 const MANAGED: Partner[] = [];
 try {
   const o = JSON.parse(await readFile(join(ROOT, "data", "offers.json"), "utf8")) as { partners?: any[] };
   for (const p of o.partners ?? []) {
     if (!p?.name || !p?.url) continue;
-    const partner: Partner = { name: String(p.name), url: String(p.url), affiliate: !!p.affiliate, managed: !!p.managed, refParam: p.refParam };
+    const partner: Partner = { name: String(p.name), url: String(p.url), affiliate: !!p.affiliate, managed: !!p.managed, refParam: p.refParam, perk: p.perk ? String(p.perk) : undefined };
     PARTNERS[partner.name.toLowerCase()] = partner;
     if (partner.managed) MANAGED.push(partner);
   }
@@ -331,7 +331,7 @@ function head(title: string, desc: string, canonical: string, jsonLd: object | o
 ${ld.map((o) => `<script type="application/ld+json">${JSON.stringify(o)}</script>`).join("\n")}
 </head>
 <body>
-<header class="site"><a class="brand" href="/">${BRAND_MARK}<span>${esc(SITE_NAME)}</span></a><nav class="nav" aria-label="Main"><a href="/can-i-run/">Fit my server</a><a href="/collections/raspberry-pi/">Collections</a><a href="/methodology/">Methodology</a><a href="/api/">API</a><a href="/sponsor/">Sponsor</a></nav><span class="tag">Deploy data verified against official docs</span></header>
+<header class="site"><a class="brand" href="/">${BRAND_MARK}<span>${esc(SITE_NAME)}</span></a><nav class="nav" aria-label="Main"><a href="/self-host/">All apps</a><a href="/can-i-run/">Fit my server</a><a href="/collections/raspberry-pi/">Collections</a><a href="/methodology/">Methodology</a><a href="/api/">API</a><a href="/sponsor/">Sponsor</a></nav><span class="tag">Deploy data verified against official docs</span></header>
 <main>`;
 }
 
@@ -356,7 +356,7 @@ function toolPage(tool: EnrichedTool, all: EnrichedTool[]): string {
       const ram = a.footprint.minRamMB > 0 ? a.footprint.minRamMB : 999999;
       const release = a.gh.latestReleaseTag ? `${esc(a.gh.latestReleaseTag)} <span class="muted">${rel(a.gh.latestReleaseAt)}</span>` : `<span class="muted">no releases</span>`;
       return `<tr id="${esc(a.slug)}" data-name="${esc(a.name.toLowerCase())}" data-health="${a.healthScore}" data-stars="${a.gh.stars ?? 0}" data-ram="${ram}" data-arm="${a.footprint.arm64 ? 1 : 0}" data-oneclick="${a.footprint.oneClick.length ? 1 : 0}">
-<td class="name" data-label="Tool"><a href="${esc(a.homepage ?? "https://github.com/" + a.github)}" rel="nofollow">${esc(a.name)}</a>
+<td class="name" data-label="Tool"><a href="/self-host/${esc(a.slug)}/">${esc(a.name)}</a>
   <a class="gh" href="https://github.com/${esc(a.github)}" rel="nofollow" title="GitHub repository">${ICON_GH}<span class="sr">GitHub</span></a>
   <div class="desc">${esc(a.description)}</div></td>
 <td data-label="Health"><span class="badge ${healthClass(a.healthScore)}">${a.healthScore}</span><div class="muted sm">${healthLabel(a.healthScore)}</div></td>
@@ -492,7 +492,7 @@ function collectionPage(c: Collection, data: Enriched): string {
   const rows = flat
     .map(
       (f) => `<tr>
-<td class="name" data-label="App"><a href="/alternatives/${f.toolSlug}/#${esc(f.a.slug)}">${esc(f.a.name)}</a><div class="desc">${esc(f.a.description)} <span class="muted">${esc(f.tool)} alternative.</span></div></td>
+<td class="name" data-label="App"><a href="/self-host/${esc(f.a.slug)}/">${esc(f.a.name)}</a><div class="desc">${esc(f.a.description)} <span class="muted">${esc(f.tool)} alternative.</span></div></td>
 <td data-label="Health"><span class="badge ${healthClass(f.a.healthScore)}">${f.a.healthScore}</span></td>
 <td class="num" data-label="Stars">${stars(f.a.gh.stars)}</td>
 <td data-label="Min RAM">${ramCell(f.a)}</td>
@@ -658,7 +658,7 @@ function apiPage(data: Enriched): string {
     { name: "API", url },
   ];
   const fields: [string, string][] = [
-    ["name, slug, github, homepage", "Project name, URL slug (used by badges and anchors), GitHub owner/repo, official site"],
+    ["name, slug, page, github, homepage", "Project name, URL slug (used by badges), its page on this site, GitHub owner/repo, official site"],
     ["description", "One-line curated description"],
     ["healthScore", "Self-Host Health Score, integer 0 to 100"],
     ["healthBreakdown", "activity, releases, maturity, adoption (points per component)"],
@@ -757,6 +757,247 @@ function aboutPage(data: Enriched): string {
   );
 }
 
+// ---------- per-app pages: /self-host/<slug>/ ----------
+type AppEntry = { a: EnrichedAlternative; tools: EnrichedTool[] };
+function appIndex(data: Enriched): Map<string, AppEntry> {
+  const m = new Map<string, AppEntry>();
+  for (const t of data.tools)
+    for (const a of t.alternatives) {
+      const e = m.get(a.slug);
+      if (e) e.tools.push(t);
+      else m.set(a.slug, { a, tools: [t] });
+    }
+  return m;
+}
+const appPath = (slug: string): string => `/self-host/${slug}/`;
+const licLabel = (a: EnrichedAlternative): string => lic(a.gh.license) || (a.gh.license === "NOASSERTION" ? "Custom" : "Not stated");
+const fmtInt = (n: number | undefined | null): string => (n == null ? "n/a" : n.toLocaleString("en-US"));
+const hostOf = (u: string): string => {
+  try {
+    return new URL(u).hostname.replace(/^www\./, "");
+  } catch {
+    return u;
+  }
+};
+
+function maintenanceSentence(a: EnrichedAlternative): string {
+  if (a.gh.archived) return `The GitHub repository is archived (read-only), so the Health Score is 0.`;
+  const rel2 = a.gh.latestReleaseTag ? `latest release ${a.gh.latestReleaseTag} ${rel(a.gh.latestReleaseAt)}` : "no published releases";
+  return `Health Score ${a.healthScore} of 100 (${healthLabel(a.healthScore)}): last commit ${rel(a.gh.pushedAt)}, ${rel2}.`;
+}
+
+function deployBox(a: EnrichedAlternative): string {
+  const items = a.footprint.oneClick
+    .map((x) => {
+      const short = x.split(" (")[0];
+      const l = platformLink(x, a.slug);
+      if (!l) return "";
+      const deep = !!DEPLOY[a.slug]?.[short.toLowerCase()];
+      const perk = l.sponsored ? PARTNERS[short.toLowerCase()]?.perk : undefined;
+      return `<div class="dep"><a class="btn${l.sponsored && deep ? " primary" : ""}" href="${esc(l.href)}" ${linkAttrs(l.sponsored)}>Deploy on ${esc(short)}</a>${perk ? `<span class="perk">${esc(perk)}</span>` : ""}</div>`;
+    })
+    .filter(Boolean);
+  const anySponsored = a.footprint.oneClick.some((x) => platformLink(x, a.slug)?.sponsored);
+  const seenHost = new Set<string>();
+  const docs = (a.footprintSources ?? []).filter((u) => !/railway\.com|repocloud\.io|elest\.io|pikapods\.com/.test(u)).filter((u) => (seenHost.has(hostOf(u)) ? false : (seenHost.add(hostOf(u)), true))).slice(0, 4);
+  return `<section class="deploy" id="deploy"><h2>Deploy ${esc(a.name)}</h2>
+${items.length ? `<p class="muted sm">One-click templates that deploy this exact project:</p><div class="btns">${items.join("")}</div>` : `<p class="muted sm">No one-click template is listed for ${esc(a.name)}. Use the official installation guide below.</p>`}
+<p class="sm"><strong>Run it on your own server:</strong> ${esc(a.footprint.deploy.join(", ") || "see the official docs")}. <a href="${esc(a.homepage ?? "https://github.com/" + a.github)}" rel="nofollow noopener" target="_blank">Official site</a>, <a href="https://github.com/${esc(a.github)}" rel="nofollow noopener" target="_blank">GitHub repository</a>${docs.length ? `, installation docs: ${docs.map((u) => `<a href="${esc(u)}" rel="nofollow noopener" target="_blank">${esc(hostOf(u))}</a>`).join(", ")}` : ""}.</p>
+${anySponsored ? `<p class="muted sm">Some deploy links are affiliate links: if you sign up, we may earn a commission at no cost to you. Commissions never affect scores.</p>` : ""}</section>`;
+}
+
+function healthBreakdownSection(a: EnrichedAlternative): string {
+  const b = a.healthBreakdown;
+  const rows: [string, number, number, string][] = [
+    ["Activity", b.activity, 35, `Last commit ${rel(a.gh.pushedAt)}. Full points within 30 days, zero after a year.`],
+    [
+      "Releases",
+      b.releases,
+      25,
+      a.gh.latestReleaseTag ? `Latest release ${a.gh.latestReleaseTag}, ${rel(a.gh.latestReleaseAt)}. Full points within 90 days, zero after 540 days.` : `No published releases, which earns a fixed 5 points.`,
+    ],
+    ["Maturity", b.maturity, 25, `${fmtInt(a.gh.stars)} stars on a log scale; full points near 50,000.`],
+    ["Adoption", b.adoption, 15, `${fmtInt(a.gh.forks)} forks on a log scale; full points near 10,000.`],
+  ];
+  return `<section class="doc wide" id="health"><h2>Health Score: ${a.healthScore} of 100 (${healthLabel(a.healthScore)})</h2>
+${a.gh.archived ? `<p class="notice">The GitHub repository is archived, so every component scores 0. Check the official site for a successor before you deploy it.</p>` : ""}
+<div class="hbs">${rows
+    .map(
+      ([n, p, max, why]) =>
+        `<div class="hb"><div class="hb-h"><strong>${n}</strong><span class="num">${p} / ${max}</span></div><div class="bar" role="img" aria-label="${n}: ${p} of ${max}"><span style="width:${Math.round((p / max) * 100)}%"></span></div><p class="muted sm">${esc(why)}</p></div>`,
+    )
+    .join("")}</div>
+<p class="muted sm">Computed from the GitHub API, refreshed daily. <a href="/methodology/#score">How the score works</a>.</p></section>`;
+}
+
+function appPage(e: AppEntry, generatedAt: string): string {
+  const a = e.a;
+  const url = `${SITE_URL}${appPath(a.slug)}`;
+  const altOf = e.tools.map((t) => t.name).join(" and ");
+  const db = a.footprint.database;
+  const ram = ramText(a);
+  const license = lic(a.gh.license);
+  const title = `Self-Host ${a.name}: System Requirements, Docker and Raspberry Pi (${YEAR})`;
+  const desc = `Self-host ${a.name}, the self-hostable ${altOf} alternative: ${a.footprint.minRamMB > 0 ? `${ram} RAM minimum` : "RAM not documented"}, ${dbProse(db)}, ${a.footprint.arm64 ? "official ARM64 images for Raspberry Pi" : "no official ARM64 image"}, one-click deploy options and a live Health Score of ${a.healthScore}/100.`;
+  const toolLinks = e.tools.map((t) => `<a href="/alternatives/${t.slug}/">${esc(t.name)}</a>`).join(" and ");
+  const ramFact =
+    a.footprint.minRamMB > 0 ? (isEst(a) ? `about ${a.footprint.minRamMB} MB (an estimate: the official docs do not state a minimum)` : `${a.footprint.minRamMB} MB`) : "not documented";
+
+  const faq: { q: string; a: string }[] = [
+    {
+      q: `What are the system requirements for ${a.name}?`,
+      a: `${a.name} needs ${ramFact} of RAM for a small instance. Database: ${db}. It can be deployed with ${a.footprint.deploy.join(", ") || "the methods in its documentation"}.`,
+    },
+    {
+      q: `Can ${a.name} run on a Raspberry Pi?`,
+      a: a.footprint.arm64
+        ? `Yes. ${a.name} publishes official ARM64 images, so it runs on a Raspberry Pi with a 64-bit OS${a.footprint.minRamMB > 0 ? ` that has more than ${a.footprint.minRamMB} MB of free memory` : ""}.`
+        : `Not out of the box: there is no official ARM64 image. Run it on an x86_64 server or VPS instead.`,
+    },
+    { q: `What database does ${a.name} use?`, a: db },
+    { q: `Is ${a.name} actively maintained?`, a: maintenanceSentence(a) },
+    {
+      q: `Can I deploy ${a.name} in one click?`,
+      a: a.footprint.oneClick.length ? `Yes, on ${a.footprint.oneClick.map((x) => x.split(" (")[0]).join(", ")}.` : `No one-click template is listed. Follow the official installation guide.`,
+    },
+  ];
+  if (license) faq.push({ q: `What license is ${a.name} under?`, a: `${license}, according to its GitHub repository.` });
+
+  const sameTool = e.tools
+    .map((t) => {
+      const sib = t.alternatives.filter((x) => x.slug !== a.slug);
+      if (!sib.length) return "";
+      return `<h3>Other ${esc(t.name)} alternatives</h3>
+<div class="tablewrap"><table>
+<thead><tr><th>App</th><th>Health</th><th>Min RAM</th><th>Database</th><th class="ctr">ARM64 / Pi</th></tr></thead>
+<tbody>${sib
+        .map(
+          (x) => `<tr><td class="name" data-label="App"><a href="${appPath(x.slug)}">${esc(x.name)}</a><div class="desc">${esc(x.description)}</div></td>
+<td data-label="Health"><span class="badge ${healthClass(x.healthScore)}">${x.healthScore}</span></td>
+<td data-label="Min RAM">${ramCell(x)}</td>
+<td data-label="Database">${esc(dbShort(x.footprint.database))}</td>
+<td class="ctr" data-label="ARM64 / Pi">${yesNo(x.footprint.arm64)}</td></tr>`,
+        )
+        .join("")}</tbody></table></div>
+<p class="sm"><a href="/alternatives/${t.slug}/">Compare all ${t.alternatives.length} self-hostable ${esc(t.name)} alternatives</a></p>`;
+    })
+    .join("\n");
+
+  const conf = a.footprintConfidence ?? "";
+  const confText = conf === "high" ? "Every value is stated in the official documentation." : conf === "medium" ? "Derived from official material such as compose files or image tags." : conf === "low" ? "Estimated from community reports; verify before you size a server." : "";
+  const sources = (a.footprintSources ?? []).map((u) => `<li><a href="${esc(u)}" rel="nofollow noopener" target="_blank">${esc(hostOf(u))}</a> <span class="muted sm">${esc(u.replace(/^https?:\/\//, "").slice(0, 90))}</span></li>`).join("");
+
+  const appLd: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: a.name,
+    description: a.description,
+    url: a.homepage ?? `https://github.com/${a.github}`,
+    sameAs: [`https://github.com/${a.github}`],
+    applicationCategory: e.tools[0].category,
+    operatingSystem: "Linux, Docker",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD", description: "Free to self-host" },
+  };
+  if (a.gh.latestReleaseTag) appLd.softwareVersion = a.gh.latestReleaseTag;
+  if (license) appLd.license = `https://spdx.org/licenses/${license}.html`;
+  const faqLd = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
+  const crumbs: Crumb[] = [
+    { name: "Home", url: `${SITE_URL}/` },
+    { name: `${e.tools[0].name} alternatives`, url: `${SITE_URL}/alternatives/${e.tools[0].slug}/` },
+    { name: a.name, url },
+  ];
+
+  return (
+    head(title, desc, url, [appLd, faqLd, breadcrumbLd(crumbs)]) +
+    `${crumbsHtml(crumbs)}
+<h1>Self-host <span class="hl">${esc(a.name)}</span></h1>
+<p class="lead">${esc(a.description)} Self-hostable alternative to ${toolLinks}.</p>
+<div class="stats" aria-label="${esc(a.name)} at a glance"><div><b class="score ${healthClass(a.healthScore)}-t">${a.healthScore}<small> / 100</small></b><span>Health Score, ${healthLabel(a.healthScore)}</span></div><div><b>${stars(a.gh.stars)}</b><span>GitHub stars</span></div><div><b>${rel(a.gh.pushedAt)}</b><span>last commit</span></div><div><b>${esc(a.gh.latestReleaseTag ?? "none")}</b><span>latest release${a.gh.latestReleaseAt ? `, ${rel(a.gh.latestReleaseAt)}` : ""}</span></div><div><b>${esc(licLabel(a))}</b><span>license</span></div></div>
+<div class="quick"><div class="qh">Quick answer</div><ul>
+<li><strong>Minimum RAM:</strong> ${esc(ramFact)}.</li>
+<li><strong>Database:</strong> ${esc(db)}.</li>
+<li><strong>Raspberry Pi:</strong> ${a.footprint.arm64 ? "yes, official ARM64 images are published" : "no official ARM64 image"}.</li>
+<li><strong>Maintenance:</strong> ${esc(maintenanceSentence(a))}</li>
+</ul></div>
+${deployBox(a)}
+<section class="doc wide" id="requirements"><h2>System requirements</h2>
+<dl class="kv">
+<dt>Minimum RAM</dt><dd>${ramCell(a)}${isEst(a) ? ` <span class="muted sm">The official documentation does not state a minimum; this is an estimate.</span>` : ""}</dd>
+<dt>Database</dt><dd>${esc(db)}</dd>
+<dt>ARM64 / Raspberry Pi</dt><dd>${yesNo(a.footprint.arm64)} ${a.footprint.arm64 ? "Official ARM64 images" : "No official ARM64 image"}</dd>
+<dt>Deploy methods</dt><dd>${a.footprint.deploy.map((d) => `<span class="chip">${esc(d)}</span>`).join(" ") || '<span class="muted">n/a</span>'}</dd>
+<dt>One-click templates</dt><dd>${oneClickChips(a)}</dd>
+<dt>Data confidence</dt><dd>${conf ? `<span class="conf c-${esc(conf)}">${esc(conf)}</span> ` : ""}<span class="muted sm">${confText} <a href="/methodology/#footprint">What this means</a>.</span></dd>
+</dl></section>
+${healthBreakdownSection(a)}
+<section class="doc wide" id="sources"><h2>Sources</h2>
+<p class="muted sm">The requirements above were read from these pages.</p>
+<ul class="srcs">${sources || '<li class="muted">No source recorded.</li>'}</ul></section>
+<section class="related" id="alternatives"><h2>Alternatives to ${esc(a.name)}</h2>
+${sameTool || `<p class="muted">No other alternatives are listed in this category yet.</p>`}</section>
+<section class="faq"><h2>FAQ</h2>${faq.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join("")}</section>
+<details class="embed" id="badge"><summary>Maintain ${esc(a.name)}? Add the live Self-Host Score badge to your README</summary>
+<p class="muted sm">Free, no sign-up, refreshed daily. <a href="/api/#badges">Badge details</a>.</p>
+<div class="snip"><img src="/api/badge/${esc(a.slug)}.svg" alt="${esc(a.name)} Self-Host Score badge" height="20" loading="lazy"><code>${esc(badgeMarkdown(a))}</code></div></details>
+` +
+    foot(generatedAt)
+  );
+}
+
+function appsIndexPage(data: Enriched, apps: Map<string, AppEntry>): string {
+  const url = `${SITE_URL}/self-host/`;
+  const list = [...apps.values()].sort((x, y) => y.a.healthScore - x.a.healthScore || (y.a.gh.stars ?? 0) - (x.a.gh.stars ?? 0));
+  const title = `All ${list.length} Self-Hostable Open-Source Apps: Requirements and Health Score`;
+  const desc = `Every self-hostable open-source app in the directory with minimum RAM, database, ARM64 / Raspberry Pi support, one-click deploy and a live GitHub Health Score. Sort and filter to fit your server.`;
+  const rows = list
+    .map(({ a, tools }) => {
+      const ram = a.footprint.minRamMB > 0 ? a.footprint.minRamMB : 999999;
+      return `<tr data-name="${esc(a.name.toLowerCase())}" data-health="${a.healthScore}" data-stars="${a.gh.stars ?? 0}" data-ram="${ram}" data-arm="${a.footprint.arm64 ? 1 : 0}" data-oneclick="${a.footprint.oneClick.length ? 1 : 0}">
+<td class="name" data-label="App"><a href="${appPath(a.slug)}">${esc(a.name)}</a><div class="desc">${esc(a.description)} <span class="muted">Replaces ${tools.map((t) => `<a href="/alternatives/${t.slug}/">${esc(t.name)}</a>`).join(", ")}.</span></div></td>
+<td data-label="Health"><span class="badge ${healthClass(a.healthScore)}">${a.healthScore}</span></td>
+<td class="num" data-label="Stars">${stars(a.gh.stars)}</td>
+<td data-label="Database" title="${esc(a.footprint.database)}">${esc(dbShort(a.footprint.database))}</td>
+<td data-label="Min RAM">${ramCell(a)}</td>
+<td class="ctr" data-label="ARM64 / Pi">${yesNo(a.footprint.arm64)}</td>
+<td data-label="One-click">${oneClickChips(a)}</td>
+</tr>`;
+    })
+    .join("\n");
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: title,
+    url,
+    numberOfItems: list.length,
+    itemListElement: list.map(({ a }, i) => ({ "@type": "ListItem", position: i + 1, url: `${SITE_URL}${appPath(a.slug)}`, name: a.name })),
+  };
+  const crumbs: Crumb[] = [
+    { name: "Home", url: `${SITE_URL}/` },
+    { name: "All apps", url },
+  ];
+  return (
+    head(title, desc, url, [jsonLd, breadcrumbLd(crumbs)]) +
+    `${crumbsHtml(crumbs)}
+<h1>All <span class="hl">${list.length}</span> self-hostable apps</h1>
+<p class="lead">Every app in the directory on one page, ranked by Self-Host Health Score. Open an app for its full system requirements, sources and deploy options.</p>
+${ctaBox()}
+<div class="filters" role="group" aria-label="Filters">
+<span class="muted sm">Filter</span>
+<label><input type="checkbox" data-filter="arm"> Raspberry Pi / ARM64</label>
+<label><input type="checkbox" data-filter="oneclick"> One-click deploy</label>
+<label><input type="checkbox" data-filter="ram"> RAM 1 GB or less</label>
+<span class="muted sm count"><span id="rowcount">${list.length}</span> of ${list.length} shown. Click a column header to sort.</span>
+</div>
+<div class="tablewrap"><table data-sortable>
+<thead><tr><th>App</th><th data-key="health" class="sortable desc">Health</th><th data-key="stars" class="sortable">Stars</th><th>Database</th><th data-key="ram" class="sortable">Min RAM</th><th class="ctr">ARM64 / Pi</th><th>One-click</th></tr></thead>
+<tbody>
+${rows}
+</tbody></table></div>
+` +
+    foot(data.generatedAt)
+  );
+}
+
 // ---------- homepage ----------
 function homePage(data: Enriched): string {
   const url = `${SITE_URL}/`;
@@ -796,6 +1037,7 @@ function homePage(data: Enriched): string {
 <a class="bigcta" href="/can-i-run/"><strong>Which apps fit my server?</strong> Pick your RAM and architecture and get the matching list.</a>
 <input id="search" type="search" placeholder="Search ${data.tools.length} categories, for example notion, backup, crm, photos" autocomplete="off" aria-label="Search categories">
 <div class="grid">${cards}</div>
+<section id="apps" class="meth"><h2>Most popular self-hosted apps</h2><div class="relgrid">${[...appIndex(data).values()].sort((x, y) => (y.a.gh.stars ?? 0) - (x.a.gh.stars ?? 0)).slice(0, 30).map(({ a }) => `<a href="/self-host/${a.slug}/">${esc(a.name)}</a>`).join("")}<a href="/self-host/"><strong>All ${appIndex(data).size} apps</strong></a></div></section>
 <section id="collections" class="meth"><h2>Collections</h2><div class="relgrid">${COLLECTIONS.map((c) => `<a href="/collections/${c.slug}/">${esc(c.h1.replace(/<[^>]+>/g, ""))}</a>`).join("")}</div></section>
 <section id="methodology" class="meth"><h2>How the Self-Host Health Score works</h2>
 <p>A 0 to 100 total from four GitHub signals: commit recency (up to 35 points), latest release recency (25), stars on a log scale (25) and forks on a log scale (15). Archived or missing repositories score 0. The deploy footprint is read from each project's official documentation and the sources are linked on every page; <span class="est">est</span> marks a RAM figure the docs do not state. <a href="/methodology/">Read the full methodology</a> or fetch the data from <a href="/api/tools.json">/api/tools.json</a>.</p></section>
@@ -822,6 +1064,7 @@ function jsonFeed(data: Enriched): string {
         alternatives: t.alternatives.map((a) => ({
           name: a.name,
           slug: a.slug,
+          page: `${SITE_URL}/self-host/${a.slug}/`,
           github: a.github,
           homepage: a.homepage ?? null,
           description: a.description,
@@ -874,6 +1117,10 @@ function llmsTxt(data: Enriched): string {
     "",
     "## Collections",
     ...COLLECTIONS.map((c) => `- [${c.h1.replace(/<[^>]+>/g, "")}](${SITE_URL}/collections/${c.slug}/): ${c.desc}`),
+    "",
+    "## App pages (system requirements per app)",
+    `- [All apps](${SITE_URL}/self-host/): every app with RAM, database, ARM64 and Health Score.`,
+    ...[...appIndex(data).values()].map(({ a }) => `- [Self-host ${a.name}](${SITE_URL}/self-host/${a.slug}/): RAM ${a.footprint.minRamMB > 0 ? `${isEst(a) ? "about " : ""}${a.footprint.minRamMB} MB` : "not documented"}, ${dbProse(a.footprint.database)}, ARM64 ${a.footprint.arm64 ? "yes" : "no"}, Health Score ${a.healthScore}/100.`),
     "",
   ];
   return lines.join("\n");
@@ -954,7 +1201,7 @@ const APP_JS = `(function(){
         var maxRam=+ramSel.value,arm=armChk.checked,oc=ocChk.checked;
         var fit=alts.filter(function(a){var r=a.ram&&a.ram>0?a.ram:999999;if(r>maxRam)return false;if(arm&&!a.arm)return false;if(oc&&!a.oc)return false;return true;}).sort(function(x,y){return y.health-x.health;});
         mc.textContent=fit.length;
-        out.innerHTML=fit.map(function(a){var meta=[esc(a.tool)+' alternative',(a.ram>0?a.ram+' MB':'RAM not documented')];if(a.arm)meta.push('ARM64');if(a.oc)meta.push('one-click');return '<a class="mrow" href="/alternatives/'+a.slug+'/#'+a.aslug+'"><span class="badge '+hc(a.health)+'">'+a.health+'</span> <b>'+esc(a.name)+'</b> <span class="muted">'+meta.join(', ')+'</span></a>';}).join('') || '<p class="muted">Nothing fits. Choose more RAM or clear a filter.</p>';
+        out.innerHTML=fit.map(function(a){var meta=[esc(a.tool)+' alternative',(a.ram>0?a.ram+' MB':'RAM not documented')];if(a.arm)meta.push('ARM64');if(a.oc)meta.push('one-click');return '<a class="mrow" href="/self-host/'+a.aslug+'/"><span class="badge '+hc(a.health)+'">'+a.health+'</span> <b>'+esc(a.name)+'</b> <span class="muted">'+meta.join(', ')+'</span></a>';}).join('') || '<p class="muted">Nothing fits. Choose more RAM or clear a filter.</p>';
       }
       ramSel.addEventListener('change',render);armChk.addEventListener('change',render);ocChk.addEventListener('change',render);render();
     }).catch(function(){out.innerHTML='<p class="muted">Could not load the data.</p>';});
@@ -1046,6 +1293,18 @@ details.embed,details.sources{margin:16px 0 0;background:var(--panel);border:1px
 details.embed summary,details.sources summary{cursor:pointer;font-weight:600;padding:9px 0;color:var(--ink2)}details[open] summary{color:var(--ink)}
 .snip{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:7px 0;font-size:13.5px}.snip code{font-size:12px;word-break:break-all;user-select:all;padding:3px 7px}
 details.sources ul{padding-left:18px;margin:4px 0 8px}details.sources li{margin:6px 0;font-size:13.5px;color:var(--ink2)}
+.deploy{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--acc);border-radius:10px;padding:14px 18px;margin:16px 0;max-width:90ch}.deploy h2{margin:0 0 6px;font-size:18px}.deploy p{margin:6px 0}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0 10px}.dep{display:flex;flex-direction:column;gap:3px}
+.btn{display:inline-flex;align-items:center;padding:8px 14px;border-radius:8px;border:1px solid var(--line2);background:var(--panel2);color:var(--ink);font-weight:600;font-size:14px}.btn:hover{border-color:var(--acc);text-decoration:none}
+.btn.primary{background:var(--acc);border-color:var(--acc);color:#0b0d10}.btn.primary:hover{filter:brightness(1.08)}.perk{font-size:11.5px;color:var(--muted);max-width:26ch}
+.doc.wide{max-width:none}dl.kv{display:grid;grid-template-columns:minmax(150px,24%) 1fr;margin:8px 0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--panel)}
+dl.kv dt,dl.kv dd{margin:0;padding:10px 14px;border-bottom:1px solid var(--line)}dl.kv dt{color:var(--muted);font-size:13px;background:var(--panel2)}dl.kv dd{color:var(--ink2)}dl.kv dt:last-of-type,dl.kv dd:last-of-type{border-bottom:0}
+.hbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin:10px 0}.hb{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px}.hb p{margin:6px 0 0}
+.hb-h{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}.bar{height:8px;background:var(--panel2);border:1px solid var(--line);border-radius:6px;overflow:hidden}.bar span{display:block;height:100%;background:var(--acc)}
+.score small{font-size:13px;color:var(--muted);font-weight:600}.h-thriving-t{color:#3ddc97}.h-healthy-t{color:#76d0a3}.h-steady-t{color:#e8c468}.h-risk-t{color:#e89c5a}.h-dormant-t{color:#d9676a}
+.notice{border:1px solid var(--bad);background:rgba(217,103,106,.08);padding:10px 14px;border-radius:8px;color:var(--ink)}
+ul.srcs{padding-left:18px}ul.srcs li{margin:5px 0;overflow-wrap:anywhere}
+.related h3{font-size:15px;margin:14px 0 6px}
 footer{max-width:1100px;margin:30px auto 0;padding:24px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;line-height:1.55}footer p{max-width:100ch}
 @media(max-width:720px){
   main{padding:22px 16px}h1{font-size:25px}.tag{display:none}header.site{padding:12px 16px;gap:12px}
@@ -1062,6 +1321,7 @@ footer{max-width:1100px;margin:30px auto 0;padding:24px;border-top:1px solid var
   td[data-label="Min RAM"],td[data-label="Activity"]{white-space:normal}
   td[data-label="Activity"]{flex-wrap:wrap;justify-content:flex-start;column-gap:10px}td[data-label="Activity"]::before{flex-basis:100%}
   .doc-table td{display:flex}
+  dl.kv{grid-template-columns:1fr}dl.kv dt{border-bottom:0;padding-bottom:2px}
 }`;
 
 function ogCard(toolCount: number, altCount: number): string {
@@ -1142,6 +1402,17 @@ async function main(): Promise<void> {
     await writeFile(join(OUT, dir, "index.html"), html, "utf8");
   }
 
+  const apps = appIndex(data);
+  await mkdir(join(OUT, "self-host"), { recursive: true });
+  await writeFile(join(OUT, "self-host", "index.html"), appsIndexPage(data, apps), "utf8");
+  urls.push(`${SITE_URL}/self-host/`);
+  for (const e of apps.values()) {
+    const dir = join(OUT, "self-host", e.a.slug);
+    await mkdir(dir, { recursive: true });
+    await writeFile(join(dir, "index.html"), appPage(e, data.generatedAt), "utf8");
+    urls.push(`${SITE_URL}/self-host/${e.a.slug}/`);
+  }
+
   for (const c of COLLECTIONS) {
     const dir = join(OUT, "collections", c.slug);
     await mkdir(dir, { recursive: true });
@@ -1164,7 +1435,7 @@ async function main(): Promise<void> {
 
   await cp(join(ROOT, "public"), OUT, { recursive: true }).catch(() => {});
 
-  console.log(`Built ${data.tools.length} tool pages + homepage + matcher + ${COLLECTIONS.length} collections + methodology/api/about/sponsor -> ${OUT}`);
+  console.log(`Built ${data.tools.length} tool pages + homepage + matcher + ${COLLECTIONS.length} collections + methodology/api/about/sponsor + ${appIndex(data).size} app pages -> ${OUT}`);
   console.log(`Pages: ${urls.length}. Wrote api/tools.json, ${seenBadge.size} badges (api/badge/*), llms.txt, awesome.md, README.md, data/tools.json, app.js, favicon, og-card, sitemap, robots.`);
 }
 

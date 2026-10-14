@@ -349,8 +349,8 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/google-
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Joplin](https://github.com/laurent22/joplin) | 99 | 57k | PostgreSQL | about 512 MB | Yes | Yes |
+| [Trilium Notes](https://github.com/TriliumNext/Trilium) | 97 | 38k | SQLite | about 256 MB | Yes | Yes |
 | [Notesnook](https://github.com/streetwriters/notesnook) | 93 | 15k | MongoDB | about 512 MB | Yes | No |
-| [Trilium Notes](https://github.com/TriliumNext/Notes) | 0 | 2.9k | SQLite | about 256 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/evernote/
 

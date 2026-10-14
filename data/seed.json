@@ -3215,8 +3215,8 @@
         {
           "name": "Trilium Notes",
           "slug": "trilium",
-          "github": "TriliumNext/Notes",
-          "homepage": "https://github.com/TriliumNext/Notes",
+          "github": "TriliumNext/Trilium",
+          "homepage": "https://github.com/TriliumNext/Trilium",
           "description": "Hierarchical personal knowledge base with a self-host server.",
           "footprint": {
             "database": "SQLite (embedded document.db file; no external database)",

@@ -10,7 +10,8 @@
         "referralCode": "ISTzUG"
       },
       "managed": true,
-      "note": "Affiliate: 15% of every invoice for 12 months, cash via Stripe Connect from $100 or credits, no approval."
+      "note": "Affiliate: 15% of every invoice for 12 months, cash via Stripe Connect from $100 or credits, no approval.",
+      "perk": "New Railway accounts get $20 in credits through this link."
     },
     {
       "name": "RepoCloud",
