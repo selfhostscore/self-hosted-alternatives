@@ -42,7 +42,7 @@ _Data updated 2026-10-14. The tables below are generated: edit [data/seed.json](
 | [NocoDB](https://github.com/nocodb/nocodb) | 99 | 65k | PostgreSQL | about 2048 MB | Yes | Yes |
 | [Teable](https://github.com/teableio/teable) | 95 | 22k | PostgreSQL | 4096 MB | Yes | Yes |
 | [Grist](https://github.com/gristlabs/grist-core) | 93 | 12k | none / embedded | 200 MB | Yes | Yes |
-| [Baserow](https://github.com/baserow/baserow) | 91 | 6.1k | PostgreSQL | 2048 MB | Yes | Yes |
+| [Baserow](https://github.com/baserow/baserow) | 91 | 6.2k | PostgreSQL | 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/airtable/
 
@@ -192,7 +192,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/google-
 |---|---|---|---|---|---|---|
 | [Documenso](https://github.com/documenso/documenso) | 95 | 15k | PostgreSQL | 1024 MB | Yes | Yes |
 | [Docuseal](https://github.com/docusealco/docuseal) | 95 | 19k | PostgreSQL | 1024 MB | Yes | Yes |
-| [OpenSign](https://github.com/OpenSignLabs/OpenSign) | 89 | 7.1k | MongoDB | about 2048 MB | Yes | Yes |
+| [OpenSign](https://github.com/OpenSignLabs/OpenSign) | 91 | 7.1k | MongoDB | about 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/docusign/
 
@@ -270,7 +270,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/looker/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Supabase](https://github.com/supabase/supabase) | 100 | 111k | PostgreSQL | 4096 MB | Yes | Yes |
+| [Supabase](https://github.com/supabase/supabase) | 100 | 112k | PostgreSQL | 4096 MB | Yes | Yes |
 | [Appwrite](https://github.com/appwrite/appwrite) | 99 | 58k | MongoDB | 4096 MB | Yes | Yes |
 | [PocketBase](https://github.com/pocketbase/pocketbase) | 98 | 61k | SQLite | about 512 MB | Yes | Yes |
 | [Nhost](https://github.com/nhost/nhost) | 92 | 9.4k | PostgreSQL | about 4096 MB | Yes | Yes |
