@@ -36,7 +36,7 @@ Footprint values are curated by hand from official documentation, Docker Hub or 
 - `medium`: derived from official material (a docker-compose file, image tags), no single stated number.
 - `low`: an estimate based on community reports.
 
-When confidence is not `high`, the site marks the RAM figure as an estimate. `scripts/merge-footprint.ts` merges the output of a verification pass back into the seed and records sources and confidence; `scripts/check-repos.ts` validates that every GitHub slug resolves without spending API quota.
+When confidence is not `high`, the site marks the RAM figure as an estimate. `scripts/merge-footprint.ts` merges the output of a verification pass back into the seed and records sources and confidence; `scripts/check-repos.ts` validates that every GitHub slug resolves without spending API quota. `data/deploy-links.json` maps each alternative to verified one-click deploy pages; affiliate parameters are added at build time from `data/offers.json`.
 
 ## Run it locally
 
@@ -59,6 +59,16 @@ The package.json scripts `enrich`, `check`, `build` and `serve` map to the same 
 4. Deploy to Cloudflare when the `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` secrets are present; otherwise skip with a warning.
 5. Re-enable the schedule through the API. GitHub disables scheduled workflows in public repositories after 60 days without pushes; the daily data commit plus this step keep it alive. The step is inline on purpose: the third-party keepalive action this repository first used was later blocked by GitHub.
 
+## Weekly deploy-link check (GitHub Actions)
+
+`.github/workflows/check-links.yml` runs every Monday at 04:41 UTC and on manual dispatch. It runs `node scripts/check-deploy-links.ts --prune`, which fetches every one-click deploy page in `data/deploy-links.json` and retries each failure twice (after 5 and 20 seconds).
+
+- **All OK:** an open `dead-links` issue, if any, is closed with a comment.
+- **Dead links:** they are removed from `data/deploy-links.json` (with the reason recorded under `_removed`), the change is committed, the refresh workflow is started to redeploy, and an issue labelled `dead-links` lists what was removed and mentions the workflow owner, which sends an email.
+- **More than 20% failing at once:** treated as a platform outage or a block of the checker. Nothing is removed and the run ends with a warning.
+
+To test the alert path without touching real data, run the workflow manually with the `canary` input: it adds one fake dead link, opens the issue, and removes nothing.
+
 ## Repository layout
 
 ```
@@ -71,7 +81,7 @@ src/healthScore.ts      score formula
 docs/README-header.md   hand-written top of the public README
 docs/ENGINE.md          this file
 public/                 static files copied into dist (og.png)
-.github/workflows/      daily refresh and deploy
+.github/workflows/      daily refresh and deploy, weekly deploy-link check
 wrangler.jsonc          Cloudflare Worker configuration
 ```
 

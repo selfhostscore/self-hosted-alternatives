@@ -1,0 +1,92 @@
+name: Check deploy links
+
+# Weekly: verify every one-click deploy page in data/deploy-links.json (Railway, RepoCloud, ...).
+# Dead links (three failed attempts each) are removed, the site is redeployed, and an issue lists what was removed,
+# so the owner gets an email. When everything is OK again, the open issue is closed automatically.
+# If more than 20% fail at once (platform outage or the checker got blocked), nothing is removed.
+
+on:
+  schedule:
+    - cron: "41 4 * * 1" # Mondays 04:41 UTC, ahead of the daily refresh at 05:23
+  workflow_dispatch:
+    inputs:
+      canary:
+        description: "Add one fake dead link to test the alert (nothing real is removed)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write # commit the pruned data file
+  issues: write # open, update and close the dead-links issue
+  actions: write # trigger the refresh workflow after pruning
+
+concurrency:
+  group: refresh # never runs at the same time as the daily refresh, so pushes do not race
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Check every deploy link
+        id: check
+        run: |
+          set +e
+          node scripts/check-deploy-links.ts --prune --report report.md ${{ inputs.canary && '--canary' || '' }}
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit removed links and redeploy
+        if: steps.check.outputs.code == '1'
+        run: |
+          git config user.name "selfhostscore-bot"
+          git config user.email "team@selfhostscore.com"
+          git add data/deploy-links.json
+          if git diff --cached --quiet; then
+            echo "Nothing removed (test entries only)."
+            exit 0
+          fi
+          git commit -m "links: remove dead deploy links $(date -u +%Y-%m-%d)"
+          for attempt in 1 2 3; do
+            if git push; then
+              # A push made with GITHUB_TOKEN does not trigger other workflows, so start the refresh explicitly.
+              gh workflow run refresh.yml --ref main
+              echo "Pushed and triggered the refresh workflow."
+              exit 0
+            fi
+            git fetch origin main
+            git rebase -X theirs origin/main || { git rebase --abort; break; }
+          done
+          echo "::warning::Could not push the pruned data file; the next weekly run will retry."
+
+      - name: Open or update the dead-links issue
+        if: steps.check.outputs.code == '1'
+        run: |
+          gh label create dead-links --color B60205 --description "Deploy links that stopped working" --force
+          { cat report.md; echo; echo "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"; echo; echo "cc @${{ github.actor }}"; } > body.md
+          num=$(gh issue list --label dead-links --state open --json number --jq '.[0].number // empty')
+          if [ -n "$num" ]; then
+            gh issue comment "$num" --body-file body.md
+          else
+            gh issue create --title "Dead deploy links found" --label dead-links --body-file body.md
+          fi
+
+      - name: Close the dead-links issue when everything is OK
+        if: steps.check.outputs.code == '0'
+        run: |
+          num=$(gh issue list --label dead-links --state open --json number --jq '.[0].number // empty' 2>/dev/null)
+          if [ -n "$num" ]; then
+            gh issue close "$num" --comment "$(head -1 report.md | sed 's/^### //')"
+          fi
+
+      - name: Inconclusive run
+        if: steps.check.outputs.code == '2'
+        run: echo "::warning::Too many links failed at once (platform outage or the checker was blocked). Nothing was removed; next week's run will retry."
