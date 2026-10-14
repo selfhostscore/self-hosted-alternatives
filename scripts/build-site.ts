@@ -603,7 +603,7 @@ function methodologyPage(data: Enriched): string {
     head(title, desc, url, [jsonLd, breadcrumbLd(crumbs)]) +
     `${crumbsHtml(crumbs)}
 <h1>How the numbers are <span class="hl">produced</span></h1>
-<p class="lead">Two kinds of data appear on every page: a Self-Host Health Score computed from the GitHub API, and a deploy footprint curated by hand from official documentation. Both are explained here in full so you can judge them.</p>
+<p class="lead">Two kinds of data appear on every page: a Self-Host Health Score computed from the GitHub API, and a deploy footprint collected from official documentation with linked sources. Both are explained here in full, including the role of AI, so you can judge them.</p>
 
 <section class="doc" id="score"><h2>Self-Host Health Score (0 to 100)</h2>
 <p>The score answers one question: is this project alive and used enough to run in production? It is the sum of four components, each computed from a single GitHub repository fetch plus the latest release. Component values are rounded before summing.</p>
@@ -623,7 +623,9 @@ function methodologyPage(data: Enriched): string {
 </section>
 
 <section class="doc" id="footprint"><h2>Deploy footprint</h2>
-<p>The footprint records what it takes to run the app yourself: the primary database, the minimum RAM for a small instance, whether official ARM64 images exist (Raspberry Pi, Apple Silicon servers), the supported deploy methods, and one-click templates on hosting platforms. Each value was read from the project's official documentation, Docker Hub or GitHub Container Registry listing, or official platform templates, and where none of these state it, from community reports (marked low confidence). The links are listed under "Footprint sources and confidence" on every category page.</p>
+<p>The footprint records what it takes to run the app yourself: the primary database, the minimum RAM for a small instance, whether official ARM64 images exist (Raspberry Pi, Apple Silicon servers), the supported deploy methods, and one-click templates on hosting platforms. Each value was read from the project's official documentation, Docker Hub or GitHub Container Registry listing, or official platform templates, and where none of these state it, from community reports (marked low confidence). The links are listed under "Footprint sources and confidence" on every category page and under Sources on every app page.</p>
+<h3>How the values were collected</h3>
+<p>The values were extracted from those sources with the help of an AI model (Claude), which recorded the source link next to every value. A second pass re-checked the entries with low and medium confidence against the same sources. Mistakes are still possible: if a number is wrong, open a pull request with the correct source or email team@selfhostscore.com, and it is fixed in the next daily build.</p>
 <p>Each one-click chip opens the platform's deploy page for that specific app when such a page exists and was checked to deploy the same project; otherwise it opens the platform's home page. Some platforms pay us a referral commission. Those links carry <code>rel="sponsored"</code>, and commissions never change a score, a footprint value or the order of a table.</p>
 <h3>Confidence levels</h3>
 <ul>

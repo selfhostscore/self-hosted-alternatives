@@ -12,5 +12,5 @@ as long as you give appropriate credit. The simplest attribution is a link:
 Full legal text: <https://creativecommons.org/licenses/by/4.0/legalcode>
 
 Health Scores are computed from public GitHub API data and refreshed daily. The deploy footprint is
-curated by hand from each project's official documentation (sources are listed per entry in
+collected from each project's official documentation with the help of an AI model, with the source of every value recorded (sources are listed per entry in
 `data/seed.json`). No warranty: verify before you depend on a number.

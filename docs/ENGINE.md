@@ -30,7 +30,7 @@ Archived repositories and repositories that cannot be fetched score 0, unless th
 
 ## Deploy footprint and confidence
 
-Footprint values are curated by hand from official documentation, Docker Hub or GitHub Container Registry listings and official platform templates, and as a last resort from community reports. Each alternative records `footprintConfidence`:
+Footprint values come from official documentation, Docker Hub or GitHub Container Registry listings and official platform templates, and as a last resort from community reports. They were extracted with the help of an AI model (Claude) that stored the source URL for every value; a second pass re-checked low and medium confidence entries. Corrections by pull request are welcome. Each alternative records `footprintConfidence`:
 
 - `high`: the documentation states the value directly.
 - `medium`: derived from official material (a docker-compose file, image tags), no single stated number.
