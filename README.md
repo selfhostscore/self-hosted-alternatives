@@ -33,7 +33,7 @@ Open your project's category page on the site and expand **"Add the live Self-Ho
 
 Data (`data/seed.json`, `data/tools.json`, the tables in this README and `awesome.md`): [CC BY 4.0](DATA-LICENSE.md), free to use, remix and republish with a link to <https://selfhostscore.com>. Code: [MIT](LICENSE).
 
-_Data updated 2026-10-13. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
+_Data updated 2026-10-14. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
 
 ## Airtable alternatives
 
@@ -42,7 +42,7 @@ _Data updated 2026-10-13. The tables below are generated: edit [data/seed.json](
 | [NocoDB](https://github.com/nocodb/nocodb) | 99 | 65k | PostgreSQL | about 2048 MB | Yes | Yes |
 | [Teable](https://github.com/teableio/teable) | 95 | 22k | PostgreSQL | 4096 MB | Yes | Yes |
 | [Grist](https://github.com/gristlabs/grist-core) | 93 | 12k | none / embedded | 200 MB | Yes | No |
-| [Baserow](https://github.com/baserow/baserow) | 91 | 6.1k | PostgreSQL | 2048 MB | Yes | Yes |
+| [Baserow](https://github.com/baserow/baserow) | 91 | 6.2k | PostgreSQL | 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/airtable/
 
@@ -122,7 +122,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/conflue
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Hoppscotch](https://github.com/hoppscotch/hoppscotch) | 99 | 81k | PostgreSQL | 2048 MB | No | Yes |
-| [Bruno](https://github.com/usebruno/bruno) | 98 | 47k | none / embedded | 512 MB | Yes | No |
+| [Bruno](https://github.com/usebruno/bruno) | 98 | 48k | none / embedded | 512 MB | Yes | No |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/postman/
 
@@ -181,7 +181,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/zendesk
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Umami](https://github.com/umami-software/umami) | 99 | 39k | PostgreSQL | about 512 MB | Yes | Yes |
-| [PostHog](https://github.com/PostHog/posthog) | 97 | 40k | PostgreSQL + ClickHouse | 4096 MB | Yes | Yes |
+| [PostHog](https://github.com/PostHog/posthog) | 98 | 40k | PostgreSQL + ClickHouse | 4096 MB | Yes | Yes |
 | [Plausible](https://github.com/plausible/analytics) | 93 | 29k | PostgreSQL + ClickHouse | 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/google-analytics/
@@ -202,7 +202,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/docusig
 |---|---|---|---|---|---|---|
 | [Vaultwarden](https://github.com/dani-garcia/vaultwarden) | 98 | 69k | SQLite | 512 MB | Yes | Yes |
 | [Passbolt](https://github.com/passbolt/passbolt_api) | 90 | 6.2k | MariaDB/MySQL | 2048 MB | Yes | Yes |
-| [Padloc](https://github.com/padloc/padloc) | 27 | 2.9k | LevelDB | about 512 MB | No | No |
+| [Padloc](https://github.com/padloc/padloc) | 62 | 2.9k | LevelDB | about 512 MB | No | No |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/1password/
 
@@ -270,7 +270,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/looker/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Supabase](https://github.com/supabase/supabase) | 100 | 111k | PostgreSQL | 4096 MB | Yes | Yes |
+| [Supabase](https://github.com/supabase/supabase) | 100 | 112k | PostgreSQL | 4096 MB | Yes | Yes |
 | [Appwrite](https://github.com/appwrite/appwrite) | 99 | 58k | MongoDB | 4096 MB | Yes | No |
 | [PocketBase](https://github.com/pocketbase/pocketbase) | 98 | 61k | SQLite | about 512 MB | Yes | No |
 | [Nhost](https://github.com/nhost/nhost) | 92 | 9.4k | PostgreSQL | about 4096 MB | Yes | No |
@@ -399,8 +399,8 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/pocket/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Pi-hole](https://github.com/pi-hole/pi-hole) | 98 | 61k | none / embedded | 512 MB | Yes | No |
 | [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) | 97 | 37k | none / embedded | about 256 MB | Yes | No |
+| [Pi-hole](https://github.com/pi-hole/pi-hole) | 97 | 61k | none / embedded | 512 MB | Yes | No |
 | [Technitium DNS](https://github.com/TechnitiumSoftware/DnsServer) | 92 | 10k | none / embedded | about 512 MB | Yes | No |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/nextdns/
