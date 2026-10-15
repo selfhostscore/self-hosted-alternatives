@@ -33,7 +33,7 @@ Open your project's page on the site (`https://selfhostscore.com/self-host/<slug
 
 Data (`data/seed.json`, `data/tools.json`, the tables in this README and `awesome.md`): [CC BY 4.0](DATA-LICENSE.md), free to use, remix and republish with a link to <https://selfhostscore.com>. Code: [MIT](LICENSE).
 
-_Data updated 2026-10-14. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
+_Data updated 2026-10-15. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
 
 ## Airtable alternatives
 
@@ -74,7 +74,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/retool/
 |---|---|---|---|---|---|---|
 | [n8n](https://github.com/n8n-io/n8n) | 100 | 207k | SQLite | 2048 MB | Yes | Yes |
 | [Activepieces](https://github.com/activepieces/activepieces) | 97 | 25k | PostgreSQL | 4096 MB | Yes | Yes |
-| [Automatisch](https://github.com/automatisch/automatisch) | 52 | 14k | PostgreSQL | about 2048 MB | Yes | Yes |
+| [Automatisch](https://github.com/automatisch/automatisch) | 51 | 14k | PostgreSQL | about 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/zapier/
 
@@ -182,7 +182,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/zendesk
 |---|---|---|---|---|---|---|
 | [Umami](https://github.com/umami-software/umami) | 99 | 39k | PostgreSQL | about 512 MB | Yes | Yes |
 | [PostHog](https://github.com/PostHog/posthog) | 98 | 40k | PostgreSQL + ClickHouse | 4096 MB | Yes | Yes |
-| [Plausible](https://github.com/plausible/analytics) | 93 | 29k | PostgreSQL + ClickHouse | 2048 MB | Yes | Yes |
+| [Plausible](https://github.com/plausible/analytics) | 92 | 29k | PostgreSQL + ClickHouse | 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/google-analytics/
 
@@ -309,7 +309,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/zoom/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Gitea](https://github.com/go-gitea/gitea) | 99 | 58k | SQLite | 1024 MB | Yes | Yes |
+| [Gitea](https://github.com/go-gitea/gitea) | 99 | 59k | SQLite | 1024 MB | Yes | Yes |
 | [Gogs](https://github.com/gogs/gogs) | 97 | 48k | SQLite3 | 512 MB | Yes | No |
 | [OneDev](https://github.com/theonedev/onedev) | 93 | 15k | none / embedded | 2048 MB | Yes | Yes |
 
@@ -341,7 +341,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/salesfo
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Infisical](https://github.com/Infisical/infisical) | 97 | 30k | PostgreSQL | 4096 MB | Yes | Yes |
-| [OpenBao](https://github.com/openbao/openbao) | 91 | 8.4k | none / embedded | about 256 MB | Yes | Yes |
+| [OpenBao](https://github.com/openbao/openbao) | 92 | 8.5k | none / embedded | about 256 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/doppler/
 
@@ -442,6 +442,6 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/sap/
 | [Ghost](https://github.com/TryGhost/Ghost) | 100 | 56k | MySQL 8 | 1024 MB | Yes | Yes |
 | [Strapi](https://github.com/strapi/strapi) | 100 | 73k | PostgreSQL | 2048 MB | No | Yes |
 | [Payload](https://github.com/payloadcms/payload) | 99 | 45k | MongoDB | about 512 MB | Yes | Yes |
-| [Directus](https://github.com/directus/directus) | 98 | 38k | PostgreSQL | 512 MB | Yes | Yes |
+| [Directus](https://github.com/directus/directus) | 98 | 39k | PostgreSQL | 512 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/wordpress/
