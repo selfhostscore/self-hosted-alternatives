@@ -2,7 +2,7 @@
 
 Open-source, self-hostable alternatives to popular SaaS, each with a **Self-Host Health Score** (live GitHub activity, releases, stars and forks) and a **deploy footprint** with sources and a confidence level (minimum RAM, database, ARM64 and Raspberry Pi support, one-click deploy).
 
-Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-10-15.
+Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-10-16.
 
 ## Airtable alternatives
 
@@ -41,7 +41,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/retool/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [n8n](https://github.com/n8n-io/n8n) | 100 | 207k | SQLite | 2048 MB | Yes | Yes |
+| [n8n](https://github.com/n8n-io/n8n) | 100 | 208k | SQLite | 2048 MB | Yes | Yes |
 | [Activepieces](https://github.com/activepieces/activepieces) | 97 | 25k | PostgreSQL | 4096 MB | Yes | Yes |
 | [Automatisch](https://github.com/automatisch/automatisch) | 51 | 14k | PostgreSQL | about 2048 MB | Yes | Yes |
 
@@ -129,7 +129,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/auth0/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Uptime Kuma](https://github.com/louislam/uptime-kuma) | 100 | 92k | SQLite | about 256 MB | Yes | Yes |
+| [Uptime Kuma](https://github.com/louislam/uptime-kuma) | 100 | 93k | SQLite | about 256 MB | Yes | Yes |
 | [SigNoz](https://github.com/SigNoz/signoz) | 97 | 32k | ClickHouse | 4096 MB | No | Yes |
 | [OpenObserve](https://github.com/openobserve/openobserve) | 94 | 22k | none / embedded | about 512 MB | Yes | Yes |
 

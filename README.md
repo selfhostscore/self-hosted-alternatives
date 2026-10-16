@@ -33,7 +33,7 @@ Open your project's page on the site (`https://selfhostscore.com/self-host/<slug
 
 Data (`data/seed.json`, `data/tools.json`, the tables in this README and `awesome.md`): [CC BY 4.0](DATA-LICENSE.md), free to use, remix and republish with a link to <https://selfhostscore.com>. Code: [MIT](LICENSE).
 
-_Data updated 2026-10-15. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
+_Data updated 2026-10-16. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
 
 ## Airtable alternatives
 
@@ -72,7 +72,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/retool/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [n8n](https://github.com/n8n-io/n8n) | 100 | 207k | SQLite | 2048 MB | Yes | Yes |
+| [n8n](https://github.com/n8n-io/n8n) | 100 | 208k | SQLite | 2048 MB | Yes | Yes |
 | [Activepieces](https://github.com/activepieces/activepieces) | 97 | 25k | PostgreSQL | 4096 MB | Yes | Yes |
 | [Automatisch](https://github.com/automatisch/automatisch) | 51 | 14k | PostgreSQL | about 2048 MB | Yes | Yes |
 
@@ -160,7 +160,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/auth0/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Uptime Kuma](https://github.com/louislam/uptime-kuma) | 100 | 92k | SQLite | about 256 MB | Yes | Yes |
+| [Uptime Kuma](https://github.com/louislam/uptime-kuma) | 100 | 93k | SQLite | about 256 MB | Yes | Yes |
 | [SigNoz](https://github.com/SigNoz/signoz) | 97 | 32k | ClickHouse | 4096 MB | No | Yes |
 | [OpenObserve](https://github.com/openobserve/openobserve) | 94 | 22k | none / embedded | about 512 MB | Yes | Yes |
 
