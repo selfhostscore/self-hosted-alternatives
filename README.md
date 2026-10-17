@@ -33,7 +33,7 @@ Open your project's page on the site (`https://selfhostscore.com/self-host/<slug
 
 Data (`data/seed.json`, `data/tools.json`, the tables in this README and `awesome.md`): [CC BY 4.0](DATA-LICENSE.md), free to use, remix and republish with a link to <https://selfhostscore.com>. Code: [MIT](LICENSE).
 
-_Data updated 2026-10-16. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
+_Data updated 2026-10-17. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
 
 ## Airtable alternatives
 
@@ -182,7 +182,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/zendesk
 |---|---|---|---|---|---|---|
 | [Umami](https://github.com/umami-software/umami) | 99 | 39k | PostgreSQL | about 512 MB | Yes | Yes |
 | [PostHog](https://github.com/PostHog/posthog) | 98 | 40k | PostgreSQL + ClickHouse | 4096 MB | Yes | Yes |
-| [Plausible](https://github.com/plausible/analytics) | 92 | 29k | PostgreSQL + ClickHouse | 2048 MB | Yes | Yes |
+| [Plausible](https://github.com/plausible/analytics) | 92 | 30k | PostgreSQL + ClickHouse | 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/google-analytics/
 
@@ -242,7 +242,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/interco
 | [Plane](https://github.com/makeplane/plane) | 99 | 61k | PostgreSQL | 4096 MB | Yes | Yes |
 | [OpenProject](https://github.com/opf/openproject) | 95 | 16k | PostgreSQL | 4096 MB | Yes | Yes |
 | [Redmine](https://github.com/redmine/redmine) | 73 | 6.0k | PostgreSQL | about 1024 MB | Yes | Yes |
-| [Taiga](https://github.com/taigaio/taiga) | 27 | 574 | PostgreSQL | about 1024 MB | No | Yes |
+| [Taiga](https://github.com/taigaio/taiga) | 27 | 575 | PostgreSQL | about 1024 MB | No | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/jira/
 
