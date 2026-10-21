@@ -2,7 +2,7 @@
 
 Open-source, self-hostable alternatives to popular SaaS, each with a **Self-Host Health Score** (live GitHub activity, releases, stars and forks) and a **deploy footprint** with sources and a confidence level (minimum RAM, database, ARM64 and Raspberry Pi support, one-click deploy).
 
-Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-10-20.
+Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-10-21.
 
 ## Airtable alternatives
 
@@ -52,7 +52,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/zapier/
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Cal.diy](https://github.com/calcom/cal.diy) | 92 | 49k | PostgreSQL | about 2048 MB | Yes | Yes |
-| [Easy!Appointments](https://github.com/alextselegidis/easyappointments) | 91 | 4.4k | MySQL | about 512 MB | Yes | Yes |
+| [Easy!Appointments](https://github.com/alextselegidis/easyappointments) | 91 | 4.5k | MySQL | about 512 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/calendly/
 
@@ -149,7 +149,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/zendesk
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Umami](https://github.com/umami-software/umami) | 99 | 39k | PostgreSQL | about 512 MB | Yes | Yes |
+| [Umami](https://github.com/umami-software/umami) | 99 | 40k | PostgreSQL | about 512 MB | Yes | Yes |
 | [PostHog](https://github.com/PostHog/posthog) | 98 | 40k | PostgreSQL + ClickHouse | 4096 MB | Yes | Yes |
 | [Plausible](https://github.com/plausible/analytics) | 92 | 30k | PostgreSQL + ClickHouse | 2048 MB | Yes | Yes |
 
@@ -161,7 +161,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/google-
 |---|---|---|---|---|---|---|
 | [Documenso](https://github.com/documenso/documenso) | 95 | 15k | PostgreSQL | 1024 MB | Yes | Yes |
 | [Docuseal](https://github.com/docusealco/docuseal) | 95 | 19k | PostgreSQL | 1024 MB | Yes | Yes |
-| [OpenSign](https://github.com/OpenSignLabs/OpenSign) | 91 | 7.1k | MongoDB | about 2048 MB | Yes | Yes |
+| [OpenSign](https://github.com/OpenSignLabs/OpenSign) | 92 | 7.1k | MongoDB | about 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/docusign/
 
@@ -188,7 +188,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/loom/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Listmonk](https://github.com/knadh/listmonk) | 95 | 24k | PostgreSQL | 512 MB | Yes | Yes |
+| [Listmonk](https://github.com/knadh/listmonk) | 96 | 24k | PostgreSQL | 512 MB | Yes | Yes |
 | [Mautic](https://github.com/mautic/mautic) | 94 | 11k | MySQL/MariaDB | about 2048 MB | Yes | Yes |
 | [phpList](https://github.com/phpList/phplist3) | 85 | 878 | MySQL/MariaDB | about 512 MB | No | No |
 
@@ -239,7 +239,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/looker/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Supabase](https://github.com/supabase/supabase) | 100 | 112k | PostgreSQL | 4096 MB | Yes | Yes |
+| [Supabase](https://github.com/supabase/supabase) | 100 | 113k | PostgreSQL | 4096 MB | Yes | Yes |
 | [Appwrite](https://github.com/appwrite/appwrite) | 99 | 58k | MongoDB | 4096 MB | Yes | Yes |
 | [PocketBase](https://github.com/pocketbase/pocketbase) | 98 | 62k | SQLite | about 512 MB | Yes | Yes |
 | [Nhost](https://github.com/nhost/nhost) | 92 | 9.4k | PostgreSQL | about 4096 MB | Yes | Yes |
@@ -261,7 +261,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/algolia
 |---|---|---|---|---|---|---|
 | [YOURLS](https://github.com/YOURLS/YOURLS) | 94 | 12k | MySQL/MariaDB | about 256 MB | Yes | Yes |
 | [Kutt](https://github.com/thedevs-network/kutt) | 93 | 11k | SQLite | about 512 MB | Yes | Yes |
-| [Shlink](https://github.com/shlinkio/shlink) | 90 | 5.3k | MySQL/MariaDB | about 512 MB | Yes | Yes |
+| [Shlink](https://github.com/shlinkio/shlink) | 90 | 5.4k | MySQL/MariaDB | about 512 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/bitly/
 
