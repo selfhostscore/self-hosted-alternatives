@@ -2,7 +2,7 @@
 
 Open-source, self-hostable alternatives to popular SaaS, each with a **Self-Host Health Score** (live GitHub activity, releases, stars and forks) and a **deploy footprint** with sources and a confidence level (minimum RAM, database, ARM64 and Raspberry Pi support, one-click deploy).
 
-Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-10-21.
+Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-10-22.
 
 ## Airtable alternatives
 
@@ -159,7 +159,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/google-
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Documenso](https://github.com/documenso/documenso) | 95 | 15k | PostgreSQL | 1024 MB | Yes | Yes |
+| [Documenso](https://github.com/documenso/documenso) | 95 | 16k | PostgreSQL | 1024 MB | Yes | Yes |
 | [Docuseal](https://github.com/docusealco/docuseal) | 95 | 19k | PostgreSQL | 1024 MB | Yes | Yes |
 | [OpenSign](https://github.com/OpenSignLabs/OpenSign) | 92 | 7.1k | MongoDB | about 2048 MB | Yes | Yes |
 
@@ -179,7 +179,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/1passwo
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Cap](https://github.com/CapSoftware/Cap) | 95 | 23k | MySQL | about 1024 MB | Yes | Yes |
+| [Cap](https://github.com/CapSoftware/Cap) | 95 | 24k | MySQL | about 1024 MB | Yes | Yes |
 | [Screenity](https://github.com/alyssaxuu/screenity) | 95 | 19k | none / embedded | n/a | Yes | No |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/loom/

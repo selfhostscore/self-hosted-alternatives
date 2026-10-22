@@ -33,7 +33,7 @@ Open your project's page on the site (`https://selfhostscore.com/self-host/<slug
 
 Data (`data/seed.json`, `data/tools.json`, the tables in this README and `awesome.md`): [CC BY 4.0](DATA-LICENSE.md), free to use, remix and republish with a link to <https://selfhostscore.com>. Code: [MIT](LICENSE).
 
-_Data updated 2026-10-21. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
+_Data updated 2026-10-22. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
 
 ## Airtable alternatives
 
@@ -190,7 +190,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/google-
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Documenso](https://github.com/documenso/documenso) | 95 | 15k | PostgreSQL | 1024 MB | Yes | Yes |
+| [Documenso](https://github.com/documenso/documenso) | 95 | 16k | PostgreSQL | 1024 MB | Yes | Yes |
 | [Docuseal](https://github.com/docusealco/docuseal) | 95 | 19k | PostgreSQL | 1024 MB | Yes | Yes |
 | [OpenSign](https://github.com/OpenSignLabs/OpenSign) | 92 | 7.1k | MongoDB | about 2048 MB | Yes | Yes |
 
@@ -210,7 +210,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/1passwo
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Cap](https://github.com/CapSoftware/Cap) | 95 | 23k | MySQL | about 1024 MB | Yes | Yes |
+| [Cap](https://github.com/CapSoftware/Cap) | 95 | 24k | MySQL | about 1024 MB | Yes | Yes |
 | [Screenity](https://github.com/alyssaxuu/screenity) | 95 | 19k | none / embedded | n/a | Yes | No |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/loom/
