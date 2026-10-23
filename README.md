@@ -33,7 +33,7 @@ Open your project's page on the site (`https://selfhostscore.com/self-host/<slug
 
 Data (`data/seed.json`, `data/tools.json`, the tables in this README and `awesome.md`): [CC BY 4.0](DATA-LICENSE.md), free to use, remix and republish with a link to <https://selfhostscore.com>. Code: [MIT](LICENSE).
 
-_Data updated 2026-10-22. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
+_Data updated 2026-10-23. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
 
 ## Airtable alternatives
 
@@ -139,7 +139,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/typefor
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Coolify](https://github.com/coollabsio/coolify) | 99 | 63k | PostgreSQL | 2048 MB | Yes | Yes |
+| [Coolify](https://github.com/coollabsio/coolify) | 99 | 64k | PostgreSQL | 2048 MB | Yes | Yes |
 | [Dokploy](https://github.com/dokploy/dokploy) | 97 | 38k | PostgreSQL | 2048 MB | Yes | No |
 | [Dokku](https://github.com/dokku/dokku) | 96 | 32k | none / embedded | 1024 MB | Yes | Yes |
 | [CapRover](https://github.com/caprover/caprover) | 93 | 15k | none / embedded | 512 MB | Yes | Yes |
@@ -200,7 +200,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/docusig
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Vaultwarden](https://github.com/dani-garcia/vaultwarden) | 98 | 69k | SQLite | 512 MB | Yes | Yes |
+| [Vaultwarden](https://github.com/dani-garcia/vaultwarden) | 98 | 70k | SQLite | 512 MB | Yes | Yes |
 | [Passbolt](https://github.com/passbolt/passbolt_api) | 90 | 6.2k | MariaDB/MySQL | 2048 MB | Yes | Yes |
 | [Padloc](https://github.com/padloc/padloc) | 62 | 2.9k | LevelDB | about 512 MB | No | No |
 
@@ -242,7 +242,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/interco
 | [Plane](https://github.com/makeplane/plane) | 99 | 61k | PostgreSQL | 4096 MB | Yes | Yes |
 | [OpenProject](https://github.com/opf/openproject) | 95 | 17k | PostgreSQL | 4096 MB | Yes | Yes |
 | [Redmine](https://github.com/redmine/redmine) | 73 | 6.1k | PostgreSQL | about 1024 MB | Yes | Yes |
-| [Taiga](https://github.com/taigaio/taiga) | 27 | 576 | PostgreSQL | about 1024 MB | No | Yes |
+| [Taiga](https://github.com/taigaio/taiga) | 27 | 575 | PostgreSQL | about 1024 MB | No | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/jira/
 
@@ -270,7 +270,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/looker/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Supabase](https://github.com/supabase/supabase) | 100 | 113k | PostgreSQL | 4096 MB | Yes | Yes |
+| [Supabase](https://github.com/supabase/supabase) | 100 | 114k | PostgreSQL | 4096 MB | Yes | Yes |
 | [Appwrite](https://github.com/appwrite/appwrite) | 99 | 58k | MongoDB | 4096 MB | Yes | Yes |
 | [PocketBase](https://github.com/pocketbase/pocketbase) | 98 | 62k | SQLite | about 512 MB | Yes | Yes |
 | [Nhost](https://github.com/nhost/nhost) | 92 | 9.4k | PostgreSQL | about 4096 MB | Yes | Yes |
@@ -301,7 +301,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/bitly/
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Jitsi Meet](https://github.com/jitsi/jitsi-meet) | 99 | 30k | none / embedded | 2048 MB | Yes | Yes |
-| [BigBlueButton](https://github.com/bigbluebutton/bigbluebutton) | 95 | 9.2k | PostgreSQL | 16384 MB | No | Yes |
+| [BigBlueButton](https://github.com/bigbluebutton/bigbluebutton) | 95 | 9.3k | PostgreSQL | 16384 MB | No | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/zoom/
 
@@ -329,7 +329,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/circlec
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Twenty](https://github.com/twentyhq/twenty) | 100 | 59k | PostgreSQL | 2048 MB | Yes | Yes |
+| [Twenty](https://github.com/twentyhq/twenty) | 100 | 60k | PostgreSQL | 2048 MB | Yes | Yes |
 | [Krayin](https://github.com/krayin/laravel-crm) | 95 | 24k | MySQL | 4096 MB | No | Yes |
 | [SuiteCRM](https://github.com/salesagility/SuiteCRM) | 93 | 5.8k | MySQL/MariaDB | about 2048 MB | No | Yes |
 | [EspoCRM](https://github.com/espocrm/espocrm) | 90 | 3.5k | MySQL/MariaDB | about 512 MB | Yes | Yes |
@@ -341,7 +341,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/salesfo
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Infisical](https://github.com/Infisical/infisical) | 97 | 30k | PostgreSQL | 4096 MB | Yes | Yes |
-| [OpenBao](https://github.com/openbao/openbao) | 92 | 8.6k | none / embedded | about 256 MB | Yes | Yes |
+| [OpenBao](https://github.com/openbao/openbao) | 92 | 8.7k | none / embedded | about 256 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/doppler/
 
