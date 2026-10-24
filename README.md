@@ -33,7 +33,7 @@ Open your project's page on the site (`https://selfhostscore.com/self-host/<slug
 
 Data (`data/seed.json`, `data/tools.json`, the tables in this README and `awesome.md`): [CC BY 4.0](DATA-LICENSE.md), free to use, remix and republish with a link to <https://selfhostscore.com>. Code: [MIT](LICENSE).
 
-_Data updated 2026-10-23. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
+_Data updated 2026-10-24. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
 
 ## Airtable alternatives
 
@@ -74,7 +74,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/retool/
 |---|---|---|---|---|---|---|
 | [n8n](https://github.com/n8n-io/n8n) | 100 | 208k | SQLite | 2048 MB | Yes | Yes |
 | [Activepieces](https://github.com/activepieces/activepieces) | 97 | 25k | PostgreSQL | 4096 MB | Yes | Yes |
-| [Automatisch](https://github.com/automatisch/automatisch) | 51 | 14k | PostgreSQL | about 2048 MB | Yes | Yes |
+| [Automatisch](https://github.com/automatisch/automatisch) | 50 | 14k | PostgreSQL | about 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/zapier/
 
@@ -192,7 +192,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/google-
 |---|---|---|---|---|---|---|
 | [Documenso](https://github.com/documenso/documenso) | 95 | 16k | PostgreSQL | 1024 MB | Yes | Yes |
 | [Docuseal](https://github.com/docusealco/docuseal) | 95 | 19k | PostgreSQL | 1024 MB | Yes | Yes |
-| [OpenSign](https://github.com/OpenSignLabs/OpenSign) | 92 | 7.1k | MongoDB | about 2048 MB | Yes | Yes |
+| [OpenSign](https://github.com/OpenSignLabs/OpenSign) | 92 | 7.2k | MongoDB | about 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/docusign/
 
@@ -380,7 +380,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/google-
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Joplin](https://github.com/laurent22/joplin) | 99 | 57k | PostgreSQL | about 512 MB | Yes | Yes |
-| [Trilium Notes](https://github.com/TriliumNext/Trilium) | 97 | 38k | SQLite | about 256 MB | Yes | Yes |
+| [Trilium Notes](https://github.com/TriliumNext/Trilium) | 97 | 39k | SQLite | about 256 MB | Yes | Yes |
 | [Notesnook](https://github.com/streetwriters/notesnook) | 93 | 15k | MongoDB | about 512 MB | Yes | No |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/evernote/
@@ -429,7 +429,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/quickbo
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [ERPNext](https://github.com/frappe/erpnext) | 100 | 40k | MariaDB | about 4096 MB | Yes | Yes |
+| [ERPNext](https://github.com/frappe/erpnext) | 100 | 41k | MariaDB | about 4096 MB | Yes | Yes |
 | [Dolibarr](https://github.com/Dolibarr/dolibarr) | 94 | 7.8k | MariaDB/MySQL | about 512 MB | Yes | Yes |
 | [Odoo](https://github.com/odoo/odoo) | 80 | 55k | PostgreSQL | about 2048 MB | Yes | Yes |
 
