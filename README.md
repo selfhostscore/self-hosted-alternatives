@@ -33,7 +33,7 @@ Open your project's page on the site (`https://selfhostscore.com/self-host/<slug
 
 Data (`data/seed.json`, `data/tools.json`, the tables in this README and `awesome.md`): [CC BY 4.0](DATA-LICENSE.md), free to use, remix and republish with a link to <https://selfhostscore.com>. Code: [MIT](LICENSE).
 
-_Data updated 2026-10-24. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
+_Data updated 2026-10-25. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
 
 ## Airtable alternatives
 
@@ -72,9 +72,9 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/retool/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [n8n](https://github.com/n8n-io/n8n) | 100 | 208k | SQLite | 2048 MB | Yes | Yes |
+| [n8n](https://github.com/n8n-io/n8n) | 100 | 209k | SQLite | 2048 MB | Yes | Yes |
 | [Activepieces](https://github.com/activepieces/activepieces) | 97 | 25k | PostgreSQL | 4096 MB | Yes | Yes |
-| [Automatisch](https://github.com/automatisch/automatisch) | 50 | 14k | PostgreSQL | about 2048 MB | Yes | Yes |
+| [Automatisch](https://github.com/automatisch/automatisch) | 49 | 14k | PostgreSQL | about 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/zapier/
 
@@ -131,7 +131,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/postman
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Formbricks](https://github.com/formbricks/formbricks) | 95 | 13k | PostgreSQL | 2048 MB | Yes | Yes |
-| [HeyForm](https://github.com/heyform/heyform) | 92 | 9.0k | MongoDB | about 1024 MB | No | Yes |
+| [HeyForm](https://github.com/heyform/heyform) | 92 | 9.1k | MongoDB | about 1024 MB | No | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/typeform/
 
@@ -150,7 +150,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/heroku/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Keycloak](https://github.com/keycloak/keycloak) | 99 | 37k | PostgreSQL | 1250 MB | Yes | Yes |
+| [Keycloak](https://github.com/keycloak/keycloak) | 99 | 38k | PostgreSQL | 1250 MB | Yes | Yes |
 | [Authentik](https://github.com/goauthentik/authentik) | 95 | 26k | PostgreSQL | 2048 MB | Yes | Yes |
 | [Zitadel](https://github.com/zitadel/zitadel) | 94 | 15k | PostgreSQL | 512 MB | Yes | Yes |
 
@@ -221,7 +221,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/loom/
 |---|---|---|---|---|---|---|
 | [Listmonk](https://github.com/knadh/listmonk) | 96 | 24k | PostgreSQL | 512 MB | Yes | Yes |
 | [Mautic](https://github.com/mautic/mautic) | 94 | 11k | MySQL/MariaDB | about 2048 MB | Yes | Yes |
-| [phpList](https://github.com/phpList/phplist3) | 85 | 878 | MySQL/MariaDB | about 512 MB | No | No |
+| [phpList](https://github.com/phpList/phplist3) | 85 | 877 | MySQL/MariaDB | about 512 MB | No | No |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/mailchimp/
 
