@@ -33,7 +33,7 @@ Open your project's page on the site (`https://selfhostscore.com/self-host/<slug
 
 Data (`data/seed.json`, `data/tools.json`, the tables in this README and `awesome.md`): [CC BY 4.0](DATA-LICENSE.md), free to use, remix and republish with a link to <https://selfhostscore.com>. Code: [MIT](LICENSE).
 
-_Data updated 2026-10-25. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
+_Data updated 2026-10-26. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
 
 ## Airtable alternatives
 
@@ -139,7 +139,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/typefor
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Coolify](https://github.com/coollabsio/coolify) | 99 | 64k | PostgreSQL | 2048 MB | Yes | Yes |
+| [Coolify](https://github.com/coollabsio/coolify) | 99 | 65k | PostgreSQL | 2048 MB | Yes | Yes |
 | [Dokploy](https://github.com/dokploy/dokploy) | 97 | 38k | PostgreSQL | 2048 MB | Yes | No |
 | [Dokku](https://github.com/dokku/dokku) | 96 | 32k | none / embedded | 1024 MB | Yes | Yes |
 | [CapRover](https://github.com/caprover/caprover) | 93 | 15k | none / embedded | 512 MB | Yes | Yes |
@@ -210,7 +210,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/1passwo
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Cap](https://github.com/CapSoftware/Cap) | 95 | 24k | MySQL | about 1024 MB | Yes | Yes |
+| [Cap](https://github.com/CapSoftware/Cap) | 96 | 24k | MySQL | about 1024 MB | Yes | Yes |
 | [Screenity](https://github.com/alyssaxuu/screenity) | 95 | 19k | none / embedded | n/a | Yes | No |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/loom/
@@ -282,7 +282,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/firebas
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Meilisearch](https://github.com/meilisearch/meilisearch) | 98 | 60k | none / embedded | about 512 MB | Yes | Yes |
-| [Typesense](https://github.com/typesense/typesense) | 90 | 27k | none / embedded | about 256 MB | Yes | Yes |
+| [Typesense](https://github.com/typesense/typesense) | 89 | 27k | none / embedded | about 256 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/algolia/
 
@@ -369,7 +369,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/statusp
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Immich](https://github.com/immich-app/immich) | 99 | 117k | PostgreSQL | 6144 MB | Yes | Yes |
+| [Immich](https://github.com/immich-app/immich) | 100 | 117k | PostgreSQL | 6144 MB | Yes | Yes |
 | [PhotoPrism](https://github.com/photoprism/photoprism) | 98 | 40k | MariaDB | 4096 MB | Yes | Yes |
 | [LibrePhotos](https://github.com/LibrePhotos/librephotos) | 91 | 8.1k | PostgreSQL | about 4096 MB | Yes | Yes |
 
@@ -441,7 +441,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/sap/
 |---|---|---|---|---|---|---|
 | [Ghost](https://github.com/TryGhost/Ghost) | 100 | 56k | MySQL 8 | 1024 MB | Yes | Yes |
 | [Strapi](https://github.com/strapi/strapi) | 100 | 73k | PostgreSQL | 2048 MB | No | Yes |
-| [Payload](https://github.com/payloadcms/payload) | 99 | 45k | MongoDB | about 512 MB | Yes | Yes |
+| [Payload](https://github.com/payloadcms/payload) | 99 | 46k | MongoDB | about 512 MB | Yes | Yes |
 | [Directus](https://github.com/directus/directus) | 98 | 39k | PostgreSQL | 512 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/wordpress/
