@@ -2,7 +2,7 @@
 
 Open-source, self-hostable alternatives to popular SaaS, each with a **Self-Host Health Score** (live GitHub activity, releases, stars and forks) and a **deploy footprint** with sources and a confidence level (minimum RAM, database, ARM64 and Raspberry Pi support, one-click deploy).
 
-Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-10-26.
+Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-10-27.
 
 ## Airtable alternatives
 
@@ -120,7 +120,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/heroku/
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Keycloak](https://github.com/keycloak/keycloak) | 99 | 38k | PostgreSQL | 1250 MB | Yes | Yes |
-| [Authentik](https://github.com/goauthentik/authentik) | 95 | 26k | PostgreSQL | 2048 MB | Yes | Yes |
+| [Authentik](https://github.com/goauthentik/authentik) | 96 | 26k | PostgreSQL | 2048 MB | Yes | Yes |
 | [Zitadel](https://github.com/zitadel/zitadel) | 94 | 15k | PostgreSQL | 512 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/auth0/
@@ -131,7 +131,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/auth0/
 |---|---|---|---|---|---|---|
 | [Uptime Kuma](https://github.com/louislam/uptime-kuma) | 100 | 93k | SQLite | about 256 MB | Yes | Yes |
 | [SigNoz](https://github.com/SigNoz/signoz) | 97 | 32k | ClickHouse | 4096 MB | No | Yes |
-| [OpenObserve](https://github.com/openobserve/openobserve) | 94 | 22k | none / embedded | about 512 MB | Yes | Yes |
+| [OpenObserve](https://github.com/openobserve/openobserve) | 94 | 23k | none / embedded | about 512 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/datadog/
 
@@ -208,10 +208,10 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/interco
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Plane](https://github.com/makeplane/plane) | 99 | 61k | PostgreSQL | 4096 MB | Yes | Yes |
+| [Plane](https://github.com/makeplane/plane) | 99 | 62k | PostgreSQL | 4096 MB | Yes | Yes |
 | [OpenProject](https://github.com/opf/openproject) | 95 | 17k | PostgreSQL | 4096 MB | Yes | Yes |
 | [Redmine](https://github.com/redmine/redmine) | 73 | 6.1k | PostgreSQL | about 1024 MB | Yes | Yes |
-| [Taiga](https://github.com/taigaio/taiga) | 27 | 575 | PostgreSQL | about 1024 MB | No | Yes |
+| [Taiga](https://github.com/taigaio/taiga) | 27 | 576 | PostgreSQL | about 1024 MB | No | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/jira/
 
@@ -241,8 +241,8 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/looker/
 |---|---|---|---|---|---|---|
 | [Supabase](https://github.com/supabase/supabase) | 100 | 114k | PostgreSQL | 4096 MB | Yes | Yes |
 | [Appwrite](https://github.com/appwrite/appwrite) | 99 | 58k | MongoDB | 4096 MB | Yes | Yes |
-| [PocketBase](https://github.com/pocketbase/pocketbase) | 98 | 62k | SQLite | about 512 MB | Yes | Yes |
 | [Nhost](https://github.com/nhost/nhost) | 92 | 9.4k | PostgreSQL | about 4096 MB | Yes | Yes |
+| [PocketBase](https://github.com/pocketbase/pocketbase) | 78 | 62k | SQLite | about 512 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/firebase/
 
@@ -288,9 +288,9 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/github/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Woodpecker CI](https://github.com/woodpecker-ci/woodpecker) | 92 | 8.0k | SQLite | 200 MB | Yes | Yes |
-| [Drone](https://github.com/harness/drone) | 92 | 39k | PostgreSQL | 1024 MB | Yes | No |
+| [Woodpecker CI](https://github.com/woodpecker-ci/woodpecker) | 92 | 8.1k | SQLite | 200 MB | Yes | Yes |
 | [Concourse](https://github.com/concourse/concourse) | 92 | 7.9k | PostgreSQL | about 2048 MB | Yes | No |
+| [Drone](https://github.com/harness/drone) | 91 | 39k | PostgreSQL | 1024 MB | Yes | No |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/circleci/
 
@@ -368,7 +368,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/pocket/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Pi-hole](https://github.com/pi-hole/pi-hole) | 98 | 61k | none / embedded | 512 MB | Yes | No |
+| [Pi-hole](https://github.com/pi-hole/pi-hole) | 98 | 62k | none / embedded | 512 MB | Yes | No |
 | [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) | 97 | 38k | none / embedded | about 256 MB | Yes | No |
 | [Technitium DNS](https://github.com/TechnitiumSoftware/DnsServer) | 92 | 10k | none / embedded | about 512 MB | Yes | No |
 
