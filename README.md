@@ -33,7 +33,7 @@ Open your project's page on the site (`https://selfhostscore.com/self-host/<slug
 
 Data (`data/seed.json`, `data/tools.json`, the tables in this README and `awesome.md`): [CC BY 4.0](DATA-LICENSE.md), free to use, remix and republish with a link to <https://selfhostscore.com>. Code: [MIT](LICENSE).
 
-_Data updated 2026-10-27. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
+_Data updated 2026-10-28. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
 
 ## Airtable alternatives
 
@@ -103,7 +103,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/trello/
 |---|---|---|---|---|---|---|
 | [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat) | 100 | 46k | MongoDB | 4096 MB | Yes | Yes |
 | [Mattermost](https://github.com/mattermost/mattermost) | 99 | 39k | PostgreSQL | 2048 MB | No | Yes |
-| [Zulip](https://github.com/zulip/zulip) | 98 | 26k | PostgreSQL | 2048 MB | No | Yes |
+| [Zulip](https://github.com/zulip/zulip) | 99 | 26k | PostgreSQL | 2048 MB | No | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/slack/
 
@@ -391,7 +391,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/evernot
 |---|---|---|---|---|---|---|
 | [Karakeep](https://github.com/karakeep-app/karakeep) | 96 | 30k | SQLite | about 2048 MB | Yes | Yes |
 | [Linkding](https://github.com/sissbruecker/linkding) | 93 | 11k | SQLite | about 256 MB | Yes | Yes |
-| [Wallabag](https://github.com/wallabag/wallabag) | 77 | 13k | SQLite | about 512 MB | No | Yes |
+| [Wallabag](https://github.com/wallabag/wallabag) | 93 | 13k | SQLite | about 512 MB | No | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/pocket/
 
@@ -411,7 +411,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/nextdns
 |---|---|---|---|---|---|---|
 | [Restic](https://github.com/restic/restic) | 95 | 37k | none / embedded | about 1024 MB | Yes | No |
 | [Duplicati](https://github.com/duplicati/duplicati) | 93 | 15k | SQLite | about 256 MB | Yes | Yes |
-| [Kopia](https://github.com/kopia/kopia) | 91 | 14k | none / embedded | about 256 MB | Yes | Yes |
+| [Kopia](https://github.com/kopia/kopia) | 91 | 15k | none / embedded | about 256 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/backblaze/
 
