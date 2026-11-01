@@ -2,7 +2,7 @@
 
 Open-source, self-hostable alternatives to popular SaaS, each with a **Self-Host Health Score** (live GitHub activity, releases, stars and forks) and a **deploy footprint** with sources and a confidence level (minimum RAM, database, ARM64 and Raspberry Pi support, one-click deploy).
 
-Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-10-31.
+Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-11-01.
 
 ## Airtable alternatives
 
@@ -11,7 +11,7 @@ Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/
 | [NocoDB](https://github.com/nocodb/nocodb) | 99 | 65k | PostgreSQL | about 2048 MB | Yes | Yes |
 | [Teable](https://github.com/teableio/teable) | 95 | 22k | PostgreSQL | 4096 MB | Yes | Yes |
 | [Grist](https://github.com/gristlabs/grist-core) | 93 | 12k | none / embedded | 200 MB | Yes | Yes |
-| [Baserow](https://github.com/baserow/baserow) | 91 | 6.2k | PostgreSQL | 2048 MB | Yes | Yes |
+| [Baserow](https://github.com/baserow/baserow) | 91 | 6.3k | PostgreSQL | 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/airtable/
 
@@ -231,7 +231,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/dropbox
 |---|---|---|---|---|---|---|
 | [Metabase](https://github.com/metabase/metabase) | 99 | 50k | PostgreSQL | 1024 MB | No | Yes |
 | [Redash](https://github.com/getredash/redash) | 98 | 29k | PostgreSQL | 4096 MB | No | Yes |
-| [Apache Superset](https://github.com/apache/superset) | 96 | 75k | PostgreSQL | about 4096 MB | Yes | Yes |
+| [Apache Superset](https://github.com/apache/superset) | 95 | 75k | PostgreSQL | about 4096 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/looker/
 

@@ -33,7 +33,7 @@ Open your project's page on the site (`https://selfhostscore.com/self-host/<slug
 
 Data (`data/seed.json`, `data/tools.json`, the tables in this README and `awesome.md`): [CC BY 4.0](DATA-LICENSE.md), free to use, remix and republish with a link to <https://selfhostscore.com>. Code: [MIT](LICENSE).
 
-_Data updated 2026-10-31. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
+_Data updated 2026-11-01. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
 
 ## Airtable alternatives
 
@@ -42,7 +42,7 @@ _Data updated 2026-10-31. The tables below are generated: edit [data/seed.json](
 | [NocoDB](https://github.com/nocodb/nocodb) | 99 | 65k | PostgreSQL | about 2048 MB | Yes | Yes |
 | [Teable](https://github.com/teableio/teable) | 95 | 22k | PostgreSQL | 4096 MB | Yes | Yes |
 | [Grist](https://github.com/gristlabs/grist-core) | 93 | 12k | none / embedded | 200 MB | Yes | Yes |
-| [Baserow](https://github.com/baserow/baserow) | 91 | 6.2k | PostgreSQL | 2048 MB | Yes | Yes |
+| [Baserow](https://github.com/baserow/baserow) | 91 | 6.3k | PostgreSQL | 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/airtable/
 
@@ -262,7 +262,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/dropbox
 |---|---|---|---|---|---|---|
 | [Metabase](https://github.com/metabase/metabase) | 99 | 50k | PostgreSQL | 1024 MB | No | Yes |
 | [Redash](https://github.com/getredash/redash) | 98 | 29k | PostgreSQL | 4096 MB | No | Yes |
-| [Apache Superset](https://github.com/apache/superset) | 96 | 75k | PostgreSQL | about 4096 MB | Yes | Yes |
+| [Apache Superset](https://github.com/apache/superset) | 95 | 75k | PostgreSQL | about 4096 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/looker/
 
