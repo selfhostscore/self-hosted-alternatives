@@ -33,7 +33,7 @@ Open your project's page on the site (`https://selfhostscore.com/self-host/<slug
 
 Data (`data/seed.json`, `data/tools.json`, the tables in this README and `awesome.md`): [CC BY 4.0](DATA-LICENSE.md), free to use, remix and republish with a link to <https://selfhostscore.com>. Code: [MIT](LICENSE).
 
-_Data updated 2026-11-01. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
+_Data updated 2026-11-02. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
 
 ## Airtable alternatives
 
@@ -102,7 +102,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/trello/
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat) | 100 | 46k | MongoDB | 4096 MB | Yes | Yes |
-| [Mattermost](https://github.com/mattermost/mattermost) | 99 | 39k | PostgreSQL | 2048 MB | No | Yes |
+| [Mattermost](https://github.com/mattermost/mattermost) | 99 | 40k | PostgreSQL | 2048 MB | No | Yes |
 | [Zulip](https://github.com/zulip/zulip) | 99 | 26k | PostgreSQL | 2048 MB | No | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/slack/
@@ -139,7 +139,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/typefor
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Coolify](https://github.com/coollabsio/coolify) | 99 | 65k | PostgreSQL | 2048 MB | Yes | Yes |
+| [Coolify](https://github.com/coollabsio/coolify) | 99 | 66k | PostgreSQL | 2048 MB | Yes | Yes |
 | [Dokploy](https://github.com/dokploy/dokploy) | 97 | 38k | PostgreSQL | 2048 MB | Yes | No |
 | [Dokku](https://github.com/dokku/dokku) | 96 | 32k | none / embedded | 1024 MB | Yes | Yes |
 | [CapRover](https://github.com/caprover/caprover) | 93 | 15k | none / embedded | 512 MB | Yes | Yes |
@@ -161,7 +161,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/auth0/
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Uptime Kuma](https://github.com/louislam/uptime-kuma) | 100 | 93k | SQLite | about 256 MB | Yes | Yes |
-| [SigNoz](https://github.com/SigNoz/signoz) | 97 | 32k | ClickHouse | 4096 MB | No | Yes |
+| [SigNoz](https://github.com/SigNoz/signoz) | 97 | 33k | ClickHouse | 4096 MB | No | Yes |
 | [OpenObserve](https://github.com/openobserve/openobserve) | 95 | 23k | none / embedded | about 512 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/datadog/
@@ -182,7 +182,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/zendesk
 |---|---|---|---|---|---|---|
 | [Umami](https://github.com/umami-software/umami) | 99 | 40k | PostgreSQL | about 512 MB | Yes | Yes |
 | [PostHog](https://github.com/PostHog/posthog) | 98 | 41k | PostgreSQL + ClickHouse | 4096 MB | Yes | Yes |
-| [Plausible](https://github.com/plausible/analytics) | 92 | 30k | PostgreSQL + ClickHouse | 2048 MB | Yes | Yes |
+| [Plausible](https://github.com/plausible/analytics) | 91 | 30k | PostgreSQL + ClickHouse | 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/google-analytics/
 
