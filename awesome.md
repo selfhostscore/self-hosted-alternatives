@@ -2,7 +2,7 @@
 
 Open-source, self-hostable alternatives to popular SaaS, each with a **Self-Host Health Score** (live GitHub activity, releases, stars and forks) and a **deploy footprint** with sources and a confidence level (minimum RAM, database, ARM64 and Raspberry Pi support, one-click deploy).
 
-Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-11-02.
+Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-11-03.
 
 ## Airtable alternatives
 
@@ -43,7 +43,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/retool/
 |---|---|---|---|---|---|---|
 | [n8n](https://github.com/n8n-io/n8n) | 100 | 209k | SQLite | 2048 MB | Yes | Yes |
 | [Activepieces](https://github.com/activepieces/activepieces) | 97 | 25k | PostgreSQL | 4096 MB | Yes | Yes |
-| [Automatisch](https://github.com/automatisch/automatisch) | 49 | 14k | PostgreSQL | about 2048 MB | Yes | Yes |
+| [Automatisch](https://github.com/automatisch/automatisch) | 48 | 14k | PostgreSQL | about 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/zapier/
 
@@ -121,7 +121,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/heroku/
 |---|---|---|---|---|---|---|
 | [Keycloak](https://github.com/keycloak/keycloak) | 99 | 38k | PostgreSQL | 1250 MB | Yes | Yes |
 | [Authentik](https://github.com/goauthentik/authentik) | 96 | 26k | PostgreSQL | 2048 MB | Yes | Yes |
-| [Zitadel](https://github.com/zitadel/zitadel) | 94 | 15k | PostgreSQL | 512 MB | Yes | Yes |
+| [Zitadel](https://github.com/zitadel/zitadel) | 94 | 16k | PostgreSQL | 512 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/auth0/
 
@@ -209,7 +209,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/interco
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Plane](https://github.com/makeplane/plane) | 99 | 62k | PostgreSQL | 4096 MB | Yes | Yes |
-| [OpenProject](https://github.com/opf/openproject) | 95 | 17k | PostgreSQL | 4096 MB | Yes | Yes |
+| [OpenProject](https://github.com/opf/openproject) | 96 | 17k | PostgreSQL | 4096 MB | Yes | Yes |
 | [Redmine](https://github.com/redmine/redmine) | 73 | 6.1k | PostgreSQL | about 1024 MB | Yes | Yes |
 | [Taiga](https://github.com/taigaio/taiga) | 27 | 576 | PostgreSQL | about 1024 MB | No | Yes |
 
@@ -400,7 +400,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/quickbo
 |---|---|---|---|---|---|---|
 | [ERPNext](https://github.com/frappe/erpnext) | 100 | 41k | MariaDB | about 4096 MB | Yes | Yes |
 | [Dolibarr](https://github.com/Dolibarr/dolibarr) | 94 | 7.8k | MariaDB/MySQL | about 512 MB | Yes | Yes |
-| [Odoo](https://github.com/odoo/odoo) | 80 | 55k | PostgreSQL | about 2048 MB | Yes | Yes |
+| [Odoo](https://github.com/odoo/odoo) | 80 | 56k | PostgreSQL | about 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/sap/
 
