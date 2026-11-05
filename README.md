@@ -33,7 +33,7 @@ Open your project's page on the site (`https://selfhostscore.com/self-host/<slug
 
 Data (`data/seed.json`, `data/tools.json`, the tables in this README and `awesome.md`): [CC BY 4.0](DATA-LICENSE.md), free to use, remix and republish with a link to <https://selfhostscore.com>. Code: [MIT](LICENSE).
 
-_Data updated 2026-11-04. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
+_Data updated 2026-11-05. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
 
 ## Airtable alternatives
 
@@ -309,7 +309,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/zoom/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Gitea](https://github.com/go-gitea/gitea) | 99 | 59k | SQLite | 1024 MB | Yes | Yes |
+| [Gitea](https://github.com/go-gitea/gitea) | 100 | 59k | SQLite | 1024 MB | Yes | Yes |
 | [Gogs](https://github.com/gogs/gogs) | 96 | 48k | SQLite3 | 512 MB | Yes | No |
 | [OneDev](https://github.com/theonedev/onedev) | 93 | 15k | none / embedded | 2048 MB | Yes | Yes |
 
@@ -359,7 +359,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/launchd
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Gatus](https://github.com/TwiN/gatus) | 93 | 12k | SQLite | 64 MB | Yes | Yes |
+| [Gatus](https://github.com/TwiN/gatus) | 93 | 13k | SQLite | 64 MB | Yes | Yes |
 | [Cachet](https://github.com/cachethq/cachet) | 69 | 15k | PostgreSQL | about 1024 MB | No | Yes |
 | [Statping-ng](https://github.com/statping-ng/statping-ng) | 27 | 2.0k | SQLite | 64 MB | Yes | Yes |
 
@@ -421,7 +421,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/backbla
 |---|---|---|---|---|---|---|
 | [Firefly III](https://github.com/firefly-iii/firefly-iii) | 96 | 25k | MySQL/MariaDB | about 512 MB | Yes | Yes |
 | [Akaunting](https://github.com/akaunting/akaunting) | 94 | 10k | MySQL/MariaDB | about 1024 MB | Yes | Yes |
-| [Invoice Ninja](https://github.com/invoiceninja/invoiceninja) | 94 | 10k | MySQL/MariaDB | about 1024 MB | Yes | Yes |
+| [Invoice Ninja](https://github.com/invoiceninja/invoiceninja) | 94 | 11k | MySQL/MariaDB | about 1024 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/quickbooks/
 
