@@ -2,7 +2,7 @@
 
 Open-source, self-hostable alternatives to popular SaaS, each with a **Self-Host Health Score** (live GitHub activity, releases, stars and forks) and a **deploy footprint** with sources and a confidence level (minimum RAM, database, ARM64 and Raspberry Pi support, one-click deploy).
 
-Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-11-05.
+Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-11-06.
 
 ## Airtable alternatives
 
@@ -298,10 +298,10 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/circlec
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Twenty](https://github.com/twentyhq/twenty) | 100 | 60k | PostgreSQL | 2048 MB | Yes | Yes |
+| [Twenty](https://github.com/twentyhq/twenty) | 100 | 61k | PostgreSQL | 2048 MB | Yes | Yes |
 | [Krayin](https://github.com/krayin/laravel-crm) | 95 | 24k | MySQL | 4096 MB | No | Yes |
 | [SuiteCRM](https://github.com/salesagility/SuiteCRM) | 93 | 5.8k | MySQL/MariaDB | about 2048 MB | No | Yes |
-| [EspoCRM](https://github.com/espocrm/espocrm) | 90 | 3.5k | MySQL/MariaDB | about 512 MB | Yes | Yes |
+| [EspoCRM](https://github.com/espocrm/espocrm) | 90 | 3.6k | MySQL/MariaDB | about 512 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/salesforce/
 
