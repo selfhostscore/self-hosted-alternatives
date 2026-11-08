@@ -33,7 +33,7 @@ Open your project's page on the site (`https://selfhostscore.com/self-host/<slug
 
 Data (`data/seed.json`, `data/tools.json`, the tables in this README and `awesome.md`): [CC BY 4.0](DATA-LICENSE.md), free to use, remix and republish with a link to <https://selfhostscore.com>. Code: [MIT](LICENSE).
 
-_Data updated 2026-11-07. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
+_Data updated 2026-11-08. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
 
 ## Airtable alternatives
 
@@ -230,7 +230,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/mailchi
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Chatwoot](https://github.com/chatwoot/chatwoot) | 99 | 39k | PostgreSQL | 4096 MB | No | Yes |
-| [Chaskiq](https://github.com/chaskiq/chaskiq) | 54 | 3.6k | PostgreSQL | about 2048 MB | No | Yes |
+| [Chaskiq](https://github.com/chaskiq/chaskiq) | 53 | 3.6k | PostgreSQL | about 2048 MB | No | Yes |
 | [Papercups](https://github.com/papercups-io/papercups) | 30 | 6.1k | PostgreSQL | about 1024 MB | No | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/intercom/
@@ -310,7 +310,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/zoom/
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Gitea](https://github.com/go-gitea/gitea) | 100 | 59k | SQLite | 1024 MB | Yes | Yes |
-| [Gogs](https://github.com/gogs/gogs) | 96 | 48k | SQLite3 | 512 MB | Yes | No |
+| [Gogs](https://github.com/gogs/gogs) | 95 | 48k | SQLite3 | 512 MB | Yes | No |
 | [OneDev](https://github.com/theonedev/onedev) | 93 | 15k | none / embedded | 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/github/
@@ -331,7 +331,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/circlec
 |---|---|---|---|---|---|---|
 | [Twenty](https://github.com/twentyhq/twenty) | 100 | 61k | PostgreSQL | 2048 MB | Yes | Yes |
 | [Krayin](https://github.com/krayin/laravel-crm) | 95 | 24k | MySQL | 4096 MB | No | Yes |
-| [SuiteCRM](https://github.com/salesagility/SuiteCRM) | 93 | 5.9k | MySQL/MariaDB | about 2048 MB | No | Yes |
+| [SuiteCRM](https://github.com/salesagility/SuiteCRM) | 92 | 5.9k | MySQL/MariaDB | about 2048 MB | No | Yes |
 | [EspoCRM](https://github.com/espocrm/espocrm) | 90 | 3.6k | MySQL/MariaDB | about 512 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/salesforce/
@@ -351,7 +351,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/doppler
 |---|---|---|---|---|---|---|
 | [Unleash](https://github.com/Unleash/unleash) | 93 | 14k | PostgreSQL | about 512 MB | Yes | Yes |
 | [GrowthBook](https://github.com/growthbook/growthbook) | 92 | 8.6k | MongoDB | 2048 MB | Yes | Yes |
-| [Flagsmith](https://github.com/Flagsmith/flagsmith) | 90 | 6.7k | PostgreSQL | 2048 MB | Yes | Yes |
+| [Flagsmith](https://github.com/Flagsmith/flagsmith) | 90 | 6.8k | PostgreSQL | 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/launchdarkly/
 
@@ -369,7 +369,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/statusp
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Immich](https://github.com/immich-app/immich) | 100 | 118k | PostgreSQL | 6144 MB | Yes | Yes |
+| [Immich](https://github.com/immich-app/immich) | 100 | 119k | PostgreSQL | 6144 MB | Yes | Yes |
 | [PhotoPrism](https://github.com/photoprism/photoprism) | 98 | 40k | MariaDB | 4096 MB | Yes | Yes |
 | [LibrePhotos](https://github.com/LibrePhotos/librephotos) | 91 | 8.1k | PostgreSQL | about 4096 MB | Yes | Yes |
 
