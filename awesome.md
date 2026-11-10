@@ -2,7 +2,7 @@
 
 Open-source, self-hostable alternatives to popular SaaS, each with a **Self-Host Health Score** (live GitHub activity, releases, stars and forks) and a **deploy footprint** with sources and a confidence level (minimum RAM, database, ARM64 and Raspberry Pi support, one-click deploy).
 
-Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-11-09.
+Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-11-10.
 
 ## Airtable alternatives
 
@@ -43,7 +43,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/retool/
 |---|---|---|---|---|---|---|
 | [n8n](https://github.com/n8n-io/n8n) | 100 | 210k | SQLite | 2048 MB | Yes | Yes |
 | [Activepieces](https://github.com/activepieces/activepieces) | 97 | 25k | PostgreSQL | 4096 MB | Yes | Yes |
-| [Automatisch](https://github.com/automatisch/automatisch) | 48 | 14k | PostgreSQL | about 2048 MB | Yes | Yes |
+| [Automatisch](https://github.com/automatisch/automatisch) | 47 | 14k | PostgreSQL | about 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/zapier/
 
@@ -139,7 +139,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/datadog
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Chatwoot](https://github.com/chatwoot/chatwoot) | 99 | 39k | PostgreSQL | 4096 MB | No | Yes |
+| [Chatwoot](https://github.com/chatwoot/chatwoot) | 99 | 40k | PostgreSQL | 4096 MB | No | Yes |
 | [FreeScout](https://github.com/freescout-help-desk/freescout) | 91 | 4.7k | MySQL/MariaDB | about 1024 MB | Yes | Yes |
 | [Zammad](https://github.com/zammad/zammad) | 71 | 6.1k | PostgreSQL | 4096 MB | Yes | Yes |
 
@@ -169,7 +169,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/docusig
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Vaultwarden](https://github.com/dani-garcia/vaultwarden) | 98 | 70k | SQLite | 512 MB | Yes | Yes |
+| [Vaultwarden](https://github.com/dani-garcia/vaultwarden) | 98 | 71k | SQLite | 512 MB | Yes | Yes |
 | [Passbolt](https://github.com/passbolt/passbolt_api) | 90 | 6.2k | MariaDB/MySQL | 2048 MB | Yes | Yes |
 | [Padloc](https://github.com/padloc/padloc) | 62 | 2.9k | LevelDB | about 512 MB | No | No |
 
@@ -190,7 +190,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/loom/
 |---|---|---|---|---|---|---|
 | [Listmonk](https://github.com/knadh/listmonk) | 96 | 24k | PostgreSQL | 512 MB | Yes | Yes |
 | [Mautic](https://github.com/mautic/mautic) | 94 | 11k | MySQL/MariaDB | about 2048 MB | Yes | Yes |
-| [phpList](https://github.com/phpList/phplist3) | 85 | 881 | MySQL/MariaDB | about 512 MB | No | No |
+| [phpList](https://github.com/phpList/phplist3) | 85 | 883 | MySQL/MariaDB | about 512 MB | No | No |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/mailchimp/
 
@@ -198,7 +198,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/mailchi
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Chatwoot](https://github.com/chatwoot/chatwoot) | 99 | 39k | PostgreSQL | 4096 MB | No | Yes |
+| [Chatwoot](https://github.com/chatwoot/chatwoot) | 99 | 40k | PostgreSQL | 4096 MB | No | Yes |
 | [Chaskiq](https://github.com/chaskiq/chaskiq) | 53 | 3.6k | PostgreSQL | about 2048 MB | No | Yes |
 | [Papercups](https://github.com/papercups-io/papercups) | 30 | 6.1k | PostgreSQL | about 1024 MB | No | Yes |
 
@@ -288,7 +288,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/github/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Woodpecker CI](https://github.com/woodpecker-ci/woodpecker) | 92 | 8.1k | SQLite | 200 MB | Yes | Yes |
+| [Woodpecker CI](https://github.com/woodpecker-ci/woodpecker) | 92 | 8.2k | SQLite | 200 MB | Yes | Yes |
 | [Concourse](https://github.com/concourse/concourse) | 92 | 7.9k | PostgreSQL | about 2048 MB | Yes | No |
 | [Drone](https://github.com/harness/drone) | 91 | 39k | PostgreSQL | 1024 MB | Yes | No |
 
@@ -310,7 +310,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/salesfo
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Infisical](https://github.com/Infisical/infisical) | 97 | 30k | PostgreSQL | 4096 MB | Yes | Yes |
-| [OpenBao](https://github.com/openbao/openbao) | 92 | 8.9k | none / embedded | about 256 MB | Yes | Yes |
+| [OpenBao](https://github.com/openbao/openbao) | 92 | 9.0k | none / embedded | about 256 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/doppler/
 
@@ -320,7 +320,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/doppler
 |---|---|---|---|---|---|---|
 | [Unleash](https://github.com/Unleash/unleash) | 93 | 14k | PostgreSQL | about 512 MB | Yes | Yes |
 | [GrowthBook](https://github.com/growthbook/growthbook) | 92 | 8.6k | MongoDB | 2048 MB | Yes | Yes |
-| [Flagsmith](https://github.com/Flagsmith/flagsmith) | 90 | 6.9k | PostgreSQL | 2048 MB | Yes | Yes |
+| [Flagsmith](https://github.com/Flagsmith/flagsmith) | 90 | 7.0k | PostgreSQL | 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/launchdarkly/
 
