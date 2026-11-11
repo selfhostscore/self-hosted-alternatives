@@ -2,13 +2,13 @@
 
 Open-source, self-hostable alternatives to popular SaaS, each with a **Self-Host Health Score** (live GitHub activity, releases, stars and forks) and a **deploy footprint** with sources and a confidence level (minimum RAM, database, ARM64 and Raspberry Pi support, one-click deploy).
 
-Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-11-10.
+Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-11-11.
 
 ## Airtable alternatives
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [NocoDB](https://github.com/nocodb/nocodb) | 99 | 65k | PostgreSQL | about 2048 MB | Yes | Yes |
+| [NocoDB](https://github.com/nocodb/nocodb) | 99 | 66k | PostgreSQL | about 2048 MB | Yes | Yes |
 | [Teable](https://github.com/teableio/teable) | 95 | 22k | PostgreSQL | 4096 MB | Yes | Yes |
 | [Grist](https://github.com/gristlabs/grist-core) | 93 | 12k | none / embedded | 200 MB | Yes | Yes |
 | [Baserow](https://github.com/baserow/baserow) | 91 | 6.3k | PostgreSQL | 2048 MB | Yes | Yes |
@@ -62,7 +62,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/calendl
 |---|---|---|---|---|---|---|
 | [WeKan](https://github.com/wekan/wekan) | 96 | 21k | MongoDB | 1024 MB | Yes | Yes |
 | [Planka](https://github.com/plankanban/planka) | 94 | 13k | PostgreSQL | 512 MB | Yes | Yes |
-| [Kanboard](https://github.com/kanboard/kanboard) | 93 | 9.9k | PostgreSQL | 256 MB | Yes | Yes |
+| [Kanboard](https://github.com/kanboard/kanboard) | 93 | 10.0k | PostgreSQL | 256 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/trello/
 
@@ -129,7 +129,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/auth0/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Uptime Kuma](https://github.com/louislam/uptime-kuma) | 100 | 93k | SQLite | about 256 MB | Yes | Yes |
+| [Uptime Kuma](https://github.com/louislam/uptime-kuma) | 100 | 94k | SQLite | about 256 MB | Yes | Yes |
 | [SigNoz](https://github.com/SigNoz/signoz) | 97 | 33k | ClickHouse | 4096 MB | No | Yes |
 | [OpenObserve](https://github.com/openobserve/openobserve) | 95 | 23k | none / embedded | about 512 MB | Yes | Yes |
 
@@ -161,7 +161,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/google-
 |---|---|---|---|---|---|---|
 | [Documenso](https://github.com/documenso/documenso) | 95 | 16k | PostgreSQL | 1024 MB | Yes | Yes |
 | [Docuseal](https://github.com/docusealco/docuseal) | 95 | 19k | PostgreSQL | 1024 MB | Yes | Yes |
-| [OpenSign](https://github.com/OpenSignLabs/OpenSign) | 92 | 7.2k | MongoDB | about 2048 MB | Yes | Yes |
+| [OpenSign](https://github.com/OpenSignLabs/OpenSign) | 92 | 7.3k | MongoDB | about 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/docusign/
 
@@ -320,7 +320,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/doppler
 |---|---|---|---|---|---|---|
 | [Unleash](https://github.com/Unleash/unleash) | 93 | 14k | PostgreSQL | about 512 MB | Yes | Yes |
 | [GrowthBook](https://github.com/growthbook/growthbook) | 92 | 8.6k | MongoDB | 2048 MB | Yes | Yes |
-| [Flagsmith](https://github.com/Flagsmith/flagsmith) | 90 | 7.0k | PostgreSQL | 2048 MB | Yes | Yes |
+| [Flagsmith](https://github.com/Flagsmith/flagsmith) | 90 | 7.1k | PostgreSQL | 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/launchdarkly/
 
@@ -340,7 +340,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/statusp
 |---|---|---|---|---|---|---|
 | [Immich](https://github.com/immich-app/immich) | 100 | 119k | PostgreSQL | 6144 MB | Yes | Yes |
 | [PhotoPrism](https://github.com/photoprism/photoprism) | 98 | 40k | MariaDB | 4096 MB | Yes | Yes |
-| [LibrePhotos](https://github.com/LibrePhotos/librephotos) | 91 | 8.1k | PostgreSQL | about 4096 MB | Yes | Yes |
+| [LibrePhotos](https://github.com/LibrePhotos/librephotos) | 91 | 8.2k | PostgreSQL | about 4096 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/google-photos/
 
