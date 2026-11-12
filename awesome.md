@@ -2,7 +2,7 @@
 
 Open-source, self-hostable alternatives to popular SaaS, each with a **Self-Host Health Score** (live GitHub activity, releases, stars and forks) and a **deploy footprint** with sources and a confidence level (minimum RAM, database, ARM64 and Raspberry Pi support, one-click deploy).
 
-Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-11-11.
+Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-11-12.
 
 ## Airtable alternatives
 
@@ -279,7 +279,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/zoom/
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Gitea](https://github.com/go-gitea/gitea) | 100 | 59k | SQLite | 1024 MB | Yes | Yes |
-| [Gogs](https://github.com/gogs/gogs) | 95 | 48k | SQLite3 | 512 MB | Yes | No |
+| [Gogs](https://github.com/gogs/gogs) | 99 | 48k | SQLite3 | 512 MB | Yes | No |
 | [OneDev](https://github.com/theonedev/onedev) | 93 | 15k | none / embedded | 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/github/
@@ -320,7 +320,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/doppler
 |---|---|---|---|---|---|---|
 | [Unleash](https://github.com/Unleash/unleash) | 93 | 14k | PostgreSQL | about 512 MB | Yes | Yes |
 | [GrowthBook](https://github.com/growthbook/growthbook) | 92 | 8.6k | MongoDB | 2048 MB | Yes | Yes |
-| [Flagsmith](https://github.com/Flagsmith/flagsmith) | 90 | 7.1k | PostgreSQL | 2048 MB | Yes | Yes |
+| [Flagsmith](https://github.com/Flagsmith/flagsmith) | 91 | 7.2k | PostgreSQL | 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/launchdarkly/
 
@@ -399,7 +399,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/quickbo
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [ERPNext](https://github.com/frappe/erpnext) | 100 | 41k | MariaDB | about 4096 MB | Yes | Yes |
-| [Dolibarr](https://github.com/Dolibarr/dolibarr) | 94 | 7.8k | MariaDB/MySQL | about 512 MB | Yes | Yes |
+| [Dolibarr](https://github.com/Dolibarr/dolibarr) | 94 | 7.9k | MariaDB/MySQL | about 512 MB | Yes | Yes |
 | [Odoo](https://github.com/odoo/odoo) | 80 | 56k | PostgreSQL | about 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/sap/
