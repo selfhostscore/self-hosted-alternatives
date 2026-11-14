@@ -33,7 +33,7 @@ Open your project's page on the site (`https://selfhostscore.com/self-host/<slug
 
 Data (`data/seed.json`, `data/tools.json`, the tables in this README and `awesome.md`): [CC BY 4.0](DATA-LICENSE.md), free to use, remix and republish with a link to <https://selfhostscore.com>. Code: [MIT](LICENSE).
 
-_Data updated 2026-11-13. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
+_Data updated 2026-11-14. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
 
 ## Airtable alternatives
 
@@ -340,7 +340,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/salesfo
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Infisical](https://github.com/Infisical/infisical) | 97 | 30k | PostgreSQL | 4096 MB | Yes | Yes |
+| [Infisical](https://github.com/Infisical/infisical) | 97 | 31k | PostgreSQL | 4096 MB | Yes | Yes |
 | [OpenBao](https://github.com/openbao/openbao) | 92 | 9.0k | none / embedded | about 256 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/doppler/
