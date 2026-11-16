@@ -33,7 +33,7 @@ Open your project's page on the site (`https://selfhostscore.com/self-host/<slug
 
 Data (`data/seed.json`, `data/tools.json`, the tables in this README and `awesome.md`): [CC BY 4.0](DATA-LICENSE.md), free to use, remix and republish with a link to <https://selfhostscore.com>. Code: [MIT](LICENSE).
 
-_Data updated 2026-11-15. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
+_Data updated 2026-11-16. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
 
 ## Airtable alternatives
 
@@ -101,7 +101,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/trello/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat) | 100 | 47k | MongoDB | 4096 MB | Yes | Yes |
+| [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat) | 100 | 46k | MongoDB | 4096 MB | Yes | Yes |
 | [Mattermost](https://github.com/mattermost/mattermost) | 99 | 40k | PostgreSQL | 2048 MB | No | Yes |
 | [Zulip](https://github.com/zulip/zulip) | 99 | 26k | PostgreSQL | 2048 MB | No | Yes |
 
@@ -221,7 +221,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/loom/
 |---|---|---|---|---|---|---|
 | [Listmonk](https://github.com/knadh/listmonk) | 96 | 24k | PostgreSQL | 512 MB | Yes | Yes |
 | [Mautic](https://github.com/mautic/mautic) | 94 | 11k | MySQL/MariaDB | about 2048 MB | Yes | Yes |
-| [phpList](https://github.com/phpList/phplist3) | 85 | 883 | MySQL/MariaDB | about 512 MB | No | No |
+| [phpList](https://github.com/phpList/phplist3) | 85 | 881 | MySQL/MariaDB | about 512 MB | No | No |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/mailchimp/
 
@@ -239,7 +239,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/interco
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Plane](https://github.com/makeplane/plane) | 99 | 62k | PostgreSQL | 4096 MB | Yes | Yes |
+| [Plane](https://github.com/makeplane/plane) | 99 | 63k | PostgreSQL | 4096 MB | Yes | Yes |
 | [OpenProject](https://github.com/opf/openproject) | 96 | 17k | PostgreSQL | 4096 MB | Yes | Yes |
 | [Redmine](https://github.com/redmine/redmine) | 73 | 6.1k | PostgreSQL | about 1024 MB | Yes | Yes |
 | [Taiga](https://github.com/taigaio/taiga) | 27 | 576 | PostgreSQL | about 1024 MB | No | Yes |
@@ -400,7 +400,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/pocket/
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Pi-hole](https://github.com/pi-hole/pi-hole) | 98 | 62k | none / embedded | 512 MB | Yes | No |
-| [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) | 97 | 38k | none / embedded | about 256 MB | Yes | No |
+| [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) | 97 | 39k | none / embedded | about 256 MB | Yes | No |
 | [Technitium DNS](https://github.com/TechnitiumSoftware/DnsServer) | 92 | 10k | none / embedded | about 512 MB | Yes | No |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/nextdns/
@@ -411,7 +411,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/nextdns
 |---|---|---|---|---|---|---|
 | [Restic](https://github.com/restic/restic) | 94 | 37k | none / embedded | about 1024 MB | Yes | No |
 | [Duplicati](https://github.com/duplicati/duplicati) | 93 | 15k | SQLite | about 256 MB | Yes | Yes |
-| [Kopia](https://github.com/kopia/kopia) | 90 | 15k | none / embedded | about 256 MB | Yes | Yes |
+| [Kopia](https://github.com/kopia/kopia) | 89 | 15k | none / embedded | about 256 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/backblaze/
 
