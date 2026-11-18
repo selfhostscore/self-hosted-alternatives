@@ -33,7 +33,7 @@ Open your project's page on the site (`https://selfhostscore.com/self-host/<slug
 
 Data (`data/seed.json`, `data/tools.json`, the tables in this README and `awesome.md`): [CC BY 4.0](DATA-LICENSE.md), free to use, remix and republish with a link to <https://selfhostscore.com>. Code: [MIT](LICENSE).
 
-_Data updated 2026-11-17. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
+_Data updated 2026-11-18. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
 
 ## Airtable alternatives
 
@@ -82,8 +82,8 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/zapier/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Cal.diy](https://github.com/calcom/cal.diy) | 91 | 50k | PostgreSQL | about 2048 MB | Yes | Yes |
 | [Easy!Appointments](https://github.com/alextselegidis/easyappointments) | 91 | 4.5k | MySQL | about 512 MB | Yes | Yes |
+| [Cal.diy](https://github.com/calcom/cal.diy) | 90 | 50k | PostgreSQL | about 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/calendly/
 
@@ -230,7 +230,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/mailchi
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Chatwoot](https://github.com/chatwoot/chatwoot) | 99 | 40k | PostgreSQL | 4096 MB | No | Yes |
-| [Chaskiq](https://github.com/chaskiq/chaskiq) | 53 | 3.6k | PostgreSQL | about 2048 MB | No | Yes |
+| [Chaskiq](https://github.com/chaskiq/chaskiq) | 52 | 3.6k | PostgreSQL | about 2048 MB | No | Yes |
 | [Papercups](https://github.com/papercups-io/papercups) | 30 | 6.1k | PostgreSQL | about 1024 MB | No | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/intercom/
@@ -240,7 +240,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/interco
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Plane](https://github.com/makeplane/plane) | 99 | 63k | PostgreSQL | 4096 MB | Yes | Yes |
-| [OpenProject](https://github.com/opf/openproject) | 96 | 17k | PostgreSQL | 4096 MB | Yes | Yes |
+| [OpenProject](https://github.com/opf/openproject) | 96 | 18k | PostgreSQL | 4096 MB | Yes | Yes |
 | [Redmine](https://github.com/redmine/redmine) | 73 | 6.1k | PostgreSQL | about 1024 MB | Yes | Yes |
 | [Taiga](https://github.com/taigaio/taiga) | 27 | 578 | PostgreSQL | about 1024 MB | No | Yes |
 
@@ -361,7 +361,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/launchd
 |---|---|---|---|---|---|---|
 | [Gatus](https://github.com/TwiN/gatus) | 93 | 13k | SQLite | 64 MB | Yes | Yes |
 | [Cachet](https://github.com/cachethq/cachet) | 69 | 15k | PostgreSQL | about 1024 MB | No | Yes |
-| [Statping-ng](https://github.com/statping-ng/statping-ng) | 27 | 2.0k | SQLite | 64 MB | Yes | Yes |
+| [Statping-ng](https://github.com/statping-ng/statping-ng) | 26 | 2.0k | SQLite | 64 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/statuspage/
 
@@ -369,7 +369,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/statusp
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Immich](https://github.com/immich-app/immich) | 100 | 119k | PostgreSQL | 6144 MB | Yes | Yes |
+| [Immich](https://github.com/immich-app/immich) | 100 | 120k | PostgreSQL | 6144 MB | Yes | Yes |
 | [PhotoPrism](https://github.com/photoprism/photoprism) | 98 | 40k | MariaDB | 4096 MB | Yes | Yes |
 | [LibrePhotos](https://github.com/LibrePhotos/librephotos) | 91 | 8.2k | PostgreSQL | about 4096 MB | Yes | Yes |
 
