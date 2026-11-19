@@ -33,7 +33,7 @@ Open your project's page on the site (`https://selfhostscore.com/self-host/<slug
 
 Data (`data/seed.json`, `data/tools.json`, the tables in this README and `awesome.md`): [CC BY 4.0](DATA-LICENSE.md), free to use, remix and republish with a link to <https://selfhostscore.com>. Code: [MIT](LICENSE).
 
-_Data updated 2026-11-18. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
+_Data updated 2026-11-19. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
 
 ## Airtable alternatives
 
@@ -221,7 +221,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/loom/
 |---|---|---|---|---|---|---|
 | [Listmonk](https://github.com/knadh/listmonk) | 96 | 24k | PostgreSQL | 512 MB | Yes | Yes |
 | [Mautic](https://github.com/mautic/mautic) | 95 | 11k | MySQL/MariaDB | about 2048 MB | Yes | Yes |
-| [phpList](https://github.com/phpList/phplist3) | 84 | 881 | MySQL/MariaDB | about 512 MB | No | No |
+| [phpList](https://github.com/phpList/phplist3) | 84 | 882 | MySQL/MariaDB | about 512 MB | No | No |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/mailchimp/
 
@@ -262,7 +262,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/dropbox
 |---|---|---|---|---|---|---|
 | [Metabase](https://github.com/metabase/metabase) | 99 | 50k | PostgreSQL | 1024 MB | No | Yes |
 | [Redash](https://github.com/getredash/redash) | 98 | 29k | PostgreSQL | 4096 MB | No | Yes |
-| [Apache Superset](https://github.com/apache/superset) | 95 | 76k | PostgreSQL | about 4096 MB | Yes | Yes |
+| [Apache Superset](https://github.com/apache/superset) | 94 | 76k | PostgreSQL | about 4096 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/looker/
 
@@ -351,7 +351,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/doppler
 |---|---|---|---|---|---|---|
 | [Unleash](https://github.com/Unleash/unleash) | 93 | 14k | PostgreSQL | about 512 MB | Yes | Yes |
 | [GrowthBook](https://github.com/growthbook/growthbook) | 92 | 8.6k | MongoDB | 2048 MB | Yes | Yes |
-| [Flagsmith](https://github.com/Flagsmith/flagsmith) | 91 | 7.4k | PostgreSQL | 2048 MB | Yes | Yes |
+| [Flagsmith](https://github.com/Flagsmith/flagsmith) | 91 | 7.6k | PostgreSQL | 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/launchdarkly/
 
@@ -409,7 +409,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/nextdns
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Restic](https://github.com/restic/restic) | 93 | 37k | none / embedded | about 1024 MB | Yes | No |
+| [Restic](https://github.com/restic/restic) | 96 | 37k | none / embedded | about 1024 MB | Yes | No |
 | [Duplicati](https://github.com/duplicati/duplicati) | 93 | 15k | SQLite | about 256 MB | Yes | Yes |
 | [Kopia](https://github.com/kopia/kopia) | 89 | 15k | none / embedded | about 256 MB | Yes | Yes |
 
