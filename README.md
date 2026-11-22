@@ -33,7 +33,7 @@ Open your project's page on the site (`https://selfhostscore.com/self-host/<slug
 
 Data (`data/seed.json`, `data/tools.json`, the tables in this README and `awesome.md`): [CC BY 4.0](DATA-LICENSE.md), free to use, remix and republish with a link to <https://selfhostscore.com>. Code: [MIT](LICENSE).
 
-_Data updated 2026-11-21. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
+_Data updated 2026-11-22. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
 
 ## Airtable alternatives
 
@@ -51,7 +51,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/airtabl
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) | 99 | 79k | PostgreSQL | about 2048 MB | Yes | Yes |
-| [AFFiNE](https://github.com/toeverything/AFFiNE) | 99 | 76k | PostgreSQL | 2048 MB | Yes | Yes |
+| [AFFiNE](https://github.com/toeverything/AFFiNE) | 99 | 77k | PostgreSQL | 2048 MB | Yes | Yes |
 | [Outline](https://github.com/outline/outline) | 98 | 41k | PostgreSQL | 512 MB | Yes | Yes |
 | [Docmost](https://github.com/docmost/docmost) | 95 | 22k | PostgreSQL | about 1024 MB | Yes | Yes |
 
@@ -74,7 +74,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/retool/
 |---|---|---|---|---|---|---|
 | [n8n](https://github.com/n8n-io/n8n) | 100 | 212k | SQLite | 2048 MB | Yes | Yes |
 | [Activepieces](https://github.com/activepieces/activepieces) | 97 | 26k | PostgreSQL | 4096 MB | Yes | Yes |
-| [Automatisch](https://github.com/automatisch/automatisch) | 46 | 14k | PostgreSQL | about 2048 MB | Yes | Yes |
+| [Automatisch](https://github.com/automatisch/automatisch) | 45 | 14k | PostgreSQL | about 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/zapier/
 
@@ -122,7 +122,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/conflue
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Hoppscotch](https://github.com/hoppscotch/hoppscotch) | 99 | 81k | PostgreSQL | 2048 MB | No | Yes |
-| [Bruno](https://github.com/usebruno/bruno) | 98 | 48k | none / embedded | 512 MB | Yes | No |
+| [Bruno](https://github.com/usebruno/bruno) | 98 | 49k | none / embedded | 512 MB | Yes | No |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/postman/
 
@@ -271,7 +271,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/looker/
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Supabase](https://github.com/supabase/supabase) | 99 | 115k | PostgreSQL | 4096 MB | Yes | Yes |
-| [Appwrite](https://github.com/appwrite/appwrite) | 99 | 58k | MongoDB | 4096 MB | Yes | Yes |
+| [Appwrite](https://github.com/appwrite/appwrite) | 99 | 59k | MongoDB | 4096 MB | Yes | Yes |
 | [Nhost](https://github.com/nhost/nhost) | 92 | 9.4k | PostgreSQL | about 4096 MB | Yes | Yes |
 | [PocketBase](https://github.com/pocketbase/pocketbase) | 78 | 62k | SQLite | about 512 MB | Yes | Yes |
 
@@ -350,7 +350,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/doppler
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Unleash](https://github.com/Unleash/unleash) | 93 | 14k | PostgreSQL | about 512 MB | Yes | Yes |
-| [Flagsmith](https://github.com/Flagsmith/flagsmith) | 92 | 8.2k | PostgreSQL | 2048 MB | Yes | Yes |
+| [Flagsmith](https://github.com/Flagsmith/flagsmith) | 92 | 8.6k | PostgreSQL | 2048 MB | Yes | Yes |
 | [GrowthBook](https://github.com/growthbook/growthbook) | 92 | 8.6k | MongoDB | 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/launchdarkly/
@@ -429,7 +429,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/quickbo
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [ERPNext](https://github.com/frappe/erpnext) | 100 | 41k | MariaDB | about 4096 MB | Yes | Yes |
+| [ERPNext](https://github.com/frappe/erpnext) | 100 | 42k | MariaDB | about 4096 MB | Yes | Yes |
 | [Dolibarr](https://github.com/Dolibarr/dolibarr) | 94 | 7.9k | MariaDB/MySQL | about 512 MB | Yes | Yes |
 | [Odoo](https://github.com/odoo/odoo) | 80 | 56k | PostgreSQL | about 2048 MB | Yes | Yes |
 
