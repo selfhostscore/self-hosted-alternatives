@@ -33,7 +33,7 @@ Open your project's page on the site (`https://selfhostscore.com/self-host/<slug
 
 Data (`data/seed.json`, `data/tools.json`, the tables in this README and `awesome.md`): [CC BY 4.0](DATA-LICENSE.md), free to use, remix and republish with a link to <https://selfhostscore.com>. Code: [MIT](LICENSE).
 
-_Data updated 2026-11-22. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
+_Data updated 2026-11-23. The tables below are generated: edit [data/seed.json](data/seed.json), not this file._
 
 ## Airtable alternatives
 
@@ -242,7 +242,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/interco
 | [Plane](https://github.com/makeplane/plane) | 99 | 63k | PostgreSQL | 4096 MB | Yes | Yes |
 | [OpenProject](https://github.com/opf/openproject) | 96 | 18k | PostgreSQL | 4096 MB | Yes | Yes |
 | [Redmine](https://github.com/redmine/redmine) | 73 | 6.1k | PostgreSQL | about 1024 MB | Yes | Yes |
-| [Taiga](https://github.com/taigaio/taiga) | 27 | 577 | PostgreSQL | about 1024 MB | No | Yes |
+| [Taiga](https://github.com/taigaio/taiga) | 27 | 578 | PostgreSQL | about 1024 MB | No | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/jira/
 
@@ -291,8 +291,8 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/algolia
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [YOURLS](https://github.com/YOURLS/YOURLS) | 94 | 12k | MySQL/MariaDB | about 256 MB | Yes | Yes |
-| [Kutt](https://github.com/thedevs-network/kutt) | 91 | 11k | SQLite | about 512 MB | Yes | Yes |
 | [Shlink](https://github.com/shlinkio/shlink) | 90 | 5.4k | MySQL/MariaDB | about 512 MB | Yes | Yes |
+| [Kutt](https://github.com/thedevs-network/kutt) | 90 | 11k | SQLite | about 512 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/bitly/
 
@@ -332,7 +332,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/circlec
 | [Twenty](https://github.com/twentyhq/twenty) | 100 | 61k | PostgreSQL | 2048 MB | Yes | Yes |
 | [Krayin](https://github.com/krayin/laravel-crm) | 95 | 24k | MySQL | 4096 MB | No | Yes |
 | [SuiteCRM](https://github.com/salesagility/SuiteCRM) | 92 | 5.9k | MySQL/MariaDB | about 2048 MB | No | Yes |
-| [EspoCRM](https://github.com/espocrm/espocrm) | 90 | 3.6k | MySQL/MariaDB | about 512 MB | Yes | Yes |
+| [EspoCRM](https://github.com/espocrm/espocrm) | 90 | 3.7k | MySQL/MariaDB | about 512 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/salesforce/
 
@@ -341,7 +341,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/salesfo
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Infisical](https://github.com/Infisical/infisical) | 97 | 31k | PostgreSQL | 4096 MB | Yes | Yes |
-| [OpenBao](https://github.com/openbao/openbao) | 92 | 9.1k | none / embedded | about 256 MB | Yes | Yes |
+| [OpenBao](https://github.com/openbao/openbao) | 92 | 9.2k | none / embedded | about 256 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/doppler/
 
@@ -350,8 +350,8 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/doppler
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Unleash](https://github.com/Unleash/unleash) | 93 | 14k | PostgreSQL | about 512 MB | Yes | Yes |
-| [Flagsmith](https://github.com/Flagsmith/flagsmith) | 92 | 8.6k | PostgreSQL | 2048 MB | Yes | Yes |
-| [GrowthBook](https://github.com/growthbook/growthbook) | 92 | 8.6k | MongoDB | 2048 MB | Yes | Yes |
+| [Flagsmith](https://github.com/Flagsmith/flagsmith) | 92 | 8.9k | PostgreSQL | 2048 MB | Yes | Yes |
+| [GrowthBook](https://github.com/growthbook/growthbook) | 92 | 8.7k | MongoDB | 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/launchdarkly/
 
