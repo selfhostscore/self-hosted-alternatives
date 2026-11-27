@@ -2,7 +2,7 @@
 
 Open-source, self-hostable alternatives to popular SaaS, each with a **Self-Host Health Score** (live GitHub activity, releases, stars and forks) and a **deploy footprint** with sources and a confidence level (minimum RAM, database, ARM64 and Raspberry Pi support, one-click deploy).
 
-Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-11-26.
+Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-11-27.
 
 ## Airtable alternatives
 
@@ -108,7 +108,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/typefor
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Coolify](https://github.com/coollabsio/coolify) | 99 | 66k | PostgreSQL | 2048 MB | Yes | Yes |
+| [Coolify](https://github.com/coollabsio/coolify) | 99 | 67k | PostgreSQL | 2048 MB | Yes | Yes |
 | [Dokploy](https://github.com/dokploy/dokploy) | 97 | 39k | PostgreSQL | 2048 MB | Yes | No |
 | [Dokku](https://github.com/dokku/dokku) | 96 | 32k | none / embedded | 1024 MB | Yes | Yes |
 | [CapRover](https://github.com/caprover/caprover) | 93 | 15k | none / embedded | 512 MB | Yes | Yes |
@@ -169,8 +169,8 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/docusig
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Vaultwarden](https://github.com/dani-garcia/vaultwarden) | 98 | 71k | SQLite | 512 MB | Yes | Yes |
-| [Passbolt](https://github.com/passbolt/passbolt_api) | 90 | 6.2k | MariaDB/MySQL | 2048 MB | Yes | Yes |
+| [Vaultwarden](https://github.com/dani-garcia/vaultwarden) | 98 | 72k | SQLite | 512 MB | Yes | Yes |
+| [Passbolt](https://github.com/passbolt/passbolt_api) | 90 | 6.3k | MariaDB/MySQL | 2048 MB | Yes | Yes |
 | [Padloc](https://github.com/padloc/padloc) | 62 | 2.9k | LevelDB | about 512 MB | No | No |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/1password/
@@ -190,7 +190,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/loom/
 |---|---|---|---|---|---|---|
 | [Listmonk](https://github.com/knadh/listmonk) | 96 | 24k | PostgreSQL | 512 MB | Yes | Yes |
 | [Mautic](https://github.com/mautic/mautic) | 95 | 11k | MySQL/MariaDB | about 2048 MB | Yes | Yes |
-| [phpList](https://github.com/phpList/phplist3) | 84 | 882 | MySQL/MariaDB | about 512 MB | No | No |
+| [phpList](https://github.com/phpList/phplist3) | 84 | 883 | MySQL/MariaDB | about 512 MB | No | No |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/mailchimp/
 
@@ -199,7 +199,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/mailchi
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Chatwoot](https://github.com/chatwoot/chatwoot) | 100 | 41k | PostgreSQL | 4096 MB | No | Yes |
-| [Chaskiq](https://github.com/chaskiq/chaskiq) | 52 | 3.6k | PostgreSQL | about 2048 MB | No | Yes |
+| [Chaskiq](https://github.com/chaskiq/chaskiq) | 51 | 3.6k | PostgreSQL | about 2048 MB | No | Yes |
 | [Papercups](https://github.com/papercups-io/papercups) | 30 | 6.1k | PostgreSQL | about 1024 MB | No | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/intercom/
@@ -220,7 +220,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/jira/
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Nextcloud](https://github.com/nextcloud/server) | 98 | 38k | MariaDB/MySQL | 128 MB | Yes | Yes |
-| [ownCloud](https://github.com/owncloud/core) | 93 | 8.8k | MariaDB | 128 MB | Yes | Yes |
+| [ownCloud](https://github.com/owncloud/core) | 93 | 8.9k | MariaDB | 128 MB | Yes | Yes |
 | [Seafile](https://github.com/haiwen/seafile) | 69 | 16k | MySQL/MariaDB | 1024 MB | No | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/dropbox/
@@ -260,7 +260,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/algolia
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [YOURLS](https://github.com/YOURLS/YOURLS) | 94 | 12k | MySQL/MariaDB | about 256 MB | Yes | Yes |
-| [Shlink](https://github.com/shlinkio/shlink) | 90 | 5.4k | MySQL/MariaDB | about 512 MB | Yes | Yes |
+| [Shlink](https://github.com/shlinkio/shlink) | 90 | 5.5k | MySQL/MariaDB | about 512 MB | Yes | Yes |
 | [Kutt](https://github.com/thedevs-network/kutt) | 90 | 11k | SQLite | about 512 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/bitly/
@@ -310,7 +310,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/salesfo
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Infisical](https://github.com/Infisical/infisical) | 97 | 31k | PostgreSQL | 4096 MB | Yes | Yes |
-| [OpenBao](https://github.com/openbao/openbao) | 92 | 9.2k | none / embedded | about 256 MB | Yes | Yes |
+| [OpenBao](https://github.com/openbao/openbao) | 92 | 9.3k | none / embedded | about 256 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/doppler/
 
@@ -378,7 +378,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/nextdns
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Restic](https://github.com/restic/restic) | 96 | 37k | none / embedded | about 1024 MB | Yes | No |
+| [Restic](https://github.com/restic/restic) | 96 | 38k | none / embedded | about 1024 MB | Yes | No |
 | [Duplicati](https://github.com/duplicati/duplicati) | 93 | 15k | SQLite | about 256 MB | Yes | Yes |
 | [Kopia](https://github.com/kopia/kopia) | 89 | 15k | none / embedded | about 256 MB | Yes | Yes |
 
