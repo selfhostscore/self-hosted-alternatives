@@ -2,7 +2,7 @@
 
 Open-source, self-hostable alternatives to popular SaaS, each with a **Self-Host Health Score** (live GitHub activity, releases, stars and forks) and a **deploy footprint** with sources and a confidence level (minimum RAM, database, ARM64 and Raspberry Pi support, one-click deploy).
 
-Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-11-27.
+Interactive site: https://selfhostscore.com. Dataset: https://selfhostscore.com/api/tools.json. Methodology: https://selfhostscore.com/methodology/. Updated 2026-11-28.
 
 ## Airtable alternatives
 
@@ -20,7 +20,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/airtabl
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) | 99 | 80k | PostgreSQL | about 2048 MB | Yes | Yes |
-| [AFFiNE](https://github.com/toeverything/AFFiNE) | 98 | 79k | PostgreSQL | 2048 MB | Yes | Yes |
+| [AFFiNE](https://github.com/toeverything/AFFiNE) | 98 | 80k | PostgreSQL | 2048 MB | Yes | Yes |
 | [Outline](https://github.com/outline/outline) | 98 | 41k | PostgreSQL | 512 MB | Yes | Yes |
 | [Docmost](https://github.com/docmost/docmost) | 95 | 22k | PostgreSQL | about 1024 MB | Yes | Yes |
 
@@ -43,7 +43,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/retool/
 |---|---|---|---|---|---|---|
 | [n8n](https://github.com/n8n-io/n8n) | 100 | 212k | SQLite | 2048 MB | Yes | Yes |
 | [Activepieces](https://github.com/activepieces/activepieces) | 97 | 26k | PostgreSQL | 4096 MB | Yes | Yes |
-| [Automatisch](https://github.com/automatisch/automatisch) | 45 | 14k | PostgreSQL | about 2048 MB | Yes | Yes |
+| [Automatisch](https://github.com/automatisch/automatisch) | 44 | 14k | PostgreSQL | about 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/zapier/
 
@@ -70,7 +70,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/trello/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat) | 100 | 47k | MongoDB | 4096 MB | Yes | Yes |
+| [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat) | 100 | 46k | MongoDB | 4096 MB | Yes | Yes |
 | [Mattermost](https://github.com/mattermost/mattermost) | 99 | 40k | PostgreSQL | 2048 MB | No | Yes |
 | [Zulip](https://github.com/zulip/zulip) | 99 | 26k | PostgreSQL | 2048 MB | No | Yes |
 
@@ -120,7 +120,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/heroku/
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Keycloak](https://github.com/keycloak/keycloak) | 99 | 38k | PostgreSQL | 1250 MB | Yes | Yes |
-| [Authentik](https://github.com/goauthentik/authentik) | 96 | 26k | PostgreSQL | 2048 MB | Yes | Yes |
+| [Authentik](https://github.com/goauthentik/authentik) | 96 | 27k | PostgreSQL | 2048 MB | Yes | Yes |
 | [Zitadel](https://github.com/zitadel/zitadel) | 94 | 16k | PostgreSQL | 512 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/auth0/
@@ -188,7 +188,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/loom/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Listmonk](https://github.com/knadh/listmonk) | 96 | 24k | PostgreSQL | 512 MB | Yes | Yes |
+| [Listmonk](https://github.com/knadh/listmonk) | 96 | 25k | PostgreSQL | 512 MB | Yes | Yes |
 | [Mautic](https://github.com/mautic/mautic) | 95 | 11k | MySQL/MariaDB | about 2048 MB | Yes | Yes |
 | [phpList](https://github.com/phpList/phplist3) | 84 | 883 | MySQL/MariaDB | about 512 MB | No | No |
 
@@ -239,7 +239,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/looker/
 
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
-| [Supabase](https://github.com/supabase/supabase) | 99 | 116k | PostgreSQL | 4096 MB | Yes | Yes |
+| [Supabase](https://github.com/supabase/supabase) | 99 | 115k | PostgreSQL | 4096 MB | Yes | Yes |
 | [Appwrite](https://github.com/appwrite/appwrite) | 99 | 59k | MongoDB | 4096 MB | Yes | Yes |
 | [Nhost](https://github.com/nhost/nhost) | 92 | 9.4k | PostgreSQL | about 4096 MB | Yes | Yes |
 | [PocketBase](https://github.com/pocketbase/pocketbase) | 78 | 62k | SQLite | about 512 MB | Yes | Yes |
@@ -319,7 +319,7 @@ Full details, sources and badges: https://selfhostscore.com/alternatives/doppler
 | Alternative | Health | Stars | Database | Min RAM | ARM64 / Pi | One-click |
 |---|---|---|---|---|---|---|
 | [Unleash](https://github.com/Unleash/unleash) | 93 | 14k | PostgreSQL | about 512 MB | Yes | Yes |
-| [Flagsmith](https://github.com/Flagsmith/flagsmith) | 92 | 10k | PostgreSQL | 2048 MB | Yes | Yes |
+| [Flagsmith](https://github.com/Flagsmith/flagsmith) | 92 | 11k | PostgreSQL | 2048 MB | Yes | Yes |
 | [GrowthBook](https://github.com/growthbook/growthbook) | 92 | 8.7k | MongoDB | 2048 MB | Yes | Yes |
 
 Full details, sources and badges: https://selfhostscore.com/alternatives/launchdarkly/
